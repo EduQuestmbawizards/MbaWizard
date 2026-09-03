@@ -4,16 +4,22 @@
   padding-bottom: 90px;
 }
 
+.containerFluid {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
 .header {
   background: linear-gradient(135deg, #05164d 0%, #001242 100%);
-  padding: 60px 0 50px;
+  padding: 55px 0 45px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .headerContent {
-  max-width: 860px;
-  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .breadcrumbs {
@@ -22,7 +28,8 @@
   gap: 8px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs a {
@@ -54,7 +61,7 @@
 }
 
 .title {
-  font-size: clamp(28px, 4vw, 44px);
+  font-size: clamp(26px, 3.6vw, 42px);
   font-weight: 900;
   line-height: 1.22;
   color: #ffffff;
@@ -63,10 +70,11 @@
 }
 
 .excerpt {
-  font-size: 17px;
+  font-size: 16.5px;
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 26px;
+  max-width: 960px;
 }
 
 .metaRow {
@@ -75,7 +83,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding-top: 20px;
+  padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -124,11 +132,10 @@
 }
 
 .coverWrapper {
-  max-width: 960px;
-  margin: -30px auto 45px;
+  margin: -25px 0 36px;
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
   border: 1px solid var(--color-border);
   position: relative;
   z-index: 10;
@@ -136,30 +143,94 @@
 
 .coverImage {
   width: 100%;
-  max-height: 480px;
+  max-height: 520px;
   object-fit: cover;
   display: block;
 }
 
+/* ==========================================================================
+   2-Column Layout: Left Content (2.5 / 4) + Right Sidebar (1.5 / 4)
+   ========================================================================== */
 .bodyLayout {
   display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: 50px;
-  max-width: 1120px;
-  margin: 0 auto;
+  grid-template-columns: 2.5fr 1.5fr;
+  gap: 36px;
+  align-items: start;
 }
 
 .mainContent {
+  width: 100%;
+  min-width: 0;
   background: #ffffff;
-  padding: 40px;
+  padding: 44px 40px;
   border-radius: var(--radius-xl);
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 6px 24px rgba(5, 22, 77, 0.04);
+}
+
+/* Social Share Bar matching Screenshot */
+.shareBar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border-light);
+  flex-wrap: wrap;
+}
+
+.shareLabel {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.shareIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.socialIcon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.twitterIcon {
+  background: #000000;
+}
+
+.linkedinIcon {
+  background: #0a66c2;
+}
+
+.whatsappIcon {
+  background: #25d366;
+}
+
+.copyIcon {
+  background: #4b5563;
 }
 
 .paragraph {
   font-size: 16.5px;
-  line-height: 1.8;
+  line-height: 1.85;
   color: var(--color-text-main);
   margin-bottom: 22px;
 }
@@ -170,6 +241,7 @@
   color: var(--color-primary);
   margin: 36px 0 16px;
   line-height: 1.3;
+  scroll-margin-top: 110px;
 }
 
 .quote {
@@ -192,10 +264,10 @@
   font-weight: 700;
 }
 
-/* WP Rendered Content Typography */
+/* WordPress Rendered Content */
 .wpContent {
   font-size: 16.5px;
-  line-height: 1.8;
+  line-height: 1.85;
   color: #2b2b2b;
 }
 
@@ -205,7 +277,8 @@
 .wpContent h4 {
   color: var(--color-primary);
   font-weight: 800;
-  margin: 32px 0 16px;
+  margin: 34px 0 16px;
+  scroll-margin-top: 110px;
 }
 
 .wpContent p {
@@ -226,6 +299,31 @@
   border-radius: var(--radius-lg);
   margin: 24px 0;
   box-shadow: var(--shadow-md);
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.wpContent table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.wpContent th {
+  background: #05164d;
+  color: #ffffff;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 13.5px;
+}
+
+.wpContent td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14px;
 }
 
 .ctaBox {
@@ -297,28 +395,349 @@
   background: rgba(255, 255, 255, 0.25);
 }
 
-/* Sidebar */
+/* ==========================================================================
+   Right Sidebar (1.5 / 4): All Cards Stacked on the Right
+   ========================================================================== */
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
+  position: sticky;
+  top: 90px;
 }
 
-.sidebarCard {
+/* 1. TABLE OF CONTENTS Card (Red Left Border Accent, Full Height - No Internal Scroll) */
+.tocCard {
   background: #ffffff;
-  padding: 28px;
-  border-radius: var(--radius-xl);
+  border-radius: 18px;
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
+  border-left: 6px solid #b91c1c;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  padding: 24px 20px;
+  overflow: hidden;
 }
 
-.sidebarTitle {
+.tocHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.hamburgerIcon {
+  font-size: 20px;
+  font-weight: 900;
+  color: #111827;
+  line-height: 1;
+}
+
+.tocTitleText {
+  font-size: 15.5px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: #111827;
+  text-transform: uppercase;
+}
+
+/* Table of Contents: Takes full natural height without internal scrolling */
+.tocNav {
+  max-height: none;
+  overflow: visible;
+  padding-right: 0;
+}
+
+.tocList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tocItem {
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.tocItemH3 {
+  padding-left: 14px;
+}
+
+.tocButton {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 7px 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  color: #374151;
+  font-size: 13.5px;
+  line-height: 1.45;
+  transition: all 0.2s ease;
+}
+
+.tocIndicator {
+  color: #b91c1c;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.tocText {
+  flex: 1;
+}
+
+.tocButton:hover {
+  color: #111827;
+  background: #f3f4f6;
+}
+
+.tocActive .tocButton {
+  color: #b91c1c;
+  font-weight: 800;
+  background: rgba(185, 28, 28, 0.08);
+}
+
+.tocActive .tocIndicator {
+  color: #b91c1c;
+}
+
+/* 2. Free Strategy Session Card (Deep Crimson Gradient + Red Button) */
+.strategySessionCard {
+  background: linear-gradient(180deg, #881337 0%, #1e1b4b 100%);
+  border-radius: 18px;
+  padding: 34px 22px;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(136, 19, 55, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.strategyTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.strategySubtitle {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.bookSessionBtn {
+  background: #ef4444;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 18px rgba(239, 68, 68, 0.4);
+}
+
+.bookSessionBtn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.55);
+}
+
+.phoneIcon {
   font-size: 17px;
+  line-height: 1;
+}
+
+/* 3. Quick Consultation / Contact Form Card */
+.contactFormCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px 22px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 18px rgba(5, 22, 77, 0.05);
+}
+
+.formSubtitle {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.quickForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formGroup {
+  width: 100%;
+}
+
+.formInput,
+.formSelect {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 13.5px;
+  color: var(--color-primary);
+  background: var(--color-bg-alt);
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.formInput:focus,
+.formSelect:focus {
+  border-color: var(--color-accent-gold);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.formSubmitBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #05164d 0%, #001f7a 100%);
+  color: var(--color-accent-gold);
+  border: 1px solid var(--color-accent-gold);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 14px rgba(5, 22, 77, 0.15);
+}
+
+.formSubmitBtn:hover {
+  background: var(--color-accent-gold);
+  color: #05164d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.3);
+}
+
+.formPrivacy {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: 4px;
+}
+
+.formSuccess {
+  text-align: center;
+  padding: 18px 10px;
+}
+
+.successIcon {
+  width: 44px;
+  height: 44px;
+  background: #10b981;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto 12px;
+}
+
+.successHeading {
+  font-size: 16px;
   font-weight: 800;
   color: var(--color-primary);
-  margin-bottom: 18px;
+  margin-bottom: 6px;
+}
+
+.successMsg {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* 4. Admissions Quick Links Card (Matching Image) */
+.quickLinksCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px 22px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 18px rgba(5, 22, 77, 0.05);
+}
+
+.quickLinksTitle {
+  font-size: 17.5px;
+  font-weight: 800;
+  color: #05164d;
+  margin-bottom: 14px;
   border-bottom: 2px solid var(--color-accent-gold);
-  padding-bottom: 8px;
+  padding-bottom: 10px;
+}
+
+.sidebarLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarLinks li {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sidebarLinks li:last-child {
+  border-bottom: none;
+}
+
+.sidebarLinks a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #05164d;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.sidebarLinks a:hover {
+  color: var(--color-accent-gold);
+  transform: translateX(4px);
+}
+
+.arrowIcon {
+  color: #05164d;
+  font-size: 15px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.sidebarLinks a:hover .arrowIcon {
+  color: var(--color-accent-gold);
+  transform: translate(2px, -2px);
+}
+
+/* 5. Author Card */
+.authorCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px 22px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 18px rgba(5, 22, 77, 0.05);
 }
 
 .authorBox {
@@ -333,12 +752,17 @@
   margin: 0 auto 12px;
   border: 2px solid var(--color-accent-gold);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  background: #05164d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
 }
 
 .founderThumbnail {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .authorHeading {
@@ -358,30 +782,6 @@
   font-size: 13.5px;
   color: var(--color-text-muted);
   line-height: 1.55;
-}
-
-.sidebarLinks {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.sidebarLinks a {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--color-primary);
-  display: block;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--color-border);
-  transition: color 0.2s, transform 0.2s;
-}
-
-.sidebarLinks a:hover {
-  color: var(--color-accent-gold);
-  transform: translateX(4px);
 }
 
 /* Related section */
@@ -409,10 +809,20 @@
   gap: 30px;
 }
 
-@media (max-width: 992px) {
+/* ==========================================================================
+   Responsive Breakpoints: Clean Stacking on Small / Mobile Screens
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .containerFluid {
+    padding: 0 20px;
+  }
   .bodyLayout {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+  .sidebar {
+    position: static;
+    width: 100%;
   }
   .relatedGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -420,6 +830,9 @@
 }
 
 @media (max-width: 768px) {
+  .containerFluid {
+    padding: 0 16px;
+  }
   .header {
     padding: 36px 0 28px;
   }
@@ -443,12 +856,16 @@
     font-size: 12px;
   }
   .coverWrapper {
-    margin: 16px auto 26px;
+    margin: 16px 0 26px;
     border-radius: var(--radius-lg);
   }
   .mainContent {
     padding: 22px 16px;
     border-radius: var(--radius-lg);
+  }
+  .shareBar {
+    margin-bottom: 22px;
+    padding-bottom: 16px;
   }
   .paragraph {
     font-size: 15px;
@@ -506,7 +923,11 @@
     text-align: center;
     padding: 12px 18px;
   }
-  .sidebarCard {
+  .tocCard,
+  .strategySessionCard,
+  .contactFormCard,
+  .quickLinksCard,
+  .authorCard {
     padding: 20px 16px;
   }
   .relatedSection {
