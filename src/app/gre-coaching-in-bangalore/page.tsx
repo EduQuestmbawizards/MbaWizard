@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+import { cityMetadata, cityJsonLd } from "./schema";
+import GreBangaloreContent from "./gre-coaching-in-bangalore";
+
+export const metadata: Metadata = cityMetadata;
+
+export default function GreBangalorePage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(cityJsonLd) }}
+      />
+      <GreBangaloreContent />
+    </>
+  );
+}

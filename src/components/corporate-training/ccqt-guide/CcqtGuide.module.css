@@ -1,0 +1,111 @@
+.section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 50px;
+}
+
+.preTitle {
+  color: var(--color-accent-gold);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 900;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.titleHighlight {
+  color: var(--color-accent-orange);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.contentBox {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stagesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.stageCard {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  padding: 24px;
+}
+
+.stageNumber {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--color-accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.stageTitle {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.stageDesc {
+  font-size: 13.5px;
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+.eligibilityList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+}
+
+.eligibilityItem {
+  font-size: 14px;
+  color: var(--color-text-main);
+  display: flex;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.check {
+  color: var(--color-accent-gold);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .stagesGrid {
+    grid-template-columns: 1fr;
+  }
+}

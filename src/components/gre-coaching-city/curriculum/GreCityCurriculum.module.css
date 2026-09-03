@@ -1,0 +1,151 @@
+.section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.preTitle {
+  color: var(--color-accent-gold);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.title {
+  font-size: clamp(26px, 3.8vw, 38px);
+  font-weight: 900;
+  color: var(--color-primary);
+  line-height: 1.25;
+}
+
+.titleHighlight {
+  color: var(--color-accent-orange);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin-bottom: 45px;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background: #ffffff;
+}
+
+.table th {
+  background: #05164d;
+  color: #ffffff;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14.5px;
+  color: var(--color-text-main);
+  line-height: 1.5;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:nth-child(even) {
+  background: var(--color-bg-alt);
+}
+
+.sectionBadge {
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.curriculumGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.currCard {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: 28px 24px;
+  transition: all var(--transition-normal);
+}
+
+.currCard:hover {
+  border-color: var(--color-accent-gold);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.currIcon {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.currTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+
+.currList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.currItem {
+  font-size: 13.5px;
+  color: var(--color-text-main);
+  line-height: 1.55;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.currItem::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-gold);
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .curriculumGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .curriculumGrid {
+    grid-template-columns: 1fr;
+  }
+}

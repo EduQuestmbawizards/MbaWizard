@@ -1,0 +1,210 @@
+/* MythVsFact.module.css */
+.section {
+  padding: 85px 0;
+  background: var(--color-bg-alt);
+}
+
+.header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 50px;
+}
+
+.preTitle {
+  color: var(--color-accent-gold);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.title {
+  font-size: clamp(26px, 3.8vw, 38px);
+  font-weight: 900;
+  color: var(--color-primary);
+  line-height: 1.25;
+}
+
+.titleHighlight {
+  color: var(--color-accent-orange);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.accordionList {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.item:hover {
+  border-color: var(--color-accent-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.item.open {
+  border-color: var(--color-accent-gold);
+  box-shadow: var(--shadow-lg);
+}
+
+.questionBtn {
+  width: 100%;
+  padding: 22px 24px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mythRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-grow: 1;
+}
+
+.mythBadge {
+  background: #fee2e2;
+  color: #991b1b;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.mythText {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.4;
+}
+
+.chevron {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-accent-gold);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.item.open .chevron {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.panel {
+  padding: 0 24px 24px;
+  border-top: 1px solid var(--color-border-light);
+  padding-top: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.factRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.factBadge {
+  background: #d1fae5;
+  color: #065f46;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.factText {
+  font-size: 14.5px;
+  color: var(--color-text-main);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.takeawayBox {
+  background: rgba(201, 168, 76, 0.1);
+  border-left: 4px solid var(--color-accent-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 12px 16px;
+  font-size: 13.5px;
+  color: var(--color-primary);
+  line-height: 1.55;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.takeawayLabel {
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.takeawayText {
+  color: var(--color-text-main);
+}
+
+@media (max-width: 640px) {
+  .questionBtn {
+    padding: 18px 16px;
+  }
+  .mythRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .factRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .panel {
+    padding: 0 16px 20px;
+    padding-top: 16px;
+  }
+}

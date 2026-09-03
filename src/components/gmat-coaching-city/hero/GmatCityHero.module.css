@@ -1,0 +1,120 @@
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #05164d 0%, #00072d 100%);
+  color: #ffffff;
+  padding: 85px 0 70px;
+  text-align: center;
+}
+
+.content {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.preTitle {
+  color: var(--color-accent-gold);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.title {
+  font-size: clamp(32px, 4.8vw, 54px);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.titleHighlight {
+  color: var(--color-accent-gold);
+}
+
+.description {
+  font-size: clamp(16px, 2vw, 19px);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.primaryBtn {
+  background: var(--color-accent-gold);
+  color: #000000;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 15px 34px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 18px rgba(201, 168, 76, 0.4);
+}
+
+.primaryBtn:hover {
+  background: #ffffff;
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px 28px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all var(--transition-fast);
+}
+
+.secondaryBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 16px 12px;
+}
+
+.statValue {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--color-accent-gold);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

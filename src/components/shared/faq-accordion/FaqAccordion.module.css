@@ -1,0 +1,108 @@
+.faqSection {
+  padding: 60px 0;
+}
+
+.headerArea {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionPre {
+  color: var(--color-accent-gold);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.sectionTitle {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.25;
+}
+
+.sectionTitleHighlight {
+  color: var(--color-accent-orange);
+}
+
+.sectionSubtitle {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  max-width: 680px;
+  margin: 12px auto 0;
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.accordionItem.open {
+  border-color: var(--color-accent-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.questionButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-main);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  background: transparent;
+}
+
+.questionButton:hover {
+  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
+}
+
+.accordionItem.open .questionButton {
+  color: var(--color-primary);
+  background-color: rgba(201, 168, 76, 0.05);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+  font-size: 16px;
+  flex-shrink: 0;
+  transition: transform var(--transition-normal), background var(--transition-fast);
+}
+
+.accordionItem.open .icon {
+  transform: rotate(45deg);
+  background: var(--color-accent-gold);
+  color: #000000;
+}
+
+.answerPanel {
+  padding: 0 24px 20px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
