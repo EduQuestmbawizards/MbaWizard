@@ -107,13 +107,21 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
     setIsSubmitted(true);
   };
 
+  const canonicalUrl = `https://www.mbawizards.co.in/blogs/${blog.slug}`;
+  const [currentUrl, setCurrentUrl] = useState<string>(canonicalUrl);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentUrl(window.location.href);
+    }
+  }, []);
+
   const dateStr = new Date(blog.publishedAt).toLocaleDateString("en-IN", {
     day: "numeric",
     month: "long",
     year: "numeric",
   });
 
-  const currentUrl = typeof window !== "undefined" ? window.location.href : "";
   const shareText = encodeURIComponent(blog.title);
 
   return (
@@ -145,8 +153,8 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
                 </div>
               </div>
 
-              <div className={styles.dateMeta}>
-                <span>📅 {dateStr}</span>
+              <div className={styles.dateMeta} suppressHydrationWarning>
+                <span suppressHydrationWarning>📅 {dateStr}</span>
                 <span>⏱️ {blog.readTime} min read</span>
                 {blog._wpLink && (
                   <a
@@ -187,7 +195,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
           {/* Left Column (2.5 / 4 space): Takes Complete Available Space */}
           <div className={styles.mainContent} ref={contentRef}>
             {/* Share Bar matching screenshot */}
-            <div className={styles.shareBar}>
+            <div className={styles.shareBar} suppressHydrationWarning>
               <span className={styles.shareLabel}>Share This Guide:</span>
               <div className={styles.shareIcons}>
                 <a
