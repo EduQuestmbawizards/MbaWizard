@@ -1,5 +1,6 @@
 import { blogPosts, BlogPost } from "@/data/blogs-data";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
+import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export interface BlogAuthor {
   name: string;
@@ -160,7 +161,7 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
       tags: wp.tags,
       publishedAt: wp.publishedAt,
       readTime: wp.readTime,
-      rawContentHtml: wp.content,
+      rawContentHtml: wp.content ? sanitizeWpHtml(wp.content) : undefined,
       _wpLink: wp.link,
       isWordPress: true,
     };
