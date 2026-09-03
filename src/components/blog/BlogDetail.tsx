@@ -89,6 +89,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
               <div
                 className={styles.wpContent}
                 dangerouslySetInnerHTML={{ __html: blog.rawContentHtml }}
+                suppressHydrationWarning
               />
             ) : blog.body && blog.body.length > 0 ? (
               <div className={styles.blocks}>
@@ -151,13 +152,9 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
               <div className={styles.authorBox}>
                 <div className={styles.authorImgWrapper}>
                   <img
-                    src="/images/common/founder-surinder-gupta.png"
-                    alt="Surinder Gupta"
+                    src="/images/common/mbawizards-logo.svg"
+                    alt="MBA Wizards Mentorship Team"
                     className={styles.founderThumbnail}
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src = "/images/toppers/karan-780.jpeg";
-                    }}
                   />
                 </div>
                 <div className={styles.authorHeading}>{blog.author.name}</div>

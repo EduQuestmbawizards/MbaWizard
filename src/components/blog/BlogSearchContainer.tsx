@@ -125,7 +125,7 @@ export default function BlogSearchContainer({ initialBlogs }: BlogSearchContaine
       {displayedBlogs.length > 0 ? (
         <div className={styles.grid}>
           {displayedBlogs.map((blog, idx) => (
-            <BlogCard key={blog.slug} blog={blog} index={idx} priority={idx < 4} />
+            <BlogCard key={`${blog.slug}-${idx}`} blog={blog} index={idx} priority={idx < 4} />
           ))}
         </div>
       ) : (

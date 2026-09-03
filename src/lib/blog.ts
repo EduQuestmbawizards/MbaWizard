@@ -104,7 +104,17 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
   const wpPosts = await getSortedWPBlogs();
   const wpSummaries = wpPosts.map(wpToBlogSummary);
 
-  return [...localSummaries, ...wpSummaries].sort(
+  const seen = new Set<string>();
+  const uniqueSummaries: BlogSummary[] = [];
+
+  for (const item of [...localSummaries, ...wpSummaries]) {
+    if (!seen.has(item.slug)) {
+      seen.add(item.slug);
+      uniqueSummaries.push(item);
+    }
+  }
+
+  return uniqueSummaries.sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 }
