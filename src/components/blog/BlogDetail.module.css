@@ -412,17 +412,113 @@
 @media (max-width: 992px) {
   .bodyLayout {
     grid-template-columns: 1fr;
+    gap: 36px;
   }
   .relatedGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .header {
+    padding: 36px 0 28px;
+  }
+  .title {
+    font-size: clamp(22px, 6vw, 30px);
+    margin-bottom: 14px;
+  }
+  .excerpt {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .metaRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 14px;
+  }
+  .dateMeta {
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+  }
+  .coverWrapper {
+    margin: 16px auto 26px;
+    border-radius: var(--radius-lg);
+  }
   .mainContent {
-    padding: 24px 18px;
+    padding: 22px 16px;
+    border-radius: var(--radius-lg);
+  }
+  .paragraph {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+  .heading {
+    font-size: 20px;
+    margin: 28px 0 12px;
+  }
+  .quote {
+    font-size: 15px;
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+  .wpContent {
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .wpContent table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 13px;
+    margin: 16px 0;
+  }
+  .wpContent iframe,
+  .wpContent video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+  }
+  .wpContent img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .ctaBox {
+    flex-direction: column;
+    padding: 22px 18px;
+    text-align: center;
+    align-items: center;
+  }
+  .ctaActions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .ctaPrimaryBtn,
+  .ctaSecondaryBtn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 18px;
+  }
+  .sidebarCard {
+    padding: 20px 16px;
+  }
+  .relatedSection {
+    margin-top: 50px;
+    padding-top: 36px;
+  }
+  .relatedTitle {
+    font-size: 22px;
+    margin-bottom: 24px;
   }
   .relatedGrid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

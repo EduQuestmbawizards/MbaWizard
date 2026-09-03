@@ -189,22 +189,39 @@
   color: var(--color-text-main);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+  .header {
+    margin-bottom: 30px;
+  }
   .questionBtn {
-    padding: 18px 16px;
+    padding: 16px 14px;
+  }
+  .questionText {
+    font-size: 15px;
   }
   .mythRow {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 6px;
   }
   .factRow {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 6px;
   }
   .panel {
-    padding: 0 16px 20px;
-    padding-top: 16px;
+    padding: 0 14px 18px;
+    padding-top: 14px;
+    gap: 14px;
+  }
+  .mythText, .factText {
+    font-size: 13.5px;
+  }
+  .takeawayBox {
+    padding: 10px 12px;
+    font-size: 12.5px;
   }
 }

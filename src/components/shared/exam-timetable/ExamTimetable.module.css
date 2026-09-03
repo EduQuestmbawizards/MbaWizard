@@ -64,6 +64,7 @@
 
 .tableWrap {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-border);
@@ -116,4 +117,30 @@
 .detailsCell {
   color: var(--color-text-muted);
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+  .header {
+    margin-bottom: 28px;
+  }
+  .tabBar {
+    gap: 6px;
+    margin-bottom: 22px;
+    justify-content: center;
+  }
+  .tab {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+  .table {
+    min-width: 520px;
+  }
+  .table th,
+  .table td {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
 }

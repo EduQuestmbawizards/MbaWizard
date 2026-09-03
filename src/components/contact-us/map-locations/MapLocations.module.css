@@ -114,5 +114,27 @@
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 48px 0;
+  }
+  .header {
+    margin-bottom: 28px;
+  }
+  .cardHeader {
+    padding: 24px 18px;
+  }
+  .centerName {
+    font-size: 19px;
+  }
+  .centerAddress {
+    font-size: 13.5px;
+  }
+  .mapFrame {
+    height: 220px;
   }
 }
