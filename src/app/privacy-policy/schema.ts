@@ -13,8 +13,14 @@ export const privacyMetadata: Metadata = {
       "Learn about how MBA Wizards collects, protects, and handles student personal and academic data across our coaching and consulting services.",
     url: "https://www.mbawizards.co.in/privacy-policy",
     siteName: "MBA Wizards",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy — MBA Wizards",
+    description:
+      "Learn about how MBA Wizards collects, protects, and handles student personal and academic data across our coaching and consulting services.",
   },
 };
 
@@ -45,6 +51,35 @@ export const privacyJsonLd = {
           position: 2,
           name: "Privacy Policy",
           item: "https://www.mbawizards.co.in/privacy-policy",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What personal information does MBA Wizards collect?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We collect basic contact details (name, email, phone number), academic transcripts, test scores, and application materials shared during consultations or enrollments.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How is my personal data secured?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We implement industry-standard SSL encryption, secure access controls, and strict internal confidentiality standards to ensure student information is protected.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does MBA Wizards share or sell student data?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No, MBA Wizards does not sell, rent, or trade student personal data with external third parties or advertisers under any circumstances.",
+          },
         },
       ],
     },

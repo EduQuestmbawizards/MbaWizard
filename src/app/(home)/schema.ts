@@ -13,7 +13,7 @@ export const homeMetadata: Metadata = {
       "Achieve your MBA dream with MBA Wizards. Expert coaching for GMAT, GRE, CAT, and admissions counseling. Personalized study plans, AI-based analytics, and proven success for Indian aspirants.",
     url: "https://www.mbawizards.co.in",
     siteName: "MBA Wizards",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
@@ -70,6 +70,78 @@ export const homeJsonLd = {
       publisher: {
         "@id": "https://www.mbawizards.co.in/#organization",
       },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.mbawizards.co.in",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is GMAT or GRE better for MBA abroad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Both GMAT and GRE are widely accepted by business schools globally. GMAT is specifically designed for business schools and tends to have a slight edge for top finance and consulting programs, while GRE offers greater flexibility if you are considering non-business master's degrees.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I get MBA admission with a low GMAT score?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, admissions committees evaluate candidates holistically. A strong professional background, impactful essays, leadership evidence, and stellar recommendations can compensate for an average GMAT score.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CAT enough for MBA abroad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "CAT is exclusively accepted by Indian business schools such as IIMs, FMS, and XLRI. For international MBA programs in the US, Europe, and Asia, you must submit a valid GMAT or GRE score.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When should I start MBA applications?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You should ideally begin preparation 12 to 18 months before your intended intake. This allows ample time for GMAT/GRE prep, school shortlisting, essay writing, and securing recommendations before Round 1 or Round 2 deadlines.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the difference between an SOP and an MBA essay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "An SOP is a comprehensive statement covering your academic background, career trajectory, and future goals, whereas MBA essays are highly targeted responses to specific prompts regarding leadership, failure, teamwork, or contribution to the community.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much can I save through MBA scholarships?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Competitive applicants with high GMAT/GRE scores and exceptional profiles can secure merit-based scholarships covering 20% to 80%, and sometimes up to 100%, of tuition costs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does MBA Wizards offer only MBA consulting or also GMAT/GRE/CAT coaching?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "MBA Wizards provides an integrated end-to-end ecosystem: top-tier test prep for GMAT, GRE, and CAT alongside comprehensive admissions consulting, essay editing, and interview preparation.",
+          },
+        },
+      ],
     },
   ],
 };

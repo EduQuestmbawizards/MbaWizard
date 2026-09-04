@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { getUnifiedBlogBySlug, getAllBlogSummaries } from "@/lib/blog";
 import BlogDetail from "@/components/blog/BlogDetail";
+import { generateBlogPostSchema } from "./schema";
 
 export const dynamicParams = true;
 
@@ -69,28 +70,7 @@ export default async function SingleBlogPage({
     .filter((b) => b.slug !== blog.slug && (b.category === blog.category || b.category.includes("GMAT")))
     .slice(0, 3);
 
-  const blogPostingSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: blog.title,
-    description: blog.metaDescription || blog.excerpt,
-    image: [blog.coverImage],
-    datePublished: blog.publishedAt,
-    author: {
-      "@type": "Person",
-      name: blog.author.name,
-      jobTitle: blog.author.role || "Senior Mentor",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "MBA Wizards",
-      url: "https://www.mbawizards.co.in",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.mbawizards.co.in/images/common/mbawizards-logo.svg",
-      },
-    },
-  };
+  const blogPostingSchema = generateBlogPostSchema(blog);
 
   return (
     <>

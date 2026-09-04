@@ -3,6 +3,8 @@ import Header from "@/components/shared/header/Header";
 import Footer from "@/components/shared/footer/Footer";
 import WhatsAppFloatButton from "@/components/shared/whatsapp-float-button/WhatsAppFloatButton";
 import BookDemoPopup from "@/components/shared/book-demo-popup/BookDemoPopup";
+import JsonLd from "@/components/shared/json-ld/JsonLd";
+import { organizationSchema } from "@/data/organization-schema";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -37,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <JsonLd data={organizationSchema} />
         <Header />
         <main>{children}</main>
         <Footer />

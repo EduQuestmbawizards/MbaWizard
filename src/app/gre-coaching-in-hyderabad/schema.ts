@@ -14,8 +14,13 @@ export const cityMetadata: Metadata = {
     description: data.metaDescription,
     url: `https://www.mbawizards.co.in/${data.slug}`,
     siteName: "MBA Wizards",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: data.metaTitle,
+    description: data.metaDescription,
   },
 };
 
@@ -36,6 +41,17 @@ export const cityJsonLd = {
         { "@type": "ListItem", position: 2, name: "GRE Coaching", item: "https://www.mbawizards.co.in/gre-coaching-classes" },
         { "@type": "ListItem", position: 3, name: data.city, item: `https://www.mbawizards.co.in/${data.slug}` },
       ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: data.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
     },
   ],
 };

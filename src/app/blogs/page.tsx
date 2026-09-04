@@ -1,35 +1,25 @@
 import { Metadata } from "next";
 import { getAllBlogSummaries } from "@/lib/blog";
 import BlogSearchContainer from "@/components/blog/BlogSearchContainer";
+import { blogsMetadata, blogsJsonLd } from "./schema";
 import styles from "./blogs.module.css";
 
 export const revalidate = 3600; // Revalidate cache every hour
 
-export const metadata: Metadata = {
-  title: "MBA Preparation Blog & Admissions Insights | MBA Wizards",
-  description:
-    "Explore 100+ expert guides on GMAT Focus Edition, GRE strategies, CAT preparation, top MBA interview questions, application essays, and success stories by IIT Roorkee alumni.",
-  alternates: {
-    canonical: "https://www.mbawizards.co.in/blogs",
-  },
-  openGraph: {
-    title: "MBA Preparation Blog & Admissions Insights | MBA Wizards",
-    description:
-      "Master GMAT Focus, CAT, GRE, and M7/IIM admissions with proven frameworks, test debriefs, and study plans.",
-    url: "https://www.mbawizards.co.in/blogs",
-    siteName: "MBA Wizards",
-    locale: "en_IN",
-    type: "website",
-  },
-};
+export const metadata: Metadata = blogsMetadata;
 
 export default async function BlogsPage() {
   const blogs = await getAllBlogSummaries();
 
   return (
-    <main className={styles.main}>
-      {/* Hero Section */}
-      <section className={styles.heroSection}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogsJsonLd) }}
+      />
+      <main className={styles.main}>
+        {/* Hero Section */}
+        <section className={styles.heroSection}>
         <div className="container">
           <div className={styles.heroContent}>
             <span className={styles.preTitle}>MBA Wizards Knowledge Base</span>
@@ -50,5 +40,6 @@ export default async function BlogsPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
