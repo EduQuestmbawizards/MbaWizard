@@ -20,11 +20,7 @@ import CtaSection from "@/components/shared/cta-section/CtaSection";
 
 
 
-const greArticles = [
-  { tag: "GRE Tips", emoji: "📖", title: "GRE Verbal 160+: The Complete Text Completion and RC Strategy Guide", excerpt: "Systematic approach to GRE Text Completion, Sentence Equivalence, and Reading Comprehension on the shorter test.", href: "/blogs/gre-verbal-160-strategy" },
-  { tag: "Interview Prep", emoji: "🎓", title: "Tell Me About Yourself for MBA & MS Interviews: 2026 Master Guide", excerpt: "The ultimate 4-part framework for answering the most critical interview icebreaker at top global universities.", href: "/blogs/tell-me-about-yourself-for-mba-interviews" },
-  { tag: "Dual Prep", emoji: "🎯", title: "GMAT vs GRE for MBA: Which Test Do Top Business Schools Prefer?", excerpt: "A data-driven analysis of GMAT vs GRE preferences at Harvard, Wharton, Booth, INSEAD, and Stanford.", href: "/blogs/mba-interview-questions-and-answers" }
-];
+
 
 const catArticles = [
   { tag: "CAT Strategy", emoji: "🧩", title: "CAT 2025 DILR: How to Crack the Toughest Section with Novel Set Strategies", excerpt: "Deep-dive into the 5 most common CAT DILR set archetypes, with frameworks for solving unconventional puzzles.", href: "/blogs/cat-2025-dilr-strategy" },
@@ -55,11 +51,12 @@ export default function GmatCatCoachingContent() {
       />
       <GmatCatFaq />
       <CtaSection
-        pretitle="Double Your MBA Admission Chances"
-        title="Master GMAT & CAT Together With"
-        titleHighlight="75% Syllabus Overlap"
-        description="One synchronized study plan that prepares you for IIMs in November and ISB/global B-schools round-the-clock."
-        primaryButtonText="Book Free Dual Prep Demo"
+        pretitle="Maximize Global & Indian B-School Options"
+        title="Prepare for GMAT & CAT Simultaneously with"
+        titleHighlight="A Synchronized Dual Roadmap"
+        description="Leverage 80% Quant and Critical Reasoning syllabus overlap. Prepare for IIMs in November and ISB or global business schools with zero duplicated effort in cohorts of 10–15 students."
+        primaryButtonText="Book Free GMAT+CAT Dual Demo"
+        secondaryButtonText="Consult Dual Exam Specialist"
       />
     </>
   );

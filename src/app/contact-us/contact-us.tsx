@@ -3,7 +3,8 @@ import ContactForm from "@/components/contact-us/contact-form/ContactForm";
 import MapLocations from "@/components/contact-us/map-locations/MapLocations";
 import WhyMbaWizards from "@/components/shared/why-mba-wizards/WhyMbaWizards";
 import MythVsFact from "@/components/shared/myth-vs-fact/MythVsFact";
-import { admissionsMyths } from "@/data/myths/admissions-myths";
+import { contactMyths } from "@/data/myths/contact-myths";
+import ContactFaq from "@/components/contact-us/faq/ContactFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 import styles from "@/components/contact-us/contact-info/ContactInfo.module.css";
 
@@ -31,13 +32,15 @@ export default function ContactUsContent() {
 
       <MapLocations />
       <WhyMbaWizards exam="MBA & Test Prep" />
-      <MythVsFact exam="Admissions & Coaching" items={admissionsMyths} />
+      <MythVsFact exam="Consultation & Centers" items={contactMyths} />
+      <ContactFaq />
       <CtaSection
-        pretitle="Ready to Transform Your Score?"
-        title="Schedule Your Free"
-        titleHighlight="Diagnostic Assessment"
-        description="Meet with our lead mentor Mr. Surinder Gupta (IIT Roorkee alumni) at our Gurgaon campus or online for an individual profile evaluation."
-        primaryButtonText="Book Free Consultation"
+        pretitle="Visit Our Centers or Connect Live Online"
+        title="Book an Unpressured 1-on-1"
+        titleHighlight="Academic & Career Counseling Session"
+        description="Drop by our DLF Galleria or Sector 50 Gurgaon classrooms, or hop on a live video diagnostic with Mr. Surinder Gupta (IIT Roorkee alumni). 100% objective, personalized advice."
+        primaryButtonText="Book In-Person / Online Counseling"
+        secondaryButtonText="Instant WhatsApp Booking"
       />
     </>
   );

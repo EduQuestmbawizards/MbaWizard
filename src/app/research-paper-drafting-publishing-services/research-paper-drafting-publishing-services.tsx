@@ -1,12 +1,8 @@
 import { gmatTestimonials } from "@/data/testimonials-data";
 import WhyMbaWizards from "@/components/shared/why-mba-wizards/WhyMbaWizards";
 import MythVsFact from "@/components/shared/myth-vs-fact/MythVsFact";
-import { admissionsMyths } from "@/data/myths/admissions-myths";
+import { researchMyths } from "@/data/myths/research-myths";
 import TestimonialsCarousel from "@/components/shared/testimonials-carousel/TestimonialsCarousel";
-
-
-
-
 import ResearchHero from "@/components/research-paper-drafting-publishing-services/hero/ResearchHero";
 import ResearchProcess from "@/components/research-paper-drafting-publishing-services/process/ResearchProcess";
 import ResearchPricing from "@/components/research-paper-drafting-publishing-services/pricing/ResearchPricing";
@@ -19,20 +15,21 @@ export default function ResearchPaperContent() {
       <ResearchHero />
       <ResearchProcess />
       <ResearchPricing />
-      <ResearchFaq />
-            <WhyMbaWizards exam="Research & Admissions" />
-      <MythVsFact exam="Research & Admissions" items={admissionsMyths} />
+      <WhyMbaWizards exam="Research & Admissions" />
+      <MythVsFact exam="Research & Admissions" items={researchMyths} />
       <TestimonialsCarousel
         testimonials={gmatTestimonials}
         title="Student Success Stories"
         titleHighlight="From MBA Wizards"
       />
+      <ResearchFaq />
       <CtaSection
-        pretitle="Author Your First Paper"
-        title="Schedule A Topic"
-        titleHighlight="Brainstorming Call"
-        description="Discuss your favorite subject, career goals, and publication target with our PhD mentors and research leads."
-        primaryButtonText="Book Topic Consultation"
+        pretitle="Publish in Scopus & IEEE Indexed Journals"
+        title="Differentiate Your Candidacy With"
+        titleHighlight="Published Academic Research"
+        description="Strengthen your MS/MBA profile with quantitative and analytical proof. Brainstorm emerging topics in AI, FinTech, Economics, or Supply Chain with our PhD research guides."
+        primaryButtonText="Book Free Research Consultation"
+        secondaryButtonText="Discuss Research Scope"
       />
     </>
   );

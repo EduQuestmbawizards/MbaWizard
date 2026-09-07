@@ -1,15 +1,61 @@
 .hero {
   position: relative;
-  background: linear-gradient(135deg, #05164d 0%, #00072d 100%);
+  background-color: #05164d;
   color: #ffffff;
-  padding: 80px 0 70px;
+  padding: 95px 0 85px;
   text-align: center;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.heroImage {
+  position: absolute;
+  inset: -5%;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: brightness(0.68) saturate(1.2) contrast(1.05);
+  animation: kenBurnsZoom 24s ease-in-out infinite alternate;
+  transform-origin: center center;
+  z-index: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 50% 40%, rgba(5, 22, 77, 0.45) 0%, rgba(0, 7, 45, 0.78) 75%),
+    linear-gradient(180deg, rgba(5, 22, 77, 0.5) 0%, rgba(0, 7, 45, 0.88) 100%);
+  z-index: 1;
+}
+
+@keyframes kenBurnsZoom {
+  0% {
+    transform: scale(1.0) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.06) translate(-1%, -0.5%);
+  }
+  100% {
+    transform: scale(1.12) translate(1%, 0.5%);
+  }
 }
 
 .content {
-  max-width: 860px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
   margin: 0 auto;
 }
+
 
 .preTitle {
   color: var(--color-accent-gold);

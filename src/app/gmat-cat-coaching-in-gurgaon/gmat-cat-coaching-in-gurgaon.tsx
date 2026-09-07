@@ -56,11 +56,12 @@ export default function GmatCatGurgaonContent() {
       />
       <GmatCatCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s Dual Achievers`}
-        title="Master Both GMAT & CAT from"
-        titleHighlight="Gurgaon?"
-        description={`Book a free diagnostic session and start your GMAT+CAT dual coaching in ${data.city} today.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle="Gurgaon's Premier Dual Exam Classroom & Online Hub"
+        title="Prepare for Both GMAT & CAT Together in"
+        titleHighlight="Gurgaon (DLF & Sec 50)"
+        description="Capitalize on 80% syllabus synergy to target both top IIMs and ISB/global B-schools. Meet IIT Roorkee mentors in person or online in small batches of 10–15 students."
+        primaryButtonText="Book In-Person / Online Dual Demo in Gurgaon"
+        secondaryButtonText="WhatsApp Gurgaon Center"
       />
     </>
   );

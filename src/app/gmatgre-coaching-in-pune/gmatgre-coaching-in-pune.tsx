@@ -56,11 +56,12 @@ export default function GmatGrePuneContent() {
       />
       <GmatGreCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s Dual Achievers`}
-        title="Master Both GMAT & GRE from"
-        titleHighlight="Pune?"
-        description={`Book a free diagnostic session and start your GMAT+GRE dual coaching in ${data.city} today.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle={`Global B-School & MS Admissions from ${data.city}`}
+        title="Conquer Both GMAT & GRE from"
+        titleHighlight={data.city}
+        description={`Cover 70% shared quantitative and reading foundations with IIT Roorkee alumni mentors in small batches of 10–15 students, then take specialized clinics for Data Insights and advanced vocabulary.`}
+        primaryButtonText={`Book Free GMAT+GRE Demo in ${data.city}`}
+        secondaryButtonText={`Speak with ${data.city} Dual Prep Mentor`}
       />
     </>
   );

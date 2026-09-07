@@ -41,7 +41,7 @@ function WPBadge() {
   );
 }
 
-export default function BlogCard({ blog, index = 0, priority = false }: BlogCardProps) {
+export default function BlogCard({ blog, index: _index = 0, priority = false }: BlogCardProps) {
   const href = `/blogs/${blog.slug}`;
   const initialSrc = blog.coverImage || "/images/toppers/karan-780.jpeg";
 

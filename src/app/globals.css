@@ -5,8 +5,8 @@
   --color-primary-light: #0d2568;
   --color-accent-gold: #c9a84c;
   --color-accent-gold-hover: #b3923a;
-  --color-accent-orange: #f49138;
-  --color-accent-orange-hover: #e07f28;
+  --color-accent-orange: #b8860b;
+  --color-accent-orange-hover: #9c7108;
 
   /* Neutrals */
   --color-bg: #ffffff;
@@ -42,8 +42,8 @@
   --transition-normal: 0.25s ease;
   --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Layout */
-  --max-width: 1240px;
+  /* Layout - Fully fluid for all screen sizes */
+  --max-width: 100%;
   --header-height: 80px;
 }
 
@@ -64,7 +64,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  max-width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -74,12 +74,13 @@ body {
   line-height: 1.6;
   font-size: 16px;
   overflow-x: hidden;
-  max-width: 100vw;
+  width: 100%;
   position: relative;
 }
 
 main {
   flex: 1;
+  width: 100%;
 }
 
 a {
@@ -109,14 +110,14 @@ ul, ol {
   list-style: none;
 }
 
-/* Global Container Utility */
+/* Global Container Utility - Optimized for Every Screen Size (No Rigid Max Width) */
 .container {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: clamp(16px, 3.5vw, 56px);
+  padding-right: clamp(16px, 3.5vw, 56px);
 }
 
 @media (max-width: 640px) {
@@ -131,6 +132,7 @@ ul, ol {
    ========================================================================== */
 [class*="card"]:not([class*="track"]):not([class*="container"]):not([class*="Wrap"]):not([class*="wrapper"]),
 [class*="Card"]:not([class*="track"]):not([class*="container"]):not([class*="Wrap"]):not([class*="wrapper"]) {
+  box-shadow: 0 4px 16px -2px rgba(5, 22, 77, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
   transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1),
               border-color 0.32s ease !important;
@@ -140,18 +142,22 @@ ul, ol {
 [class*="card"]:not([class*="track"]):not([class*="container"]):not([class*="Wrap"]):not([class*="wrapper"]):hover,
 [class*="Card"]:not([class*="track"]):not([class*="container"]):not([class*="Wrap"]):not([class*="wrapper"]):hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 36px rgba(5, 22, 77, 0.14), 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 40px -4px rgba(5, 22, 77, 0.16), 0 8px 18px -2px rgba(201, 168, 76, 0.18) !important;
 }
 
 /* Smooth zoom effect for images inside interactive cards */
-[class*="card"] img,
-[class*="Card"] img {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+img:not([class*="logoImg"]):not([class*="footerLogo"]) {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.4s ease,
+              box-shadow 0.4s ease;
 }
 
 [class*="card"]:hover img:not([class*="logoImg"]):not([class*="footerLogo"]),
-[class*="Card"]:hover img:not([class*="logoImg"]):not([class*="footerLogo"]) {
-  transform: scale(1.05);
+[class*="Card"]:hover img:not([class*="logoImg"]):not([class*="footerLogo"]),
+img[class*="Img"]:not([class*="logoImg"]):not([class*="footerLogo"]):hover,
+img[class*="image"]:not([class*="logoImg"]):not([class*="footerLogo"]):hover {
+  transform: scale(1.04);
+  filter: brightness(1.03);
 }
 
 /* Micro-animations for buttons and interactive badges */
@@ -177,5 +183,40 @@ button:active,
 a[class*="btn"]:active,
 a[class*="button"]:active {
   transform: translateY(0) scale(0.98);
+}
+
+/* ==========================================================================
+   Hero Visual Background & Particle Keyframes
+   ========================================================================== */
+@keyframes ambientMeshMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.06);
+  }
 }
 

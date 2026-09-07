@@ -44,11 +44,12 @@ export default function GreGurgaonContent() {
       <GreCityCenter city={data.city} centerType={data.centerType} address={data.address} phone={data.phone} email={data.email} />
       <GreCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s High Percentile Scorers`}
-        title="Aiming for 325+ on the"
-        titleHighlight="GRE Test?"
-        description={`Book a free diagnostic session and begin your GRE coaching in ${data.city} today.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle="Gurgaon's Premier GRE Prep Classrooms & Online Hub"
+        title="Master the Shorter GRE with IIT Mentors in"
+        titleHighlight="Gurgaon (DLF & Sec 50)"
+        description="Walk into our DLF Galleria or Sector 50 classrooms for a personalized diagnostic or attend live interactive sessions with our senior faculty."
+        primaryButtonText="Book In-Person / Live GRE Demo in Gurgaon"
+        secondaryButtonText="WhatsApp Gurgaon GRE Head"
       />
     </>
   );

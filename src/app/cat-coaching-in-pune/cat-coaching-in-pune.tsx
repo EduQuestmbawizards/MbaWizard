@@ -44,11 +44,12 @@ export default function CatPuneContent() {
       <CatCityCenter city={data.city} centerType={data.centerType} address={data.address} phone={data.phone} email={data.email} />
       <CatCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s 99+ Percentile Club`}
-        title="Ready for Your IIM Dream from"
-        titleHighlight="Pune?"
-        description={`Book a free CAT diagnostic session and start your journey to 99+ percentile in ${data.city}.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle={`Top-Rated CAT Coaching for ${data.city} Aspirants`}
+        title="Target 99.5+ Percentile in CAT 2026 from"
+        titleHighlight={data.city}
+        description={`Master QA, DILR matrix sets, and VARC with IIT Roorkee alumni mentors in interactive live classes and small batches of 10–15 students tailored for ${data.city} candidates.`}
+        primaryButtonText={`Book Free CAT Demo in ${data.city}`}
+        secondaryButtonText={`Chat with ${data.city} CAT Mentor`}
       />
     </>
   );

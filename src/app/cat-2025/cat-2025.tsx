@@ -20,11 +20,7 @@ import CtaSection from "@/components/shared/cta-section/CtaSection";
 
 
 
-const greArticles = [
-  { tag: "GRE Tips", emoji: "📖", title: "GRE Verbal 160+: The Complete Text Completion and RC Strategy Guide", excerpt: "Systematic approach to GRE Text Completion, Sentence Equivalence, and Reading Comprehension on the shorter test.", href: "/blogs/gre-verbal-160-strategy" },
-  { tag: "Interview Prep", emoji: "🎓", title: "Tell Me About Yourself for MBA & MS Interviews: 2026 Master Guide", excerpt: "The ultimate 4-part framework for answering the most critical interview icebreaker at top global universities.", href: "/blogs/tell-me-about-yourself-for-mba-interviews" },
-  { tag: "Dual Prep", emoji: "🎯", title: "GMAT vs GRE for MBA: Which Test Do Top Business Schools Prefer?", excerpt: "A data-driven analysis of GMAT vs GRE preferences at Harvard, Wharton, Booth, INSEAD, and Stanford.", href: "/blogs/mba-interview-questions-and-answers" }
-];
+
 
 const catArticles = [
   { tag: "CAT Strategy", emoji: "🧩", title: "CAT 2025 DILR: How to Crack the Toughest Section with Novel Set Strategies", excerpt: "Deep-dive into the 5 most common CAT DILR set archetypes, with frameworks for solving unconventional puzzles.", href: "/blogs/cat-2025-dilr-strategy" },
@@ -55,11 +51,12 @@ export default function Cat2025Content() {
       />
       <CatFaq />
       <CtaSection
-        pretitle="Targeting 99+ Percentile in CAT 2026?"
-        title="Experience The Proprietary"
-        titleHighlight="Manthan Pedagogy"
-        description="Book your diagnostic assessment session, identify your weak areas across QA, DILR, and VARC, and build your personalized path to top IIMs."
-        primaryButtonText="Book Free CAT Demo"
+        pretitle="Targeting 99.5+ Percentile in CAT 2026?"
+        title="Crack IIM Ahmedabad, Bangalore & Calcutta with"
+        titleHighlight="Proven Manthan Pedagogy"
+        description="Eliminate time traps across QA, DILR matrix sets, and VARC inferential passages. Experience 1-on-1 Litmus diagnostics and small-cohort coaching (10–15 students) with IIT Roorkee mentors."
+        primaryButtonText="Book Free CAT Diagnostic Demo"
+        secondaryButtonText="Discuss CAT Study Plan"
       />
     </>
   );

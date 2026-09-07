@@ -21,14 +21,12 @@ export default function CtaSection({
   titleHighlight = "Top MBA Admit",
   description = "Join hundreds of successful candidates who transformed their scores and profiles with MBA Wizards. Get personalized mentoring from 99th percentile instructors today.",
   primaryButtonText = "Book Free Demo Session",
-  primaryButtonHref,
+  primaryButtonHref = "/contact-us",
   secondaryButtonText = "Chat on WhatsApp",
   secondaryButtonHref = siteConfig.whatsappUrl,
 }: CtaSectionProps) {
   const handlePrimaryClick = () => {
-    if (!primaryButtonHref) {
-      window.dispatchEvent(new CustomEvent("open-book-demo"));
-    }
+    window.location.href = primaryButtonHref || "/contact-us";
   };
 
   return (

@@ -21,7 +21,7 @@ export default function GmatCatCityCenter({ city, centerType, address, phone, em
           <div className={styles.addressGrid}>
             <div className={styles.addressBox}>
               <div className={styles.addressLabel}>📍 Center 1 — Gurugram</div>
-              <div className={styles.addressText}>Office No. 1212 &amp; 1212A, Galleria Boulevard, DLF Phase 4, Sector 28, Gurugram, Haryana 122001</div>
+              <div className={styles.addressText}>{address || "Office No. 1212 & 1212A, Galleria Boulevard, DLF Phase 4, Sector 28, Gurugram, Haryana 122001"}</div>
             </div>
             <div className={styles.addressBox}>
               <div className={styles.addressLabel}>📍 Center 2 — Gurgaon</div>

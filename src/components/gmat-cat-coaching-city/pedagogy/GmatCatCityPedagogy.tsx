@@ -37,7 +37,7 @@ export default function GmatCatCityPedagogy({ city }: GmatCatCityPedagogyProps) 
             <div className={styles.stepNumber}>03</div>
             <div className={styles.stepContent}>
               <h3 className={styles.stepTitle}>Score Benchmarking Across Both Exams</h3>
-              <p className={styles.stepDesc}>Practice sets are customized to each student's level for both GMAT and CAT simultaneously. Sectional tests validate readiness in each exam and identify any micro-gaps that need remedial sessions before advancing to the next phase.</p>
+              <p className={styles.stepDesc}>Practice sets are customized to each student&apos;s level for both GMAT and CAT simultaneously. Sectional tests validate readiness in each exam and identify any micro-gaps that need remedial sessions before advancing to the next phase.</p>
             </div>
           </div>
           <div className={styles.stepCard}>
@@ -55,7 +55,7 @@ export default function GmatCatCityPedagogy({ city }: GmatCatCityPedagogyProps) 
                 </div>
                 <div className={styles.phaseBox}>
                   <h4 className={styles.phaseTitle}>Phase C: Time Efficiency Race</h4>
-                  <p className={styles.phaseText}>Speed and mental math shortcuts for GMAT's 90-second window and CAT's 2-minute reading pace simultaneously.</p>
+                  <p className={styles.phaseText}>Speed and mental math shortcuts for GMAT&apos;s 90-second window and CAT&apos;s 2-minute reading pace simultaneously.</p>
                 </div>
               </div>
             </div>

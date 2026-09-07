@@ -68,7 +68,7 @@ export default function WhyMbaWizards({ exam }: WhyMbaWizardsProps) {
 
         <div className={styles.founderBox}>
           <img
-            src="/images/common/mbawizards-logo.png"
+            src="/images/common/mbawizards-logo-darkbg.svg"
             alt="MBA Wizards Leadership"
             className={styles.founderImg}
           />

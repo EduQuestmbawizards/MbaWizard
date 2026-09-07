@@ -1,6 +1,6 @@
 import WhyMbaWizards from "@/components/shared/why-mba-wizards/WhyMbaWizards";
 import MythVsFact from "@/components/shared/myth-vs-fact/MythVsFact";
-import { gmatMyths } from "@/data/myths/gmat-myths";
+import { toppersMyths } from "@/data/myths/toppers-myths";
 import TestimonialsCarousel from "@/components/shared/testimonials-carousel/TestimonialsCarousel";
 import { gmatTestimonials } from "@/data/testimonials-data";
 import ToppersHero from "@/components/gmat-toppers/hero/ToppersHero";
@@ -13,20 +13,21 @@ export default function GmatToppersContent() {
     <>
       <ToppersHero />
       <HallOfFame />
-      <ToppersFaq />
-      <WhyMbaWizards exam="GMAT" />
-      <MythVsFact exam="GMAT" items={gmatMyths} />
+      <WhyMbaWizards exam="GMAT Toppers" />
+      <MythVsFact exam="GMAT Toppers" items={toppersMyths} />
       <TestimonialsCarousel
         testimonials={gmatTestimonials}
         title="Student Success Stories"
         titleHighlight="From MBA Wizards"
       />
+      <ToppersFaq />
       <CtaSection
-        pretitle="Be The Next Topper"
-        title="Ready to Write Your Own"
-        titleHighlight="Success Story?"
-        description="Book a 1-on-1 strategy call with our senior mentors and start your journey towards a 700+ GMAT score."
-        primaryButtonText="Join The Toppers Club"
+        pretitle="Join The 700+ / 99th Percentile Hall of Fame"
+        title="Turn Your Ambition into an"
+        titleHighlight="ISB & Top B-School Reality"
+        description="Access the exact 3-angle error logs, pace-management heuristics, and daily study blueprints used by our 760 & 780 scorers. Learn directly from their mentors."
+        primaryButtonText="Apply for Toppers Mastermind Cohort"
+        secondaryButtonText="Speak with Toppers' Mentor"
       />
     </>
   );

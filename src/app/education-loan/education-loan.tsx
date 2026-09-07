@@ -1,12 +1,8 @@
 import { catTestimonials } from "@/data/testimonials-data";
 import WhyMbaWizards from "@/components/shared/why-mba-wizards/WhyMbaWizards";
 import MythVsFact from "@/components/shared/myth-vs-fact/MythVsFact";
-import { admissionsMyths } from "@/data/myths/admissions-myths";
+import { loanMyths } from "@/data/myths/loan-myths";
 import TestimonialsCarousel from "@/components/shared/testimonials-carousel/TestimonialsCarousel";
-
-
-
-
 import LoanHero from "@/components/education-loan/hero/LoanHero";
 import LoanTypes from "@/components/education-loan/loan-types/LoanTypes";
 import LendersTable from "@/components/education-loan/lenders-table/LendersTable";
@@ -19,20 +15,21 @@ export default function EducationLoanContent() {
       <LoanHero />
       <LoanTypes />
       <LendersTable />
-      <LoanFaq />
-            <WhyMbaWizards exam="Global Education" />
-      <MythVsFact exam="Global Education" items={admissionsMyths} />
+      <WhyMbaWizards exam="Global Education" />
+      <MythVsFact exam="Global Education" items={loanMyths} />
       <TestimonialsCarousel
         testimonials={catTestimonials}
         title="Student Success Stories"
         titleHighlight="From MBA Wizards"
       />
+      <LoanFaq />
       <CtaSection
-        pretitle="Fast-Track Your Funding"
-        title="Get An Instant Education"
-        titleHighlight="Loan Sanction"
-        description="Our financial counselors will evaluate your profile and match you with lenders offering the lowest interest rate and maximum disbursement."
-        primaryButtonText="Check My Loan Eligibility"
+        pretitle="Zero Collateral Loans Up To ₹1.5 Crore"
+        title="Fast-Track Your Global Education"
+        titleHighlight="Funding & Pre-Sanction"
+        description="100% tuition + living expenses covered with minimal documentation, preferential interest rates from top banks and NBFCs, and zero service fees through EduQuest."
+        primaryButtonText="Check Free Loan Eligibility"
+        secondaryButtonText="Chat with Loan Advisor"
       />
     </>
   );

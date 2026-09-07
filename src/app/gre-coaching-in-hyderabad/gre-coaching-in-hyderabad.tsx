@@ -44,11 +44,12 @@ export default function GreHyderabadContent() {
       <GreCityCenter city={data.city} centerType={data.centerType} address={data.address} phone={data.phone} email={data.email} />
       <GreCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s High Percentile Scorers`}
-        title="Aiming for 325+ on the"
-        titleHighlight="GRE Test?"
-        description={`Book a free diagnostic session and begin your GRE coaching in ${data.city} today.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle={`Top-Ranked GRE Coaching for ${data.city} Aspirants`}
+        title="Aiming for 330+ on the Shorter GRE from"
+        titleHighlight={data.city}
+        description={`Master high-frequency vocabulary retention, quantitative precision, and 1-on-1 Litmus diagnostics with IIT Roorkee mentors in cohorts capped at 10–15 students across ${data.city}.`}
+        primaryButtonText={`Book Free GRE Demo in ${data.city}`}
+        secondaryButtonText={`Speak with ${data.city} GRE Mentor`}
       />
     </>
   );

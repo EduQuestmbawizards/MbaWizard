@@ -1,13 +1,11 @@
 "use client";
 
+import Link from "next/link";
+import AnimatedCounter from "@/components/shared/animated-counter/AnimatedCounter";
 import { siteConfig } from "@/data/site-config";
 import styles from "./MethodologyHero.module.css";
 
 export default function MethodologyHero() {
-  const handleOpenDemo = () => {
-    window.dispatchEvent(new CustomEvent("open-book-demo"));
-  };
-
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.content}`}>
@@ -20,9 +18,9 @@ export default function MethodologyHero() {
         </p>
 
         <div className={styles.actions}>
-          <button type="button" onClick={handleOpenDemo} className={styles.primaryBtn}>
+          <Link href="/contact-us" className={styles.primaryBtn}>
             Experience A Class Demo
-          </button>
+          </Link>
           <a
             href={`${siteConfig.whatsappUrl}%2C%20i%27d%20like%20to%20learn%20more%20about%20your%20methodology.`}
             target="_blank"
@@ -31,6 +29,29 @@ export default function MethodologyHero() {
           >
             💬 Speak to an IIT Mentor
           </a>
+        </div>
+
+        <div className={styles.heroStatsRow}>
+          <div className={styles.heroStatItem}>
+            <span className={styles.heroStatNum}>
+              <AnimatedCounter end={5} />
+            </span>
+            <span className={styles.heroStatLabel}>Adaptive Ability Tiers</span>
+          </div>
+          <div className={styles.heroStatDivider} />
+          <div className={styles.heroStatItem}>
+            <span className={styles.heroStatNum}>
+              <AnimatedCounter end={100} suffix="%" />
+            </span>
+            <span className={styles.heroStatLabel}>Personalized Mentorship</span>
+          </div>
+          <div className={styles.heroStatDivider} />
+          <div className={styles.heroStatItem}>
+            <span className={styles.heroStatNum}>
+              <AnimatedCounter end={30} suffix="+" />
+            </span>
+            <span className={styles.heroStatLabel}>Years IIT Roorkee Pedagogy</span>
+          </div>
         </div>
       </div>
     </section>

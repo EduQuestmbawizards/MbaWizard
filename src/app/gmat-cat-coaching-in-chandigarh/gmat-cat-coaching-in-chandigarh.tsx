@@ -56,11 +56,12 @@ export default function GmatCatChandigarhContent() {
       />
       <GmatCatCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s Dual Achievers`}
-        title="Master Both GMAT & CAT from"
-        titleHighlight="Chandigarh?"
-        description={`Book a free diagnostic session and start your GMAT+CAT dual coaching in ${data.city} today.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle={`Dual Exam Excellence for ${data.city} Aspirants`}
+        title="Master Both GMAT & CAT Simultaneously from"
+        titleHighlight={data.city}
+        description={`Leverage 80% syllabus synergy to target both top IIMs and global business schools/ISB. Personalized study calendar and small batches of 10–15 students for ${data.city} candidates.`}
+        primaryButtonText={`Book Free Dual Prep Demo in ${data.city}`}
+        secondaryButtonText={`Chat with ${data.city} Dual Prep Advisor`}
       />
     </>
   );

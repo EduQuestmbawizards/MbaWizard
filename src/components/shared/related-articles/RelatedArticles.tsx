@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./RelatedArticles.module.css";
 
 interface Article {
@@ -29,7 +30,7 @@ export default function RelatedArticles({
               {title} <span className={styles.titleHighlight}>{titleHighlight}</span>
             </h2>
           </div>
-          <a href="/blogs" className={styles.viewAll}>View All Articles →</a>
+          <Link href="/blogs" className={styles.viewAll}>View All Articles →</Link>
         </div>
 
         <div className={styles.grid}>
@@ -40,7 +41,7 @@ export default function RelatedArticles({
                 <span className={styles.cardTag}>{a.tag}</span>
                 <h3 className={styles.cardTitle}>{a.title}</h3>
                 <p className={styles.cardExcerpt}>{a.excerpt}</p>
-                <a href={a.href} className={styles.readMore}>Read More →</a>
+                <Link href={a.href} className={styles.readMore}>Read More →</Link>
               </div>
             </div>
           ))}

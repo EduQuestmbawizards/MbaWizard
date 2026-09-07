@@ -108,13 +108,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
   };
 
   const canonicalUrl = `https://www.mbawizards.co.in/blogs/${blog.slug}`;
-  const [currentUrl, setCurrentUrl] = useState<string>(canonicalUrl);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setCurrentUrl(window.location.href);
-    }
-  }, []);
+  const currentUrl = canonicalUrl;
 
   const dateStr = new Date(blog.publishedAt).toLocaleDateString("en-IN", {
     day: "numeric",

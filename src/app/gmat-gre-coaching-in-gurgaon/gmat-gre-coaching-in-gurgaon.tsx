@@ -56,11 +56,12 @@ export default function GmatGreGurgaonContent() {
       />
       <GmatGreCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s Dual Achievers`}
-        title="Master Both GMAT & GRE from"
-        titleHighlight="Gurgaon?"
-        description={`Book a free diagnostic session and start your GMAT+GRE dual coaching in ${data.city} today.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle="Gurgaon's Leading Global Prep Classroom & Online Center"
+        title="Master GMAT & GRE Simultaneously in"
+        titleHighlight="Gurgaon (DLF & Sec 50)"
+        description="Unlock worldwide MBA & MS program admits with synchronized preparation. Visit our DLF Galleria or Sector 50 classrooms or join interactive live classes."
+        primaryButtonText="Book In-Person / Live Dual Demo in Gurgaon"
+        secondaryButtonText="WhatsApp Gurgaon Dual Head"
       />
     </>
   );

@@ -52,11 +52,12 @@ export default function GmatChandigarhContent() {
       <GmatCityCenter city={data.city} centerType={data.centerType} address={data.address} phone={data.phone} email={data.email} />
       <GmatCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s Elite Scorers`}
-        title="Ready to Target 700+ on"
-        titleHighlight="GMAT Focus?"
-        description={`Book a free diagnostic session and begin your GMAT coaching in ${data.city} today.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle={`Join ${data.city}'s 99th Percentile GMAT Scorers`}
+        title="Target 705+ on GMAT Focus Edition from"
+        titleHighlight={data.city}
+        description={`Experience 1-on-1 diagnostic evaluations, high-difficulty Data Insights heuristics, and small batch mentoring (10–15 students) led by IIT Roorkee alumni for ${data.city} professionals and students.`}
+        primaryButtonText={`Book Free GMAT Demo in ${data.city}`}
+        secondaryButtonText={`Speak with ${data.city} GMAT Advisor`}
       />
     </>
   );

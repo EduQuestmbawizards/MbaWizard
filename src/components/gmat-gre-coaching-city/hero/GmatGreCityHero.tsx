@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import AnimatedCounter from "@/components/shared/animated-counter/AnimatedCounter";
 import { siteConfig } from "@/data/site-config";
 import styles from "./GmatGreCityHero.module.css";
 
@@ -18,12 +20,17 @@ export default function GmatGreCityHero({
   subtitle,
   city,
 }: GmatGreCityHeroProps) {
-  const handleOpenDemo = () => {
-    window.dispatchEvent(new CustomEvent("open-book-demo"));
-  };
-
   return (
     <section className={styles.hero}>
+      <div className={styles.heroBackground}>
+        <img
+          src="/images/heroes/hero-gre.jpg"
+          alt={`GMAT & GRE Coaching in ${city} - MBA Wizards`}
+          className={styles.heroImage}
+        />
+        <div className={styles.heroOverlay} />
+      </div>
+      <div className={styles.ambientGlow} />
       <div className={`container ${styles.content}`}>
         <span className={styles.preTitle}>{preTitle}</span>
         <h1 className={styles.title}>
@@ -32,9 +39,9 @@ export default function GmatGreCityHero({
         <p className={styles.description}>{subtitle}</p>
 
         <div className={styles.actions}>
-          <button type="button" onClick={handleOpenDemo} className={styles.primaryBtn}>
+          <Link href="/contact-us" className={styles.primaryBtn}>
             Book Free Demo in {city}
-          </button>
+          </Link>
           <a
             href={`${siteConfig.whatsappUrl}%2C%20i%27m%20inquiring%20about%20GMAT%2BGRE%20coaching%20in%20${city}.`}
             target="_blank"
@@ -44,7 +51,35 @@ export default function GmatGreCityHero({
             💬 Chat with {city} Mentor
           </a>
         </div>
+
+        <div className={styles.statsGrid}>
+          <div className={styles.statCard}>
+            <div className={styles.statValue}>
+              <AnimatedCounter end={98} suffix="%" />
+            </div>
+            <div className={styles.statLabel}>Success Ratio</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statValue}>
+              <AnimatedCounter end={5} suffix="K+" />
+            </div>
+            <div className={styles.statLabel}>Happy Students</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statValue}>
+              <AnimatedCounter end={15} suffix="+" />
+            </div>
+            <div className={styles.statLabel}>Expert Faculty</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statValue}>
+              <AnimatedCounter end={15} suffix="+" />
+            </div>
+            <div className={styles.statLabel}>Years of Service</div>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
+

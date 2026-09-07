@@ -44,11 +44,12 @@ export default function CatGurgaonContent() {
       <CatCityCenter city={data.city} centerType={data.centerType} address={data.address} phone={data.phone} email={data.email} />
       <CatCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s 99+ Percentile Club`}
-        title="Ready for Your IIM Dream from"
-        titleHighlight="Gurgaon?"
-        description={`Book a free CAT diagnostic session and start your journey to 99+ percentile in ${data.city}.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle="Gurgaon's Premier CAT Prep Classrooms & Online Hub"
+        title="Target 99.5+ Percentile in CAT 2026 at"
+        titleHighlight="Gurgaon (DLF & Sec 50)"
+        description="Experience 1-on-1 Litmus diagnostics, small batches of 10–15 students, and mentorship by IIT Roorkee alumni at our Gurgaon centers or live online."
+        primaryButtonText="Book In-Person / Online CAT Demo in Gurgaon"
+        secondaryButtonText="WhatsApp Gurgaon Center"
       />
     </>
   );

@@ -52,11 +52,12 @@ export default function GmatGurgaonContent() {
       <GmatCityCenter city={data.city} centerType={data.centerType} address={data.address} phone={data.phone} email={data.email} />
       <GmatCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle={`Join ${data.city}'s Elite Scorers`}
-        title="Ready to Target 700+ on"
-        titleHighlight="GMAT Focus?"
-        description={`Book a free diagnostic session and begin your GMAT coaching in ${data.city} today.`}
-        primaryButtonText={`Book Demo in ${data.city}`}
+        pretitle="Gurgaon's Leading GMAT Focus Classroom & Online Center"
+        title="Target 705+ on GMAT Focus with IIT Mentors in"
+        titleHighlight="Gurgaon (DLF & Sec 50)"
+        description="Attend an in-person diagnostic at our DLF Galleria or Sector 50 classrooms or join live online sessions. Small cohorts of 10–15 students with 1-on-1 faculty clinic support."
+        primaryButtonText="Book In-Person / Live GMAT Demo in Gurgaon"
+        secondaryButtonText="WhatsApp Gurgaon GMAT Head"
       />
     </>
   );

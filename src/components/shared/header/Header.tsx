@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/data/site-config";
 import { navigationItems } from "@/data/navigation";
-import EduQuestBar from "@/components/shared/eduquest-bar/EduQuestBar";
+import { SocialIcon } from "@/components/shared/icons/SocialIcons";
 import styles from "./Header.module.css";
 
 interface HeaderProps {
@@ -24,14 +24,12 @@ export default function Header({ onOpenDemo }: HeaderProps) {
     if (onOpenDemo) {
       onOpenDemo();
     } else {
-      const event = new CustomEvent("open-book-demo");
-      window.dispatchEvent(event);
+      window.location.href = "/contact-us";
     }
   };
 
   return (
     <header className={styles.headerWrapper}>
-      <EduQuestBar />
       <div className={styles.topBar}>
         <div className={`container ${styles.topBarContainer}`}>
           <div className={styles.topBarContact}>
@@ -54,11 +52,7 @@ export default function Header({ onOpenDemo }: HeaderProps) {
                 className={styles.socialIconLink}
                 aria-label={`Visit our ${item.label} page`}
               >
-                {item.platform === "facebook" && "f"}
-                {item.platform === "youtube" && "▶"}
-                {item.platform === "linkedin" && "in"}
-                {item.platform === "instagram" && "ig"}
-                {item.platform === "whatsapp" && "wa"}
+                <SocialIcon platform={item.platform} size={13} />
               </a>
             ))}
           </div>
@@ -71,7 +65,7 @@ export default function Header({ onOpenDemo }: HeaderProps) {
             <Image
               src="/images/common/mbawizards-logo.svg"
               alt="MBA Wizards"
-              width={168}
+              width={185}
               height={46}
               priority
               className={styles.logoImg}
@@ -135,14 +129,13 @@ export default function Header({ onOpenDemo }: HeaderProps) {
           </ul>
 
           <div className={styles.headerActions}>
-            <button
-              type="button"
-              onClick={handleBookDemoClick}
+            <Link
+              href="/contact-us"
               className={styles.bookDemoBtn}
-              aria-label="Open Book Demo Modal"
+              aria-label="Book A Demo - Contact Us"
             >
               Book A Demo
-            </button>
+            </Link>
 
             <button
               type="button"
@@ -162,8 +155,8 @@ export default function Header({ onOpenDemo }: HeaderProps) {
             <Image
               src="/images/common/mbawizards-logo.svg"
               alt="MBA Wizards"
-              width={150}
-              height={40}
+              width={185}
+              height={48}
               className={styles.logoImg}
             />
             <button
@@ -242,17 +235,29 @@ export default function Header({ onOpenDemo }: HeaderProps) {
           </div>
 
           <div style={{ marginTop: "24px" }}>
-            <button
-              type="button"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                handleBookDemoClick();
-              }}
+            <Link
+              href="/contact-us"
+              onClick={() => setMobileMenuOpen(false)}
               className={styles.bookDemoBtn}
-              style={{ width: "100%" }}
+              style={{ width: "100%", textAlign: "center", display: "block" }}
             >
               Book A Demo
-            </button>
+            </Link>
+          </div>
+
+          <div className={styles.mobileSocialRow}>
+            {siteConfig.socialLinks.map((item) => (
+              <a
+                key={item.platform}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.mobileSocialBtn}
+                aria-label={`Visit our ${item.label} page`}
+              >
+                <SocialIcon platform={item.platform} size={16} />
+              </a>
+            ))}
           </div>
         </div>
       </div>

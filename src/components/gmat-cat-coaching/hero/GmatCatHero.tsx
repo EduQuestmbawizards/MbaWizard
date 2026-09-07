@@ -1,5 +1,6 @@
 "use client";
 
+import AnimatedCounter from "@/components/shared/animated-counter/AnimatedCounter";
 import { siteConfig } from "@/data/site-config";
 import styles from "./GmatCatHero.module.css";
 
@@ -10,6 +11,7 @@ export default function GmatCatHero() {
 
   return (
     <section className={styles.hero}>
+      <div className={styles.ambientGlow} />
       <div className={`container ${styles.content}`}>
         <span className={styles.preTitle}>Dual Track Prep</span>
         <h1 className={styles.title}>
@@ -32,7 +34,35 @@ export default function GmatCatHero() {
             💬 Talk to an Expert
           </a>
         </div>
+
+        <div className={styles.statsGrid}>
+          <div className={styles.statCard}>
+            <div className={styles.statNumber}>
+              <AnimatedCounter end={99} suffix=".8 %ile" />
+            </div>
+            <div className={styles.statLabel}>Top CAT Result</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statNumber}>
+              <AnimatedCounter end={720} suffix="+" />
+            </div>
+            <div className={styles.statLabel}>Top GMAT Score</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statNumber}>
+              <AnimatedCounter end={21} suffix=" IIMs" />
+            </div>
+            <div className={styles.statLabel}>IIM Calls Converted</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statNumber}>
+              <AnimatedCounter end={100} suffix="%" />
+            </div>
+            <div className={styles.statLabel}>Mentorship Track</div>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
+

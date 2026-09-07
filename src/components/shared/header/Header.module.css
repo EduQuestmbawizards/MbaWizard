@@ -12,7 +12,7 @@
   background: linear-gradient(135deg, #05164d 0%, #00072d 100%);
   color: #ffffff;
   font-size: 13px;
-  padding: 8px 0;
+  padding: 5px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -20,6 +20,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: clamp(12px, 2vw, 24px);
+  padding-right: clamp(12px, 2vw, 24px);
 }
 
 .topBarContact {
@@ -50,25 +52,27 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: #ffffff;
-  font-size: 12px;
   transition: all var(--transition-fast);
 }
 
 .socialIconLink:hover {
   background: var(--color-accent-gold);
-  color: #000000;
+  border-color: var(--color-accent-gold);
+  color: #05164d;
   transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(201, 168, 76, 0.35);
 }
 
 /* Main Navigation */
 .mainNav {
   background: #ffffff;
-  padding: 12px 0;
+  padding: 6px 0;
   position: relative;
 }
 
@@ -76,7 +80,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: clamp(10px, 1.5vw, 20px);
+  padding-left: clamp(12px, 2vw, 24px);
+  padding-right: clamp(12px, 2vw, 24px);
 }
 
 /* Logo */
@@ -85,12 +91,13 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .logoImg {
   height: 44px;
   width: auto;
-  max-width: 175px;
+  max-width: 185px;
   object-fit: contain;
   display: block;
 }
@@ -107,7 +114,7 @@
 }
 
 .logoTagline {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-text-muted);
@@ -119,7 +126,7 @@
 .desktopNavList {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: clamp(8px, 1.2vw, 16px);
 }
 
 .navItem {
@@ -127,10 +134,10 @@
 }
 
 .navLink {
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 600;
   color: var(--color-text-main);
-  padding: 8px 4px;
+  padding: 6px 5px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -241,20 +248,23 @@
 .headerActions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .bookDemoBtn {
   background: var(--color-accent-gold);
   color: #000000;
   font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  padding: 10px 20px;
+  font-size: 12.5px;
+  letter-spacing: 0.4px;
+  padding: 7px 16px;
   border-radius: var(--radius-sm);
   text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1.2;
   transition: all var(--transition-fast);
-  box-shadow: 0 4px 12px rgba(201, 168, 76, 0.3);
+  box-shadow: 0 3px 10px rgba(201, 168, 76, 0.28);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -263,8 +273,8 @@
 .bookDemoBtn:hover {
   background: var(--color-primary);
   color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(5, 22, 77, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(5, 22, 77, 0.25);
 }
 
 /* Mobile Toggle */
@@ -391,5 +401,35 @@
 
   .mobileSublink:hover {
     color: var(--color-accent-gold);
+  }
+
+  .mobileSocialRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  .mobileSocialBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-bg-alt);
+    color: var(--color-primary);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+  }
+
+  .mobileSocialBtn:hover {
+    background: var(--color-primary);
+    color: #ffffff;
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
   }
 }

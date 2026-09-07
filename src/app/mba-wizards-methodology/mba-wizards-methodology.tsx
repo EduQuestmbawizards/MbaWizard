@@ -1,12 +1,8 @@
 import { gmatTestimonials } from "@/data/testimonials-data";
 import WhyMbaWizards from "@/components/shared/why-mba-wizards/WhyMbaWizards";
 import MythVsFact from "@/components/shared/myth-vs-fact/MythVsFact";
-import { gmatMyths } from "@/data/myths/gmat-myths";
+import { methodologyMyths } from "@/data/myths/methodology-myths";
 import TestimonialsCarousel from "@/components/shared/testimonials-carousel/TestimonialsCarousel";
-
-
-
-
 import MethodologyHero from "@/components/mba-wizards-methodology/hero/MethodologyHero";
 import MethodologySteps from "@/components/mba-wizards-methodology/steps/MethodologySteps";
 import MethodologyPillars from "@/components/mba-wizards-methodology/pillars/MethodologyPillars";
@@ -19,20 +15,21 @@ export default function MethodologyContent() {
       <MethodologyHero />
       <MethodologySteps />
       <MethodologyPillars />
-      <MethodologyFaq />
-            <WhyMbaWizards exam="Manthan Pedagogy" />
-      <MythVsFact exam="Manthan Pedagogy" items={gmatMyths} />
+      <WhyMbaWizards exam="Manthan Pedagogy" />
+      <MythVsFact exam="Manthan Pedagogy" items={methodologyMyths} />
       <TestimonialsCarousel
         testimonials={gmatTestimonials}
         title="Student Success Stories"
         titleHighlight="From MBA Wizards"
       />
+      <MethodologyFaq />
       <CtaSection
-        pretitle="Experience The Difference"
-        title="Witness Our Pedagogy"
-        titleHighlight="In Action"
-        description="Book a live demonstration session and see how our Manthan framework transforms problem solving in under 60 minutes."
-        primaryButtonText="Book Methodology Demo"
+        pretitle="Move Beyond Rote Memorization"
+        title="Experience the Proprietary"
+        titleHighlight="Ability-Based Manthan Framework"
+        description="See why 99th percentile performance is not about memorizing 1,000 shortcuts, but diagnosing root-cause cognitive blocks. Attend an exclusive live methodology masterclass with IIT Roorkee alumni."
+        primaryButtonText="Attend Live Manthan Masterclass"
+        secondaryButtonText="Discuss Pedagogy with Mentors"
       />
     </>
   );

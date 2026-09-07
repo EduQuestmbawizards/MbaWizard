@@ -79,19 +79,17 @@ export default function TestimonialsCarousel({
     }
   };
 
-  // Sync active dot with actual scroll position
-  const handleScroll = () => {
-    const track = trackRef.current;
-    if (!track) return;
-    const scrollAmount = getScrollAmount();
-    if (scrollAmount <= 0) return;
-    const currentIdx = Math.round(track.scrollLeft / scrollAmount);
-    setActiveIdx(Math.min(testimonials.length - 1, Math.max(0, currentIdx)));
-  };
-
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
+
+    const handleScroll = () => {
+      const scrollAmount = getScrollAmount();
+      if (scrollAmount <= 0) return;
+      const currentIdx = Math.round(track.scrollLeft / scrollAmount);
+      setActiveIdx(Math.min(testimonials.length - 1, Math.max(0, currentIdx)));
+    };
+
     track.addEventListener("scroll", handleScroll, { passive: true });
     return () => track.removeEventListener("scroll", handleScroll);
   }, [testimonials.length]);

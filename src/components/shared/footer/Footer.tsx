@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/data/site-config";
 import { footerPopularCourses, footerUsefulLinks } from "@/data/navigation";
+import { SocialIcon } from "@/components/shared/icons/SocialIcons";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -40,6 +41,13 @@ export default function Footer() {
             </div>
           </div>
 
+          <div className={styles.initiativeNote}>
+            <span className={styles.initiativeIcon}>🎓</span>
+            <p className={styles.initiativeText}>
+              <strong>MBA Wizards</strong> is an initiative managed &amp; powered by <strong>EduQuest</strong> — Empowering Future Leaders Since 2010
+            </p>
+          </div>
+
           <div className={styles.socialRow}>
             {siteConfig.socialLinks.map((item) => (
               <a
@@ -50,11 +58,7 @@ export default function Footer() {
                 className={styles.socialBtn}
                 aria-label={`Visit our ${item.label} page`}
               >
-                {item.platform === "facebook" && "f"}
-                {item.platform === "youtube" && "▶"}
-                {item.platform === "linkedin" && "in"}
-                {item.platform === "instagram" && "ig"}
-                {item.platform === "whatsapp" && "wa"}
+                <SocialIcon platform={item.platform} size={16} />
               </a>
             ))}
           </div>

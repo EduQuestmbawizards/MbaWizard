@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import type { BlogPost } from "@/data/blogs-data";
+import CtaSection from "@/components/shared/cta-section/CtaSection";
 import styles from "./blogs.module.css";
 
 interface BlogsContentProps {
@@ -67,6 +68,14 @@ export default function BlogsContent({ posts }: BlogsContentProps) {
           ))}
         </div>
       </div>
+      <CtaSection
+        pretitle="Turn Knowledge Into Measurable Scores"
+        title="Need Personalized Strategy Beyond"
+        titleHighlight="Articles & Study Guides?"
+        description="Connect 1-on-1 with IIT Roorkee alumni faculty to analyze your diagnostic test performance, timing leaks, and business school application roadmap."
+        primaryButtonText="Book Free 1-on-1 Strategy Session"
+        secondaryButtonText="Ask a Question on WhatsApp"
+      />
     </div>
   );
 }

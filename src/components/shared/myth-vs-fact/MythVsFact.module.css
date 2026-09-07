@@ -6,7 +6,7 @@
 
 .header {
   text-align: center;
-  max-width: 780px;
+  width: 100%;
   margin: 0 auto 50px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .accordionList {
-  max-width: 860px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

@@ -1,5 +1,4 @@
 import FaqAccordion, { FaqItem } from "@/components/shared/faq-accordion/FaqAccordion";
-import styles from "./CatCityFaq.module.css";
 
 interface CatCityFaqProps {
   city: string;
