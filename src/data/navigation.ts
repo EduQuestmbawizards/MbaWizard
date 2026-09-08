@@ -87,7 +87,7 @@ export const navigationItems: NavItem[] = [
       },
       {
         title: "CAT",
-        href: "/cat-2025",
+        href: "/cat",
         subItems: [
           { title: "CAT Coaching in Gurgaon", href: "/cat-coaching-in-gurgaon" },
           { title: "CAT Coaching in Noida", href: "/cat-coaching-in-noida" },
@@ -133,7 +133,7 @@ export const navigationItems: NavItem[] = [
 
 export const footerPopularCourses = [
   { title: "GMAT Coaching", href: "/gmat-coaching" },
-  { title: "CAT Coaching", href: "/cat-2025" },
+  { title: "CAT Coaching", href: "/cat" },
   { title: "GMAT+CAT Coaching", href: "/gmat-cat-coaching" },
   { title: "GRE Coaching", href: "/gre-coaching-classes" },
 ];

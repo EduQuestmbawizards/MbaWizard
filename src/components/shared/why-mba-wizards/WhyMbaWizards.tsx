@@ -48,7 +48,7 @@ export default function WhyMbaWizards({ exam }: WhyMbaWizardsProps) {
           </div>
           <div className={styles.statItem}>
             <div className={styles.statNum}>
-              <AnimatedCounter end={5} suffix="K+" />
+              <AnimatedCounter end={10} suffix="K+" />
             </div>
             <div className={styles.statLabel}>Happy Students</div>
           </div>

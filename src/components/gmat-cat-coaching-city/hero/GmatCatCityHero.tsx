@@ -61,7 +61,7 @@ export default function GmatCatCityHero({
           </div>
           <div className={styles.statCard}>
             <div className={styles.statValue}>
-              <AnimatedCounter end={5} suffix="K+" />
+              <AnimatedCounter end={10} suffix="K+" />
             </div>
             <div className={styles.statLabel}>Happy Students</div>
           </div>

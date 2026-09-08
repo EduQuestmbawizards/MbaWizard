@@ -37,7 +37,7 @@ export default function CatCityHero({ preTitle, title, titleHighlight, subtitle,
         </div>
         <div className={styles.statsGrid}>
           <div className={styles.statCard}><div className={styles.statValue}><AnimatedCounter end={98} suffix="%" /></div><div className={styles.statLabel}>Success Ratio</div></div>
-          <div className={styles.statCard}><div className={styles.statValue}><AnimatedCounter end={5} suffix="K+" /></div><div className={styles.statLabel}>Happy Students</div></div>
+          <div className={styles.statCard}><div className={styles.statValue}><AnimatedCounter end={10} suffix="K+" /></div><div className={styles.statLabel}>Happy Students</div></div>
           <div className={styles.statCard}><div className={styles.statValue}><AnimatedCounter end={15} suffix="+" /></div><div className={styles.statLabel}>Expert Faculty</div></div>
           <div className={styles.statCard}><div className={styles.statValue}><AnimatedCounter end={15} suffix="+" /></div><div className={styles.statLabel}>Years of Service</div></div>
         </div>

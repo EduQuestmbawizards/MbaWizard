@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 
 export const catMetadata: Metadata = {
-  title: "Crack CAT 2025 / 2026 with MBA Wizards | Best CAT Coaching",
+  title: "Crack CAT with MBA Wizards | Best CAT Coaching for IIMs",
   description:
     "Top CAT coaching by IIT Roorkee alumni. Master Quantitative Aptitude, DILR, and VARC with our ability-based Manthan Methodology. Classroom & online options.",
   alternates: {
-    canonical: "https://www.mbawizards.co.in/cat-2025",
+    canonical: "https://www.mbawizards.co.in/cat",
   },
   openGraph: {
-    title: "Crack CAT 2025 / 2026 with MBA Wizards | Best CAT Coaching",
+    title: "Crack CAT with MBA Wizards | Best CAT Coaching for IIMs",
     description:
       "Top CAT coaching by IIT Roorkee alumni. Master Quantitative Aptitude, DILR, and VARC with our ability-based Manthan Methodology. Classroom & online options.",
-    url: "https://www.mbawizards.co.in/cat-2025",
+    url: "https://www.mbawizards.co.in/cat",
     siteName: "MBA Wizards",
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crack CAT 2025 / 2026 with MBA Wizards | Best CAT Coaching",
+    title: "Crack CAT with MBA Wizards | Best CAT Coaching for IIMs",
     description:
       "Top CAT coaching by IIT Roorkee alumni. Master Quantitative Aptitude, DILR, and VARC with our ability-based Manthan Methodology. Classroom & online options.",
   },
@@ -50,8 +50,8 @@ export const catJsonLd = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "CAT 2025",
-          item: "https://www.mbawizards.co.in/cat-2025",
+          name: "CAT Coaching",
+          item: "https://www.mbawizards.co.in/cat",
         },
       ],
     },
@@ -60,7 +60,7 @@ export const catJsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is the eligibility criteria for CAT 2025?",
+          name: "What is the eligibility criteria for the CAT exam?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Candidates must hold a Bachelor’s Degree with at least 50% marks or equivalent CGPA (45% for SC/ST/PwD), or be in the final year of their bachelor's degree.",
@@ -84,7 +84,7 @@ export const catJsonLd = {
         },
         {
           "@type": "Question",
-          name: "How does MBA Wizards prepare students for CAT 2025?",
+          name: "How does MBA Wizards prepare students for CAT?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Our Ability-Based Manthan model offers personalized diagnostic assessments, 99+ percentile IIM mentors, comprehensive mock test series with AI analytics, and complete WAT-PI preparation.",

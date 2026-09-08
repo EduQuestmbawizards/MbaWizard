@@ -1,7 +1,7 @@
 import type { ExamMasteryData } from "@/components/shared/exam-mastery-guide/ExamMasteryGuide";
 
 export const catMasteryData: ExamMasteryData = {
-  examName: "CAT 2025–2026 (Common Admission Test)",
+  examName: "CAT (Common Admission Test)",
   tagline: "India's premier gateway to the 21 Indian Institutes of Management (IIMs) and 100+ top business schools. 3 non-switchable sectional slots of 40 minutes each.",
   duration: "2 Hours (120 Minutes)",
   totalQuestions: "66 Questions (MCQs + Non-MCQ TITA questions)",

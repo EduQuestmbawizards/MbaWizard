@@ -16,7 +16,7 @@ const programs = [
     description:
       "Crack CAT with our Ability-Based Model, rigorous sectional drills, QA shortcuts, and expert mentor evaluation.",
     features: ["Ability-based adaptive batches", "VARC comprehension mastery", "Comprehensive mock series with AI"],
-    href: "/cat-2025",
+    href: "/cat",
   },
   {
     tag: "Target 320+ Score",

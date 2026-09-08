@@ -3,7 +3,7 @@ import styles from "./CatFaq.module.css";
 
 const catFaqs: FaqItem[] = [
   {
-    question: "When should I begin CAT 2025/2026 preparation with MBA Wizards?",
+    question: "When should I begin CAT preparation with MBA Wizards?",
     answer:
       "Most serious aspirants start between 8 to 12 months prior to the exam (typically starting January–March for the November test). This allows 5 months of comprehensive concept building, followed by 3 months of mock marathons and DILR caselet mastery.",
   },

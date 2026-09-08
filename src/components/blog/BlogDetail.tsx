@@ -441,8 +441,8 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
                   </Link>
                 </li>
                 <li>
-                  <Link href="/cat-2025">
-                    <span>CAT 2026 Batch</span>
+                  <Link href="/cat">
+                    <span>CAT Coaching Batch</span>
                     <span className={styles.arrowIcon}>↗</span>
                   </Link>
                 </li>

@@ -26,7 +26,7 @@ export function generateSchema(data: CatCityData) {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://www.mbawizards.co.in" },
-          { "@type": "ListItem", position: 2, name: "CAT Coaching", item: "https://www.mbawizards.co.in/cat-2025" },
+          { "@type": "ListItem", position: 2, name: "CAT Coaching", item: "https://www.mbawizards.co.in/cat" },
           { "@type": "ListItem", position: 3, name: data.city, item: `https://www.mbawizards.co.in/${data.slug}` },
         ],
       },

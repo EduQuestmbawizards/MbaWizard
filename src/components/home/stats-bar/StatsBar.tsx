@@ -3,7 +3,7 @@ import styles from "./StatsBar.module.css";
 
 const stats = [
   { value: 99, suffix: "%", label: "Success Ratio" },
-  { value: 5, suffix: "K+", label: "Happy Students" },
+  { value: 10, suffix: "K+", label: "Happy Students" },
   { value: 25, suffix: "+", label: "Expert Faculty" },
   { value: 30, suffix: "+", label: "Years of Service" },
 ];
