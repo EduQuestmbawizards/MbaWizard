@@ -130,19 +130,39 @@ ul, ol {
 /* ==========================================================================
    Universal Card & Interactive Hover Animations
    ========================================================================== */
-[class*="card"]:not([class*="track"]):not([class*="container"]):not([class*="Wrap"]):not([class*="wrapper"]),
-[class*="Card"]:not([class*="track"]):not([class*="container"]):not([class*="Wrap"]):not([class*="wrapper"]) {
-  box-shadow: 0 4px 16px -2px rgba(5, 22, 77, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+/* Apply elevation/transitions only to actual card containers, never inner card content */
+:where(div, article, a)[class*="_card__"]:not([class*="Title"]):not([class*="title"]):not([class*="Desc"]):not([class*="desc"]):not([class*="Text"]):not([class*="text"]):not([class*="Header"]):not([class*="header"]):not([class*="Body"]):not([class*="body"]):not([class*="Footer"]):not([class*="footer"]):not([class*="Tag"]):not([class*="tag"]):not([class*="Badge"]):not([class*="badge"]):not([class*="Icon"]):not([class*="icon"]):not([class*="Content"]):not([class*="content"]):not([class*="Feature"]):not([class*="feature"]):not([class*="Item"]):not([class*="item"]):not([class*="List"]):not([class*="list"]):not([class*="Link"]):not([class*="link"]):not([class*="Price"]):not([class*="price"]):not([class*="Wrapper"]):not([class*="wrapper"]):not([class*="Container"]):not([class*="container"]):not([class*="Track"]):not([class*="track"]),
+:where(div, article, a)[class*="Card"]:not([class*="Title"]):not([class*="title"]):not([class*="Desc"]):not([class*="desc"]):not([class*="Text"]):not([class*="text"]):not([class*="Header"]):not([class*="header"]):not([class*="Body"]):not([class*="body"]):not([class*="Footer"]):not([class*="footer"]):not([class*="Tag"]):not([class*="tag"]):not([class*="Badge"]):not([class*="badge"]):not([class*="Icon"]):not([class*="icon"]):not([class*="Content"]):not([class*="content"]):not([class*="Feature"]):not([class*="feature"]):not([class*="Item"]):not([class*="item"]):not([class*="List"]):not([class*="list"]):not([class*="Link"]):not([class*="link"]):not([class*="Price"]):not([class*="price"]):not([class*="Wrapper"]):not([class*="wrapper"]):not([class*="Container"]):not([class*="container"]):not([class*="Track"]):not([class*="track"]) {
   transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.32s ease !important;
+              border-color 0.32s ease;
   will-change: transform, box-shadow;
 }
 
-[class*="card"]:not([class*="track"]):not([class*="container"]):not([class*="Wrap"]):not([class*="wrapper"]):hover,
-[class*="Card"]:not([class*="track"]):not([class*="container"]):not([class*="Wrap"]):not([class*="wrapper"]):hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px -4px rgba(5, 22, 77, 0.16), 0 8px 18px -2px rgba(201, 168, 76, 0.18) !important;
+/* Card inner content: strictly ensure headings, descriptions, badges, and text never look or act like cards */
+[class*="cardTitle"], [class*="CardTitle"],
+[class*="cardDesc"], [class*="CardDesc"],
+[class*="cardDescription"], [class*="CardDescription"],
+[class*="cardText"], [class*="CardText"],
+[class*="cardBody"], [class*="CardBody"],
+[class*="cardHeader"], [class*="CardHeader"],
+[class*="cardFooter"], [class*="CardFooter"],
+[class*="cardTag"], [class*="CardTag"],
+[class*="cardBadge"], [class*="CardBadge"],
+[class*="cardIcon"], [class*="CardIcon"],
+[class*="cardPrice"], [class*="CardPrice"],
+[class*="cardContent"], [class*="CardContent"],
+[class*="cardFeatures"], [class*="CardFeatures"],
+[class*="cardSubtitle"], [class*="CardSubtitle"],
+[class*="cardExcerpt"], [class*="CardExcerpt"],
+[class*="cardItem"], [class*="CardItem"],
+[class*="cardList"], [class*="CardList"],
+[class*="cardLink"], [class*="CardLink"] {
+  box-shadow: none !important;
+  transform: none !important;
+  background: transparent !important;
+  border: none !important;
+  will-change: auto !important;
 }
 
 /* Smooth zoom effect for images inside interactive cards */
@@ -152,8 +172,8 @@ img:not([class*="logoImg"]):not([class*="footerLogo"]) {
               box-shadow 0.4s ease;
 }
 
-[class*="card"]:hover img:not([class*="logoImg"]):not([class*="footerLogo"]),
-[class*="Card"]:hover img:not([class*="logoImg"]):not([class*="footerLogo"]),
+[class*="card"]:hover > img:not([class*="logoImg"]):not([class*="footerLogo"]),
+[class*="Card"]:hover > img:not([class*="logoImg"]):not([class*="footerLogo"]),
 img[class*="Img"]:not([class*="logoImg"]):not([class*="footerLogo"]):hover,
 img[class*="image"]:not([class*="logoImg"]):not([class*="footerLogo"]):hover {
   transform: scale(1.04);
