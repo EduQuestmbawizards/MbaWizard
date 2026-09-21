@@ -1,4 +1,5 @@
 import { blogPosts, BlogPost } from "@/data/blogs-data";
+import { gmatGurgaonBlogs, GurgaonBlogPost } from "@/data/gmat-gurgaon-blogs";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
@@ -83,9 +84,26 @@ export function wpToBlogSummary(wp: WPBlog): BlogSummary {
 }
 
 /**
- * Get all unified blog summaries (Local Guides + 105 WordPress Posts)
+ * Get all unified blog summaries (GMAT Gurgaon Pillar Guides + Local Guides + 105 WordPress Posts)
  */
 export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
+  const gurgaonSummaries: BlogSummary[] = gmatGurgaonBlogs.map((g: GurgaonBlogPost) => ({
+    slug: g.slug,
+    title: g.title,
+    subtitle: g.subtitle,
+    excerpt: g.excerpt,
+    metaDescription: g.metaDescription || g.excerpt,
+    coverImage: g.coverImage || "/images/toppers/karan-780.jpeg",
+    author: g.author,
+    category: g.category,
+    tags: g.tags,
+    publishedAt: g.publishedAt,
+    readTime: g.readTime,
+    featured: g.featured || false,
+    accentColor: g.accentColor || "#d4af37",
+    isWordPress: false,
+  }));
+
   const localSummaries: BlogSummary[] = blogPosts.map((a: BlogPost) => ({
     slug: a.slug,
     title: a.title,
@@ -108,7 +126,7 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
   const seen = new Set<string>();
   const uniqueSummaries: BlogSummary[] = [];
 
-  for (const item of [...localSummaries, ...wpSummaries]) {
+  for (const item of [...gurgaonSummaries, ...localSummaries, ...wpSummaries]) {
     if (!seen.has(item.slug)) {
       seen.add(item.slug);
       uniqueSummaries.push(item);
@@ -121,10 +139,33 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
 }
 
 /**
- * Get full blog by slug (either local article or WordPress post)
+ * Get full blog by slug (either GMAT Gurgaon article, local article or WordPress post)
  */
 export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
-  // Check local articles first
+  // Check GMAT Gurgaon Pillar Articles first
+  const gurgaon = gmatGurgaonBlogs.find((g: GurgaonBlogPost) => g.slug === slug);
+  if (gurgaon) {
+    return {
+      slug: gurgaon.slug,
+      title: gurgaon.title,
+      subtitle: gurgaon.subtitle,
+      excerpt: gurgaon.excerpt,
+      metaTitle: gurgaon.metaTitle || `${gurgaon.title} — MBA Wizards`,
+      metaDescription: gurgaon.metaDescription || gurgaon.excerpt,
+      coverImage: gurgaon.coverImage,
+      author: gurgaon.author,
+      category: gurgaon.category,
+      tags: gurgaon.tags,
+      publishedAt: gurgaon.publishedAt,
+      readTime: gurgaon.readTime,
+      featured: gurgaon.featured,
+      accentColor: gurgaon.accentColor,
+      body: gurgaon.body as ContentBlock[],
+      isWordPress: false,
+    };
+  }
+
+  // Check local articles second
   const local = blogPosts.find((a: BlogPost) => a.slug === slug);
   if (local) {
     return {

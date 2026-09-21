@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Blog, BlogSummary } from "@/lib/blog";
 import BlogCard from "./BlogCard";
+import LeadMagnetBanner from "./LeadMagnetBanner";
+import LeadMagnetModal from "./LeadMagnetModal";
 import styles from "./BlogDetail.module.css";
 
 interface BlogDetailProps {
@@ -17,11 +19,42 @@ interface TocItem {
   level: number;
 }
 
+function renderFormattedText(text: string) {
+  const parts: (string | React.ReactNode)[] = [];
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const [, label, href] = match;
+    parts.push(
+      <Link
+        key={match.index}
+        href={href}
+        style={{ color: "#b8860b", fontWeight: 600, textDecoration: "underline" }}
+      >
+        {label}
+      </Link>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
+
 export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [toc, setToc] = useState<TocItem[]>([]);
   const [activeId, setActiveId] = useState<string>("");
   const [copied, setCopied] = useState(false);
+  const [isSidebarModalOpen, setIsSidebarModalOpen] = useState(false);
 
   // Quick form state
   const [formData, setFormData] = useState({
@@ -239,27 +272,82 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
 
             {/* If Raw HTML from WordPress */}
             {blog.rawContentHtml ? (
-              <div
-                className={styles.wpContent}
-                dangerouslySetInnerHTML={{ __html: blog.rawContentHtml }}
-                suppressHydrationWarning
-              />
+              <>
+                <LeadMagnetBanner
+                  sourceSlug={blog.slug}
+                  blogTitle={blog.title}
+                  title={`Download Free ${blog.title.split(":")[0]} Guide (PDF)`}
+                  subtitle="Complete 100-Day Study Timetable, formulas & IIT Roorkee mentorship framework."
+                />
+                <div
+                  className={styles.wpContent}
+                  dangerouslySetInnerHTML={{ __html: blog.rawContentHtml }}
+                  suppressHydrationWarning
+                />
+              </>
             ) : blog.body && blog.body.length > 0 ? (
               <div className={styles.blocks}>
                 {blog.body.map((block, idx) => {
                   if (block.type === "paragraph") {
                     return (
                       <p key={idx} className={styles.paragraph}>
-                        {block.text}
+                        {renderFormattedText(block.text)}
                       </p>
                     );
                   }
                   if (block.type === "heading") {
                     const Tag = block.level === 3 ? "h3" : "h2";
                     return (
-                      <Tag key={idx} className={styles.heading}>
-                        {block.text}
-                      </Tag>
+                      <div key={idx}>
+                        {idx === 2 && (
+                          <LeadMagnetBanner
+                            sourceSlug={blog.slug}
+                            blogTitle={blog.title}
+                            title={`Download Free ${blog.title.split(":")[0]} Blueprint (PDF)`}
+                            subtitle="100-Day Study Timetable, Quant/Verbal/DI formulas & IIT Roorkee mentorship guide."
+                          />
+                        )}
+                        {idx === 14 && (
+                          <LeadMagnetBanner
+                            sourceSlug={blog.slug}
+                            blogTitle={blog.title}
+                            title={`Download Free 100-Day Study Timetable & Formula Sheet (PDF)`}
+                            subtitle="Comprehensive high-yield preparation blueprint tailored for Gurgaon candidates."
+                          />
+                        )}
+                        {idx === 24 && (
+                          <LeadMagnetBanner
+                            sourceSlug={blog.slug}
+                            blogTitle={blog.title}
+                            title={`Download Free GMAT Focus 705+ Score Roadmap & Mistake Log (PDF)`}
+                            subtitle="Instant PDF guide with 705+ scoring matrices, pacing traps & Gurgaon batch details."
+                          />
+                        )}
+                        <Tag className={styles.heading}>
+                          {block.text}
+                        </Tag>
+                      </div>
+                    );
+                  }
+                  if (block.type === "image") {
+                    return (
+                      <figure key={idx} className={styles.imageWrapper}>
+                        <img
+                          src={block.src}
+                          alt={block.alt || blog.title}
+                          className={styles.contentImage}
+                          loading="lazy"
+                          onError={(e) => {
+                            e.currentTarget.onerror = null;
+                            e.currentTarget.src = "/images/heroes/hero-gmat.jpg";
+                          }}
+                        />
+                        {block.caption && (
+                          <figcaption className={styles.imageCaption}>
+                            {block.caption}
+                          </figcaption>
+                        )}
+                      </figure>
                     );
                   }
                   if (block.type === "quote") {
@@ -268,6 +356,54 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
                         <p>&ldquo;{block.text}&rdquo;</p>
                         {block.author && <cite>— {block.author}</cite>}
                       </blockquote>
+                    );
+                  }
+                  if (block.type === "list") {
+                    const ListTag = block.ordered ? "ol" : "ul";
+                    return (
+                      <ListTag key={idx} className={styles.list}>
+                        {block.items.map((item, itemIdx) => (
+                          <li key={itemIdx} className={styles.listItem}>
+                            {renderFormattedText(item)}
+                          </li>
+                        ))}
+                      </ListTag>
+                    );
+                  }
+                  if (block.type === "table") {
+                    return (
+                      <div key={idx} className={styles.tableWrap}>
+                        <table className={styles.contentTable}>
+                          <thead>
+                            <tr>
+                              {block.headers.map((h, hIdx) => (
+                                <th key={hIdx}>{h}</th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {block.rows.map((row, rIdx) => (
+                              <tr key={rIdx}>
+                                {row.map((cell, cIdx) => (
+                                  <td key={cIdx}>{renderFormattedText(cell)}</td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    );
+                  }
+                  if (block.type === "faq") {
+                    return (
+                      <div key={idx} className={styles.faqSection}>
+                        {block.items.map((faq, fIdx) => (
+                          <div key={fIdx} className={styles.faqCard}>
+                            <h4 className={styles.faqQuestion}>Q: {faq.question}</h4>
+                            <p className={styles.faqAnswer}>{renderFormattedText(faq.answer)}</p>
+                          </div>
+                        ))}
+                      </div>
                     );
                   }
                   return null;
@@ -339,7 +475,28 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
               </div>
             )}
 
-            {/* 2. Free Strategy Session Card (Deep Crimson Gradient + Red Button) */}
+            {/* 2. FREE DOWNLOADABLE LEAD MAGNET Card with Continuous Zoom In/Out & Glowing Shadow */}
+            <div className={styles.sidebarLeadCard}>
+              <div className={styles.sidebarLeadBadge}>
+                🎁 Free PDF Study Guide
+              </div>
+              <h4 className={styles.sidebarLeadTitle}>
+                Download Free 100-Day Study Plan &amp; Formula Sheet
+              </h4>
+              <p className={styles.sidebarLeadDesc}>
+                Get the complete GMAT Focus blueprint, sectional timing formulas, and IIT Roorkee error log template.
+              </p>
+              <button
+                type="button"
+                onClick={() => setIsSidebarModalOpen(true)}
+                className={styles.sidebarLeadBtn}
+              >
+                <span>📥</span>
+                <span>Download Free PDF Guide</span>
+              </button>
+            </div>
+
+            {/* 3. Free Strategy Session Card (Deep Crimson Gradient + Red Button) */}
             <div className={styles.strategySessionCard}>
               <h3 className={styles.strategyTitle}>Free Strategy Session</h3>
               <p className={styles.strategySubtitle}>
@@ -355,7 +512,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
               </button>
             </div>
 
-            {/* 3. Quick Consultation / Contact Us Form Card */}
+            {/* 4. Quick Consultation / Contact Us Form Card */}
             <div className={styles.contactFormCard}>
               <h4 className={styles.quickLinksTitle}>Quick Consultation</h4>
               <p className={styles.formSubtitle}>
@@ -498,6 +655,14 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
           </div>
         </section>
       )}
+      {/* Sidebar Lead Magnet Modal */}
+      <LeadMagnetModal
+        isOpen={isSidebarModalOpen}
+        onClose={() => setIsSidebarModalOpen(false)}
+        sourceSlug={blog.slug}
+        blogTitle={blog.title}
+        guideTitle={`Download Free ${blog.title.split(":")[0]} Blueprint (PDF)`}
+      />
     </article>
   );
 }
