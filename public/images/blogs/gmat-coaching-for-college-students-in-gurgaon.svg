@@ -1,87 +1,78 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#701a75"/>
-      <stop offset="100%" stop-color="#4c0519"/>
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f766e"/>
     </linearGradient>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#fbbf24"/>
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#FFF2A3"/>
     </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="630" fill="url(#bgGrad)"/>
-  
-  <!-- Subtle Grid Pattern -->
-  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
-    <line x1="100" y1="0" x2="100" y2="630"/>
-    <line x1="200" y1="0" x2="200" y2="630"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="400" y1="0" x2="400" y2="630"/>
-    <line x1="500" y1="0" x2="500" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="700" y1="0" x2="700" y2="630"/>
-    <line x1="800" y1="0" x2="800" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
-    <line x1="1000" y1="0" x2="1000" y2="630"/>
-    <line x1="1100" y1="0" x2="1100" y2="630"/>
-    <line x1="0" y1="100" x2="1200" y2="100"/>
-    <line x1="0" y1="200" x2="1200" y2="200"/>
-    <line x1="0" y1="300" x2="1200" y2="300"/>
-    <line x1="0" y1="400" x2="1200" y2="400"/>
-    <line x1="0" y1="500" x2="1200" y2="500"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Decorative Accent Glows -->
+  <circle cx="1100" cy="100" r="300" fill="#2dd4bf" opacity="0.15" filter="blur(80px)"/>
+  <circle cx="100" cy="550" r="250" fill="#D4AF37" opacity="0.1" filter="blur(60px)"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#goldGrad)"/>
+
+  <!-- Brand Watermark / Tag -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="360" height="44" rx="22" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5"/>
+    <text x="24" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">
+      MBA WIZARDS &amp; EDUQUEST
+    </text>
   </g>
 
-  <!-- Brand Bar Top -->
-  <rect x="80" y="60" width="1040" height="4" fill="#f472b6"/>
-  
-  <!-- Top Brand Info -->
-  <text x="80" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="2">
-    MBA WIZARDS &amp; EDUQUEST | GURGAON GMAT PREP
-  </text>
-  <text x="1120" y="95" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#f472b6">
-    GMAT FOCUS EDITION 2026
-  </text>
-
-  <!-- Badge -->
-  <rect x="80" y="140" width="340" height="42" rx="21" fill="rgba(255,255,255,0.12)" stroke="#f472b6" stroke-width="1.5"/>
-  <text x="100" y="167" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#f472b6" letter-spacing="1">
-    🎓 EARLY BIRD ADVANTAGE
-  </text>
+  <!-- Badge / Category -->
+  <g transform="translate(80, 150)">
+    <rect x="0" y="0" width="280" height="36" rx="8" fill="#2dd4bf" opacity="0.2"/>
+    <rect x="0" y="0" width="280" height="36" rx="8" fill="none" stroke="#2dd4bf" stroke-width="1.5"/>
+    <text x="18" y="23" fill="#2dd4bf" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" letter-spacing="1">
+      🎓 2026 GURGAON MASTER GUIDE
+    </text>
+  </g>
 
   <!-- Main Title -->
-  <text x="80" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-1">
-    GMAT for College Students
-  </text>
-  <text x="80" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" fill="#f472b6">
-    Gurgaon Master Strategy &amp; Mentorship
-  </text>
+  <g transform="translate(80, 240)">
+    <text x="0" y="45" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">
+      GMAT Coaching for College Students in Gurgaon
+    </text>
+  </g>
 
-  <!-- Subtitle -->
-  <text x="80" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#e2e8f0">
-    5-Year Score Validity, Deferred MBA Programs (ISB YLP) & Final Year Prep
-  </text>
+  <!-- Subtitle / Focus Keyword -->
+  <g transform="translate(80, 340)">
+    <text x="0" y="30" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="500">
+      GMAT Coaching for College Students in Gurgaon • 705+ GMAT Focus Blueprint
+    </text>
+    <text x="0" y="65" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400">
+      DLF Cyber City • Golf Course Road • Sector 14 • MG Road Gurugram
+    </text>
+  </g>
 
-  <!-- Bottom Details Box -->
-  <rect x="80" y="470" width="1040" height="90" rx="14" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.15)"/>
-  
-  <text x="110" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#f472b6">
-    CHIEF ACADEMIC MENTOR
-  </text>
-  <text x="110" y="538" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff">
-    Mr. Surinder Gupta (IIT Roorkee Alumnus)
-  </text>
+  <!-- Bottom Metric Pills -->
+  <g transform="translate(80, 480)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="220" height="70" rx="12" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)"/>
+    <text x="20" y="32" fill="#D4AF37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">IIT ROORKEE</text>
+    <text x="20" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Founder Mentorship</text>
 
-  <text x="650" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#f472b6">
-    CENTRES IN GURGAON
-  </text>
-  <text x="650" y="538" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#ffffff">
-    DLF Cyber City • Golf Course Rd • MG Rd • Live Online
-  </text>
+    <!-- Pill 2 -->
+    <rect x="240" y="0" width="220" height="70" rx="12" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)"/>
+    <text x="260" y="32" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">8–12 BATCH</text>
+    <text x="260" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Strict Cohort Size</text>
 
-  <!-- Large Icon Watermark Right -->
-  <text x="1000" y="320" font-size="120" opacity="0.25" text-anchor="middle">
-    🎓
-  </text>
+    <!-- Pill 3 -->
+    <rect x="480" y="0" width="220" height="70" rx="12" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)"/>
+    <text x="500" y="32" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">99th %ILE</text>
+    <text x="500" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">705+ Score Track</text>
+  </g>
 </svg>
