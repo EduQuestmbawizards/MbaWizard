@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
 
 export const homeMetadata: Metadata = {
-  title: "Personalized GMAT, GRE & CAT Coaching for Top MBA Admissions",
-  description:
-    "Achieve your MBA dream with MBA Wizards. Expert coaching for GMAT, GRE, CAT, and admissions counseling. Personalized study plans, AI-based analytics, and proven success for Indian aspirants.",
+  title: "Home Page | MBA Wizards",
+  description: "Official Home Page by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
   alternates: {
     canonical: "https://www.mbawizards.co.in",
   },
   openGraph: {
-    title: "Personalized GMAT, GRE & CAT Coaching for Top MBA Admissions",
-    description:
-      "Achieve your MBA dream with MBA Wizards. Expert coaching for GMAT, GRE, CAT, and admissions counseling. Personalized study plans, AI-based analytics, and proven success for Indian aspirants.",
+    title: "Home Page | MBA Wizards",
+    description: "Official Home Page by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     url: "https://www.mbawizards.co.in",
     siteName: "MBA Wizards",
     locale: "en_IN",
@@ -18,9 +16,8 @@ export const homeMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Personalized GMAT, GRE & CAT Coaching for Top MBA Admissions",
-    description:
-      "Achieve your MBA dream with MBA Wizards. Expert coaching for GMAT, GRE, CAT, and admissions counseling. Personalized study plans, AI-based analytics, and proven success for Indian aspirants.",
+    title: "Home Page | MBA Wizards",
+    description: "Official Home Page by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
   },
 };
 
@@ -33,8 +30,7 @@ export const homeJsonLd = {
       name: "MBA Wizards",
       url: "https://www.mbawizards.co.in",
       logo: "https://www.mbawizards.co.in/wp-content/uploads/2025/08/cropped-cropped-Logo.jpg",
-      description:
-        "Achieve your dream MBA with MBA Wizards. Expert coaching for GMAT, GRE, CAT, and admissions counseling. Personalized study plans, AI-based analytics, and proven success for Indian aspirants.",
+      description: "Official Home Page by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
       telephone: "+91-9958041888",
       email: "info@mbawizards.co.in",
       address: [

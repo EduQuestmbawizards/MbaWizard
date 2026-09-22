@@ -21,9 +21,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   gurgaon: {
     city: "Gurgaon",
     slug: "gmat-cat-coaching-in-gurgaon",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Gurgaon — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Gurgaon | MBA Wizards",
     metaDescription:
-      "Integrated GMAT and CAT dual coaching in Gurgaon at Galleria DLF Phase 4 & Sector 50. Prepare for IIMs, ISB & top global B-schools simultaneously.",
+      "Official Gmat Cat Coaching In Gurgaon by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target Top IIMs, ISB & Global B-Schools",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Gurgaon",
@@ -65,9 +65,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   delhi: {
     city: "Delhi",
     slug: "gmat-cat-coaching-in-delhi",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Delhi — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Delhi | MBA Wizards",
     metaDescription:
-      "Premier GMAT+CAT combined coaching in Delhi by IIT Roorkee alumni. Prepare for IIMs and global business schools with one unified strategy.",
+      "Official Gmat Cat Coaching In Delhi by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Capital's Most Trusted Dual Management Prep",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Delhi",
@@ -108,9 +108,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   noida: {
     city: "Noida",
     slug: "gmat-cat-coaching-in-noida",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Noida — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Noida | MBA Wizards",
     metaDescription:
-      "Top GMAT+CAT dual coaching in Noida & Greater Noida. Highly personalized classes by IIT mentors. Target IIMs and international B-schools.",
+      "Official Gmat Cat Coaching In Noida by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Maximize MBA Admissions from Delhi-NCR",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Noida",
@@ -151,9 +151,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   pune: {
     city: "Pune",
     slug: "gmat-cat-coaching-in-pune",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Pune — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Pune | MBA Wizards",
     metaDescription:
-      "Best GMAT+CAT dual coaching in Pune for engineers and students. IIT alumni faculty, dual test strategy, and guaranteed score improvement.",
+      "Official Gmat Cat Coaching In Pune by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Oxford of the East Top Dual MBA Program",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Pune",
@@ -194,9 +194,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   chandigarh: {
     city: "Chandigarh",
     slug: "gmat-cat-coaching-in-chandigarh",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Chandigarh — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Chandigarh | MBA Wizards",
     metaDescription:
-      "Leading GMAT+CAT coaching in Chandigarh, Mohali & Panchkula. IIT alumni mentors, adaptive mocks, and study abroad & IIM counseling.",
+      "Official Gmat Cat Coaching In Chandigarh by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Tricity's Premier Dual MBA Destination",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Chandigarh",
@@ -237,9 +237,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   mumbai: {
     city: "Mumbai",
     slug: "gmat-cat-coaching-in-mumbai",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Mumbai — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Mumbai | MBA Wizards",
     metaDescription:
-      "Top GMAT+CAT dual coaching in Mumbai for finance and tech professionals. IIT alumni mentors, weekend batches, and top B-school admissions.",
+      "Official Gmat Cat Coaching In Mumbai by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Financial Capital's Elite Dual MBA Program",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Mumbai",
@@ -280,9 +280,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   bangalore: {
     city: "Bangalore",
     slug: "gmat-cat-coaching-in-bangalore",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Bangalore — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Bangalore | MBA Wizards",
     metaDescription:
-      "Top GMAT+CAT coaching in Bangalore for engineers and tech professionals. Master both exams with IIT alumni mentors and comprehensive adaptive mocks.",
+      "Official Gmat Cat Coaching In Bangalore by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Silicon Valley of India's Elite Dual MBA Prep",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Bangalore",
@@ -323,9 +323,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   hyderabad: {
     city: "Hyderabad",
     slug: "gmat-cat-coaching-in-hyderabad",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Hyderabad — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Hyderabad | MBA Wizards",
     metaDescription:
-      "Premier GMAT+CAT coaching in Hyderabad for HITEC City techies and college graduates. IIT mentors, dual test strategy, and guaranteed results.",
+      "Official Gmat Cat Coaching In Hyderabad by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "HITEC City's Trusted Dual MBA Accelerator",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Hyderabad",
@@ -366,9 +366,9 @@ export const gmatCatCitiesData: Record<string, GmatCatCityData> = {
   chennai: {
     city: "Chennai",
     slug: "gmat-cat-coaching-in-chennai",
-    metaTitle: "Best GMAT+CAT Dual Coaching in Chennai — MBA Wizards",
+    metaTitle: "Gmat Cat Coaching In Chennai | MBA Wizards",
     metaDescription:
-      "Leading GMAT+CAT coaching in Chennai for college students and IT professionals. IIT faculty mentors, dual test strategy, and proven 99%ile results.",
+      "Official Gmat Cat Coaching In Chennai by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Gateway of South India's Top Dual MBA Prep",
     heroTitle: "Best GMAT+CAT Coaching in",
     heroTitleHighlight: "Chennai",

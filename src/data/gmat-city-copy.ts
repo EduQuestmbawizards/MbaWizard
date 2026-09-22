@@ -21,9 +21,9 @@ export const gmatCitiesData: Record<string, GmatCityData> = {
   gurgaon: {
     city: "Gurgaon",
     slug: "gmat-coaching-in-gurgaon",
-    metaTitle: "Best GMAT Coaching in Gurgaon | Top GMAT Classes — MBA Wizards",
+    metaTitle: "Gmat Coaching In Gurgaon | MBA Wizards",
     metaDescription:
-      "Join the best GMAT coaching in Gurgaon at Galleria DLF Phase 4 & Sector 50. Mentored by IIT Roorkee alumni. 700+ guaranteed score improvement.",
+      "Official Gmat Coaching In Gurgaon by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Top Rated GMAT Institute in Millennium City",
     heroTitle: "Best GMAT Coaching in",
     heroTitleHighlight: "Gurgaon",
@@ -65,9 +65,9 @@ export const gmatCitiesData: Record<string, GmatCityData> = {
   noida: {
     city: "Noida",
     slug: "gmat-coaching-in-noida",
-    metaTitle: "Best GMAT Coaching in Noida | GMAT Classes — MBA Wizards",
+    metaTitle: "Gmat Coaching In Noida | MBA Wizards",
     metaDescription:
-      "Top GMAT coaching in Noida & Greater Noida. Highly personalized GMAT Focus training by IIT mentors. 700+ score guarantee with flexible batches.",
+      "Official Gmat Coaching In Noida by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Premier GMAT Prep for Delhi-NCR Aspirants",
     heroTitle: "Best GMAT Coaching in",
     heroTitleHighlight: "Noida",
@@ -108,9 +108,9 @@ export const gmatCitiesData: Record<string, GmatCityData> = {
   delhi: {
     city: "Delhi",
     slug: "gmat-coaching-in-delhi",
-    metaTitle: "Best GMAT Coaching in Delhi | Top GMAT Classes — MBA Wizards",
+    metaTitle: "Gmat Coaching In Delhi | MBA Wizards",
     metaDescription:
-      "Join the leading GMAT coaching in Delhi. Personalized training by IIT Roorkee alumni. 100+ points score improvement guarantee. Book a free demo!",
+      "Official Gmat Coaching In Delhi by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Capital's Most Trusted GMAT Institute",
     heroTitle: "Best GMAT Coaching in",
     heroTitleHighlight: "Delhi",
@@ -151,9 +151,9 @@ export const gmatCitiesData: Record<string, GmatCityData> = {
   chandigarh: {
     city: "Chandigarh",
     slug: "gmat-coaching-in-chandigarh",
-    metaTitle: "Best GMAT Coaching in Chandigarh | Top Classes — MBA Wizards",
+    metaTitle: "Gmat Coaching In Chandigarh | MBA Wizards",
     metaDescription:
-      "Premier GMAT coaching for students in Chandigarh, Mohali & Panchkula. IIT alumni mentors, adaptive mocks, and guaranteed score improvement.",
+      "Official Gmat Coaching In Chandigarh by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Tricity's Premier GMAT Destination",
     heroTitle: "Best GMAT Coaching in",
     heroTitleHighlight: "Chandigarh",
@@ -194,9 +194,9 @@ export const gmatCitiesData: Record<string, GmatCityData> = {
   mumbai: {
     city: "Mumbai",
     slug: "gmat-coaching-in-mumbai",
-    metaTitle: "Best GMAT Coaching in Mumbai | Top GMAT Classes — MBA Wizards",
+    metaTitle: "Gmat Coaching In Mumbai | MBA Wizards",
     metaDescription:
-      "Top GMAT coaching in Mumbai for finance and tech professionals. Live interactive batches by IIT alumni. Proven 700+ GMAT Focus scores.",
+      "Official Gmat Coaching In Mumbai by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Finance & Tech Capital's Top Choice",
     heroTitle: "Best GMAT Coaching in",
     heroTitleHighlight: "Mumbai",
@@ -237,9 +237,9 @@ export const gmatCitiesData: Record<string, GmatCityData> = {
   hyderabad: {
     city: "Hyderabad",
     slug: "gmat-coaching-in-hyderabad",
-    metaTitle: "Best GMAT Coaching in Hyderabad | GMAT Classes — MBA Wizards",
+    metaTitle: "Gmat Coaching In Hyderabad | MBA Wizards",
     metaDescription:
-      "Premier GMAT coaching in Hyderabad for HITEC City techies and students. IIT Roorkee alumni mentorship, Focus Edition mocks, and guaranteed results.",
+      "Official Gmat Coaching In Hyderabad by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "HITEC City's Trusted GMAT Accelerator",
     heroTitle: "Best GMAT Coaching in",
     heroTitleHighlight: "Hyderabad",
@@ -280,9 +280,9 @@ export const gmatCitiesData: Record<string, GmatCityData> = {
   bangalore: {
     city: "Bangalore",
     slug: "gmat-coaching-in-bangalore",
-    metaTitle: "Best GMAT Coaching in Bangalore | Top Classes — MBA Wizards",
+    metaTitle: "Gmat Coaching In Bangalore | MBA Wizards",
     metaDescription:
-      "Top GMAT coaching in Bangalore for IT, product, and startup professionals. Elite IIT mentors, 700+ Focus Edition strategy, and small batches.",
+      "Official Gmat Coaching In Bangalore by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Silicon Valley of India's Elite Test Prep",
     heroTitle: "Best GMAT Coaching in",
     heroTitleHighlight: "Bangalore",
@@ -323,9 +323,9 @@ export const gmatCitiesData: Record<string, GmatCityData> = {
   pune: {
     city: "Pune",
     slug: "gmat-coaching-in-pune",
-    metaTitle: "Best GMAT Coaching in Pune | Top GMAT Classes — MBA Wizards",
+    metaTitle: "Gmat Coaching In Pune | MBA Wizards",
     metaDescription:
-      "Join the best GMAT coaching in Pune. Expert preparation by IIT Roorkee alumni for engineers and students. Guaranteed 700+ GMAT Focus score.",
+      "Official Gmat Coaching In Pune by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Oxford of the East Premier GMAT Program",
     heroTitle: "Best GMAT Coaching in",
     heroTitleHighlight: "Pune",

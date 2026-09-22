@@ -21,9 +21,9 @@ export const greCitiesData: Record<string, GreCityData> = {
   gurgaon: {
     city: "Gurgaon",
     slug: "gre-coaching-in-gurgaon",
-    metaTitle: "Best GRE Coaching in Gurgaon | Top GRE Classes — MBA Wizards",
+    metaTitle: "Gre Coaching In Gurgaon | MBA Wizards",
     metaDescription:
-      "Elite GRE coaching in Gurgaon at DLF Galleria & South City 2. IIT Roorkee alumni faculty, 325+ target score plans, and 1-on-1 vocabulary clinics.",
+      "Official Gre Coaching In Gurgaon by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 325+ with Millennium City Mentors",
     heroTitle: "Best GRE Coaching in",
     heroTitleHighlight: "Gurgaon",
@@ -65,9 +65,9 @@ export const greCitiesData: Record<string, GreCityData> = {
   noida: {
     city: "Noida",
     slug: "gre-coaching-in-noida",
-    metaTitle: "Best GRE Coaching in Noida | Top GRE Classes — MBA Wizards",
+    metaTitle: "Gre Coaching In Noida | MBA Wizards",
     metaDescription:
-      "Join top GRE coaching in Noida for MS and MBA aspirants. IIT alumni faculty, shorter GRE mock tests, and personalized study roadmaps.",
+      "Official Gre Coaching In Noida by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 325+ for Top US & European MS Programs",
     heroTitle: "Best GRE Coaching in",
     heroTitleHighlight: "Noida",
@@ -108,9 +108,9 @@ export const greCitiesData: Record<string, GreCityData> = {
   delhi: {
     city: "Delhi",
     slug: "gre-coaching-in-delhi",
-    metaTitle: "Best GRE Coaching in Delhi | Top GRE Classes — MBA Wizards",
+    metaTitle: "Gre Coaching In Delhi | MBA Wizards",
     metaDescription:
-      "Premier GRE coaching in Delhi by IIT Roorkee alumni. High-percentile Verbal & Quant techniques for top global university admissions.",
+      "Official Gre Coaching In Delhi by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Capital's Leading GRE Test Prep",
     heroTitle: "Best GRE Coaching in",
     heroTitleHighlight: "Delhi",
@@ -151,9 +151,9 @@ export const greCitiesData: Record<string, GreCityData> = {
   chandigarh: {
     city: "Chandigarh",
     slug: "gre-coaching-in-chandigarh",
-    metaTitle: "Best GRE Coaching in Chandigarh | Top Classes — MBA Wizards",
+    metaTitle: "Gre Coaching In Chandigarh | MBA Wizards",
     metaDescription:
-      "Best GRE coaching in Chandigarh, Mohali & Panchkula. High-scoring Verbal & Quant strategies, study abroad guidance, and adaptive mocks.",
+      "Official Gre Coaching In Chandigarh by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Tricity's Premier GRE Institute",
     heroTitle: "Best GRE Coaching in",
     heroTitleHighlight: "Chandigarh",
@@ -194,9 +194,9 @@ export const greCitiesData: Record<string, GreCityData> = {
   mumbai: {
     city: "Mumbai",
     slug: "gre-coaching-in-mumbai",
-    metaTitle: "Best GRE Coaching in Mumbai | Top GRE Classes — MBA Wizards",
+    metaTitle: "Gre Coaching In Mumbai | MBA Wizards",
     metaDescription:
-      "Top GRE coaching in Mumbai for engineers and finance professionals. IIT alumni faculty, 325+ score roadmaps, and flexible batch timings.",
+      "Official Gre Coaching In Mumbai by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Maximum City's Top GRE Coaching",
     heroTitle: "Best GRE Coaching in",
     heroTitleHighlight: "Mumbai",
@@ -237,9 +237,9 @@ export const greCitiesData: Record<string, GreCityData> = {
   hyderabad: {
     city: "Hyderabad",
     slug: "gre-coaching-in-hyderabad",
-    metaTitle: "Best GRE Coaching in Hyderabad | GRE Classes — MBA Wizards",
+    metaTitle: "Gre Coaching In Hyderabad | MBA Wizards",
     metaDescription:
-      "Top GRE coaching in Hyderabad for engineering students and IT professionals. 325+ target training by IIT Roorkee alumni. Book a free demo!",
+      "Official Gre Coaching In Hyderabad by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Cyberabad's Premier GRE Accelerator",
     heroTitle: "Best GRE Coaching in",
     heroTitleHighlight: "Hyderabad",
@@ -280,9 +280,9 @@ export const greCitiesData: Record<string, GreCityData> = {
   bangalore: {
     city: "Bangalore",
     slug: "gre-coaching-in-bangalore",
-    metaTitle: "Best GRE Coaching in Bangalore | Top Classes — MBA Wizards",
+    metaTitle: "Gre Coaching In Bangalore | MBA Wizards",
     metaDescription:
-      "Premier GRE coaching in Bangalore for software engineers and tech graduates. IIT alumni mentors, 325+ target pedagogy, and adaptive mocks.",
+      "Official Gre Coaching In Bangalore by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "India's Tech Capital's Top GRE Choice",
     heroTitle: "Best GRE Coaching in",
     heroTitleHighlight: "Bangalore",
@@ -323,9 +323,9 @@ export const greCitiesData: Record<string, GreCityData> = {
   pune: {
     city: "Pune",
     slug: "gre-coaching-in-pune",
-    metaTitle: "Best GRE Coaching in Pune | Top GRE Classes — MBA Wizards",
+    metaTitle: "Gre Coaching In Pune | MBA Wizards",
     metaDescription:
-      "Best GRE coaching in Pune for engineering students and young professionals. IIT faculty, adaptive test series, and guaranteed 320+ scores.",
+      "Official Gre Coaching In Pune by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Oxford of the East Top GRE Institute",
     heroTitle: "Best GRE Coaching in",
     heroTitleHighlight: "Pune",

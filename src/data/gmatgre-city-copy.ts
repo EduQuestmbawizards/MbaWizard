@@ -21,9 +21,9 @@ export const gmatGreCitiesData: Record<string, GmatGreCityData> = {
   gurgaon: {
     city: "Gurgaon",
     slug: "gmat-gre-coaching-in-gurgaon",
-    metaTitle: "Best GMAT+GRE Dual Coaching in Gurgaon — MBA Wizards",
+    metaTitle: "Gmat Gre Coaching In Gurgaon | MBA Wizards",
     metaDescription:
-      "Integrated GMAT and GRE dual coaching in Gurgaon at Galleria DLF Phase 4 & Sector 50. Maximize your global MBA and MS options with IIT alumni mentors.",
+      "Official Gmat Gre Coaching In Gurgaon by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Dual Advantage for Global Business Schools & MS",
     heroTitle: "Best GMAT+GRE Coaching in",
     heroTitleHighlight: "Gurgaon",
@@ -65,9 +65,9 @@ export const gmatGreCitiesData: Record<string, GmatGreCityData> = {
   noida: {
     city: "Noida",
     slug: "gmatgre-coaching-in-noida",
-    metaTitle: "Best GMAT+GRE Dual Coaching in Noida — MBA Wizards",
+    metaTitle: "Gmatgre Coaching In Noida | MBA Wizards",
     metaDescription:
-      "Integrated GMAT GRE coaching in Noida. Live online & hybrid classes by IIT faculty. One comprehensive course for global MBA and MS admissions.",
+      "Official Gmatgre Coaching In Noida by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Maximize Global Admissions from Delhi-NCR",
     heroTitle: "Best GMAT+GRE Coaching in",
     heroTitleHighlight: "Noida",
@@ -108,9 +108,9 @@ export const gmatGreCitiesData: Record<string, GmatGreCityData> = {
   delhi: {
     city: "Delhi",
     slug: "gmatgre-coaching-in-delhi",
-    metaTitle: "Best GMAT+GRE Dual Coaching in Delhi — MBA Wizards",
+    metaTitle: "Gmatgre Coaching In Delhi | MBA Wizards",
     metaDescription:
-      "Leading GMAT+GRE coaching in Delhi. Expert IIT Roorkee mentors, combined syllabus efficiency, and top global university admissions support.",
+      "Official Gmatgre Coaching In Delhi by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Capital's Most Trusted Dual Test Prep",
     heroTitle: "Best GMAT+GRE Coaching in",
     heroTitleHighlight: "Delhi",
@@ -151,9 +151,9 @@ export const gmatGreCitiesData: Record<string, GmatGreCityData> = {
   chandigarh: {
     city: "Chandigarh",
     slug: "gmatgre-coaching-in-chandigarh",
-    metaTitle: "Best GMAT+GRE Dual Coaching in Chandigarh — MBA Wizards",
+    metaTitle: "Gmatgre Coaching In Chandigarh | MBA Wizards",
     metaDescription:
-      "Premier GMAT+GRE combined coaching for Chandigarh, Mohali & Panchkula. IIT alumni faculty, dual test mocks, and study abroad counseling.",
+      "Official Gmatgre Coaching In Chandigarh by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Tricity's Premier Dual Test Destination",
     heroTitle: "Best GMAT+GRE Coaching in",
     heroTitleHighlight: "Chandigarh",
@@ -194,9 +194,9 @@ export const gmatGreCitiesData: Record<string, GmatGreCityData> = {
   mumbai: {
     city: "Mumbai",
     slug: "gmatgre-coaching-in-mumbai",
-    metaTitle: "Best GMAT+GRE Dual Coaching in Mumbai — MBA Wizards",
+    metaTitle: "Gmatgre Coaching In Mumbai | MBA Wizards",
     metaDescription:
-      "Top GMAT+GRE dual coaching in Mumbai for finance and tech professionals. IIT alumni mentors, weekend batches, and global MBA/MS admissions support.",
+      "Official Gmatgre Coaching In Mumbai by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Financial Capital's Elite Dual Prep Program",
     heroTitle: "Best GMAT+GRE Coaching in",
     heroTitleHighlight: "Mumbai",
@@ -237,9 +237,9 @@ export const gmatGreCitiesData: Record<string, GmatGreCityData> = {
   hyderabad: {
     city: "Hyderabad",
     slug: "gmatgre-coaching-in-hyderabad",
-    metaTitle: "Best GMAT+GRE Dual Coaching in Hyderabad — MBA Wizards",
+    metaTitle: "Gmatgre Coaching In Hyderabad | MBA Wizards",
     metaDescription:
-      "Premier GMAT+GRE coaching in Hyderabad for HITEC City techies and college graduates. IIT mentors, dual test strategy, and guaranteed results.",
+      "Official Gmatgre Coaching In Hyderabad by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "HITEC City's Trusted Dual Prep Accelerator",
     heroTitle: "Best GMAT+GRE Coaching in",
     heroTitleHighlight: "Hyderabad",
@@ -280,9 +280,9 @@ export const gmatGreCitiesData: Record<string, GmatGreCityData> = {
   bangalore: {
     city: "Bangalore",
     slug: "gmatgre-coaching-in-bangalore",
-    metaTitle: "Best GMAT+GRE Dual Coaching in Bangalore — MBA Wizards",
+    metaTitle: "Gmatgre Coaching In Bangalore | MBA Wizards",
     metaDescription:
-      "Top GMAT+GRE coaching in Bangalore for engineers and tech professionals. Master both exams with IIT alumni mentors and comprehensive adaptive mocks.",
+      "Official Gmatgre Coaching In Bangalore by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Silicon Valley of India's Elite Dual Test Prep",
     heroTitle: "Best GMAT+GRE Coaching in",
     heroTitleHighlight: "Bangalore",
@@ -323,9 +323,9 @@ export const gmatGreCitiesData: Record<string, GmatGreCityData> = {
   pune: {
     city: "Pune",
     slug: "gmatgre-coaching-in-pune",
-    metaTitle: "Best GMAT+GRE Dual Coaching in Pune — MBA Wizards",
+    metaTitle: "Gmatgre Coaching In Pune | MBA Wizards",
     metaDescription:
-      "Best GMAT+GRE coaching in Pune for engineering students and young professionals. IIT Roorkee alumni mentors, dual test strategy, and guaranteed results.",
+      "Official Gmatgre Coaching In Pune by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Oxford of the East Premier Dual Program",
     heroTitle: "Best GMAT+GRE Coaching in",
     heroTitleHighlight: "Pune",

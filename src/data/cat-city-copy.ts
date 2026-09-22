@@ -38,8 +38,8 @@ const commonFaqs: FaqItem[] = [
 export const catCitiesData: Record<string, CatCityData> = {
   gurgaon: {
     city: "Gurgaon", slug: "cat-coaching-in-gurgaon",
-    metaTitle: "Best CAT Coaching in Gurgaon — IIM Admits | MBA Wizards",
-    metaDescription: "Expert CAT coaching in Gurgaon at DLF Phase 4 Galleria & Sector 50. Ability-Based Manthan methodology. 95% success rate. IIM admits every year. Book a free demo.",
+    metaTitle: "Cat Coaching In Gurgaon | MBA Wizards",
+    metaDescription: "Official Cat Coaching In Gurgaon by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 99+ Percentile & IIM Admits",
     heroTitle: "Best CAT Coaching in", heroTitleHighlight: "Gurgaon",
     heroSubtitle: "IIT Roorkee alumni-led coaching at DLF Galleria Phase 4 & Sector 50. The Manthan ability-based model has delivered 99+ percentile scorers and IIM A, B, C admits consistently.",
@@ -50,8 +50,8 @@ export const catCitiesData: Record<string, CatCityData> = {
   },
   noida: {
     city: "Noida", slug: "cat-coaching-in-noida",
-    metaTitle: "Best CAT Coaching in Noida — IIM Admits | MBA Wizards",
-    metaDescription: "Top CAT coaching in Noida with Ability-Based pedagogy, IIM alumni faculty, unlimited mocks, and WAT-PI prep. 95% success rate. Book free demo today.",
+    metaTitle: "Cat Coaching In Noida | MBA Wizards",
+    metaDescription: "Official Cat Coaching In Noida by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 99+ Percentile & IIM Admits",
     heroTitle: "Best CAT Coaching in", heroTitleHighlight: "Noida",
     heroSubtitle: "Expert CAT preparation in Noida with the Manthan ability-based model. Live online and hybrid batch options for working professionals aiming at IIM A, B, C and top business schools.",
@@ -61,8 +61,8 @@ export const catCitiesData: Record<string, CatCityData> = {
   },
   delhi: {
     city: "Delhi", slug: "cat-coaching-in-delhi",
-    metaTitle: "Best CAT Coaching in Delhi — IIM Admits | MBA Wizards",
-    metaDescription: "Premier CAT coaching in Delhi. Manthan ability-based model, 95% success rate, unlimited mocks, WAT-PI prep. IIM alumni faculty. Book your free diagnostic session.",
+    metaTitle: "Cat Coaching In Delhi | MBA Wizards",
+    metaDescription: "Official Cat Coaching In Delhi by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 99+ Percentile & IIM Admits",
     heroTitle: "Best CAT Coaching in", heroTitleHighlight: "Delhi",
     heroSubtitle: "MBA Wizards brings Delhi aspirants a structured, personalized CAT coaching program anchored by the Manthan pedagogy — proven to push scores beyond the 95th percentile year after year.",
@@ -72,8 +72,8 @@ export const catCitiesData: Record<string, CatCityData> = {
   },
   chandigarh: {
     city: "Chandigarh", slug: "cat-coaching-in-chandigarh",
-    metaTitle: "Best CAT Coaching in Chandigarh — IIM Admits | MBA Wizards",
-    metaDescription: "Top CAT coaching in Chandigarh by IIT alumni. Ability-Based Manthan model, AI analytics, unlimited mocks. IIM admits every year. Book a free demo.",
+    metaTitle: "Cat Coaching In Chandigarh | MBA Wizards",
+    metaDescription: "Official Cat Coaching In Chandigarh by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 99+ Percentile & IIM Admits",
     heroTitle: "Best CAT Coaching in", heroTitleHighlight: "Chandigarh",
     heroSubtitle: "Expert CAT preparation in Chandigarh with the proven Manthan ability-based model. Live online + offline hybrid sessions. Consistent IIM A, B, C calls every admission cycle.",
@@ -83,8 +83,8 @@ export const catCitiesData: Record<string, CatCityData> = {
   },
   pune: {
     city: "Pune", slug: "cat-coaching-in-pune",
-    metaTitle: "Best CAT Coaching in Pune — IIM Admits | MBA Wizards",
-    metaDescription: "Expert CAT coaching in Pune. Ability-Based Manthan methodology, AI analytics, unlimited mocks, WAT-PI prep. IIM alumni faculty. 95% success rate.",
+    metaTitle: "Cat Coaching In Pune | MBA Wizards",
+    metaDescription: "Official Cat Coaching In Pune by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 99+ Percentile & IIM Admits",
     heroTitle: "Best CAT Coaching in", heroTitleHighlight: "Pune",
     heroSubtitle: "MBA Wizards delivers Pune aspirants a data-driven, personalized CAT coaching experience built on the Manthan pedagogy — turning corporate professionals into IIM admits.",
@@ -94,8 +94,8 @@ export const catCitiesData: Record<string, CatCityData> = {
   },
   mumbai: {
     city: "Mumbai", slug: "cat-coaching-in-mumbai",
-    metaTitle: "Best CAT Coaching in Mumbai — IIM Admits | MBA Wizards",
-    metaDescription: "Top CAT coaching in Mumbai with Ability-Based model. IIM alumni faculty, unlimited full-length mocks, AI performance analytics, WAT-PI prep. Book free demo.",
+    metaTitle: "Cat Coaching In Mumbai | MBA Wizards",
+    metaDescription: "Official Cat Coaching In Mumbai by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 99+ Percentile & IIM Admits",
     heroTitle: "Best CAT Coaching in", heroTitleHighlight: "Mumbai",
     heroSubtitle: "From Bandra to BKC, Mumbai aspirants trust MBA Wizards' Manthan ability-based CAT coaching for consistent 99+ percentile outcomes and IIM admission success.",
@@ -105,8 +105,8 @@ export const catCitiesData: Record<string, CatCityData> = {
   },
   hyderabad: {
     city: "Hyderabad", slug: "cat-coaching-in-hyderabad",
-    metaTitle: "Best CAT Coaching in Hyderabad — IIM Admits | MBA Wizards",
-    metaDescription: "Expert CAT coaching in Hyderabad with Ability-Based Manthan model. IIM alumni faculty, AI analytics, unlimited mocks, WAT-PI preparation. 95% success rate.",
+    metaTitle: "Cat Coaching In Hyderabad | MBA Wizards",
+    metaDescription: "Official Cat Coaching In Hyderabad by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
     heroPreTitle: "Target 99+ Percentile & IIM Admits",
     heroTitle: "Best CAT Coaching in", heroTitleHighlight: "Hyderabad",
     heroSubtitle: "Hyderabad's aspiring MBA candidates choose MBA Wizards for the Manthan ability-based CAT coaching model — delivering 99+ percentile results and IIM calls every year.",
