@@ -14,7 +14,7 @@ export default function GreCityBatches({ city }: GreCityBatchesProps) {
   const batches = [
     {
       name: "GRE Online Live (Group)",
-      price: "₹25,000",
+      price: "₹30,000",
       featured: false,
       badge: null,
       features: [
@@ -28,7 +28,7 @@ export default function GreCityBatches({ city }: GreCityBatchesProps) {
     },
     {
       name: "GRE Classroom (Regular)",
-      price: "₹35,000",
+      price: "₹40,000",
       featured: false,
       badge: null,
       features: [
@@ -41,31 +41,31 @@ export default function GreCityBatches({ city }: GreCityBatchesProps) {
       ],
     },
     {
-      name: "GRE Weekend Batch",
-      price: "₹40,000",
+      name: "GRE 1-on-1 Online Live",
+      price: "₹65,000",
       featured: true,
-      badge: "Best for Working Pros",
+      badge: "Most Popular",
       features: [
-        "Intensive Saturday-Sunday sessions",
-        "Networking with corporate professionals",
-        "Complete curriculum in flexible timing",
-        "Special focus on test-taking strategies",
-        "Hybrid classroom + online attendance",
-        "Unlimited doubt support till test day",
+        "100% private 1-on-1 live interactive sessions",
+        "Personalized study plan & flexible timing",
+        "Direct IIT faculty mentorship",
+        "Deep diagnosis of every mock attempt",
+        "Unlimited doubt resolution till exam day",
+        "Graduate admissions & SOP guidance",
       ],
     },
     {
-      name: "GRE 320+ Elite Track",
-      price: "₹65,000",
+      name: "GRE 1-on-1 Classroom",
+      price: "₹1,00,000",
       featured: false,
-      badge: "Top Scorers",
+      badge: "Elite Track",
       features: [
-        "Advanced problem-solving techniques",
-        "Elite-level practice question bank",
-        "Personalized mentoring approach",
-        "Score guarantee program",
-        "University-specific SOP and essay help",
-        "Alumni mentorship from Stanford / MIT",
+        "Exclusive 1-on-1 in-person classroom coaching",
+        "Dedicated IIT/IIM faculty personalized attention",
+        "Quiet study lab & comprehensive physical kit",
+        "Elite-level question bank & score guarantee",
+        "Full mock analysis & test strategy sessions",
+        "End-to-end SOP, essay & scholarship consulting",
       ],
     },
   ];
