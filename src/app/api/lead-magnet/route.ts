@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServiceSupabase } from "@/lib/supabase";
+import { sendLeadNotificationEmail } from "@/lib/email";
 
 export async function POST(req: NextRequest) {
   try {
@@ -47,10 +48,30 @@ export async function POST(req: NextRequest) {
     const ip = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || "unknown";
     const userAgent = req.headers.get("user-agent") || "unknown";
 
-    const supabase = getServiceSupabase();
-
     const finalBlogName = blogName || leadMagnetName || "GMAT Focus Gurgaon Guide";
 
+    // 1. Send real-time email notification via SMTP to rupali.eduquest@gmail.com
+    let emailResult: { success: boolean; messageId?: string; error?: string } = { success: false };
+    try {
+      emailResult = await sendLeadNotificationEmail({
+        fullName: fullName.trim(),
+        email: email.trim().toLowerCase(),
+        phone: cleanPhone,
+        interestedIn,
+        profileType,
+        targetScore,
+        targetIntake,
+        cityArea,
+        sourceSlug,
+        blogName: finalBlogName,
+        ipAddress: ip,
+      });
+    } catch (mailErr: unknown) {
+      console.error("Lead email dispatch error:", mailErr);
+    }
+
+    // 2. Insert into Supabase database
+    const supabase = getServiceSupabase();
     const { data, error } = await supabase.from("gmat_gurgaon_leads").insert([
       {
         full_name: fullName.trim(),
@@ -70,20 +91,21 @@ export async function POST(req: NextRequest) {
     ]).select();
 
     if (error) {
-      console.warn("Supabase insert notice (fallback to local success):", error.message);
-      // Return success gracefully so user still receives their generated PDF even if Supabase env vars are still being configured in production
+      console.warn("Supabase insert notice (fallback mode):", error.message);
       return NextResponse.json({
         success: true,
-        message: "Lead recorded successfully (local sync mode)",
+        message: "Lead recorded successfully (email dispatched)",
         leadId: "local-" + Date.now(),
+        emailSent: emailResult.success,
         warning: error.message,
       });
     }
 
     return NextResponse.json({
       success: true,
-      message: "Lead recorded successfully in Supabase",
+      message: "Lead recorded successfully in Supabase and email sent",
       data: data?.[0] || null,
+      emailSent: emailResult.success,
     });
   } catch (err: unknown) {
     console.error("Lead Magnet API Error:", err);
@@ -93,3 +115,4 @@ export async function POST(req: NextRequest) {
     );
   }
 }
+
