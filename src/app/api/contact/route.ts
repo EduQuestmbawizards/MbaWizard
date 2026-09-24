@@ -7,36 +7,40 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const {
       fullName,
+      name,
       email,
       phone,
-      interestedIn = "GMAT Focus Edition (705+ Strategy)",
+      mobile,
+      program,
+      interestedIn,
+      message,
       profileType = "Working Professional",
       targetScore = "705+ (99th %ile)",
       targetIntake = "2026/2027",
       cityArea = "Gurgaon",
-      sourceSlug = "gmat-gurgaon-blog",
-      blogName = "GMAT Focus Gurgaon Guide",
-      leadMagnetName = "GMAT Gurgaon Mastery Guide 2026",
+      sourceSlug = "contact-us",
     } = body;
 
-    // Basic validation
-    if (!fullName || !email || !phone) {
+    const candidateName = fullName || name || "";
+    const candidatePhone = phone || mobile || "";
+    const candidateProgram = interestedIn || program || (message ? `Inquiry: ${message.slice(0, 50)}...` : "General MBA / Test Prep Consultation");
+
+    // Validation
+    if (!candidateName || !email || !candidatePhone) {
       return NextResponse.json(
-        { error: "Name, email, and phone number are required." },
+        { error: "Full Name, Email, and Phone number are required." },
         { status: 400 }
       );
     }
 
-    // Phone validation (at least 10 digits)
-    const cleanPhone = phone.replace(/[^0-9]/g, "");
+    const cleanPhone = candidatePhone.replace(/[^0-9]/g, "");
     if (cleanPhone.length < 10) {
       return NextResponse.json(
-        { error: "Please provide a valid 10-digit mobile number." },
+        { error: "Please enter a valid 10-digit phone number." },
         { status: 400 }
       );
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return NextResponse.json(
@@ -48,42 +52,36 @@ export async function POST(req: NextRequest) {
     const ip = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || "unknown";
     const userAgent = req.headers.get("user-agent") || "unknown";
 
-    const finalBlogName = blogName || leadMagnetName || "GMAT Focus Gurgaon Guide";
-
-    // 1. Dispatch 4-channel real-time automation concurrently:
-    // - Admin Email (rupali.eduquest@gmail.com)
-    // - Candidate Confirmation Email
-    // - Fast2SMS SMS to Candidate Phone
-    // - Twilio WhatsApp Message to Candidate Phone
+    // 1. Dispatch 4-channel automations (Admin Email, User Email, User Fast2SMS, User Twilio WhatsApp)
     const automationResults = await dispatchLeadAutomations({
-      fullName: fullName.trim(),
+      fullName: candidateName.trim(),
       email: email.trim().toLowerCase(),
       phone: cleanPhone,
-      interestedIn,
+      interestedIn: candidateProgram,
       profileType,
       targetScore,
       targetIntake,
       cityArea,
       sourceSlug,
-      blogName: finalBlogName,
+      blogName: "MBA Wizards Contact Us",
       ipAddress: ip,
     });
 
-    // 2. Insert lead record into Supabase database
+    // 2. Persist in Supabase
     const supabase = getServiceSupabase();
     const { data, error } = await supabase.from("gmat_gurgaon_leads").insert([
       {
-        full_name: fullName.trim(),
+        full_name: candidateName.trim(),
         email: email.trim().toLowerCase(),
         phone: cleanPhone,
-        interested_in: interestedIn,
+        interested_in: candidateProgram,
         profile_type: profileType,
         target_score: targetScore,
         target_intake: targetIntake,
         city_area: cityArea,
         source_slug: sourceSlug,
-        blog_name: finalBlogName,
-        lead_magnet_name: finalBlogName,
+        blog_name: "MBA Wizards Contact Form",
+        lead_magnet_name: "Direct Contact Form",
         ip_address: ip,
         user_agent: userAgent,
       },
@@ -93,8 +91,7 @@ export async function POST(req: NextRequest) {
       console.warn("Supabase insert notice (fallback mode):", error.message);
       return NextResponse.json({
         success: true,
-        message: "Lead recorded and automations dispatched successfully",
-        leadId: "local-" + Date.now(),
+        message: "Inquiry received and automations dispatched successfully",
         automations: automationResults,
         warning: error.message,
       });
@@ -102,15 +99,15 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: "Lead recorded in Supabase and all automations executed",
+      message: "Inquiry saved and automations completed successfully",
       data: data?.[0] || null,
       automations: automationResults,
     });
   } catch (err: unknown) {
     const errorMsg = err instanceof Error ? err.message : String(err);
-    console.error("❌ Lead Magnet API Error:", errorMsg);
+    console.error("❌ Contact API Error:", errorMsg);
     return NextResponse.json(
-      { error: "An unexpected error occurred while processing lead." },
+      { error: "An unexpected error occurred while processing contact inquiry." },
       { status: 500 }
     );
   }
