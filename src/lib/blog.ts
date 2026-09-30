@@ -1,5 +1,6 @@
 import { blogPosts, BlogPost } from "@/data/blogs-data";
 import { gmatGurgaonBlogs, GurgaonBlogPost } from "@/data/gmat-gurgaon-blogs";
+import { gmatMockAnalyticsBlogs, MockAnalyticsBlogPost } from "@/data/gmat-mock-analytics-blogs";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
@@ -84,9 +85,26 @@ export function wpToBlogSummary(wp: WPBlog): BlogSummary {
 }
 
 /**
- * Get all unified blog summaries (GMAT Gurgaon Pillar Guides + Local Guides + 105 WordPress Posts)
+ * Get all unified blog summaries (GMAT Mock Analytics + GMAT Gurgaon Pillar Guides + Local Guides + 105 WordPress Posts)
  */
 export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
+  const mockAnalyticsSummaries: BlogSummary[] = gmatMockAnalyticsBlogs.map((m: MockAnalyticsBlogPost) => ({
+    slug: m.slug,
+    title: m.title,
+    subtitle: m.subtitle,
+    excerpt: m.excerpt,
+    metaDescription: m.metaDescription || m.excerpt,
+    coverImage: m.coverImage || "/images/heroes/hero-gmat.jpg",
+    author: m.author,
+    category: m.category,
+    tags: m.tags,
+    publishedAt: m.publishedAt,
+    readTime: m.readTime,
+    featured: m.featured || false,
+    accentColor: m.accentColor || "#d4af37",
+    isWordPress: false,
+  }));
+
   const gurgaonSummaries: BlogSummary[] = gmatGurgaonBlogs.map((g: GurgaonBlogPost) => ({
     slug: g.slug,
     title: g.title,
@@ -126,7 +144,7 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
   const seen = new Set<string>();
   const uniqueSummaries: BlogSummary[] = [];
 
-  for (const item of [...gurgaonSummaries, ...localSummaries, ...wpSummaries]) {
+  for (const item of [...mockAnalyticsSummaries, ...gurgaonSummaries, ...localSummaries, ...wpSummaries]) {
     if (!seen.has(item.slug)) {
       seen.add(item.slug);
       uniqueSummaries.push(item);
@@ -139,10 +157,33 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
 }
 
 /**
- * Get full blog by slug (either GMAT Gurgaon article, local article or WordPress post)
+ * Get full blog by slug (either GMAT Mock Analytics, GMAT Gurgaon article, local article or WordPress post)
  */
 export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
-  // Check GMAT Gurgaon Pillar Articles first
+  // Check GMAT Mock Analytics first
+  const mockBlog = gmatMockAnalyticsBlogs.find((m: MockAnalyticsBlogPost) => m.slug === slug);
+  if (mockBlog) {
+    return {
+      slug: mockBlog.slug,
+      title: mockBlog.title,
+      subtitle: mockBlog.subtitle,
+      excerpt: mockBlog.excerpt,
+      metaTitle: mockBlog.metaTitle || `${mockBlog.title} — MBA Wizards`,
+      metaDescription: mockBlog.metaDescription || mockBlog.excerpt,
+      coverImage: mockBlog.coverImage,
+      author: mockBlog.author,
+      category: mockBlog.category,
+      tags: mockBlog.tags,
+      publishedAt: mockBlog.publishedAt,
+      readTime: mockBlog.readTime,
+      featured: mockBlog.featured,
+      accentColor: mockBlog.accentColor,
+      body: mockBlog.body as ContentBlock[],
+      isWordPress: false,
+    };
+  }
+
+  // Check GMAT Gurgaon Pillar Articles second
   const gurgaon = gmatGurgaonBlogs.find((g: GurgaonBlogPost) => g.slug === slug);
   if (gurgaon) {
     return {
@@ -165,7 +206,7 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
     };
   }
 
-  // Check local articles second
+  // Check local articles third
   const local = blogPosts.find((a: BlogPost) => a.slug === slug);
   if (local) {
     return {
@@ -210,3 +251,4 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
 
   return null;
 }
+

@@ -39,12 +39,43 @@ export default function LeadMagnetModal({
 
   if (!isOpen) return null;
 
+  const triggerDownload = async () => {
+    try {
+      const staticUrl = `/lead-magnets/${sourceSlug}-guide.pdf`;
+      const res = await fetch(staticUrl, { method: "HEAD" });
+      if (res.ok) {
+        const a = document.createElement("a");
+        a.href = staticUrl;
+        a.download = `${sourceSlug}-guide.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        return;
+      }
+    } catch (err) {
+      console.warn("Static project PDF not directly reachable, using dynamic generator", err);
+    }
+
+    // Dynamic personalized fallback
+    generateLeadMagnetPDF({
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      interestedIn: formData.interestedIn,
+      blogTitle: effectiveBlogTitle,
+      blogSlug: sourceSlug,
+      profileType: formData.profileType,
+      targetScore: formData.targetScore,
+      targetIntake: formData.targetIntake,
+    });
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMsg("");
 
-    if (!formData.fullName.trim() || !formData.email.trim() || !formData.phone.trim()) {
-      setErrorMsg("Please fill in all required fields (Name, Email, Phone).");
+    if (!formData.fullName.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.cityArea.trim()) {
+      setErrorMsg("Please fill in all required fields.");
       return;
     }
 
@@ -62,7 +93,7 @@ export default function LeadMagnetModal({
       .replace(/\s+/g, "_")
       .slice(0, 45);
     const safeCandidate = formData.fullName.trim().replace(/[^a-zA-Z0-9]/g, "_");
-    const generatedFilename = `${safeBlogName}_Guide_${safeCandidate}.pdf`;
+    const generatedFilename = `${sourceSlug}-guide.pdf`;
     setDownloadedFileName(generatedFilename);
 
     try {
@@ -91,34 +122,13 @@ export default function LeadMagnetModal({
         throw new Error(data.error || "Submission failed. Please try again.");
       }
 
-      // 2. Automatically generate and download the branded PDF on the user's device with blog name
-      generateLeadMagnetPDF({
-        fullName: formData.fullName,
-        email: formData.email,
-        phone: formData.phone,
-        interestedIn: formData.interestedIn,
-        blogTitle: effectiveBlogTitle,
-        blogSlug: sourceSlug,
-        profileType: formData.profileType,
-        targetScore: formData.targetScore,
-        targetIntake: formData.targetIntake,
-      });
-
+      // 2. Download the branded project PDF
+      await triggerDownload();
       setIsSuccess(true);
     } catch (err: unknown) {
       console.error("Lead submission error (fallback to local download):", err);
       // Guarantee candidate receives their valuable PDF immediately even during network hiccups
-      generateLeadMagnetPDF({
-        fullName: formData.fullName,
-        email: formData.email,
-        phone: formData.phone,
-        interestedIn: formData.interestedIn,
-        blogTitle: effectiveBlogTitle,
-        blogSlug: sourceSlug,
-        profileType: formData.profileType,
-        targetScore: formData.targetScore,
-        targetIntake: formData.targetIntake,
-      });
+      await triggerDownload();
       setIsSuccess(true);
     } finally {
       setLoading(false);
@@ -126,17 +136,7 @@ export default function LeadMagnetModal({
   };
 
   const handleDownloadAgain = () => {
-    generateLeadMagnetPDF({
-      fullName: formData.fullName,
-      email: formData.email,
-      phone: formData.phone,
-      interestedIn: formData.interestedIn,
-      blogTitle: effectiveBlogTitle,
-      blogSlug: sourceSlug,
-      profileType: formData.profileType,
-      targetScore: formData.targetScore,
-      targetIntake: formData.targetIntake,
-    });
+    triggerDownload();
   };
 
   return (
@@ -217,6 +217,7 @@ export default function LeadMagnetModal({
               <div className={styles.formGroup}>
                 <label className={styles.label}>Interested In / Target Program *</label>
                 <select
+                  required
                   className={styles.select}
                   value={formData.interestedIn}
                   onChange={(e) => setFormData({ ...formData, interestedIn: e.target.value })}
@@ -232,8 +233,9 @@ export default function LeadMagnetModal({
               </div>
 
               <div className={styles.formGroup}>
-                <label className={styles.label}>Candidate Category</label>
+                <label className={styles.label}>Candidate Category *</label>
                 <select
+                  required
                   className={styles.select}
                   value={formData.profileType}
                   onChange={(e) => setFormData({ ...formData, profileType: e.target.value })}
@@ -246,8 +248,9 @@ export default function LeadMagnetModal({
               </div>
 
               <div className={styles.formGroup}>
-                <label className={styles.label}>Target Score Goal</label>
+                <label className={styles.label}>Target Score Goal *</label>
                 <select
+                  required
                   className={styles.select}
                   value={formData.targetScore}
                   onChange={(e) => setFormData({ ...formData, targetScore: e.target.value })}
@@ -259,12 +262,39 @@ export default function LeadMagnetModal({
                 </select>
               </div>
 
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Target MBA Intake *</label>
+                <select
+                  required
+                  className={styles.select}
+                  value={formData.targetIntake}
+                  onChange={(e) => setFormData({ ...formData, targetIntake: e.target.value })}
+                >
+                  <option value="2026 Intake (Round 1 / Round 2)">2026 Intake (Round 1 / Round 2)</option>
+                  <option value="2027 Intake (Early Stage Prep)">2027 Intake (Early Stage Prep)</option>
+                  <option value="Executive MBA / 1-Year Program (Immediate)">Executive MBA / 1-Year Program (Immediate)</option>
+                  <option value="Deferred MBA / Early Entry (ISB YLP / Harvard 2+2)">Deferred MBA / Early Entry (ISB YLP / Harvard 2+2)</option>
+                </select>
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Location / City *</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="e.g., Gurgaon / Delhi NCR / Bangalore"
+                  className={styles.input}
+                  value={formData.cityArea}
+                  onChange={(e) => setFormData({ ...formData, cityArea: e.target.value })}
+                />
+              </div>
+
               <button
                 type="submit"
                 disabled={loading}
                 className={styles.submitBtn}
               >
-                {loading ? "Saving & Generating PDF..." : "📥 Download Free PDF Guide Now"}
+                {loading ? "Saving & Fetching PDF..." : "📥 Download Free PDF Guide Now"}
               </button>
 
               <div className={styles.guaranteeText}>
