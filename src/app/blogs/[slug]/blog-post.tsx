@@ -31,7 +31,7 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
 
           <div className={styles.authorBox}>
             <img
-              src="/images/toppers/karan-780.jpeg"
+              src="/images/common/surinder-gupta.jpg"
               alt={post.author}
               className={styles.authorAvatar}
             />

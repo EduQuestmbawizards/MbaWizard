@@ -209,7 +209,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
               className={styles.coverImage}
               onError={(e) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = "/images/toppers/karan-780.jpeg";
+                e.currentTarget.src = "/images/blogs/scenery/analytics-study-desk.jpg";
               }}
             />
           </div>

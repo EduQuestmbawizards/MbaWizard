@@ -29,7 +29,7 @@ export const gmatMockAnalyticsBlogs: MockAnalyticsBlogPost[] = [
     excerpt: "Stuck at 595, 625, or 655 despite logging 300+ study hours? Discover the hidden cognitive and algorithmic reasons your GMAT Focus score won't budge and how to engineer a 705+ breakthrough.",
     metaTitle: "Why Your GMAT Score Is Stuck Despite Studying More (2026) — MBA Wizards",
     metaDescription: "Score stuck at 605-655? Discover the exact algorithmic and psychological reasons your GMAT score plateaus and the 7-step diagnostic system to reach 705+.",
-    coverImage: "/images/heroes/hero-gmat.jpg",
+    coverImage: "/images/blogs/scenery/analytics-study-desk.jpg",
     author: {
       name: "Mr. Surinder Gupta (IIT Roorkee)",
       role: "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -636,7 +636,7 @@ export const gmatMockAnalyticsBlogs: MockAnalyticsBlogPost[] = [
     excerpt: "Your mock report contains crucial hidden signals that standard score summaries ignore. Learn how to decode question difficulty trajectories, pacing spikes, and section fatigue patterns.",
     metaTitle: "Hidden Patterns in GMAT Mock Reports (2026) — MBA Wizards",
     metaDescription: "Decode the hidden data inside your GMAT Focus mock reports: difficulty curves, consecutive error penalties, pacing spikes, and sub-skill variance.",
-    coverImage: "/images/heroes/hero-gmat.jpg",
+    coverImage: "/images/heroes/hero-gre.jpg",
     author: {
       name: "Mr. Surinder Gupta (IIT Roorkee)",
       role: "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -804,7 +804,7 @@ export const gmatMockAnalyticsBlogs: MockAnalyticsBlogPost[] = [
     excerpt: "Scored 615, 685, 645, 715, and 655 in your last 5 mocks? Learn how to calculate your true statistical ability, eliminate test variance, and predict your official exam score.",
     metaTitle: "What Your Last 5 GMAT Mocks Predict About Your Score — MBA Wizards",
     metaDescription: "Calculate your true GMAT score using statistical regression across your last 5 mocks. Eliminate test variance, fatigue outliers, and predict test-day performance.",
-    coverImage: "/images/heroes/hero-gmat.jpg",
+    coverImage: "/images/heroes/hero-research.jpg",
     author: {
       name: "Mr. Surinder Gupta (IIT Roorkee)",
       role: "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -949,7 +949,7 @@ export const gmatMockAnalyticsBlogs: MockAnalyticsBlogPost[] = [
     excerpt: "Stop guessing why you missed a question. Use clinical root-cause diagnostic trees to identify conceptual voids, execution breakdowns, and trap triggers across all 3 GMAT sections.",
     metaTitle: "GMAT Weakness Detection Using Mock Analytics — MBA Wizards",
     metaDescription: "Master the root-cause diagnostic framework to detect and eliminate hidden weaknesses in GMAT Quant, Verbal, and Data Insights using mock analytics.",
-    coverImage: "/images/heroes/hero-gmat.jpg",
+    coverImage: "/images/blogs/scenery/analytics-study-desk.jpg",
     author: {
       name: "Mr. Surinder Gupta (IIT Roorkee)",
       role: "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -1085,7 +1085,7 @@ export const gmatMockAnalyticsBlogs: MockAnalyticsBlogPost[] = [
     excerpt: "Reviewing your GMAT mocks the wrong way is worse than not reviewing them at all. Learn the 10 fatal post-mock review blunders and the 3-stage corrective protocol to fix them.",
     metaTitle: "Why Most Students Review GMAT Mocks Incorrectly — MBA Wizards",
     metaDescription: "Discover the 10 biggest mistakes students make when reviewing GMAT practice tests and master the 3-stage corrective protocol for rapid score improvement.",
-    coverImage: "/images/heroes/hero-gmat.jpg",
+    coverImage: "/images/blogs/scenery/b-school-amphitheater.jpg",
     author: {
       name: "Mr. Surinder Gupta (IIT Roorkee)",
       role: "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -1200,7 +1200,7 @@ export const gmatMockAnalyticsBlogs: MockAnalyticsBlogPost[] = [
     excerpt: "Understand the psychometric science behind the GMAT Focus adaptive engine: Item Response Theory (IRT), difficulty parameters, and score optimization tactics.",
     metaTitle: "The Science Behind Adaptive GMAT Mock Tests — MBA Wizards",
     metaDescription: "Deconstruct the GMAT Focus adaptive algorithm: Item Response Theory (IRT), difficulty calibration, consecutive error penalties, and scoring strategies.",
-    coverImage: "/images/heroes/hero-gmat.jpg",
+    coverImage: "/images/heroes/hero-gre.jpg",
     author: {
       name: "Mr. Surinder Gupta (IIT Roorkee)",
       role: "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -1332,7 +1332,7 @@ export const gmatMockAnalyticsBlogs: MockAnalyticsBlogPost[] = [
     excerpt: "Discover how AI and machine learning algorithms analyze your mock response telemetry, predict score trajectories, and pinpoint high-yield study priorities.",
     metaTitle: "How AI Predicts GMAT Score Improvement — MBA Wizards",
     metaDescription: "Learn how machine learning models, error taxonomy algorithms, and response telemetry predict your GMAT score improvement trajectory with ±10 point precision.",
-    coverImage: "/images/heroes/hero-gmat.jpg",
+    coverImage: "/images/blogs/scenery/analytics-study-desk.jpg",
     author: {
       name: "Mr. Surinder Gupta (IIT Roorkee)",
       role: "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -1432,7 +1432,7 @@ export const gmatMockAnalyticsBlogs: MockAnalyticsBlogPost[] = [
     excerpt: "Should you aim for 95% accuracy and rush the end, or maintain a strict 2-minute pace with lower accuracy? Deconstruct the mathematical trade-off on the GMAT Focus Edition.",
     metaTitle: "GMAT Accuracy vs Speed: What Matters More? (2026) — MBA Wizards",
     metaDescription: "Analyze the mathematical trade-off between speed and accuracy on the GMAT Focus Edition. Learn optimal pacing thresholds and guessing strategies to maximize your score.",
-    coverImage: "/images/heroes/hero-gmat.jpg",
+    coverImage: "/images/blogs/scenery/analytics-study-desk.jpg",
     author: {
       name: "Mr. Surinder Gupta (IIT Roorkee)",
       role: "Founder & Master GMAT Mentor (25+ Yrs Exp)",

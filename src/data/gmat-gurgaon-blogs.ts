@@ -26,7 +26,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Find GMAT coaching in Gurgaon with this guide to classes, preparation options, fees, study support, and choosing a suitable GMAT institute.",
     "metaTitle": "GMAT Coaching in Gurgaon: Classes, Fees & Preparation — MBA Wizards",
     "metaDescription": "Find GMAT coaching in Gurgaon with this guide to classes, preparation options, fees, study support, and choosing a suitable GMAT institute.",
-    "coverImage": "/images/blogs/gmat-coaching-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -620,7 +620,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Compare the factors that matter when choosing GMAT coaching in Gurgaon, including faculty, curriculum, mocks, support, fees, and learning format.",
     "metaTitle": "Best GMAT Coaching in Gurgaon: How to Choose the Right Institute — MBA Wizards",
     "metaDescription": "Compare the factors that matter when choosing GMAT coaching in Gurgaon, including faculty, curriculum, mocks, support, fees, and learning format.",
-    "coverImage": "/images/blogs/best-gmat-coaching-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -1214,7 +1214,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT classes in Gurgaon, including course formats, batches, preparation support, practice resources, and factors to consider before enrolling.",
     "metaTitle": "GMAT Classes in Gurgaon: Courses, Batches & Preparation — MBA Wizards",
     "metaDescription": "Explore GMAT classes in Gurgaon, including course formats, batches, preparation support, practice resources, and factors to consider before enrolling.",
-    "coverImage": "/images/blogs/gmat-classes-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -1808,7 +1808,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn how to plan GMAT preparation in Gurgaon with a practical study strategy, practice routine, mock-test approach, and coaching considerations.",
     "metaTitle": "GMAT Preparation in Gurgaon: Complete 2026 Guide — MBA Wizards",
     "metaDescription": "Learn how to plan GMAT preparation in Gurgaon with a practical study strategy, practice routine, mock-test approach, and coaching considerations.",
-    "coverImage": "/images/blogs/gmat-preparation-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -2402,7 +2402,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Understand GMAT coaching fees in Gurgaon, what course pricing can include, and which factors affect the cost of GMAT preparation.",
     "metaTitle": "GMAT Coaching Fees in Gurgaon: Complete Fee Guide 2026 — MBA Wizards",
     "metaDescription": "Understand GMAT coaching fees in Gurgaon, what course pricing can include, and which factors affect the cost of GMAT preparation.",
-    "coverImage": "/images/blogs/gmat-coaching-fees-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -2996,7 +2996,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT course fees in Gurgaon, course formats, inclusions, and the factors that can change preparation costs.",
     "metaTitle": "GMAT Course Fees in Gurgaon: Courses & Pricing Guide — MBA Wizards",
     "metaDescription": "Explore GMAT course fees in Gurgaon, course formats, inclusions, and the factors that can change preparation costs.",
-    "coverImage": "/images/blogs/gmat-course-fees-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -3590,7 +3590,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore online GMAT coaching options for Gurgaon students, including live classes, study plans, practice, mocks, and online support.",
     "metaTitle": "GMAT Online Coaching in Gurgaon: Classes & Study Plans — MBA Wizards",
     "metaDescription": "Explore online GMAT coaching options for Gurgaon students, including live classes, study plans, practice, mocks, and online support.",
-    "coverImage": "/images/blogs/gmat-online-coaching-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -4184,7 +4184,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn what to consider when choosing offline GMAT coaching in Gurgaon, from classroom support and practice to schedules and course structure.",
     "metaTitle": "GMAT Offline Coaching in Gurgaon: Classroom Preparation Guide — MBA Wizards",
     "metaDescription": "Learn what to consider when choosing offline GMAT coaching in Gurgaon, from classroom support and practice to schedules and course structure.",
-    "coverImage": "/images/blogs/gmat-offline-coaching-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -4778,7 +4778,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Compare online and offline GMAT preparation in Gurgaon across flexibility, interaction, practice, schedules, support, and learning preferences.",
     "metaTitle": "Online vs Offline GMAT Coaching in Gurgaon: Which Format Fits You? — MBA Wizards",
     "metaDescription": "Compare online and offline GMAT preparation in Gurgaon across flexibility, interaction, practice, schedules, support, and learning preferences.",
-    "coverImage": "/images/blogs/online-vs-offline-gmat-coaching-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -5372,7 +5372,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "A practical guide to GMAT preparation for working professionals in Gurgaon, including schedules, weekend classes, practice, mocks, and study planning.",
     "metaTitle": "GMAT Coaching for Working Professionals in Gurgaon — MBA Wizards",
     "metaDescription": "A practical guide to GMAT preparation for working professionals in Gurgaon, including schedules, weekend classes, practice, mocks, and study planning.",
-    "coverImage": "/images/blogs/gmat-coaching-for-working-professionals-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -5966,7 +5966,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn how college students in Gurgaon can plan GMAT preparation alongside academics, including timelines, fundamentals, practice, and coaching.",
     "metaTitle": "GMAT Coaching for College Students in Gurgaon — MBA Wizards",
     "metaDescription": "Learn how college students in Gurgaon can plan GMAT preparation alongside academics, including timelines, fundamentals, practice, and coaching.",
-    "coverImage": "/images/blogs/gmat-coaching-for-college-students-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -6559,7 +6559,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore a practical GMAT preparation roadmap for fresh graduates in Gurgaon, including study planning, practice, mocks, and MBA application timing.",
     "metaTitle": "GMAT Coaching for Fresh Graduates in Gurgaon — MBA Wizards",
     "metaDescription": "Explore a practical GMAT preparation roadmap for fresh graduates in Gurgaon, including study planning, practice, mocks, and MBA application timing.",
-    "coverImage": "/images/blogs/gmat-coaching-for-fresh-graduates-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -7153,7 +7153,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Build a 700+ GMAT preparation strategy with section planning, practice analysis, mock tests, error tracking, and realistic study routines.",
     "metaTitle": "GMAT Coaching for 700+ Score in Gurgaon: Preparation Strategy — MBA Wizards",
     "metaDescription": "Build a 700+ GMAT preparation strategy with section planning, practice analysis, mock tests, error tracking, and realistic study routines.",
-    "coverImage": "/images/blogs/gmat-coaching-for-700-plus-score-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/scenery/analytics-study-desk.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -7747,7 +7747,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore an advanced GMAT preparation approach for students targeting a high score, including practice analysis, timing, mocks, and revision.",
     "metaTitle": "GMAT Coaching for 750+ Score in Gurgaon: 750+ Preparation Plan — MBA Wizards",
     "metaDescription": "Explore an advanced GMAT preparation approach for students targeting a high score, including practice analysis, timing, mocks, and revision.",
-    "coverImage": "/images/blogs/gmat-coaching-for-750-plus-score-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-gmat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -8341,7 +8341,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore weekend GMAT classes in Gurgaon for learners balancing work or college with preparation, including schedules and study planning.",
     "metaTitle": "GMAT Weekend Classes in Gurgaon for Working Professionals — MBA Wizards",
     "metaDescription": "Explore weekend GMAT classes in Gurgaon for learners balancing work or college with preparation, including schedules and study planning.",
-    "coverImage": "/images/blogs/gmat-weekend-classes-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -8935,7 +8935,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn how an intensive GMAT crash course can structure revision, practice, mocks, and time management for a shorter preparation window.",
     "metaTitle": "GMAT Crash Course in Gurgaon: Intensive Preparation Guide — MBA Wizards",
     "metaDescription": "Learn how an intensive GMAT crash course can structure revision, practice, mocks, and time management for a shorter preparation window.",
-    "coverImage": "/images/blogs/gmat-crash-course-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -9529,7 +9529,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Understand one-to-one GMAT coaching in Gurgaon, including personalized study plans, feedback, practice analysis, and individual support.",
     "metaTitle": "One-to-One GMAT Coaching in Gurgaon: Personalized Preparation — MBA Wizards",
     "metaDescription": "Understand one-to-one GMAT coaching in Gurgaon, including personalized study plans, feedback, practice analysis, and individual support.",
-    "coverImage": "/images/blogs/gmat-one-to-one-coaching-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -10123,7 +10123,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Use this checklist to evaluate GMAT coaching in Gurgaon based on curriculum, faculty, practice, mocks, support, schedules, and course transparency.",
     "metaTitle": "How to Choose GMAT Coaching in Gurgaon: Complete Checklist — MBA Wizards",
     "metaDescription": "Use this checklist to evaluate GMAT coaching in Gurgaon based on curriculum, faculty, practice, mocks, support, schedules, and course transparency.",
-    "coverImage": "/images/blogs/how-to-choose-gmat-coaching-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -10717,7 +10717,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Starting GMAT preparation from zero? Follow a structured roadmap covering fundamentals, practice, mock tests, review, and study planning.",
     "metaTitle": "GMAT Preparation From Scratch: Beginner's Complete Roadmap — MBA Wizards",
     "metaDescription": "Starting GMAT preparation from zero? Follow a structured roadmap covering fundamentals, practice, mock tests, review, and study planning.",
-    "coverImage": "/images/blogs/gmat-preparation-from-scratch.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -11311,7 +11311,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Build a beginner-friendly GMAT study strategy with fundamentals, daily practice, review methods, mock tests, and progress tracking.",
     "metaTitle": "GMAT Preparation Strategy for Beginners: Complete Roadmap — MBA Wizards",
     "metaDescription": "Build a beginner-friendly GMAT study strategy with fundamentals, daily practice, review methods, mock tests, and progress tracking.",
-    "coverImage": "/images/blogs/gmat-preparation-strategy-for-beginners.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -11905,7 +11905,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Follow a structured 90-day GMAT study plan covering concepts, practice, error review, mock tests, and final revision.",
     "metaTitle": "GMAT 3-Month Study Plan: 90-Day Preparation Strategy — MBA Wizards",
     "metaDescription": "Follow a structured 90-day GMAT study plan covering concepts, practice, error review, mock tests, and final revision.",
-    "coverImage": "/images/blogs/gmat-3-month-study-plan.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -12499,7 +12499,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Use a six-month GMAT preparation roadmap with phases for fundamentals, section practice, mocks, review, and final exam readiness.",
     "metaTitle": "GMAT 6-Month Study Plan: Complete Preparation Roadmap — MBA Wizards",
     "metaDescription": "Use a six-month GMAT preparation roadmap with phases for fundamentals, section practice, mocks, review, and final exam readiness.",
-    "coverImage": "/images/blogs/gmat-6-month-study-plan.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -13093,7 +13093,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Create a realistic GMAT study schedule around a full-time job using weekday sessions, weekend practice, review blocks, and mock tests.",
     "metaTitle": "GMAT Study Plan for Working Professionals: Daily Schedule — MBA Wizards",
     "metaDescription": "Create a realistic GMAT study schedule around a full-time job using weekday sessions, weekend practice, review blocks, and mock tests.",
-    "coverImage": "/images/blogs/gmat-study-plan-for-working-professionals.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -13687,7 +13687,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn how GMAT mock tests support preparation through timed practice, score tracking, error analysis, review, and exam-day simulation.",
     "metaTitle": "GMAT Mock Tests in Gurgaon: Practice Tests & Preparation Guide — MBA Wizards",
     "metaDescription": "Learn how GMAT mock tests support preparation through timed practice, score tracking, error analysis, review, and exam-day simulation.",
-    "coverImage": "/images/blogs/gmat-mock-tests-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-research.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -14281,7 +14281,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Use a GMAT diagnostic test to understand your starting point, identify weak areas, and build a focused preparation plan.",
     "metaTitle": "GMAT Diagnostic Test: Check Your Starting Score & Weaknesses — MBA Wizards",
     "metaDescription": "Use a GMAT diagnostic test to understand your starting point, identify weak areas, and build a focused preparation plan.",
-    "coverImage": "/images/blogs/gmat-diagnostic-test.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -14875,7 +14875,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Build GMAT Quant skills with topic planning, problem-solving strategies, timed practice, error analysis, and mock-test review.",
     "metaTitle": "GMAT Quant Preparation: Topics, Strategy & Practice Guide — MBA Wizards",
     "metaDescription": "Build GMAT Quant skills with topic planning, problem-solving strategies, timed practice, error analysis, and mock-test review.",
-    "coverImage": "/images/blogs/gmat-quant-preparation-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-gmat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -15469,7 +15469,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Prepare for GMAT Verbal with structured practice for Reading Comprehension, Critical Reasoning, timing, review, and error analysis.",
     "metaTitle": "GMAT Verbal Preparation: Complete Strategy & Practice Guide — MBA Wizards",
     "metaDescription": "Prepare for GMAT Verbal with structured practice for Reading Comprehension, Critical Reasoning, timing, review, and error analysis.",
-    "coverImage": "/images/blogs/gmat-verbal-preparation-in-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-gre.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -16063,7 +16063,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn a structured GMAT Data Insights preparation approach covering data reasoning, practice, timing, review, and common question types.",
     "metaTitle": "GMAT Data Insights Preparation: Complete Strategy & Topics — MBA Wizards",
     "metaDescription": "Learn a structured GMAT Data Insights preparation approach covering data reasoning, practice, timing, review, and common question types.",
-    "coverImage": "/images/blogs/gmat-data-insights-preparation-in-gurgaon.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -16657,7 +16657,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Review the GMAT syllabus and major topic areas, with section-wise preparation guidance and a practical study checklist.",
     "metaTitle": "GMAT Syllabus 2026: Sections, Topics & Exam Structure — MBA Wizards",
     "metaDescription": "Review the GMAT syllabus and major topic areas, with section-wise preparation guidance and a practical study checklist.",
-    "coverImage": "/images/blogs/gmat-syllabus-2026.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -17251,7 +17251,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Understand the current GMAT exam structure, sections, timing, question types, and how the pattern affects preparation planning.",
     "metaTitle": "GMAT Exam Pattern 2026: Sections, Questions & Duration — MBA Wizards",
     "metaDescription": "Understand the current GMAT exam structure, sections, timing, question types, and how the pattern affects preparation planning.",
-    "coverImage": "/images/blogs/gmat-exam-pattern-2026.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -17845,7 +17845,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn about GMAT eligibility, common registration considerations, academic background, and how the exam fits MBA applications.",
     "metaTitle": "GMAT Eligibility 2026: Requirements, Age & Qualification — MBA Wizards",
     "metaDescription": "Learn about GMAT eligibility, common registration considerations, academic background, and how the exam fits MBA applications.",
-    "coverImage": "/images/blogs/gmat-eligibility-2026.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -18439,7 +18439,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Understand how GMAT scoring works, how section performance relates to the total score, and how to interpret results for MBA planning.",
     "metaTitle": "GMAT Scoring System: Score Calculation & Percentiles Explained — MBA Wizards",
     "metaDescription": "Understand how GMAT scoring works, how section performance relates to the total score, and how to interpret results for MBA planning.",
-    "coverImage": "/images/blogs/gmat-scoring-system.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -19033,7 +19033,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore a practical approach to targeting a 700+ GMAT score through diagnostics, section practice, mock analysis, timing, and revision.",
     "metaTitle": "How to Score 700+ in GMAT: Preparation Strategy & Study Plan — MBA Wizards",
     "metaDescription": "Explore a practical approach to targeting a 700+ GMAT score through diagnostics, section practice, mock analysis, timing, and revision.",
-    "coverImage": "/images/blogs/how-to-score-700-plus-in-gmat.jpg",
+    "coverImage": "/images/blogs/scenery/analytics-study-desk.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -19627,7 +19627,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn how to improve GMAT performance using mock-test analysis, error logs, targeted practice, timing adjustments, and revision.",
     "metaTitle": "How to Improve GMAT Score: Practical Preparation Strategies — MBA Wizards",
     "metaDescription": "Learn how to improve GMAT performance using mock-test analysis, error logs, targeted practice, timing adjustments, and revision.",
-    "coverImage": "/images/blogs/how-to-improve-gmat-score.jpg",
+    "coverImage": "/images/heroes/hero-gmat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -20221,7 +20221,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Plan a GMAT retake by reviewing your first attempt, identifying gaps, rebuilding practice, and setting a realistic preparation timeline.",
     "metaTitle": "GMAT Retake Strategy: When to Retake & How to Prepare — MBA Wizards",
     "metaDescription": "Plan a GMAT retake by reviewing your first attempt, identifying gaps, rebuilding practice, and setting a realistic preparation timeline.",
-    "coverImage": "/images/blogs/gmat-retake-strategy.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -20815,7 +20815,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Compare GMAT and CAT across exam structure, syllabus, preparation approach, test-taking context, and MBA application use cases.",
     "metaTitle": "GMAT vs CAT: Differences, Syllabus, Difficulty & MBA Options — MBA Wizards",
     "metaDescription": "Compare GMAT and CAT across exam structure, syllabus, preparation approach, test-taking context, and MBA application use cases.",
-    "coverImage": "/images/blogs/gmat-vs-cat.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -21409,7 +21409,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Compare GMAT and GRE for MBA applicants across test structure, preparation, score reporting, and business-school considerations.",
     "metaTitle": "GMAT vs GRE: Differences, Syllabus, Difficulty & MBA Use — MBA Wizards",
     "metaDescription": "Compare GMAT and GRE for MBA applicants across test structure, preparation, score reporting, and business-school considerations.",
-    "coverImage": "/images/blogs/gmat-vs-gre.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -22003,7 +22003,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Understand the role of GMAT in an ISB application and how to structure preparation, score planning, and application research.",
     "metaTitle": "GMAT for ISB: Score Requirements & Preparation Guide — MBA Wizards",
     "metaDescription": "Understand the role of GMAT in an ISB application and how to structure preparation, score planning, and application research.",
-    "coverImage": "/images/blogs/gmat-for-isb.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -22597,7 +22597,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore how GMAT may be used across relevant IIM programs, with current eligibility and application requirements verified from official sources.",
     "metaTitle": "GMAT for IIMs: Eligibility, Scores & MBA Admission Guide — MBA Wizards",
     "metaDescription": "Explore how GMAT may be used across relevant IIM programs, with current eligibility and application requirements verified from official sources.",
-    "coverImage": "/images/blogs/gmat-for-iims.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -23191,7 +23191,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Learn how GMAT can fit international MBA applications, including score planning, school research, preparation, and application timelines.",
     "metaTitle": "GMAT for International MBA: Scores, Universities & Preparation — MBA Wizards",
     "metaDescription": "Learn how GMAT can fit international MBA applications, including score planning, school research, preparation, and application timelines.",
-    "coverImage": "/images/blogs/gmat-for-international-mba.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -23785,7 +23785,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT preparation considerations for students looking for coaching and classes in and around Sector 14 Gurgaon.",
     "metaTitle": "GMAT Coaching in Sector 14 Gurgaon: Classes & Preparation Guide — MBA Wizards",
     "metaDescription": "Explore GMAT preparation considerations for students looking for coaching and classes in and around Sector 14 Gurgaon.",
-    "coverImage": "/images/blogs/gmat-coaching-in-sector-14-gurgaon.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -24379,7 +24379,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT coaching and preparation considerations for students searching around DLF Phase 4 Gurgaon, including classes and study support.",
     "metaTitle": "GMAT Coaching in DLF Phase 4 Gurgaon: Complete Guide — MBA Wizards",
     "metaDescription": "Explore GMAT coaching and preparation considerations for students searching around DLF Phase 4 Gurgaon, including classes and study support.",
-    "coverImage": "/images/blogs/gmat-coaching-in-dlf-phase-4-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -24973,7 +24973,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Looking for GMAT preparation near Galleria Market? Explore what to evaluate in coaching, classes, study support, schedules, and course options.",
     "metaTitle": "GMAT Coaching Near Galleria Market Gurgaon: Classes & Guide — MBA Wizards",
     "metaDescription": "Looking for GMAT preparation near Galleria Market? Explore what to evaluate in coaching, classes, study support, schedules, and course options.",
-    "coverImage": "/images/blogs/gmat-coaching-near-galleria-market-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -25567,7 +25567,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT coaching considerations for learners around Golf Course Road Gurgaon, including classes, preparation formats, practice, and support.",
     "metaTitle": "GMAT Coaching on Golf Course Road Gurgaon: Preparation Guide — MBA Wizards",
     "metaDescription": "Explore GMAT coaching considerations for learners around Golf Course Road Gurgaon, including classes, preparation formats, practice, and support.",
-    "coverImage": "/images/blogs/gmat-coaching-on-golf-course-road-gurgaon.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -26161,7 +26161,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT preparation options around Sector 49 Gurgaon and learn what to compare when evaluating classes, study support, and course structure.",
     "metaTitle": "GMAT Coaching in Sector 49 Gurgaon: Classes & Preparation — MBA Wizards",
     "metaDescription": "Explore GMAT preparation options around Sector 49 Gurgaon and learn what to compare when evaluating classes, study support, and course structure.",
-    "coverImage": "/images/blogs/gmat-coaching-in-sector-49-gurgaon.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -26755,7 +26755,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT coaching and preparation considerations for learners in and around Sector 50 Gurgaon, including class formats and study support.",
     "metaTitle": "GMAT Coaching in Sector 50 Gurgaon: Complete Guide — MBA Wizards",
     "metaDescription": "Explore GMAT coaching and preparation considerations for learners in and around Sector 50 Gurgaon, including class formats and study support.",
-    "coverImage": "/images/blogs/gmat-coaching-in-sector-50-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -27349,7 +27349,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT coaching considerations for students in South City Gurgaon, including class formats, preparation planning, practice, and support.",
     "metaTitle": "GMAT Coaching in South City Gurgaon: Classes & Preparation — MBA Wizards",
     "metaDescription": "Explore GMAT coaching considerations for students in South City Gurgaon, including class formats, preparation planning, practice, and support.",
-    "coverImage": "/images/blogs/gmat-coaching-in-south-city-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-home.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -27943,7 +27943,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT preparation considerations for learners around Sushant Lok Gurgaon, including coaching formats, classes, study planning, and support.",
     "metaTitle": "GMAT Coaching in Sushant Lok Gurgaon: Complete Guide — MBA Wizards",
     "metaDescription": "Explore GMAT preparation considerations for learners around Sushant Lok Gurgaon, including coaching formats, classes, study planning, and support.",
-    "coverImage": "/images/blogs/gmat-coaching-in-sushant-lok-gurgaon.jpg",
+    "coverImage": "/images/blogs/gmat_gurgaon_cyber_city_1789976092148.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -28537,7 +28537,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT preparation options around HUDA City Centre Gurgaon and the factors to compare when choosing classes and coaching support.",
     "metaTitle": "GMAT Coaching Near HUDA City Centre Gurgaon: Complete Guide — MBA Wizards",
     "metaDescription": "Explore GMAT preparation options around HUDA City Centre Gurgaon and the factors to compare when choosing classes and coaching support.",
-    "coverImage": "/images/blogs/gmat-coaching-near-huda-city-centre-gurgaon.jpg",
+    "coverImage": "/images/blogs/scenery/university-campus-quad.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -29131,7 +29131,7 @@ export const gmatGurgaonBlogs: GurgaonBlogPost[] = [
     "excerpt": "Explore GMAT coaching considerations near Millennium City Centre Gurgaon, including classes, preparation formats, schedules, practice, and student support.",
     "metaTitle": "GMAT Coaching Near Millennium City Centre: GMAT Guide — MBA Wizards",
     "metaDescription": "Explore GMAT coaching considerations near Millennium City Centre Gurgaon, including classes, preparation formats, schedules, practice, and student support.",
-    "coverImage": "/images/blogs/gmat-coaching-near-millennium-city-centre-gurgaon.jpg",
+    "coverImage": "/images/heroes/hero-cat.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",

@@ -43,7 +43,7 @@ function WPBadge() {
 
 export default function BlogCard({ blog, index: _index = 0, priority = false }: BlogCardProps) {
   const href = `/blogs/${blog.slug}`;
-  const initialSrc = blog.coverImage || "/images/toppers/karan-780.jpeg";
+  const initialSrc = blog.coverImage || "/images/blogs/scenery/analytics-study-desk.jpg";
 
   return (
     <Link href={href} className={styles.card}>
@@ -55,7 +55,7 @@ export default function BlogCard({ blog, index: _index = 0, priority = false }: 
           loading={priority ? undefined : "lazy"}
           onError={(e) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src = "/images/toppers/karan-780.jpeg";
+            e.currentTarget.src = "/images/blogs/scenery/analytics-study-desk.jpg";
           }}
         />
       </div>

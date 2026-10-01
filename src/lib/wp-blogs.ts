@@ -25,7 +25,7 @@ export async function getSortedWPBlogs(): Promise<WPBlog[]> {
   const posts = (localWPPosts as unknown as WPBlog[]).map((p) => ({
     ...p,
     isWordPress: true as const,
-    coverImage: p.coverImage || "/images/toppers/karan-780.jpeg",
+    coverImage: p.coverImage || `/images/blogs/${p.slug}.svg`,
   }));
 
   return posts.sort(
