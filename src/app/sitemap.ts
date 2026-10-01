@@ -3,6 +3,17 @@ import { getAllBlogSummaries } from "@/lib/blog";
 
 const BASE_URL = "https://www.mbawizards.co.in";
 
+function formatSitemapDate(dateStr?: string | Date): string {
+  if (!dateStr) return new Date().toISOString();
+  try {
+    const d = new Date(dateStr);
+    if (!isNaN(d.getTime())) {
+      return d.toISOString();
+    }
+  } catch {}
+  return new Date().toISOString();
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const currentDate = new Date().toISOString();
 
@@ -180,7 +191,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const blogs = await getAllBlogSummaries();
     blogPages = blogs.map((post) => ({
       url: `${BASE_URL}/blogs/${post.slug}`,
-      lastModified: post.publishedAt || currentDate,
+      lastModified: formatSitemapDate(post.publishedAt || currentDate),
       changeFrequency: "monthly",
       priority: 0.7,
     }));
