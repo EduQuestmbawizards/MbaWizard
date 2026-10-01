@@ -26,7 +26,7 @@ export const mbaInterviewStrategyBlogs: MasterBlogPost[] = [
     "excerpt": "A 705+ GMAT score guarantees an interview invite, not an admit. Learn why high-scoring MBA candidates stumble in admissions interviews and how to present compelling leadership narratives.",
     "metaTitle": "Why High GMAT Scorers Fail MBA Interviews (Adcom Insights) — MBA Wizards",
     "metaDescription": "Understand why 705+ GMAT scorers get rejected in MBA interviews. Discover the 7 behavioral blind spots, AdCom evaluation rubrics, and communication strategies for top business schools.",
-    "coverImage": "/images/blogs/scenery/ai-communication-studio.jpg",
+    "coverImage": "/images/blogs/scenery/blog-16-executive-boardroom.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -636,7 +636,7 @@ export const mbaInterviewStrategyBlogs: MasterBlogPost[] = [
     "excerpt": "Discover how AI-powered mock interviews and real-time speech analytics are helping MBA applicants eliminate filler words, refine narrative structure, and outperform traditional coaching models.",
     "metaTitle": "AI-Powered MBA Interview Preparation (2026 Guide) — MBA Wizards",
     "metaDescription": "Learn how AI interview simulators, speech analytics, and NLP feedback systems are transforming MBA admissions prep for top global business schools.",
-    "coverImage": "/images/blogs/scenery/analytics-study-desk.jpg",
+    "coverImage": "/images/blogs/scenery/blog-17-ai-interview-era.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1246,7 +1246,7 @@ export const mbaInterviewStrategyBlogs: MasterBlogPost[] = [
     "excerpt": "Is AI ready to replace human admissions consultants for MBA mock interviews? Compare the analytical power of AI against the emotional intelligence of veteran human mentors to build the ideal prep strategy.",
     "metaTitle": "Can AI Replace Traditional MBA Mock Interviews? (2026 Analysis) — MBA Wizards",
     "metaDescription": "An in-depth comparative breakdown of AI mock interviews vs. human admissions consulting. Discover how to combine AI telemetry with human expertise for maximum MBA admissions success.",
-    "coverImage": "/images/blogs/scenery/ai-communication-studio.jpg",
+    "coverImage": "/images/blogs/scenery/blog-18-mock-interviews.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1868,7 +1868,7 @@ export const mbaInterviewStrategyBlogs: MasterBlogPost[] = [
     "excerpt": "Peek behind closed doors into the actual scoring rubrics and evaluation grids used by AdComs at Harvard, Wharton, INSEAD, and ISB to score candidate interview performance.",
     "metaTitle": "How MBA Admissions Evaluate Interviews (AdCom Scoring Rubrics) — MBA Wizards",
     "metaDescription": "Learn how top MBA admissions committees grade your interview. Detailed breakdown of confidential scoring sheets, executive presence rubrics, and committee deliberations.",
-    "coverImage": "/images/heroes/hero-corporate.jpg",
+    "coverImage": "/images/blogs/scenery/blog-19-adcom-evaluation.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2478,7 +2478,7 @@ export const mbaInterviewStrategyBlogs: MasterBlogPost[] = [
     "excerpt": "Avoid the costly mistakes that get even high-scoring candidates rejected from top MBA programs. Learn how to fix rambling answers, fake weaknesses, unconvincing career goals, and lack of school fit.",
     "metaTitle": "The Most Common MBA Interview Mistakes (and Solutions) — MBA Wizards",
     "metaDescription": "Discover the top 10 MBA interview mistakes that lead to rejection. Learn practical frameworks to fix rambling, weak goal articulation, and poor executive presence.",
-    "coverImage": "/images/blogs/scenery/ai-communication-studio.jpg",
+    "coverImage": "/images/blogs/scenery/blog-20-interview-mistakes.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",

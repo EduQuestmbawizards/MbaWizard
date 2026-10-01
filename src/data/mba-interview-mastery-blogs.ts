@@ -26,7 +26,7 @@ export const mbaInterviewMasteryBlogs: MasterBlogPost[] = [
     "excerpt": "Practicing with friends feels comfortable, but it won't prepare you for elite MBA admissions interviews. Discover why peer feedback fails and how professional mentorship bridges the gap.",
     "metaTitle": "Why Practicing with Friends Fails for MBA Interviews — MBA Wizards",
     "metaDescription": "Learn why peer mock interviews fail to prepare MBA applicants for top business school interviews. Understand feedback bias, lack of AdCom standards, and professional solutions.",
-    "coverImage": "/images/blogs/scenery/executive-interview-suite.jpg",
+    "coverImage": "/images/blogs/scenery/blog-21-peer-practice.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -636,7 +636,7 @@ export const mbaInterviewMasteryBlogs: MasterBlogPost[] = [
     "excerpt": "Master the step-by-step tactical workflow for using AI feedback in your MBA interview preparation. Learn how to track metrics, run high-frequency drills, and refine your leadership stories.",
     "metaTitle": "MBA Interview Prep Using AI Feedback (Tactical Guide) — MBA Wizards",
     "metaDescription": "Step-by-step guide to using AI feedback for MBA admissions interviews. Track speech cadence, filler words, STAR frameworks, and executive presence with data.",
-    "coverImage": "/images/blogs/scenery/analytics-study-desk.jpg",
+    "coverImage": "/images/blogs/scenery/blog-22-ai-feedback.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1246,7 +1246,7 @@ export const mbaInterviewMasteryBlogs: MasterBlogPost[] = [
     "excerpt": "Transform interview anxiety into unshakable executive confidence. Discover neuroscience-backed techniques to eliminate imposter syndrome and perform at your peak during MBA admissions interviews.",
     "metaTitle": "How to Build Unshakable Confidence for MBA Interviews — MBA Wizards",
     "metaDescription": "Master the psychology of high-stakes MBA interview performance. Learn stress-reduction protocols, physiological calming techniques, and confidence-building frameworks.",
-    "coverImage": "/images/heroes/hero-consulting.jpg",
+    "coverImage": "/images/blogs/scenery/blog-23-improve-confidence.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1856,7 +1856,7 @@ export const mbaInterviewMasteryBlogs: MasterBlogPost[] = [
     "excerpt": "Discover the unspoken criteria that separate admitted candidates from rejected applicants. Learn what AdComs and alumni interviewers really look for during your MBA interview.",
     "metaTitle": "What MBA Interviewers Really Look For (Admissions Insights) — MBA Wizards",
     "metaDescription": "Learn the unspoken signals and core competencies MBA admissions interviewers evaluate. Detailed breakdown of leadership presence, coachability, and cultural fit.",
-    "coverImage": "/images/blogs/scenery/analytics-study-desk.jpg",
+    "coverImage": "/images/blogs/scenery/blog-24-what-interviewers-want.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2466,7 +2466,7 @@ export const mbaInterviewMasteryBlogs: MasterBlogPost[] = [
     "excerpt": "Ensure 100% interview readiness with our comprehensive 30-day MBA interview preparation checklist. Master every milestone from story banking to final alumni simulation.",
     "metaTitle": "MBA Interview Preparation Checklist (30-Day Guide) — MBA Wizards",
     "metaDescription": "The ultimate 30-day MBA interview checklist. Comprehensive guide covering story banking, behavioral frameworks, school research, tech setup, and day-of-execution.",
-    "coverImage": "/images/blogs/scenery/executive-interview-suite.jpg",
+    "coverImage": "/images/blogs/scenery/blog-25-interview-checklist.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",

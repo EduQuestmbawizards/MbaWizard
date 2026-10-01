@@ -26,7 +26,7 @@ export const gmatScoreImprovementBlogs: MasterBlogPost[] = [
     "excerpt": "Discover the exact 150-point score breakthrough protocol that turned a 555 diagnostic into a 705 on the GMAT Focus Edition using deep mock analytics rather than blind question repetition.",
     "metaTitle": "How I Improved from 555 to 705 Using Mock Analysis (2026) — MBA Wizards",
     "metaDescription": "Step-by-step 150-point GMAT Focus score improvement case study. Learn the 6:1 review ratio, error taxonomy, and adaptive pacing strategies engineered by IIT Roorkee alumni.",
-    "coverImage": "/images/blogs/scenery/analytics-study-desk.jpg",
+    "coverImage": "/images/blogs/scenery/blog-11-mock-analysis.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -686,7 +686,7 @@ export const gmatScoreImprovementBlogs: MasterBlogPost[] = [
     "excerpt": "Stop grinding endless question banks. Discover the cognitive and psychometric reasons why question volume plateaus your GMAT Focus score, and learn the 5:1 deep-practice method used by 99th-percentile test takers.",
     "metaTitle": "Why Taking More Questions Doesn't Increase GMAT Score (2026) — MBA Wizards",
     "metaDescription": "Trapped in the volume fallacy? Discover why grinding 3,000 questions plateaus your GMAT score and how 400 deep-solved problems engineer a 705+ breakthrough.",
-    "coverImage": "/images/heroes/hero-gmat.jpg",
+    "coverImage": "/images/blogs/scenery/blog-12-study-volume.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master GMAT Mentor (25+ Yrs Exp)",
@@ -1180,7 +1180,7 @@ export const gmatScoreImprovementBlogs: MasterBlogPost[] = [
     "excerpt": "Stop wasting hundreds of hours on low-yield formulas. Learn how applying the Pareto Principle (80/20 rule) to GMAT Focus preparation cuts prep time in half while driving a 705+ (99th percentile) score.",
     "metaTitle": "The 80/20 Rule of GMAT Preparation (705+ Strategy) — MBA Wizards",
     "metaDescription": "Master the GMAT Focus Edition using the 80/20 Pareto principle. Learn high-yield Quant, Verbal, and Data Insights topics that account for 80% of score impact.",
-    "coverImage": "/images/heroes/hero-gre.jpg",
+    "coverImage": "/images/blogs/scenery/blog-13-pareto-strategy.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1791,7 +1791,7 @@ export const gmatScoreImprovementBlogs: MasterBlogPost[] = [
     "excerpt": "Stuck at a 605 score ceiling? Discover the exact cognitive traps, passive study routines, and time-management flaws that prevent GMAT Focus test-takers from crossing the 705 (99th percentile) threshold.",
     "metaTitle": "Why Students Plateau at 605 on GMAT Focus (and How to Hit 705) — MBA Wizards",
     "metaDescription": "Break through the 605 GMAT score plateau. Master the algorithmic mechanics, heuristic modeling, and pacing adjustments required to reach 705+ on the GMAT Focus.",
-    "coverImage": "/images/heroes/hero-research.jpg",
+    "coverImage": "/images/blogs/scenery/blog-14-plateau-breakthrough.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2402,7 +2402,7 @@ export const gmatScoreImprovementBlogs: MasterBlogPost[] = [
     "excerpt": "The GMAT Focus is not scored like a linear exam. Discover how the computer-adaptive algorithm really works, how Item Response Theory calculates your score, and how to calibrate your preparation accordingly.",
     "metaTitle": "How Adaptive Testing Changes Your GMAT Prep Strategy (2026) — MBA Wizards",
     "metaDescription": "Understand the GMAT Focus computer-adaptive algorithm, Item Response Theory (IRT), and pacing strategies needed to maximize your score on test day.",
-    "coverImage": "/images/blogs/scenery/analytics-study-desk.jpg",
+    "coverImage": "/images/blogs/scenery/blog-15-adaptive-testing.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
