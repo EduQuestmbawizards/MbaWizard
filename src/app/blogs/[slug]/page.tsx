@@ -8,8 +8,8 @@ export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const blogs = await getAllBlogSummaries();
-  // Pre-generate top 40 posts at build time, remainder generated on-demand
-  return blogs.slice(0, 40).map((b) => ({ slug: b.slug }));
+  // Pre-generate top 100 posts at build time, remainder generated on-demand
+  return blogs.slice(0, 100).map((b) => ({ slug: b.slug }));
 }
 
 export async function generateMetadata({
