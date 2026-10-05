@@ -33,6 +33,9 @@ function getTransporter() {
       user,
       pass,
     },
+    connectionTimeout: 15000,
+    greetingTimeout: 15000,
+    socketTimeout: 20000,
   });
 }
 
@@ -207,6 +210,11 @@ Call: tel:+91${cleanPhone}
  */
 export async function sendUserConfirmationEmail(lead: LeadEmailData): Promise<{ success: boolean; messageId?: string; error?: string }> {
   try {
+    if (!lead.email || !lead.email.includes("@") || lead.email.includes("not-provided") || lead.email.startsWith("lead_")) {
+      console.log("ℹ️ Skipping candidate confirmation email: Valid user email not provided.");
+      return { success: false, error: "Valid user email not provided" };
+    }
+
     const transporter = getTransporter();
     const sender = process.env.SMTP_USER || "rupali.eduquest@gmail.com";
     const firstName = lead.fullName.trim().split(" ")[0] || lead.fullName.trim();

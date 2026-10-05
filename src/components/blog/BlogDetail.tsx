@@ -63,6 +63,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
     email: "",
     exam: "GMAT Focus Edition",
   });
+  const [formLoading, setFormLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Extract headings for Table of Contents from both local & WordPress content
@@ -134,10 +135,37 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.phone) return;
-    setIsSubmitted(true);
+    if (!formData.name.trim() || !formData.phone.trim()) return;
+
+    setFormLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fullName: formData.name.trim(),
+          email: formData.email.trim() || `lead_${Date.now()}@mbawizards.com`,
+          phone: formData.phone.trim(),
+          interestedIn: formData.exam,
+          sourceSlug: blog.slug,
+          blogName: blog.title,
+          message: `Quick Consultation request from blog: ${blog.title}`,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok && !data.success) {
+        console.warn("Contact submission response notice:", data);
+      }
+      setIsSubmitted(true);
+    } catch (err: unknown) {
+      console.error("Contact submission error:", err);
+      setIsSubmitted(true);
+    } finally {
+      setFormLoading(false);
+    }
   };
 
   const canonicalUrl = `https://www.mbawizards.co.in/blogs/${blog.slug}`;
@@ -571,8 +599,8 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
                       <option value="Admissions Consulting">M7 / IIM Admissions Consulting</option>
                     </select>
                   </div>
-                  <button type="submit" className={styles.formSubmitBtn}>
-                    Book Free 1-on-1 Call
+                  <button type="submit" disabled={formLoading} className={styles.formSubmitBtn}>
+                    {formLoading ? "Sending..." : "Book Free 1-on-1 Call"}
                   </button>
                   <div className={styles.formPrivacy}>
                     🔒 100% Confidential. No Spam Ever.

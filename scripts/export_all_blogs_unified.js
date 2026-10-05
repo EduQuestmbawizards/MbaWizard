@@ -33,6 +33,9 @@ function parseTsArray(filePath, varName) {
   return [];
 }
 
+// 0. CAT & IIM Interviews (41-60)
+const catIimBlogs = parseTsArray(path.join(__dirname, '../src/data/cat-iim-interview-blogs.ts'), 'catIimInterviewBlogs');
+
 // 1. School & Video (26-40)
 const schoolVideo = parseTsArray(path.join(__dirname, '../src/data/mba-interview-school-video-blogs.ts'), 'mbaInterviewSchoolVideoBlogs');
 
@@ -91,7 +94,8 @@ function normalize(b, cluster, isWp = false, isLocal = false) {
   const metaTitle = (b.metaTitle || `${title} — MBA Wizards`).trim();
   const metaDesc = (b.metaDescription || excerpt).trim();
   const canonicalUrl = `${BASE_URL}/blogs/${slug}`;
-  const coverImage = (b.coverImage || `/images/blogs/${slug}.svg`).trim();
+  const rawCover = (b.coverImage || `/images/blogs/${slug}.jpg`).trim();
+  const coverImage = rawCover.endsWith('.svg') ? rawCover.replace(/\.svg$/, '.jpg') : rawCover;
 
   let authorName = "Mr. Surinder Gupta (IIT Roorkee)";
   if (b.author) {
@@ -206,6 +210,9 @@ function normalize(b, cluster, isWp = false, isLocal = false) {
 }
 
 const allCatalog = [];
+
+// 0. CAT & IIM Interviews (41-60)
+catIimBlogs.forEach(b => allCatalog.push(normalize(b, "CAT & IIM Interviews (41-60)")));
 
 // 1. School & Video (26-40)
 schoolVideo.forEach(b => allCatalog.push(normalize(b, "MBA Admissions & Interviews (26-40)")));

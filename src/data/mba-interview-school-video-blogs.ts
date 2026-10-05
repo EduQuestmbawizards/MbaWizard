@@ -26,7 +26,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Master the Harvard MBA interview. Understand the 2-member AdCom panel dynamic, rapid-fire questioning style, deep resume scrutiny, and the mandatory 24-hour post-interview reflection.",
   "metaTitle": "Harvard MBA Interview Questions & HBS AdCom Guide (2026-2027) — MBA Wizards",
   "metaDescription": "Master the 30-minute Harvard Business School MBA interview. In-depth analysis of HBS AdCom questions, spontaneous follow-ups, post-interview reflection email, and real sample answers.",
-  "coverImage": "/images/blogs/harvard-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/harvard-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -602,7 +602,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Cracking the Stanford GSB interview requires authentic self-awareness and deep behavioral storytelling. Explore key questions, alumni interviewer dynamics, and leadership rubrics.",
   "metaTitle": "Stanford MBA Interview Questions & GSB Strategy Guide — MBA Wizards",
   "metaDescription": "Prepare for the Stanford GSB MBA interview. Complete guide to Stanford's blind alumni interview format, 'What Matters Most' probing, behavioral frameworks, and winning answers.",
-  "coverImage": "/images/blogs/stanford-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/stanford-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1178,7 +1178,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Ace the Wharton MBA Team-Based Discussion (TBD) and 1-on-1 interview. Learn how to pitch your prompt, facilitate collaborative group consensus, and handle the AdCom debrief.",
   "metaTitle": "Wharton MBA Team-Based Discussion (TBD) & Interview Guide — MBA Wizards",
   "metaDescription": "Master the Wharton MBA Team-Based Discussion (TBD). Learn group pitch structures, collaborative consensus tactics, and 1-on-1 AdCom follow-up questions with proven frameworks.",
-  "coverImage": "/images/blogs/wharton-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/wharton-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1754,7 +1754,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Prepare for Northwestern Kellogg's MBA interview with real behavioral questions, team dynamics frameworks, and strategies for demonstrating high-impact, low-ego leadership.",
   "metaTitle": "Kellogg MBA Interview Questions & Collaboration Guide — MBA Wizards",
   "metaDescription": "Complete guide to Northwestern Kellogg MBA interview questions. Master behavioral questions on teamwork, high-impact low-ego leadership, and alumni interview techniques.",
-  "coverImage": "/images/blogs/kellogg-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/kellogg-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2330,7 +2330,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Ace INSEAD's mandatory two alumni interviews. Learn how to showcase international diversity, cultural dexterity, and professional resilience for the world's leading 1-year MBA.",
   "metaTitle": "INSEAD MBA Interview Questions & 2-Alumni Prep Guide — MBA Wizards",
   "metaDescription": "Cracking the INSEAD MBA interview: complete breakdown of the 2-alumni interview format, international motivation probing, cross-cultural situational questions, and model answers.",
-  "coverImage": "/images/blogs/insead-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/insead-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2906,7 +2906,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Comprehensive guide to ISB PGP interview questions. Discover how the panel evaluates your industry knowledge, leadership potential, career switch feasibility, and fit for ISB.",
   "metaTitle": "ISB Interview Questions & PGP Panel Prep Guide (2026) — MBA Wizards",
   "metaDescription": "Master the ISB PGP Hyderabad and Mohali interview. Detailed insights on panel composition, CV grilling, industry deep-dives, why 1-year MBA, and real interview transcripts.",
-  "coverImage": "/images/blogs/isb-interview-questions.svg",
+  "coverImage": "/images/blogs/isb-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -3482,7 +3482,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Prepare for HEC Paris MBA interviews with our comprehensive guide on crafting your mandatory 10-minute presentation and acing the two distinct alumni interview rounds.",
   "metaTitle": "HEC Paris MBA Interview Questions & 10-Min Presentation Guide — MBA Wizards",
   "metaDescription": "How to ace HEC Paris MBA interviews: choosing your 10-minute presentation topic, slide deck frameworks, handling alumni Q&A, and answering European leadership questions.",
-  "coverImage": "/images/blogs/hec-paris-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/hec-paris-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -4058,7 +4058,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Conquer the London Business School (LBS) MBA interview. Understand the impromptu presentation, in-depth behavioral probing, global diversity evaluation, and alumni expectations.",
   "metaTitle": "LBS MBA Interview Questions & Presentation Guide — MBA Wizards",
   "metaDescription": "Master the London Business School (LBS) MBA interview. Detailed breakdown of the impromptu presentation, alumni panel dynamics, global mindset assessment, and question vault.",
-  "coverImage": "/images/blogs/lbs-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/lbs-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -4634,7 +4634,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Ace your Oxford Saïd MBA interview. Learn how to articulate system-level impact, demonstrate business and social synergy, and navigate the Oxford collegiate admissions process.",
   "metaTitle": "Oxford Saïd MBA Interview Questions & AdCom Strategy — MBA Wizards",
   "metaDescription": "Complete guide to Oxford Saïd MBA interview questions. Learn how to address ESG, global systemic challenges, the 1-year Oxford curriculum, and collegiate life fit.",
-  "coverImage": "/images/blogs/oxford-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/oxford-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -5210,7 +5210,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Prepare for Cambridge Judge MBA interviews. Understand the unique faculty-led interview format, project-based learning dynamics, and collegiate community expectations.",
   "metaTitle": "Cambridge Judge MBA Interview Questions & Faculty Day Guide — MBA Wizards",
   "metaDescription": "How to ace the Cambridge Judge MBA interview. Insights into faculty-conducted interviews, Cambridge Venture Project (CVP), Silicon Fen ecosystem, and collegiate questions.",
-  "coverImage": "/images/blogs/cambridge-mba-interview-questions.svg",
+  "coverImage": "/images/blogs/cambridge-mba-interview-questions.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -5786,7 +5786,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Decode MBA asynchronous video interviews. Learn the 4 major question categories, 30-second rapid brainstorming models, and 60-second delivery blueprints for top business schools.",
   "metaTitle": "MBA Video Interview Questions Explained (2026 Guide) — MBA Wizards",
   "metaDescription": "Everything you need to know about MBA video interview questions. Breakdowns of icebreaker, behavioral, problem-solving, and creative prompts with timed answer structures.",
-  "coverImage": "/images/blogs/mba-video-interview-questions-explained.svg",
+  "coverImage": "/images/blogs/mba-video-interview-questions-explained.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -6362,7 +6362,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Master Kira Talent video assessments for top MBA programs. Explore platform mechanics, 30s prep time management, 60s video recording rules, and written response modules.",
   "metaTitle": "How to Prepare for Kira Talent MBA Interviews (2026 Manual) — MBA Wizards",
   "metaDescription": "Step-by-step preparation guide for Kira Talent MBA video assessments. Includes actual practice prompts, timing strategies, hardware setups, and AdCom evaluation criteria.",
-  "coverImage": "/images/blogs/how-to-prepare-for-kira-talent-interviews.svg",
+  "coverImage": "/images/blogs/how-to-prepare-for-kira-talent-interviews.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -6938,7 +6938,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Unlock the secrets to dominating one-way asynchronous MBA video interviews. Learn vocal modulation, lens eye contact, lighting setups, and concise narrative frameworks.",
   "metaTitle": "One-Way MBA Video Interview Guide & Camera Presence — MBA Wizards",
   "metaDescription": "Master one-way MBA video interviews. Learn how to project confidence without an interviewer, eliminate awkward pauses, optimize camera framing, and score high on AdCom rubrics.",
-  "coverImage": "/images/blogs/one-way-mba-video-interview-guide.svg",
+  "coverImage": "/images/blogs/one-way-mba-video-interview-guide.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -7514,7 +7514,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Avoid the critical mistakes that ruin MBA video essays. From robotic script memorization to poor lighting and rambling answers, discover how to polish your video submissions.",
   "metaTitle": "Top 15 MBA Video Essay Mistakes & Fixes — MBA Wizards",
   "metaDescription": "Discover the 15 most damaging mistakes MBA applicants make in video essays and Kira assessments. Learn how to fix delivery, timing, technical audio/video, and narrative flaws.",
-  "coverImage": "/images/blogs/mba-video-essays-common-mistakes.svg",
+  "coverImage": "/images/blogs/mba-video-essays-common-mistakes.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -8089,7 +8089,7 @@ export const mbaInterviewSchoolVideoBlogs: MasterBlogPost[] = [
   "excerpt": "Understand how MBA admissions and assessment platforms use AI to evaluate facial sentiment, lexical diversity, pacing, and filler words in video interviews.",
   "metaTitle": "AI Evaluation of MBA Video Interviews (Admissions Tech) — MBA Wizards",
   "metaDescription": "How business schools use AI to evaluate video interview submissions. Explore NLP sentiment analysis, speech cadence metrics, facial landmark detection, and AI practice tools.",
-  "coverImage": "/images/blogs/ai-evaluation-of-video-interview-performance.svg",
+  "coverImage": "/images/blogs/ai-evaluation-of-video-interview-performance.jpg",
   "author": {
     "name": "Mr. Surinder Gupta (IIT Roorkee)",
     "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",

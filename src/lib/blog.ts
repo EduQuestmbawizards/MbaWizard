@@ -5,14 +5,16 @@ import { gmatScoreImprovementBlogs, MasterBlogPost } from "@/data/gmat-score-imp
 import { mbaInterviewStrategyBlogs } from "@/data/mba-interview-strategy-blogs";
 import { mbaInterviewMasteryBlogs } from "@/data/mba-interview-mastery-blogs";
 import { mbaInterviewSchoolVideoBlogs } from "@/data/mba-interview-school-video-blogs";
+import { catIimInterviewBlogs } from "@/data/cat-iim-interview-blogs";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export const all15MasterBlogs: MasterBlogPost[] = [
-  ...gmatScoreImprovementBlogs,
-  ...mbaInterviewStrategyBlogs,
-  ...mbaInterviewMasteryBlogs,
+  ...catIimInterviewBlogs,
   ...mbaInterviewSchoolVideoBlogs,
+  ...mbaInterviewMasteryBlogs,
+  ...mbaInterviewStrategyBlogs,
+  ...gmatScoreImprovementBlogs,
 ];
 
 export interface BlogAuthor {
@@ -82,7 +84,7 @@ export function wpToBlogSummary(wp: WPBlog): BlogSummary {
     title: wp.title,
     excerpt: wp.excerpt,
     metaDescription: wp.excerpt,
-    coverImage: wp.coverImage || `/images/blogs/${wp.slug}.svg`,
+    coverImage: wp.coverImage || `/images/blogs/${wp.slug}.jpg`,
     author: { name: wp.authorName || "Surinder Gupta (IIT Roorkee)" },
     category: cat,
     tags: wp.tags || [],
@@ -105,7 +107,7 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
     subtitle: m.subtitle,
     excerpt: m.excerpt,
     metaDescription: m.metaDescription || m.excerpt,
-    coverImage: m.coverImage || `/images/blogs/${m.slug}.svg`,
+    coverImage: m.coverImage || `/images/blogs/${m.slug}.jpg`,
     author: m.author,
     category: m.category,
     tags: m.tags,
@@ -122,7 +124,7 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
     subtitle: m.subtitle,
     excerpt: m.excerpt,
     metaDescription: m.metaDescription || m.excerpt,
-    coverImage: m.coverImage || `/images/blogs/${m.slug}.svg`,
+    coverImage: m.coverImage || `/images/blogs/${m.slug}.jpg`,
     author: m.author,
     category: m.category,
     tags: m.tags,
@@ -139,7 +141,7 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
     subtitle: g.subtitle,
     excerpt: g.excerpt,
     metaDescription: g.metaDescription || g.excerpt,
-    coverImage: g.coverImage || `/images/blogs/${g.slug}.svg`,
+    coverImage: g.coverImage || `/images/blogs/${g.slug}.jpg`,
     author: g.author,
     category: g.category,
     tags: g.tags,
@@ -155,7 +157,7 @@ export async function getAllBlogSummaries(): Promise<BlogSummary[]> {
     title: a.title,
     excerpt: a.excerpt,
     metaDescription: a.excerpt,
-    coverImage: `/images/blogs/${a.slug}.svg`,
+    coverImage: `/images/blogs/${a.slug}.jpg`,
     author: { name: a.author },
     category: a.category,
     tags: [a.category, a.tag || "Test Prep"],
@@ -198,7 +200,7 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
       excerpt: masterBlog.excerpt,
       metaTitle: masterBlog.metaTitle || `${masterBlog.title} — MBA Wizards`,
       metaDescription: masterBlog.metaDescription || masterBlog.excerpt,
-      coverImage: masterBlog.coverImage || `/images/blogs/${masterBlog.slug}.svg`,
+      coverImage: masterBlog.coverImage || `/images/blogs/${masterBlog.slug}.jpg`,
       author: masterBlog.author,
       category: masterBlog.category,
       tags: masterBlog.tags,
@@ -221,7 +223,7 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
       excerpt: mockBlog.excerpt,
       metaTitle: mockBlog.metaTitle || `${mockBlog.title} — MBA Wizards`,
       metaDescription: mockBlog.metaDescription || mockBlog.excerpt,
-      coverImage: mockBlog.coverImage || `/images/blogs/${mockBlog.slug}.svg`,
+      coverImage: mockBlog.coverImage || `/images/blogs/${mockBlog.slug}.jpg`,
       author: mockBlog.author,
       category: mockBlog.category,
       tags: mockBlog.tags,
@@ -244,7 +246,7 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
       excerpt: gurgaon.excerpt,
       metaTitle: gurgaon.metaTitle || `${gurgaon.title} — MBA Wizards`,
       metaDescription: gurgaon.metaDescription || gurgaon.excerpt,
-      coverImage: gurgaon.coverImage || `/images/blogs/${gurgaon.slug}.svg`,
+      coverImage: gurgaon.coverImage || `/images/blogs/${gurgaon.slug}.jpg`,
       author: gurgaon.author,
       category: gurgaon.category,
       tags: gurgaon.tags,
@@ -266,7 +268,7 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
       excerpt: local.excerpt,
       metaTitle: `${local.title} — MBA Wizards`,
       metaDescription: local.excerpt,
-      coverImage: `/images/blogs/${local.slug}.svg`,
+      coverImage: `/images/blogs/${local.slug}.jpg`,
       author: { name: local.author, role: "Senior Faculty & Admissions Mentor" },
       category: local.category,
       tags: [local.category, local.tag, "Admissions Strategy"],
@@ -288,7 +290,7 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
       excerpt: wp.excerpt,
       metaTitle: `${wp.title} — MBA Wizards`,
       metaDescription: wp.excerpt,
-      coverImage: wp.coverImage || `/images/blogs/${wp.slug}.svg`,
+      coverImage: wp.coverImage || `/images/blogs/${wp.slug}.jpg`,
       author: { name: wp.authorName || "MBA Wizards Faculty", role: "IIT Alumni Mentorship Team" },
       category: cat,
       tags: wp.tags,

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c2a4d"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Geometric Grid & Glow Overlay -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1.2">
+    <line x1="80" y1="0" x2="80" y2="630"/>
+    <line x1="280" y1="0" x2="280" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="680" y1="0" x2="680" y2="630"/>
+    <line x1="880" y1="0" x2="880" y2="630"/>
+    <line x1="1080" y1="0" x2="1080" y2="630"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="260" x2="1200" y2="260"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+  </g>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1200" height="10" fill="url(#accentBar)"/>
+
+  <!-- Left Side Badge -->
+  <g transform="translate(80, 55)">
+    <rect x="0" y="0" width="370" height="42" rx="21" fill="#2563eb" opacity="0.25"/>
+    <rect x="0" y="0" width="370" height="42" rx="21" fill="none" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="24" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#60a5fa" letter-spacing="1">🌐 MACROECONOMICS & POLICY</text>
+  </g>
+
+  <!-- Title Section -->
+  <text x="80" y="175" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+    <tspan x="80" dy="0">Current Affairs in IIM Interviews</tspan>
+    
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="400" fill="#cbd5e1" width="700">
+    <tspan x="80" dy="0">Geopolitical Economics, Union Budget, RBI Policies &amp; Tech </tspan>
+    <tspan x="80" dy="30">Disruptions...</tspan>
+  </text>
+
+  <!-- 3 Pillars/Tags Feature Badges -->
+  <g transform="translate(80, 370)">
+    <rect x="0" y="0" width="225" height="46" rx="8" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="18" y="28" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">✓ Union Budget & GDP Trend</text>
+
+    <rect x="240" y="0" width="245" height="46" rx="8" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="258" y="28" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">✓ Geopolitical Neutrality</text>
+
+    <rect x="500" y="0" width="245" height="46" rx="8" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="518" y="28" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">✓ Multi-Stakeholder Framewor</text>
+  </g>
+
+  <!-- Specialized Right-side Visual Graphic for this specific title -->
+  
+      <!-- Global Grid & Finance Chart -->
+      <g transform="translate(860, 210)">
+        <circle cx="100" cy="90" r="75" fill="#1e3a8a" stroke="#60a5fa" stroke-width="3"/>
+        <ellipse cx="100" cy="90" rx="75" ry="30" fill="none" stroke="#93c5fd" stroke-width="2"/>
+        <line x1="100" y1="15" x2="100" y2="165" stroke="#93c5fd" stroke-width="2"/>
+        <polyline points="40,110 80,80 120,95 160,50" fill="none" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+        <text x="100" y="195" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#93c5fd">Macroeconomic Mastery</text>
+      </g>
+    
+
+  <!-- Footer Branding -->
+  <g transform="translate(80, 545)">
+    <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#d4af37" letter-spacing="1">MBA WIZARDS</text>
+    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">Mentored by Mr. Surinder Gupta (IIT Roorkee Alum, 25+ Yrs Exp) • IIM Interview Masterclass</text>
+    <text x="1040" y="30" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#60a5fa">mbawizards.co.in</text>
+  </g>
+</svg>
