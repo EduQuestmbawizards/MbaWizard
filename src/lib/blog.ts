@@ -6,6 +6,8 @@ import { mbaInterviewStrategyBlogs } from "@/data/mba-interview-strategy-blogs";
 import { mbaInterviewMasteryBlogs } from "@/data/mba-interview-mastery-blogs";
 import { mbaInterviewSchoolVideoBlogs } from "@/data/mba-interview-school-video-blogs";
 import { catIimInterviewBlogs } from "@/data/cat-iim-interview-blogs";
+import { aiInterviewsComparisonBlogs } from "@/data/ai-interviews-comparison-blogs";
+import { problemAwarePrepBlogs } from "@/data/problem-aware-prep-blogs";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
@@ -15,6 +17,8 @@ export const all15MasterBlogs: MasterBlogPost[] = [
   ...mbaInterviewMasteryBlogs,
   ...mbaInterviewStrategyBlogs,
   ...gmatScoreImprovementBlogs,
+  ...aiInterviewsComparisonBlogs,
+  ...problemAwarePrepBlogs,
 ];
 
 export interface BlogAuthor {
