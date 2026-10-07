@@ -6,9 +6,24 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"],
+        disallow: [
+          "/api/",
+          "/*feed*",
+          "/wp-includes/",
+          "/wp-content/",
+          "/wp-admin/",
+          "/tag/",
+          "/category/",
+          "/comments/",
+          "/product/",
+          "/product-category/",
+          "/shop/",
+          "/*YOUR_PILLAR_PAGE_URL*",
+          "/*?ver=*",
+        ],
       },
     ],
     sitemap: "https://www.mbawizards.co.in/sitemap.xml",
   };
 }
+
