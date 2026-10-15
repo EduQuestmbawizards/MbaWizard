@@ -20,76 +20,59 @@ export default function GmatGreBatches({ city }: GmatGreBatchesProps) {
             GMAT+GRE Program Pricing in <span className={styles.titleHighlight}>{city}</span>
           </h2>
           <p className={styles.subtitle}>
-            One combined package that saves you ₹15,000+ versus purchasing GMAT and GRE courses
-            separately — with the full power of MBA Wizards&apos; dual-track Manthan methodology.
+            One combined 1-on-1 dual program that saves you ₹50,000+ versus enrolling in GMAT and GRE separately —
+            with the full power of MBA Wizards&apos; dual-track Manthan methodology.
           </p>
         </div>
 
         <div className={styles.packagesGrid}>
           <div className={styles.packageCard}>
-            <h3 className={styles.pkgName}>Online Dual Live (Group)</h3>
+            <span className={styles.badge}>Dual Track Online</span>
+            <h3 className={styles.pkgName}>GMAT+GRE 1-on-1 Online Live</h3>
             <div className={styles.priceBox}>
-              <div className={styles.price}>₹45,000</div>
+              <div className={styles.price}>₹1,50,000</div>
               <span className={styles.tax}>+ GST</span>
             </div>
             <ul className={styles.featuresList}>
-              <li className={styles.featItem}>Live GMAT + GRE sessions (online)</li>
-              <li className={styles.featItem}>Recorded access for unlimited revision</li>
-              <li className={styles.featItem}>Alternating GMAT and GRE mock tests</li>
-              <li className={styles.featItem}>AI test generator for both formats</li>
-              <li className={styles.featItem}>Performance analytics dashboard</li>
-              <li className={styles.featItem}>Graduate admissions guidance</li>
+              <li className={styles.featItem}>100% private 1-on-1 dual coaching for GMAT Focus &amp; GRE</li>
+              <li className={styles.featItem}>Synchronized curriculum covering shared Quant &amp; Verbal logic</li>
+              <li className={styles.featItem}>Specialized clinics for GMAT Data Insights &amp; GRE Vocab</li>
+              <li className={styles.featItem}>Flexible scheduling tailored for working professionals</li>
+              <li className={styles.featItem}>Full computer-adaptive mock tests for both GMAT and GRE</li>
+              <li className={styles.featItem}>AI-powered diagnostic dashboard for dual score tracking</li>
+              <li className={styles.featItem}>Complete global MS &amp; MBA admissions strategy included</li>
             </ul>
             <button type="button" onClick={handleOpenDemo} className={styles.btn}>
-              Book Free Demo
+              Enroll / Book Demo
             </button>
           </div>
 
           <div className={`${styles.packageCard} ${styles.featuredCard}`}>
-            <span className={styles.badge}>Best Value</span>
-            <h3 className={styles.pkgName}>Dual Prep Weekend Batch</h3>
+            <span className={styles.badge}>Elite Dual Classroom</span>
+            <h3 className={styles.pkgName}>GMAT+GRE 1-on-1 Offline Classroom</h3>
             <div className={styles.priceBox}>
-              <div className={styles.price}>₹65,000</div>
-              <span className={styles.tax}>+ GST (Save ₹15,000+)</span>
-            </div>
-            <ul className={styles.featuresList}>
-              <li className={styles.featItem}>Morning GMAT + Afternoon GRE sessions</li>
-              <li className={styles.featItem}>Intensive Saturday-Sunday dual training</li>
-              <li className={styles.featItem}>Full mock series for both GMAT &amp; GRE</li>
-              <li className={styles.featItem}>Comparative score analysis report</li>
-              <li className={styles.featItem}>Test selection strategy counseling</li>
-              <li className={styles.featItem}>SOP + admissions essay guidance</li>
-            </ul>
-            <button type="button" onClick={handleOpenDemo} className={`${styles.btn} ${styles.featuredBtn}`}>
-              Enroll Now
-            </button>
-          </div>
-
-          <div className={styles.packageCard}>
-            <span className={styles.badge2}>Premium</span>
-            <h3 className={styles.pkgName}>1-on-1 Dual Coaching</h3>
-            <div className={styles.priceBox}>
-              <div className={styles.price}>₹95,000</div>
+              <div className={styles.price}>₹2,30,000</div>
               <span className={styles.tax}>+ GST</span>
             </div>
             <ul className={styles.featuresList}>
-              <li className={styles.featItem}>100% private sessions for GMAT + GRE</li>
-              <li className={styles.featItem}>Founder-led bespoke dual mentorship</li>
-              <li className={styles.featItem}>Fully customized schedule and pace</li>
-              <li className={styles.featItem}>Unlimited classes till target scores</li>
-              <li className={styles.featItem}>Complete admissions consulting</li>
-              <li className={styles.featItem}>Score guarantee for retakers</li>
+              <li className={styles.featItem}>Exclusive in-person 1-on-1 dual mentorship at classroom center</li>
+              <li className={styles.featItem}>Face-to-face guidance from senior IIT Roorkee alumni mentors</li>
+              <li className={styles.featItem}>Complete physical study kits &amp; books for both GMAT and GRE</li>
+              <li className={styles.featItem}>Dedicated quiet study lab &amp; proctored adaptive test environment</li>
+              <li className={styles.featItem}>Intensive error log diagnosis &amp; personalized roadmap</li>
+              <li className={styles.featItem}>End-to-end SOP, resume, essay review &amp; interview preparation</li>
+              <li className={styles.featItem}>Unlimited sessions &amp; validity until final university admission</li>
             </ul>
-            <button type="button" onClick={handleOpenDemo} className={styles.btn}>
-              Book Free Demo
+            <button type="button" onClick={handleOpenDemo} className={`${styles.btn} ${styles.featuredBtn}`}>
+              Enroll / Book Demo
             </button>
           </div>
         </div>
 
         <div className={styles.savingsNote}>
           <span className={styles.savingsIcon}>💡</span>
-          <strong>Smart Economics:</strong> Separate GMAT coaching (₹45,000) + separate GRE coaching (₹35,000) = ₹80,000.
-          Our combined dual package starts at ₹65,000 — saving you ₹15,000 while doubling your admission chances.
+          <strong>Smart Economics:</strong> Separate 1-on-1 GMAT coaching (₹1,00,000) + separate 1-on-1 GRE coaching (₹1,00,000) = ₹2,00,000.
+          Our combined 1-on-1 dual online package is ₹1,50,000 — saving you ₹50,000+ while maximizing global MS and MBA opportunities.
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ export const gmatCatMyths: MythFactPair[] = [
   },
   {
     myth: "Dual prep costs twice as much as preparing for a single exam.",
-    fact: "MBA Wizards & EduQuest's integrated GMAT+CAT program saves over ₹15,000 compared to enrolling in separate courses, providing unified diagnostic dashboards, master study material, and continuous validity until your final B-school admission.",
+    fact: "MBA Wizards & EduQuest's integrated GMAT+CAT program saves over ₹50,000 compared to enrolling in separate courses, providing unified diagnostic dashboards, master study material, and continuous validity until your final B-school admission.",
     takeaway: "Maximize financial and career ROI with one synchronized dual-track mentorship program."
   },
   {

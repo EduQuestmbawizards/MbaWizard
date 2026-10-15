@@ -20,7 +20,7 @@ const gmatCatFaqs: FaqItem[] = [
   {
     question: "What is the fee advantage of enrolling in MBA Wizards' dual GMAT+CAT program?",
     answer:
-      "Our integrated dual preparation package saves over ₹15,000 compared to enrolling in individual courses. It includes comprehensive study kits for both exams, full-length official mock series, AI-driven performance tracking, and complete WAT-PI and interview preparation until your final admission.",
+      "Our integrated dual preparation package saves ₹50,000+ compared to enrolling in individual courses. It includes comprehensive study kits for both exams, full-length official mock series, AI-driven performance tracking, and complete WAT-PI and interview preparation until your final admission.",
   },
 ];
 

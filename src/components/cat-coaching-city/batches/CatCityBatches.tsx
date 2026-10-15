@@ -7,10 +7,36 @@ interface CatCityBatchesProps { city: string; }
 export default function CatCityBatches({ city }: CatCityBatchesProps) {
   const handleOpenDemo = () => { window.dispatchEvent(new CustomEvent("open-book-demo")); };
   const batches = [
-    { name: "CAT Online Live (Group)", price: "₹22,000", featured: false, badge: null, features: ["70+ Hours QA, VARC & DILR live sessions", "AI test generator and analytics", "Full-length CAT + sectional mocks", "Booster sessions for 99+ percentile", "Unlimited doubt clearing till CAT day", "WAT-PI preparation included"] },
-    { name: "CAT Offline Classroom", price: "₹30,000", featured: true, badge: "Most Popular", features: ["Physical classroom at DLF Galleria / Sector 50", "Face-to-face IIT/IIM faculty", "Complete printed study material kit", "Weekend + evening batch flexibility", "10+ full-length adaptive mock tests", "Group Discussion + WAT-PI coaching"] },
-    { name: "CAT 1-on-1 Coaching", price: "₹50,000", featured: false, badge: null, features: ["Fully private, customized sessions", "Founder-led personalized mentorship", "Flexible pace and schedule", "Individual milestone tracking sheets", "Complete WAT-PI personal coaching", "Validity till IIM admission secured"] },
-    { name: "CAT Topper's Club (99%ile)", price: "₹65,000", featured: false, badge: "Selection Based", features: ["Admission via faculty recommendation", "Diagnostic: ₹10,000 evaluation", "Unlimited sessions till 99+ percentile", "Rigorous adaptive mock lab access", "Personalized Manthan mapping", "When 'winning is the only option'"] },
+    {
+      name: "CAT 1-on-1 Online Live",
+      price: "₹1,00,000",
+      featured: false,
+      badge: "100% Private Online",
+      features: [
+        "1-on-1 live interactive sessions with 99+ percentile IIM alumni",
+        "Personalized study roadmap tailored to your diagnostic baseline",
+        "Comprehensive coverage of QA, VARC & DILR advanced strategies",
+        "Full-length adaptive CAT mocks with AI question analytics",
+        "Unlimited 1-on-1 doubt clearing & weekly mentor reviews",
+        "Complete WAT-PI & interview preparation included",
+        "Course validity until IIM admission is secured",
+      ],
+    },
+    {
+      name: "CAT 1-on-1 Offline Classroom",
+      price: "₹1,50,000",
+      featured: true,
+      badge: "Elite In-Person",
+      features: [
+        "Exclusive in-person 1-on-1 mentoring at flagship centers",
+        "Face-to-face coaching with senior IIT Roorkee & IIM faculty",
+        "Complete printed study material kit & concept workbooks",
+        "Dedicated library & quiet mock testing lab access",
+        "Deep-dive error log analysis & Manthan pedagogical mapping",
+        "Comprehensive 1-on-1 WAT-PI, GD & SOP personal mentorship",
+        "Unlimited sessions & personal mentoring till final admission",
+      ],
+    },
   ];
   return (
     <section className={styles.section}>

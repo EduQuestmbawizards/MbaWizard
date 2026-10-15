@@ -12,14 +12,36 @@ export default function GmatCatCityBatches({ city }: GmatCatCityBatchesProps) {
   };
 
   const batches = [
-    { name: "GMAT+CAT Online Group", price: "₹30,000", featured: false, badge: null,
-      features: ["70+ Hours GMAT + CAT live sessions","AI test generator for both formats","10 GMAT + CAT full-length mocks","Booster sessions for 700+/99%ile","Unlimited doubt support till exam","Online video portal access"] },
-    { name: "GMAT+CAT Offline Classroom", price: "₹40,000", featured: true, badge: "Most Popular",
-      features: ["Physical classroom at DLF Galleria / Sector 50","Face-to-face IIT faculty mentorship","Combined GMAT + CAT study kit","Hard Math & DI clinics included","10 GMAT + CAT adaptive mocks","Group discussion + WAT-PI prep"] },
-    { name: "GMAT+CAT 1-on-1", price: "₹59,000", featured: false, badge: null,
-      features: ["100% private dual coaching sessions","Customized schedule and pace","Founder-led bespoke mentorship","Individual milestone reviews weekly","Complete admissions consulting","Score guarantee for retakers"] },
-    { name: "Topper\u2019s Club (750+ / 99%ile)", price: "₹80,000", featured: false, badge: "Selection Based",
-      features: ["Admission via faculty recommendation","Diagnostic evaluation: ₹15,000","Unlimited classes till you reach target","Rigorous practice lab access","Bespoke Manthan dual-track mapping","When \"winning is the only option\""] },
+    {
+      name: "GMAT+CAT 1-on-1 Online Live",
+      price: "₹1,50,000",
+      featured: false,
+      badge: "Dual Track Online",
+      features: [
+        "100% private 1-on-1 dual coaching for GMAT Focus & CAT",
+        "Integrated curriculum leveraging 80% Quant and Reasoning overlap",
+        "Specialized clinics for CAT DILR and GMAT Data Insights",
+        "Flexible scheduling designed around college and corporate work hours",
+        "10+ full-length adaptive mocks for both GMAT and CAT",
+        "AI-driven question analytics & individualized error logs",
+        "Complete WAT-PI, GD & international admissions consulting",
+      ],
+    },
+    {
+      name: "GMAT+CAT 1-on-1 Offline Classroom",
+      price: "₹2,30,000",
+      featured: true,
+      badge: "Elite Dual Classroom",
+      features: [
+        "Exclusive face-to-face 1-on-1 classroom mentoring at center",
+        "Direct mentorship with senior IIT Roorkee & IIM alumni faculty",
+        "Complete physical study kits & printed materials for both exams",
+        "Dedicated library & quiet testing lab for timed simulations",
+        "In-person diagnostic reviews and bespoke Manthan dual mapping",
+        "Comprehensive personal WAT-PI, GD & IIM/ISB interview prep",
+        "Unlimited classes and validity until your final B-school admission",
+      ],
+    },
   ];
 
   return (
