@@ -3,6 +3,7 @@ import Hero from "@/components/home/hero/Hero";
 import StatsBar from "@/components/home/stats-bar/StatsBar";
 import Programs from "@/components/home/programs/Programs";
 import Methodology from "@/components/home/methodology/Methodology";
+import PrepTools from "@/components/home/prep-tools/PrepTools";
 import ToppersShowcase from "@/components/home/toppers-showcase/ToppersShowcase";
 import WhyMbaWizards from "@/components/shared/why-mba-wizards/WhyMbaWizards";
 import MythVsFact from "@/components/shared/myth-vs-fact/MythVsFact";
@@ -33,6 +34,7 @@ export default function HomeContent() {
       <StatsBar />
       <Programs />
       <Methodology />
+      <PrepTools />
       <ToppersShowcase />
       <WhyMbaWizards exam="MBA" />
       <MythVsFact exam="GMAT & CAT" items={gmatMyths} />

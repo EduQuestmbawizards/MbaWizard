@@ -50,7 +50,7 @@ export default function Hero() {
               📅 Schedule A Free Trial Demo
             </Link>
             <a
-              href="https://cat.interview.mbawizards.co.in/"
+              href="https://interview.cat.mbawizards.co.in/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.toolPill}
@@ -64,6 +64,14 @@ export default function Hero() {
               className={styles.toolPill}
             >
               🤖 AI GMAT Interviewer
+            </a>
+            <a
+              href="https://gmat-mock.mbawizards.co.in/#mock-tests"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.toolPill}
+            >
+              📝 GMAT Mock Tests
             </a>
           </div>
 
