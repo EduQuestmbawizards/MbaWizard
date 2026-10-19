@@ -89,13 +89,13 @@ async function main() {
   console.log(`Total files updated with optimized metadata: ${updatedFilesCount}`);
 
   // 2. Filter October 2026 blogs
-  const octBlogs = all15MasterBlogs.filter(b => (b.publishedAt || "").startsWith("2026-10"));
+  const octBlogs = all15MasterBlogs.filter((b: any) => (b.publishedAt || "").startsWith("2026-10"));
 
   // 3. Prepare Before vs After Rows
   const beforeVsAfterRows: any[] = [];
   const cleanOptimizedRows: any[] = [];
 
-  octBlogs.forEach((b, idx) => {
+  octBlogs.forEach((b: any, idx: number) => {
     const slug = b.slug;
     const opt = optimizations[slug] || {
       slug,
@@ -115,7 +115,7 @@ async function main() {
       .filter((block: any) => block.type === "heading" && block.level === 2)
       .map((block: any) => block.text);
 
-    const cleanH2s = rawH2s.map((h, i) => {
+    const cleanH2s = rawH2s.map((h: any, i: number) => {
       // If heading already starts with a number like "1. ", normalize it
       const stripped = h.replace(/^\d+[\.\)]\s*/, "").trim();
       return `${i + 1}. ${stripped}`;
@@ -235,10 +235,10 @@ async function main() {
   });
 
   // KPI Dashboard data
-  const oldAvgTitleLen = Math.round(beforeVsAfterRows.reduce((a, r) => a + r["[PEHLE] Old Title Chars"], 0) / octBlogs.length);
-  const newAvgTitleLen = Math.round(beforeVsAfterRows.reduce((a, r) => a + r["[AB] New Title Chars"], 0) / octBlogs.length);
-  const oldAvgDescLen = Math.round(beforeVsAfterRows.reduce((a, r) => a + r["[PEHLE] Old Desc Chars"], 0) / octBlogs.length);
-  const newAvgDescLen = Math.round(beforeVsAfterRows.reduce((a, r) => a + r["[AB] New Desc Chars"], 0) / octBlogs.length);
+  const oldAvgTitleLen = Math.round(beforeVsAfterRows.reduce((a: number, r: any) => a + r["[PEHLE] Old Title Chars"], 0) / octBlogs.length);
+  const newAvgTitleLen = Math.round(beforeVsAfterRows.reduce((a: number, r: any) => a + r["[AB] New Title Chars"], 0) / octBlogs.length);
+  const oldAvgDescLen = Math.round(beforeVsAfterRows.reduce((a: number, r: any) => a + r["[PEHLE] Old Desc Chars"], 0) / octBlogs.length);
+  const newAvgDescLen = Math.round(beforeVsAfterRows.reduce((a: number, r: any) => a + r["[AB] New Desc Chars"], 0) / octBlogs.length);
 
   const kpiData = [
     { "Metric": "Total October 2026 Blogs", "Before Optimization": octBlogs.length, "After Optimization": octBlogs.length, "Impact / Result": "All 70 blogs audited and upgraded" },
@@ -252,7 +252,7 @@ async function main() {
 
   // All 244 Site Blogs Directory
   const allSummaries = await getAllBlogSummaries();
-  const allBlogsOverview = allSummaries.map((b, idx) => ({
+  const allBlogsOverview = allSummaries.map((b: any, idx: number) => ({
     "S.No.": idx + 1,
     "Slug": b.slug,
     "Title": b.title,

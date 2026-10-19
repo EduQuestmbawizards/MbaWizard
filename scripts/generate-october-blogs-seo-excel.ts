@@ -1,7 +1,7 @@
 import * as XLSX from "xlsx";
 import * as fs from "fs";
 import * as path from "path";
-import { all15MasterBlogs, getAllBlogSummaries } from "./src/lib/blog";
+import { all15MasterBlogs, getAllBlogSummaries } from "../src/lib/blog";
 
 // Function to generate the Excel file
 async function generateSeoExcel() {
@@ -12,7 +12,7 @@ async function generateSeoExcel() {
   console.log(`Found ${octBlogs.length} blogs published in October 2026.`);
 
   // Prepare Data Rows for Sheet 1 (October 2026 Blogs)
-  const octSheetData = octBlogs.map((b, idx) => {
+  const octSheetData = octBlogs.map((b: any, idx: number) => {
     // 1. Extract H2 headings
     const h2Headings = (b.body || [])
       .filter((block: any) => block.type === "heading" && block.level === 2)
@@ -47,15 +47,15 @@ async function generateSeoExcel() {
       `${primaryKeyword.toLowerCase()} preparation tips`,
       `how to prepare for ${primaryKeyword.toLowerCase()}`,
       `${b.slug.replace(/-/g, " ")} strategy`,
-      ...(b.tags || []).slice(1, 4).map(t => t.toLowerCase())
-    ].filter((v, i, a) => a.indexOf(v) === i).slice(0, 5).join(" | ");
+      ...(b.tags || []).slice(1, 4).map((t: string) => t.toLowerCase())
+    ].filter((v: string, i: number, a: string[]) => a.indexOf(v) === i).slice(0, 5).join(" | ");
 
     // 5. Canonical Tag URL
     const canonicalTag = `https://www.mbawizards.co.in/blogs/${b.slug}`;
 
     // 6. Content Summary (Kya kya hain)
     // Create an informative structured breakdown of what is covered
-    const keyThemes = h2Headings.slice(0, 8).map(h => h.replace(/^\d+\.\s*/, "")).join("; ");
+    const keyThemes = h2Headings.slice(0, 8).map((h: string) => h.replace(/^\d+\.\s*/, "")).join("; ");
     const contentBreakdown = `• Core Subject: ${b.title}\n• Major Sub-topics & Modules: ${keyThemes} (Total ${h2Headings.length} detailed sections)\n• Target Key Value: ${b.excerpt}\n• Target Audience: MBA Aspirants, CAT/GMAT/GRE candidates, Interviewees targeting IIMs/ISB/M7.\n• Practical Assets: Actionable answer frameworks, real candidate transcripts, evaluation rubrics, high-impact do's and don'ts.`;
 
     // 7. SEO Status
@@ -87,7 +87,7 @@ async function generateSeoExcel() {
       "Long Tail Keywords": longTailKeywords,
       "Canonical Tag (URL)": canonicalTag,
       "SEO Status": seoStatus,
-      "H2 Headings Used (All Sections)": h2Headings.map((h, i) => `${i + 1}. ${h}`).join("\n"),
+      "H2 Headings Used (All Sections)": h2Headings.map((h: string, i: number) => `${i + 1}. ${h}`).join("\n"),
       "Content Breakdown (Usme Kya Kya Hai)": contentBreakdown,
       "Meta Title": b.metaTitle || `${b.title} — MBA Wizards`,
       "Meta Title Length": metaTitleLen,
@@ -113,9 +113,9 @@ async function generateSeoExcel() {
   });
 
   // Prepare Sheet 2 (SEO KPI & Summary Dashboard)
-  const totalWordCount = octSheetData.reduce((acc, row) => acc + row["Total Word Count"], 0);
+  const totalWordCount = octSheetData.reduce((acc: number, row: any) => acc + row["Total Word Count"], 0);
   const avgWordCount = Math.round(totalWordCount / octSheetData.length);
-  const totalH2s = octSheetData.reduce((acc, row) => acc + row["Total H2 Count"], 0);
+  const totalH2s = octSheetData.reduce((acc: number, row: any) => acc + row["Total H2 Count"], 0);
 
   const kpiData = [
     { "SEO Metric": "Total Blogs Published in October 2026", "Metric Value": octBlogs.length, "Notes / Benchmarks": "All 70 comprehensive master blog pillars published" },
@@ -132,7 +132,7 @@ async function generateSeoExcel() {
 
   // Category breakdown
   const categoryCounts: Record<string, number> = {};
-  octBlogs.forEach(b => {
+  octBlogs.forEach((b: any) => {
     categoryCounts[b.category] = (categoryCounts[b.category] || 0) + 1;
   });
 
@@ -144,7 +144,7 @@ async function generateSeoExcel() {
 
   // Prepare Sheet 3 (All Site Blogs Overview)
   const allSummaries = await getAllBlogSummaries();
-  const allBlogsOverview = allSummaries.map((b, idx) => ({
+  const allBlogsOverview = allSummaries.map((b: any, idx: number) => ({
     "S.No.": idx + 1,
     "Slug": b.slug,
     "Title": b.title,

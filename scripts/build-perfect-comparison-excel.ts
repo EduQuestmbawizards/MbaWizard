@@ -59,9 +59,9 @@ for (const relPath of files) {
 console.log(`Extracted original git data for ${Object.keys(oldDataMap).length} blogs.`);
 
 // Now let's build the comparison rows
-const octBlogs = all15MasterBlogs.filter(b => (b.publishedAt || "").startsWith("2026-10"));
+const octBlogs = all15MasterBlogs.filter((b: any) => (b.publishedAt || "").startsWith("2026-10"));
 
-const comparisonRows = octBlogs.map((b, idx) => {
+const comparisonRows = octBlogs.map((b: any, idx: number) => {
   const slug = b.slug;
   const opt = optimizations[slug] || {
     slug,
@@ -106,7 +106,7 @@ const comparisonRows = octBlogs.map((b, idx) => {
     .filter((block: any) => block.type === "heading" && block.level === 2)
     .map((block: any) => block.text);
 
-  const cleanH2s = rawH2s.map((h, i) => {
+  const cleanH2s = rawH2s.map((h: any, i: number) => {
     const stripped = h.replace(/^\d+[\.\)]\s*/, "").trim();
     return `${i + 1}. ${stripped}`;
   });
@@ -168,7 +168,7 @@ const comparisonRows = octBlogs.map((b, idx) => {
 });
 
 // Prepare Complete Optimized Sheet
-const cleanOptimizedRows = octBlogs.map((b, idx) => {
+const cleanOptimizedRows = octBlogs.map((b: any, idx: number) => {
   const slug = b.slug;
   const opt = optimizations[slug];
   
@@ -176,7 +176,7 @@ const cleanOptimizedRows = octBlogs.map((b, idx) => {
     .filter((block: any) => block.type === "heading" && block.level === 2)
     .map((block: any) => block.text);
 
-  const cleanH2s = rawH2s.map((h, i) => {
+  const cleanH2s = rawH2s.map((h: any, i: number) => {
     const stripped = h.replace(/^\d+[\.\)]\s*/, "").trim();
     return `${i + 1}. ${stripped}`;
   });
@@ -232,10 +232,10 @@ const cleanOptimizedRows = octBlogs.map((b, idx) => {
 });
 
 // KPI Summary Sheet
-const oldAvgTitleLen = Math.round(comparisonRows.reduce((a, r) => a + r["[PEHLE] Old Title Chars"], 0) / octBlogs.length);
-const newAvgTitleLen = Math.round(comparisonRows.reduce((a, r) => a + r["[AB] New Title Chars"], 0) / octBlogs.length);
-const oldAvgDescLen = Math.round(comparisonRows.reduce((a, r) => a + r["[PEHLE] Old Desc Chars"], 0) / octBlogs.length);
-const newAvgDescLen = Math.round(comparisonRows.reduce((a, r) => a + r["[AB] New Desc Chars"], 0) / octBlogs.length);
+const oldAvgTitleLen = Math.round(comparisonRows.reduce((a: number, r: any) => a + r["[PEHLE] Old Title Chars"], 0) / octBlogs.length);
+const newAvgTitleLen = Math.round(comparisonRows.reduce((a: number, r: any) => a + r["[AB] New Title Chars"], 0) / octBlogs.length);
+const oldAvgDescLen = Math.round(comparisonRows.reduce((a: number, r: any) => a + r["[PEHLE] Old Desc Chars"], 0) / octBlogs.length);
+const newAvgDescLen = Math.round(comparisonRows.reduce((a: number, r: any) => a + r["[AB] New Desc Chars"], 0) / octBlogs.length);
 
 const kpiData = [
   { "Metric": "Total October 2026 Blogs", "Pehle (Before Optimization)": "70 Blogs", "Ab (After Optimization)": "70 Blogs", "Key Impact & Benefit": "Sabhi 70 blogs ko audit & upgrade kiya gaya" },
@@ -250,7 +250,7 @@ const kpiData = [
 
 async function generateWorkbooks() {
   const allSummaries = await getAllBlogSummaries();
-  const allBlogsOverview = allSummaries.map((b, idx) => ({
+  const allBlogsOverview = allSummaries.map((b: any, idx: number) => ({
     "S.No.": idx + 1,
     "Slug": b.slug,
     "Title": b.title,
