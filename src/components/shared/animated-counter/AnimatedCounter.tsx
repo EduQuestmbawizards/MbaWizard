@@ -53,7 +53,7 @@ export default function AnimatedCounter({
           requestAnimationFrame(step);
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.05, rootMargin: "0px 0px 50px 0px" }
     );
 
     observer.observe(node);
