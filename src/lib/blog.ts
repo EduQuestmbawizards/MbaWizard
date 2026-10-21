@@ -8,10 +8,12 @@ import { mbaInterviewSchoolVideoBlogs } from "@/data/mba-interview-school-video-
 import { catIimInterviewBlogs } from "@/data/cat-iim-interview-blogs";
 import { aiInterviewsComparisonBlogs } from "@/data/ai-interviews-comparison-blogs";
 import { problemAwarePrepBlogs } from "@/data/problem-aware-prep-blogs";
+import { seo15MasterBlogs } from "@/data/seo-15-master-blogs";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export const all15MasterBlogs: MasterBlogPost[] = [
+  ...seo15MasterBlogs,
   ...catIimInterviewBlogs,
   ...mbaInterviewSchoolVideoBlogs,
   ...mbaInterviewMasteryBlogs,

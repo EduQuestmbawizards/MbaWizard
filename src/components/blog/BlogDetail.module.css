@@ -1280,3 +1280,220 @@
   box-shadow: 0 8px 25px rgba(212, 175, 55, 0.9);
   background: linear-gradient(135deg, #f0ca4d 0%, #c49514 100%);
 }
+
+/* =========================================================================
+   AI PREP TOOLS SHOWCASE SECTION
+   ========================================================================= */
+.aiToolsSection {
+  background: linear-gradient(135deg, rgba(5, 22, 77, 0.05) 0%, rgba(212, 175, 55, 0.08) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 18px;
+  padding: 38px 30px;
+  margin: 48px 0 36px;
+  box-shadow: 0 10px 30px rgba(5, 22, 77, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.aiToolsSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #05164d 0%, #d4af37 50%, #001242 100%);
+}
+
+.aiToolsHeader {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 32px;
+}
+
+.aiToolsBadge {
+  display: inline-block;
+  background: rgba(212, 175, 55, 0.16);
+  border: 1px solid var(--color-accent-gold, #d4af37);
+  color: #8c6d1f;
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 5px 16px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.aiToolsTitle {
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 900;
+  color: #05164d;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+.aiToolsTitleHighlight {
+  background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aiToolsSubtitle {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+.aiToolsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .aiToolsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.aiToolCard {
+  background: #ffffff;
+  border: 1px solid rgba(5, 22, 77, 0.1);
+  border-radius: 14px;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.28s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+.aiToolCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 12px 28px rgba(212, 175, 55, 0.18);
+}
+
+.aiToolCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.aiToolIconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(5, 22, 77, 0.08) 0%, rgba(212, 175, 55, 0.15) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.aiToolPillLive {
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+.aiToolPill {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.aiToolPillGold {
+  background: rgba(212, 175, 55, 0.15);
+  color: #8c6d1f;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.aiToolCardTitle {
+  font-size: 17px;
+  font-weight: 800;
+  color: #05164d;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.aiToolCardDesc {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0 0 18px;
+  flex: 1;
+}
+
+.aiToolCardBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #05164d;
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 11px 18px;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.aiToolCardBtn:hover {
+  background: #d4af37;
+  color: #05164d;
+  transform: translateY(-1px);
+}
+
+.aiToolCardBtnPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+  color: #05164d;
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 11px 18px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(212, 175, 55, 0.35);
+}
+
+.aiToolCardBtnPrimary:hover {
+  background: linear-gradient(135deg, #f0ca4d 0%, #c49514 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.5);
+}
+
+.btnArrow {
+  font-weight: 800;
+  font-size: 14px;
+}
+

@@ -441,6 +441,100 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
               <p className={styles.paragraph}>{blog.excerpt}</p>
             )}
 
+            {/* AI Prep Tools Showcase Grid */}
+            <div className={styles.aiToolsSection}>
+              <div className={styles.aiToolsHeader}>
+                <span className={styles.aiToolsBadge}>⚡ AI-Powered MBA Prep Suite</span>
+                <h3 className={styles.aiToolsTitle}>
+                  Accelerate Your Score with <span className={styles.aiToolsTitleHighlight}>MBA Wizards AI Diagnostic Tools</span>
+                </h3>
+                <p className={styles.aiToolsSubtitle}>
+                  Proprietary adaptive test algorithms, speech cadence analytics, and behavioral simulation trained on 25+ years of IIM and 700+ GMAT mentorship data.
+                </p>
+              </div>
+
+              <div className={styles.aiToolsGrid}>
+                {/* Tool 1 */}
+                <div className={styles.aiToolCard}>
+                  <div className={styles.aiToolCardHeader}>
+                    <div className={styles.aiToolIconWrap}>🤖</div>
+                    <span className={styles.aiToolPillLive}>Live Simulator</span>
+                  </div>
+                  <h4 className={styles.aiToolCardTitle}>AI CAT Mock Interviewer</h4>
+                  <p className={styles.aiToolCardDesc}>
+                    Adaptive IIM PI simulation with real-time video evaluation, speech cadence analytics, and faculty question banks.
+                  </p>
+                  <a
+                    href="https://interview.cat.mbawizards.co.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.aiToolCardBtn}
+                  >
+                    Launch CAT Interviewer <span className={styles.btnArrow}>↗</span>
+                  </a>
+                </div>
+
+                {/* Tool 2 */}
+                <div className={styles.aiToolCard}>
+                  <div className={styles.aiToolCardHeader}>
+                    <div className={styles.aiToolIconWrap}>🎙️</div>
+                    <span className={styles.aiToolPill}>M7 &amp; Exec MBA</span>
+                  </div>
+                  <h4 className={styles.aiToolCardTitle}>AI GMAT Interviewer</h4>
+                  <p className={styles.aiToolCardDesc}>
+                    Simulate high-stakes behavioral &amp; leadership interviews for ISB, IIM PGPX, and global M7 business schools with instant scoring.
+                  </p>
+                  <a
+                    href="https://gmat.mbawizards.co.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.aiToolCardBtn}
+                  >
+                    Try GMAT Interviewer <span className={styles.btnArrow}>↗</span>
+                  </a>
+                </div>
+
+                {/* Tool 3 */}
+                <div className={styles.aiToolCard}>
+                  <div className={styles.aiToolCardHeader}>
+                    <div className={styles.aiToolIconWrap}>📊</div>
+                    <span className={styles.aiToolPill}>Focus Edition</span>
+                  </div>
+                  <h4 className={styles.aiToolCardTitle}>GMAT Adaptive Mock Tests</h4>
+                  <p className={styles.aiToolCardDesc}>
+                    Authentic item-response theory algorithms, 3-question edit feature, and deep sectional error logs for 705+ targeting.
+                  </p>
+                  <a
+                    href="https://gmat-mock.mbawizards.co.in/#mock-tests"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.aiToolCardBtn}
+                  >
+                    Take Adaptive Mock <span className={styles.btnArrow}>↗</span>
+                  </a>
+                </div>
+
+                {/* Tool 4 */}
+                <div className={styles.aiToolCard}>
+                  <div className={styles.aiToolCardHeader}>
+                    <div className={styles.aiToolIconWrap}>🎯</div>
+                    <span className={styles.aiToolPillGold}>IIT Roorkee Alum</span>
+                  </div>
+                  <h4 className={styles.aiToolCardTitle}>1-on-1 Faculty Mentorship</h4>
+                  <p className={styles.aiToolCardDesc}>
+                    Personalized diagnostic strategy consultation with Surinder Gupta to audit your test baseline and target intake roadmap.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={handleOpenBooking}
+                    className={styles.aiToolCardBtnPrimary}
+                  >
+                    Book Strategy Session <span className={styles.btnArrow}>→</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
             {/* In-Article Call to Action */}
             <div className={styles.ctaBox}>
               <div className={styles.ctaIcon}>🎯</div>
