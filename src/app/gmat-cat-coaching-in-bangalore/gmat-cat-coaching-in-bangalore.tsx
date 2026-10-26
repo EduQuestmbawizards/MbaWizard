@@ -1,3 +1,4 @@
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import { dualTestimonials } from "@/data/testimonials-data";
 import { gmatCatCitiesData } from "@/data/gmatcat-city-copy";
 import GmatCatCityHero from "@/components/gmat-cat-coaching-city/hero/GmatCatCityHero";
@@ -39,6 +40,7 @@ export default function GmatCatBangaloreContent() {
       />
       <GmatCatCityPedagogy city={data.city} />
       <WhyMbaWizards exam="GMAT+CAT" />
+      <CareerIntelligenceSection />
       <ExamMasteryGuide data={gmatMasteryData} city={data.city} />
       <MythVsFact exam="GMAT+CAT" items={gmatCatMyths} />
       <GmatCatCityFeatures city={data.city} features={data.features} />

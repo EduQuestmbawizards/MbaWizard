@@ -6,6 +6,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import LoanHero from "@/components/education-loan/hero/LoanHero";
 import LoanTypes from "@/components/education-loan/loan-types/LoanTypes";
 import LendersTable from "@/components/education-loan/lenders-table/LendersTable";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import LoanFaq from "@/components/education-loan/faq/LoanFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
@@ -15,6 +16,7 @@ export default function EducationLoanContent() {
       <LoanHero />
       <LoanTypes />
       <LendersTable />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="Global Education" />
       <MythVsFact exam="Global Education" items={loanMyths} />
       <TestimonialsCarousel

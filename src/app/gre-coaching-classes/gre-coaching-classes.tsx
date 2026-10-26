@@ -1,6 +1,7 @@
 import { greTestimonials } from "@/data/testimonials-data";
 import GreHero from "@/components/gre-coaching-classes/hero/GreHero";
 import GreStructure from "@/components/gre-coaching-classes/exam-structure/GreStructure";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import GreVsGmat from "@/components/gre-coaching-classes/gre-vs-gmat/GreVsGmat";
 import GreFaq from "@/components/gre-coaching-classes/faq/GreFaq";
 import ExamMasteryGuide from "@/components/shared/exam-mastery-guide/ExamMasteryGuide";
@@ -28,6 +29,7 @@ export default function GreCoachingClassesContent() {
       <GreHero />
       <ExamMasteryGuide data={greMasteryData} />
       <GreStructure />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="GRE" />
       <MythVsFact exam="GRE" items={greMyths} />
       <GreVsGmat />

@@ -6,6 +6,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import ResearchHero from "@/components/research-paper-drafting-publishing-services/hero/ResearchHero";
 import ResearchProcess from "@/components/research-paper-drafting-publishing-services/process/ResearchProcess";
 import ResearchPricing from "@/components/research-paper-drafting-publishing-services/pricing/ResearchPricing";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import ResearchFaq from "@/components/research-paper-drafting-publishing-services/faq/ResearchFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
@@ -15,6 +16,7 @@ export default function ResearchPaperContent() {
       <ResearchHero />
       <ResearchProcess />
       <ResearchPricing />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="Research & Admissions" />
       <MythVsFact exam="Research & Admissions" items={researchMyths} />
       <TestimonialsCarousel

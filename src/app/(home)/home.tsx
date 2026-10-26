@@ -2,6 +2,7 @@ import { gmatTestimonials } from "@/data/testimonials-data";
 import Hero from "@/components/home/hero/Hero";
 import StatsBar from "@/components/home/stats-bar/StatsBar";
 import Programs from "@/components/home/programs/Programs";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import Methodology from "@/components/home/methodology/Methodology";
 import PrepTools from "@/components/home/prep-tools/PrepTools";
 import ToppersShowcase from "@/components/home/toppers-showcase/ToppersShowcase";
@@ -33,6 +34,7 @@ export default function HomeContent() {
       <Hero />
       <StatsBar />
       <Programs />
+      <CareerIntelligenceSection />
       <Methodology />
       <PrepTools />
       <ToppersShowcase />

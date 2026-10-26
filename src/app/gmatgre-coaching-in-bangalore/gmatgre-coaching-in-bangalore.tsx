@@ -1,3 +1,4 @@
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import { dualTestimonials } from "@/data/testimonials-data";
 import { gmatGreCitiesData } from "@/data/gmatgre-city-copy";
 import GmatGreCityHero from "@/components/gmat-gre-coaching-city/hero/GmatGreCityHero";
@@ -39,6 +40,7 @@ export default function GmatGreBangaloreContent() {
       />
       <GmatGreDualPrep city={data.city} />
       <WhyMbaWizards exam="GMAT+GRE" />
+      <CareerIntelligenceSection />
       <ExamMasteryGuide data={gmatMasteryData} city={data.city} />
       <MythVsFact exam="GMAT+GRE" items={gmatGreMyths} />
       <GmatGreCityFeatures city={data.city} features={data.features} />

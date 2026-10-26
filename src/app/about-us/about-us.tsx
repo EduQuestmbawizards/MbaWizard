@@ -2,6 +2,7 @@ import { gmatTestimonials } from "@/data/testimonials-data";
 import Story from "@/components/about-us/story/Story";
 import VisionMission from "@/components/about-us/vision-mission/VisionMission";
 import Goals from "@/components/about-us/goals/Goals";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import WhyMbaWizards from "@/components/shared/why-mba-wizards/WhyMbaWizards";
 import MythVsFact from "@/components/shared/myth-vs-fact/MythVsFact";
 import { aboutMyths } from "@/data/myths/about-myths";
@@ -15,6 +16,7 @@ export default function AboutUsContent() {
       <Story />
       <VisionMission />
       <Goals />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="Global MBA" />
       <MythVsFact exam="MBA Wizards & EduQuest" items={aboutMyths} />
       <TestimonialsCarousel

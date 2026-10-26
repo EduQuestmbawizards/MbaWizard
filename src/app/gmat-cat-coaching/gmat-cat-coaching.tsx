@@ -1,6 +1,7 @@
 import { dualTestimonials } from "@/data/testimonials-data";
 import GmatCatHero from "@/components/gmat-cat-coaching/hero/GmatCatHero";
 import GmatCatOverview from "@/components/gmat-cat-coaching/overview/GmatCatOverview";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import GmatCatComparison from "@/components/gmat-cat-coaching/comparison-table/GmatCatComparison";
 import GmatCatFaq from "@/components/gmat-cat-coaching/faq/GmatCatFaq";
 import ExamMasteryGuide from "@/components/shared/exam-mastery-guide/ExamMasteryGuide";
@@ -34,6 +35,7 @@ export default function GmatCatCoachingContent() {
       <GmatCatHero />
       <ExamMasteryGuide data={gmatMasteryData} />
       <GmatCatOverview />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="GMAT+CAT" />
       <MythVsFact exam="GMAT+CAT" items={gmatCatMyths} />
       <GmatCatComparison />

@@ -6,6 +6,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import PrepHero from "@/components/gmat-preparation/hero/PrepHero";
 import ExamGuide from "@/components/gmat-preparation/exam-guide/ExamGuide";
 import PrepFeatures from "@/components/gmat-preparation/features/PrepFeatures";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import PrepFaq from "@/components/gmat-preparation/faq/PrepFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
@@ -15,6 +16,7 @@ export default function GmatPreparationContent() {
       <PrepHero />
       <ExamGuide />
       <PrepFeatures />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="GMAT Focus" />
       <MythVsFact exam="GMAT Preparation" items={prepMyths} />
       <TestimonialsCarousel

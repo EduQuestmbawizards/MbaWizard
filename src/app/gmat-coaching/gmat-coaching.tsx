@@ -1,6 +1,7 @@
 import { gmatTestimonials } from "@/data/testimonials-data";
 import GmatHero from "@/components/gmat-coaching/hero/GmatHero";
 import GmatCurriculum from "@/components/gmat-coaching/curriculum/GmatCurriculum";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import GmatPricing from "@/components/gmat-coaching/pricing/GmatPricing";
 import GmatFaq from "@/components/gmat-coaching/faq/GmatFaq";
 import ExamMasteryGuide from "@/components/shared/exam-mastery-guide/ExamMasteryGuide";
@@ -32,6 +33,7 @@ export default function GmatCoachingContent() {
       <GmatHero />
       <ExamMasteryGuide data={gmatMasteryData} />
       <GmatCurriculum />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="GMAT" />
       <MythVsFact exam="GMAT" items={gmatMyths} />
       <GmatPricing />

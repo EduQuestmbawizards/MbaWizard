@@ -6,6 +6,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import ConsultingHero from "@/components/premium-university-consulting-packages/hero/ConsultingHero";
 import ConsultingPackages from "@/components/premium-university-consulting-packages/packages/ConsultingPackages";
 import ConsultingServices from "@/components/premium-university-consulting-packages/services/ConsultingServices";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import ConsultingFaq from "@/components/premium-university-consulting-packages/faq/ConsultingFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
@@ -15,6 +16,7 @@ export default function PremiumUniversityConsultingContent() {
       <ConsultingHero />
       <ConsultingPackages />
       <ConsultingServices />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="MBA Admissions" />
       <MythVsFact exam="MBA Admissions" items={consultingMyths} />
       <TestimonialsCarousel

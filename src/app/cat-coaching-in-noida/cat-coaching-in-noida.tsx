@@ -1,3 +1,4 @@
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import { catTestimonials } from "@/data/testimonials-data";
 import { catCitiesData } from "@/data/cat-city-copy";
 import CatCityHero from "@/components/cat-coaching-city/hero/CatCityHero";
@@ -33,6 +34,7 @@ export default function CatNoidaContent() {
       <CatCityHero preTitle={data.heroPreTitle} title={data.heroTitle} titleHighlight={data.heroTitleHighlight} subtitle={data.heroSubtitle} city={data.city} />
       <CatCityCurriculum city={data.city} />
       <WhyMbaWizards exam="CAT" />
+      <CareerIntelligenceSection />
       <ExamMasteryGuide data={catMasteryData} city={data.city} />
       <MythVsFact exam="CAT" items={catMyths} />
       <CatCityFeatures city={data.city} features={data.features} />

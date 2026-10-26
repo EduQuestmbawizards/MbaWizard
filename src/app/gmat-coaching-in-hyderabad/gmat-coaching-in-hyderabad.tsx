@@ -1,3 +1,4 @@
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import { gmatTestimonials } from "@/data/testimonials-data";
 import { gmatCitiesData } from "@/data/gmat-city-copy";
 import GmatCityHero from "@/components/gmat-coaching-city/hero/GmatCityHero";
@@ -37,6 +38,7 @@ export default function GmatHyderabadContent() {
       <GmatCityHero preTitle={data.heroPreTitle} title={data.heroTitle} titleHighlight={data.heroTitleHighlight} subtitle={data.heroSubtitle} city={data.city} />
       <GmatCityExamGuide city={data.city} />
       <WhyMbaWizards exam="GMAT" />
+      <CareerIntelligenceSection />
       <ExamMasteryGuide data={gmatMasteryData} city={data.city} />
       <MythVsFact exam="GMAT" items={gmatMyths} />
       <GmatCityEligibilityReg city={data.city} />

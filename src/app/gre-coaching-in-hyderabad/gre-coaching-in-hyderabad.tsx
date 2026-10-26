@@ -1,3 +1,4 @@
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import { greTestimonials } from "@/data/testimonials-data";
 import { greCitiesData } from "@/data/gre-city-copy";
 import GreCityHero from "@/components/gre-coaching-city/hero/GreCityHero";
@@ -33,6 +34,7 @@ export default function GreHyderabadContent() {
       <GreCityHero preTitle={data.heroPreTitle} title={data.heroTitle} titleHighlight={data.heroTitleHighlight} subtitle={data.heroSubtitle} city={data.city} />
       <GreCityCurriculum city={data.city} />
       <WhyMbaWizards exam="GRE" />
+      <CareerIntelligenceSection />
       <ExamMasteryGuide data={greMasteryData} city={data.city} />
       <MythVsFact exam="GRE" items={greMyths} />
       <GreCityFeatures city={data.city} features={data.features} />

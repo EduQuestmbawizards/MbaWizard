@@ -1,6 +1,7 @@
 import { dualTestimonials } from "@/data/testimonials-data";
 import GmatGreHero from "@/components/gmat-gre-coaching/hero/GmatGreHero";
 import DualBenefits from "@/components/gmat-gre-coaching/dual-benefits/DualBenefits";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import ComparisonTable from "@/components/gmat-gre-coaching/comparison-table/ComparisonTable";
 import GmatGreFaq from "@/components/gmat-gre-coaching/faq/GmatGreFaq";
 import ExamMasteryGuide from "@/components/shared/exam-mastery-guide/ExamMasteryGuide";
@@ -28,6 +29,7 @@ export default function GmatGreCoachingContent() {
       <GmatGreHero />
       <ExamMasteryGuide data={gmatMasteryData} />
       <DualBenefits />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="GMAT+GRE" />
       <MythVsFact exam="GMAT+GRE" items={gmatGreMyths} />
       <ComparisonTable />

@@ -6,6 +6,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import CorporateHero from "@/components/corporate-training/hero/CorporateHero";
 import PlacementPrep from "@/components/corporate-training/placement-prep/PlacementPrep";
 import CcqtGuide from "@/components/corporate-training/ccqt-guide/CcqtGuide";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import CorporateFaq from "@/components/corporate-training/faq/CorporateFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
@@ -15,6 +16,7 @@ export default function CorporateTrainingContent() {
       <CorporateHero />
       <PlacementPrep />
       <CcqtGuide />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="Corporate Aptitude" />
       <MythVsFact exam="Corporate Aptitude" items={corporateMyths} />
       <TestimonialsCarousel

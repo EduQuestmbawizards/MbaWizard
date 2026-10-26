@@ -5,6 +5,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import { gmatTestimonials } from "@/data/testimonials-data";
 import ToppersHero from "@/components/gmat-toppers/hero/ToppersHero";
 import HallOfFame from "@/components/gmat-toppers/hall-of-fame/HallOfFame";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import ToppersFaq from "@/components/gmat-toppers/faq/ToppersFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
@@ -14,6 +15,7 @@ export default function GmatToppersContent() {
       <ToppersHero />
       <HallOfFame />
       <WhyMbaWizards exam="GMAT Toppers" />
+      <CareerIntelligenceSection />
       <MythVsFact exam="GMAT Toppers" items={toppersMyths} />
       <TestimonialsCarousel
         testimonials={gmatTestimonials}

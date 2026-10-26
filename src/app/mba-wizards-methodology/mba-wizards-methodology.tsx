@@ -6,6 +6,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import MethodologyHero from "@/components/mba-wizards-methodology/hero/MethodologyHero";
 import MethodologySteps from "@/components/mba-wizards-methodology/steps/MethodologySteps";
 import MethodologyPillars from "@/components/mba-wizards-methodology/pillars/MethodologyPillars";
+import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import MethodologyFaq from "@/components/mba-wizards-methodology/faq/MethodologyFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
@@ -15,6 +16,7 @@ export default function MethodologyContent() {
       <MethodologyHero />
       <MethodologySteps />
       <MethodologyPillars />
+      <CareerIntelligenceSection />
       <WhyMbaWizards exam="Manthan Pedagogy" />
       <MythVsFact exam="Manthan Pedagogy" items={methodologyMyths} />
       <TestimonialsCarousel

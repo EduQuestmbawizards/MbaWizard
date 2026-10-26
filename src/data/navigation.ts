@@ -132,6 +132,7 @@ export const navigationItems: NavItem[] = [
 ];
 
 export const footerPopularCourses = [
+  { title: "AI Career Intelligence", href: "/career-intelligence" },
   { title: "GMAT Coaching", href: "/gmat-coaching" },
   { title: "CAT Coaching", href: "/cat" },
   { title: "GMAT+CAT Coaching", href: "/gmat-cat-coaching" },
@@ -139,6 +140,7 @@ export const footerPopularCourses = [
 ];
 
 export const footerUsefulLinks = [
+  { title: "Career Intelligence Tool", href: "/career-intelligence" },
   { title: "About Us", href: "/about-us" },
   { title: "Contact Us", href: "/contact-us" },
   { title: "Blog", href: "/blogs" },
