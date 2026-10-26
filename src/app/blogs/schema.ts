@@ -15,12 +15,21 @@ export const blogsMetadata: Metadata = {
     siteName: "MBA Wizards",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "https://www.mbawizards.co.in/images/common/mba-wizards-og-banner.png",
+        width: 1200,
+        height: 630,
+        alt: "MBA Wizards — Elite GMAT, CAT, GRE Coaching & Global MBA Admissions Mentorship",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "MBA Preparation Blog & Admissions Insights | MBA Wizards",
     description:
       "Master GMAT Focus, CAT, GRE, and M7/IIM admissions with proven frameworks, test debriefs, and study plans.",
+    images: ["https://www.mbawizards.co.in/images/common/mba-wizards-og-banner.png"],
   },
 };
 

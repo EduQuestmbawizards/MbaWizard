@@ -13,11 +13,20 @@ export const homeMetadata: Metadata = {
     siteName: "MBA Wizards",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "https://www.mbawizards.co.in/images/common/mba-wizards-og-banner.png",
+        width: 1200,
+        height: 630,
+        alt: "MBA Wizards — Elite GMAT, CAT, GRE Coaching & Global MBA Admissions Mentorship",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Home Page | MBA Wizards",
     description: "Official Home Page by MBA Wizards. IIT alumni mentorship, small batch sizes, and proven top results.",
+    images: ["https://www.mbawizards.co.in/images/common/mba-wizards-og-banner.png"],
   },
 };
 

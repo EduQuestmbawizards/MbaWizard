@@ -37,7 +37,17 @@ export async function generateMetadata({
     openGraph: {
       title: pageTitle,
       description: desc,
-      images: [{ url: blog.coverImage, width: 1200, height: 630, alt: blog.title }],
+      images: [
+        {
+          url: "https://www.mbawizards.co.in/images/common/mba-wizards-og-banner.png",
+          width: 1200,
+          height: 630,
+          alt: "MBA Wizards — Elite GMAT, CAT & MBA Admissions Mentorship",
+        },
+        ...(blog.coverImage
+          ? [{ url: blog.coverImage, width: 1200, height: 630, alt: blog.title }]
+          : []),
+      ],
       type: "article",
       publishedTime: blog.publishedAt,
       authors: [blog.author.name],
@@ -48,7 +58,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: pageTitle,
       description: desc,
-      images: [blog.coverImage],
+      images: ["https://www.mbawizards.co.in/images/common/mba-wizards-og-banner.png"],
     },
   };
 }
