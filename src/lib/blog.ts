@@ -9,10 +9,12 @@ import { catIimInterviewBlogs } from "@/data/cat-iim-interview-blogs";
 import { aiInterviewsComparisonBlogs } from "@/data/ai-interviews-comparison-blogs";
 import { problemAwarePrepBlogs } from "@/data/problem-aware-prep-blogs";
 import { seo15MasterBlogs } from "@/data/seo-15-master-blogs";
+import { gmatOctoberSeoBlogs } from "@/data/gmat-october-seo-blogs";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export const all15MasterBlogs: MasterBlogPost[] = [
+  ...gmatOctoberSeoBlogs,
   ...seo15MasterBlogs,
   ...catIimInterviewBlogs,
   ...mbaInterviewSchoolVideoBlogs,
@@ -60,6 +62,8 @@ export interface Blog {
   rawContentHtml?: string;
   _wpLink?: string;
   isWordPress?: boolean;
+  schemaTypes?: string[];
+  howToSteps?: { name: string; text: string }[];
 }
 
 export interface BlogSummary {
@@ -216,6 +220,8 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
       accentColor: masterBlog.accentColor,
       body: masterBlog.body as ContentBlock[],
       isWordPress: false,
+      schemaTypes: masterBlog.schemaTypes,
+      howToSteps: masterBlog.howToSteps,
     };
   }
 

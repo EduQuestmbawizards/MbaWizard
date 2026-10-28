@@ -16,6 +16,8 @@ export interface MasterBlogPost {
   featured: boolean;
   accentColor?: string;
   body: ContentBlock[];
+  schemaTypes?: string[];
+  howToSteps?: { name: string; text: string }[];
 }
 
 export const gmatScoreImprovementBlogs: MasterBlogPost[] = [
