@@ -24,7 +24,6 @@ export default function GreCityBatches({ city }: GreCityBatchesProps) {
         "High-frequency vocabulary retention & logic shortcuts",
         "Computer-adaptive mock test series with granular diagnostic review",
         "Unlimited doubt clearing till exam day",
-        "Graduate admissions & SOP strategy guidance included",
       ],
     },
     {
@@ -38,7 +37,6 @@ export default function GreCityBatches({ city }: GreCityBatchesProps) {
         "Complete printed study kit & comprehensive physical material",
         "Quiet study lab access for realistic timed test simulations",
         "Deep diagnosis of every mock attempt & bespoke strategy",
-        "End-to-end SOP, LOR, scholarship & global MS/MBA admissions consulting",
         "Unlimited classes till target 325+ score achieved",
       ],
     },
