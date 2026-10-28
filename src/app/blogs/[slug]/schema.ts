@@ -15,7 +15,7 @@ export function generateBlogPostSchema(post: BlogPost | Blog) {
       ? post.coverImage
       : "https://www.mbawizards.co.in/wp-content/uploads/2025/08/cropped-cropped-Logo.jpg";
 
-  const graph: any[] = [
+  const graph: Record<string, unknown>[] = [
     {
       "@type": ["Article", "BlogPosting"],
       "@id": `https://www.mbawizards.co.in/blogs/${post.slug}#article`,
