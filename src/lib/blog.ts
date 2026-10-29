@@ -10,10 +10,12 @@ import { aiInterviewsComparisonBlogs } from "@/data/ai-interviews-comparison-blo
 import { problemAwarePrepBlogs } from "@/data/problem-aware-prep-blogs";
 import { seo15MasterBlogs } from "@/data/seo-15-master-blogs";
 import { gmatOctoberSeoBlogs } from "@/data/gmat-october-seo-blogs";
+import { gmatGreOctoberBatch2Blogs } from "@/data/gmat-gre-october-batch2-blogs";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export const all15MasterBlogs: MasterBlogPost[] = [
+  ...gmatGreOctoberBatch2Blogs,
   ...gmatOctoberSeoBlogs,
   ...seo15MasterBlogs,
   ...catIimInterviewBlogs,
