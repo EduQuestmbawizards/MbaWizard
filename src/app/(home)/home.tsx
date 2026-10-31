@@ -33,8 +33,8 @@ export default function HomeContent() {
     <>
       <Hero />
       <StatsBar />
-      <Programs />
       <CareerIntelligenceSection />
+      <Programs />
       <Methodology />
       <PrepTools />
       <ToppersShowcase />
