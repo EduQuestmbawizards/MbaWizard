@@ -19,8 +19,6 @@ function Meta({ blog }: { blog: BlogSummary | Blog }) {
 
   return (
     <div className={styles.meta}>
-      <span className={styles.author}>{blog.author.name}</span>
-      <span className={styles.dot}>·</span>
       <span>{dateStr}</span>
       <span className={styles.dot}>·</span>
       <span className={styles.readTime}>{blog.readTime} min read</span>
