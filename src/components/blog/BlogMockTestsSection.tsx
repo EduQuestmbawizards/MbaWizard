@@ -5,9 +5,9 @@ export default function BlogMockTestsSection() {
   return (
     <section className={styles.mockSection} aria-label="Free CAT and GMAT Mock Tests">
       <div className={styles.header}>
-        <div className={styles.rotatingBadgeWrap}>
-          <div className={styles.badgeSpinner}></div>
-          <span className={styles.badgeText}>⚡ FREE EXAM SIMULATORS</span>
+        <div className={styles.badgeWrap}>
+          <span className={styles.liveDot}></span>
+          <span className={styles.badgeText}>FREE EXAM SIMULATORS</span>
         </div>
         <h3 className={styles.sectionTitle}>
           Attempt Official <span className={styles.titleHighlight}>CAT &amp; GMAT Mock Tests</span>
@@ -20,11 +20,9 @@ export default function BlogMockTestsSection() {
       <div className={styles.cardsGrid}>
         {/* Card 1: CAT Mock Test */}
         <div className={styles.cardWrapper}>
-          <div className={styles.rotatingBorderCat}></div>
           <div className={styles.cardContent}>
             <div className={styles.cardHeader}>
               <div className={styles.cardIconWrap}>
-                <div className={styles.rotatingIconRing}></div>
                 <span className={styles.cardIcon}>🐯</span>
               </div>
               <div className={styles.cardTagCat}>IIM CAT 2026</div>
@@ -64,21 +62,19 @@ export default function BlogMockTestsSection() {
                 <span>Try Free Mock (CAT)</span>
                 <span className={styles.btnArrow}>↗</span>
               </a>
-              <span className={styles.ctaSubtext}>100% Free &bull; No Credit Card &bull; Instant Results</span>
+              <span className={styles.ctaSubtext}>100% Free &bull; No Credit Card Required &bull; Instant Results</span>
             </div>
           </div>
         </div>
 
         {/* Card 2: GMAT Focus Mock Test */}
         <div className={styles.cardWrapper}>
-          <div className={styles.rotatingBorderGmat}></div>
           <div className={styles.cardContent}>
             <div className={styles.cardHeader}>
               <div className={styles.cardIconWrap}>
-                <div className={styles.rotatingIconRing}></div>
                 <span className={styles.cardIcon}>🎯</span>
               </div>
-              <div className={styles.cardTagGmat}>GMAT FOCUS</div>
+              <div className={styles.cardTagGmat}>GMAT FOCUS 2026</div>
             </div>
 
             <h4 className={styles.cardTitle}>GMAT Focus Adaptive Mock</h4>
@@ -123,4 +119,3 @@ export default function BlogMockTestsSection() {
     </section>
   );
 }
-

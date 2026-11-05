@@ -25,7 +25,6 @@ export default function CatMockSection({ city, title, subtitle }: CatMockSection
           {/* Section Header */}
           <div className={styles.header}>
             <div className={styles.badgeWrapper}>
-              <span className={styles.rotatingRing}></span>
               <span className={styles.badge}>
                 <span className={styles.liveDot}></span>
                 OFFICIAL CAT MOCK TEST PLATFORM
@@ -40,7 +39,6 @@ export default function CatMockSection({ city, title, subtitle }: CatMockSection
 
           {/* Main Card Content */}
           <div className={styles.cardWrapper}>
-            <div className={styles.cardGradientBorder}></div>
             <div className={styles.cardBody}>
               {/* Left Column: Feature List */}
               <div className={styles.featuresColumn}>
@@ -93,11 +91,9 @@ export default function CatMockSection({ city, title, subtitle }: CatMockSection
                 </div>
               </div>
 
-              {/* Right Column: Live Simulator CTA Card */}
+              {/* Right Column: Live Simulator CTA Card with Zoom In/Out Animation */}
               <div className={styles.simulatorColumn}>
                 <div className={styles.simulatorCard}>
-                  <div className={styles.simulatorCardGlow}></div>
-                  
                   <div className={styles.simulatorHeader}>
                     <div className={styles.windowControls}>
                       <span className={styles.winDotRed}></span>
@@ -110,15 +106,15 @@ export default function CatMockSection({ city, title, subtitle }: CatMockSection
                   <div className={styles.testMeta}>
                     <div className={styles.testBadge}>Full-Length Diagnostic Mock #1</div>
                     <div className={styles.sectionChips}>
-                      <span className={styles.chip}>VARC (24 Qs • 40m)</span>
-                      <span className={styles.chip}>DILR (20 Qs • 40m)</span>
-                      <span className={styles.chip}>QA (22 Qs • 40m)</span>
+                      <span className={styles.chip}>VARC (24 Questions &bull; 40 Mins)</span>
+                      <span className={styles.chip}>DILR (20 Questions &bull; 40 Mins)</span>
+                      <span className={styles.chip}>QA (22 Questions &bull; 40 Mins)</span>
                     </div>
                   </div>
 
                   <div className={styles.pricingPill}>
-                    <span className={styles.freeTag}>100% FREE</span>
-                    <span className={styles.freeSub}>No credit card required</span>
+                    <span className={styles.freeTag}>100% FREE ACCESS</span>
+                    <span className={styles.freeSub}>No credit card required &bull; Instant activation</span>
                   </div>
 
                   <div className={styles.actionWrap}>
@@ -128,7 +124,6 @@ export default function CatMockSection({ city, title, subtitle }: CatMockSection
                       rel="noopener noreferrer"
                       className={styles.ctaButton}
                     >
-                      <span className={styles.ctaButtonGlow}></span>
                       <span className={styles.ctaButtonText}>Try Free CAT Mock Test</span>
                       <span className={styles.ctaArrow}>↗</span>
                     </a>
@@ -145,4 +140,3 @@ export default function CatMockSection({ city, title, subtitle }: CatMockSection
     </section>
   );
 }
-

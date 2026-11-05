@@ -84,9 +84,6 @@ export default function CatMockPopup({ triggerElementId = "cat-mock-trigger-sect
       <div className={styles.popupBackdrop} onClick={handleDismiss} />
       
       <div className={styles.popupCard}>
-        {/* Animated Rotating Gradient Border */}
-        <div className={styles.rotatingBorder}></div>
-
         {/* Close Button */}
         <button
           type="button"
@@ -98,9 +95,8 @@ export default function CatMockPopup({ triggerElementId = "cat-mock-trigger-sect
         </button>
 
         <div className={styles.popupContent}>
-          {/* Eyebrow Badge with Rotating Spinner */}
+          {/* Eyebrow Badge */}
           <div className={styles.badgeWrapper}>
-            <span className={styles.rotatingSpinner}></span>
             <div className={styles.badge}>
               <span className={styles.livePulse}></span>
               <span>FREE CAT 2026 MOCK TEST</span>
@@ -162,4 +158,3 @@ export default function CatMockPopup({ triggerElementId = "cat-mock-trigger-sect
     </div>
   );
 }
-
