@@ -145,3 +145,4 @@ export default function CatMockSection({ city, title, subtitle }: CatMockSection
     </section>
   );
 }
+
