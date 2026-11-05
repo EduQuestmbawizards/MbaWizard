@@ -14,14 +14,8 @@ import ExamUpdates from "@/components/shared/exam-updates/ExamUpdates";
 import ExamTimetable from "@/components/shared/exam-timetable/ExamTimetable";
 import RelatedArticles from "@/components/shared/related-articles/RelatedArticles";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
-
-
-
-
-
-
-
-
+import CatMockSection from "@/components/shared/cat-mock-section/CatMockSection";
+import CatMockPopup from "@/components/shared/cat-mock-popup/CatMockPopup";
 
 const catArticles = [
   { tag: "CAT Strategy", emoji: "🧩", title: "CAT 2025 DILR: How to Crack the Toughest Section with Novel Set Strategies", excerpt: "Deep-dive into the 5 most common CAT DILR set archetypes, with frameworks for solving unconventional puzzles.", href: "/blogs/cat-2025-dilr-strategy" },
@@ -35,6 +29,7 @@ export default function GmatCatCoachingContent() {
       <GmatCatHero />
       <ExamMasteryGuide data={gmatMasteryData} />
       <GmatCatOverview />
+      <CatMockSection />
       <CareerIntelligenceSection />
       <WhyMbaWizards exam="GMAT+CAT" />
       <MythVsFact exam="GMAT+CAT" items={gmatCatMyths} />
@@ -45,6 +40,8 @@ export default function GmatCatCoachingContent() {
         titleHighlight="on GMAT & CAT"
       />
       <ExamUpdates defaultExam="GMAT" />
+      {/* Scroll trigger marker after 10 sections */}
+      <div id="cat-mock-trigger-section-10" />
       <ExamTimetable defaultExam="GMAT" />
       <RelatedArticles
         articles={catArticles}
@@ -60,6 +57,8 @@ export default function GmatCatCoachingContent() {
         primaryButtonText="Book Free GMAT+CAT Dual Demo"
         secondaryButtonText="Consult Dual Exam Specialist"
       />
+      {/* 10-Section Scroll Triggered Free Mock Popup */}
+      <CatMockPopup triggerElementId="cat-mock-trigger-section-10" />
     </>
   );
 }

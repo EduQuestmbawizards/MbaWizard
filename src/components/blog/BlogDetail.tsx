@@ -6,6 +6,7 @@ import { Blog, BlogSummary } from "@/lib/blog";
 import BlogCard from "./BlogCard";
 import LeadMagnetBanner from "./LeadMagnetBanner";
 import LeadMagnetModal from "./LeadMagnetModal";
+import BlogMockTestsSection from "./BlogMockTestsSection";
 import styles from "./BlogDetail.module.css";
 
 interface BlogDetailProps {
@@ -440,6 +441,9 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
             ) : (
               <p className={styles.paragraph}>{blog.excerpt}</p>
             )}
+
+            {/* Official CAT & GMAT Free Mock Test Showcase with Rotating Animations */}
+            <BlogMockTestsSection />
 
             {/* AI Prep Tools Showcase Grid */}
             <div className={styles.aiToolsSection}>

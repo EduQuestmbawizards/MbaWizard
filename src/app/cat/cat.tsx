@@ -13,6 +13,8 @@ import ExamUpdates from "@/components/shared/exam-updates/ExamUpdates";
 import ExamTimetable from "@/components/shared/exam-timetable/ExamTimetable";
 import RelatedArticles from "@/components/shared/related-articles/RelatedArticles";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
+import CatMockSection from "@/components/shared/cat-mock-section/CatMockSection";
+import CatMockPopup from "@/components/shared/cat-mock-popup/CatMockPopup";
 
 
 
@@ -34,6 +36,7 @@ export default function CatContent() {
       <CatHero />
       <ExamMasteryGuide data={catMasteryData} />
       <CatSyllabus />
+      <CatMockSection />
       <WhyMbaWizards exam="CAT" />
       <MythVsFact exam="CAT" items={catMyths} />
       <CatColleges />
@@ -44,6 +47,8 @@ export default function CatContent() {
       />
       <ExamUpdates defaultExam="CAT" />
       <ExamTimetable defaultExam="CAT" />
+      {/* Scroll trigger marker after 10 sections */}
+      <div id="cat-mock-trigger-section-10" />
       <RelatedArticles
         articles={catArticles}
         title="CAT Strategy Hub"
@@ -58,6 +63,8 @@ export default function CatContent() {
         primaryButtonText="Book Free CAT Diagnostic Demo"
         secondaryButtonText="Discuss CAT Study Plan"
       />
+      {/* 10-Section Scroll Popup for Free CAT Mock */}
+      <CatMockPopup triggerElementId="cat-mock-trigger-section-10" />
     </>
   );
 }

@@ -17,10 +17,10 @@ import RelatedArticles from "@/components/shared/related-articles/RelatedArticle
 import CatCityCenter from "@/components/cat-coaching-city/center-info/CatCityCenter";
 import CatCityFaq from "@/components/cat-coaching-city/faq/CatCityFaq";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
+import CatMockSection from "@/components/shared/cat-mock-section/CatMockSection";
+import CatMockPopup from "@/components/shared/cat-mock-popup/CatMockPopup";
 
 const data = catCitiesData.gurgaon;
-
-
 
 const articles = [
   { tag: "CAT Strategy", emoji: "🧩", title: "CAT 2025 DILR: How to Crack the Toughest Section with Novel Set Strategies", excerpt: "Deep-dive into the 5 most common CAT DILR set types, with frameworks for solving unconventional puzzles under 2-minute time pressure.", href: "/blogs/cat-2025-dilr-strategy" },
@@ -33,6 +33,8 @@ export default function CatGurgaonContent() {
     <>
       <CatCityHero preTitle={data.heroPreTitle} title={data.heroTitle} titleHighlight={data.heroTitleHighlight} subtitle={data.heroSubtitle} city={data.city} />
       <CatCityCurriculum city={data.city} />
+      {/* Official CAT Mock Test Section */}
+      <CatMockSection city={data.city} />
       <WhyMbaWizards exam="CAT" />
       <CareerIntelligenceSection />
       <ExamMasteryGuide data={catMasteryData} city={data.city} />
@@ -41,18 +43,22 @@ export default function CatGurgaonContent() {
       <CatCityBatches city={data.city} />
       <TestimonialsCarousel testimonials={catTestimonials} title="IIM Admits from" titleHighlight={`${data.city}`} />
       <ExamUpdates defaultExam="CAT" />
+      {/* Scroll trigger marker after 10 sections */}
+      <div id="cat-mock-trigger-section-10" />
       <ExamTimetable defaultExam="CAT" />
       <RelatedArticles articles={articles} title="CAT Tips, Guides" titleHighlight="& Resources" />
       <CatCityCenter city={data.city} centerType={data.centerType} address={data.address} phone={data.phone} email={data.email} />
       <CatCityFaq city={data.city} faqs={data.faqs} />
       <CtaSection
-        pretitle="Gurgaon's Premier CAT Prep Classrooms & Online Hub"
-        title="Target 99.5+ Percentile in CAT 2026 at"
-        titleHighlight="Gurgaon (DLF & Sec 50)"
-        description="Experience 1-on-1 Litmus diagnostics, small batches of 10–15 students, and mentorship by IIT Roorkee alumni at our Gurgaon centers or live online."
-        primaryButtonText="Book In-Person / Online CAT Demo in Gurgaon"
-        secondaryButtonText="WhatsApp Gurgaon Center"
+        pretitle={`Top-Rated CAT Coaching for ${data.city} Aspirants`}
+        title="Target 99.5+ Percentile in CAT 2026 from"
+        titleHighlight={data.city}
+        description={`Master QA, DILR matrix sets, and VARC with IIT Roorkee alumni mentors in interactive live classes and small batches of 10–15 students tailored for ${data.city} candidates.`}
+        primaryButtonText={`Book Free CAT Demo in ${data.city}`}
+        secondaryButtonText={`Chat with ${data.city} CAT Mentor`}
       />
+      {/* 10-Section Scroll Triggered Free Mock Popup */}
+      <CatMockPopup triggerElementId="cat-mock-trigger-section-10" />
     </>
   );
 }

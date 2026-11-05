@@ -92,6 +92,25 @@ const prepTools: ToolItem[] = [
     isExternal: true,
     highlightTag: "IRT Adaptive Algorithm",
   },
+  {
+    id: "cat-mock-tests",
+    badge: "CAT 2026 CBT Simulation",
+    emoji: "🐯",
+    title: "CAT Full-Length Mock Tests",
+    subtitle: "Authentic TCS-iON Interface & AI Percentile Engine",
+    description:
+      "Experience the authentic CAT exam environment with exact 40-minute sectional countdowns, negative marking (-1 / +3), on-screen calculator, and instant All-India Percentile prediction.",
+    features: [
+      "Exact TCS-iON Exam Replica: Question palette, mark-for-review status & sectional lockouts",
+      "All-India Percentile & AIR: Calibrated against 50,000+ test attempts from 90%ile to 99.9%ile",
+      "AI Mistake Taxonomy: Uncover whether errors stem from conceptual blindspots or calculation rush",
+      "66 Questions / 120 Mins: Full-length simulation curated by 99.8+%ile IIT Roorkee alumni faculty",
+    ],
+    ctaText: "Attempt Free CAT Mock",
+    href: "https://cat-mock.mbawizards.co.in/",
+    isExternal: true,
+    highlightTag: "Real TCS-iON Interface",
+  },
 ];
 
 export default function PrepTools() {
