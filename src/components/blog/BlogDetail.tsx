@@ -202,9 +202,13 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
               <div className={styles.authorBadge}>
                 <div className={styles.authorAvatar}>🎓</div>
                 <div>
-                  <div className={styles.authorName}>{blog.author.name}</div>
+                  <div className={styles.authorName}>
+                    {blog.author.name?.includes("Surinder Gupta") ? "MBA Wizards Faculty" : blog.author.name}
+                  </div>
                   <div className={styles.authorRole}>
-                    {blog.author.role || "Senior MBA Admissions Mentor"}
+                    {blog.author.name?.includes("Surinder Gupta")
+                      ? "IIT & IIM Alumni Mentorship Team"
+                      : blog.author.role || "Senior MBA Admissions Mentor"}
                   </div>
                 </div>
               </div>
@@ -526,7 +530,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
                   </div>
                   <h4 className={styles.aiToolCardTitle}>1-on-1 Faculty Mentorship</h4>
                   <p className={styles.aiToolCardDesc}>
-                    Personalized diagnostic strategy consultation with Surinder Gupta to audit your test baseline and target intake roadmap.
+                    Personalized diagnostic strategy consultation with IIT Roorkee alumni faculty to audit your test baseline and target intake roadmap.
                   </p>
                   <button
                     type="button"
@@ -545,7 +549,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
               <div>
                 <h3 className={styles.ctaTitle}>Aiming for 705+ on GMAT or 99th %ile in CAT?</h3>
                 <p className={styles.ctaDesc}>
-                  Schedule a personalized 1-on-1 strategy call with Surinder Gupta (IIT Roorkee Alum) and get a diagnostic roadmap tailored to your target intake.
+                  Schedule a personalized 1-on-1 strategy call with our Chief Academic Mentor (IIT Roorkee Alum) and get a diagnostic roadmap tailored to your target intake.
                 </p>
                 <div className={styles.ctaActions}>
                   <button
@@ -755,8 +759,10 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
                     className={styles.founderThumbnail}
                   />
                 </div>
-                <div className={styles.authorHeading}>{blog.author.name}</div>
-                <div className={styles.authorSub}>IIT Roorkee Alum | Founder</div>
+                <div className={styles.authorHeading}>
+                  {blog.author.name?.includes("Surinder Gupta") ? "MBA Wizards Master Faculty" : blog.author.name}
+                </div>
+                <div className={styles.authorSub}>IIT &amp; IIM Alumni Mentorship Team</div>
                 <p className={styles.authorBio}>
                   30+ years mentoring ambitious minds for GMAT, GRE, CAT, and top M7 / IIM admissions.
                 </p>

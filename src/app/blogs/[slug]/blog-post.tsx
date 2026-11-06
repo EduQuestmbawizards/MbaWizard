@@ -31,13 +31,15 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
 
           <div className={styles.authorBox}>
             <img
-              src="/images/common/surinder-gupta.jpg"
-              alt={post.author}
+              src="/images/common/mbawizards-logo.svg"
+              alt="MBA Wizards Faculty"
               className={styles.authorAvatar}
             />
             <div>
-              <div className={styles.authorName}>{post.author}</div>
-              <div className={styles.authorTitle}>MBA Admissions &amp; Test Prep Specialist</div>
+              <div className={styles.authorName}>
+                {post.author?.includes("Surinder Gupta") ? "MBA Wizards Academic Faculty" : post.author}
+              </div>
+              <div className={styles.authorTitle}>IIT &amp; IIM Alumni Mentorship Team</div>
             </div>
           </div>
         </header>

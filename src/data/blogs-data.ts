@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     tag: "Interview Prep",
     readTime: "8 min read",
     publishedDate: "2026-08-24",
-    author: "Mr. Surinder Gupta (IIT Roorkee)",
+    author: "MBA Wizards Admissions Team",
     excerpt: "The ultimate framework for answering the #1 most critical MBA interview icebreaker question at IIM Ahmedabad, ISB, Harvard, and Wharton.",
     content: [
       "The 'Tell Me About Yourself' question is not small talk — it is your elevator pitch, your opening thesis statement, and the anchor for the entire 30-to-45 minute interview that follows.",
@@ -35,7 +35,7 @@ export const blogPosts: BlogPost[] = [
     tag: "Interview Questions",
     readTime: "12 min read",
     publishedDate: "2026-08-24",
-    author: "Mr. Surinder Gupta (IIT Roorkee)",
+    author: "MBA Wizards Admissions Team",
     excerpt: "Comprehensive breakdown of behavioral, situational, and school-specific interview questions with STAR-method answer structures.",
     content: [
       "Securing an interview invitation from an elite business school means your academic profile, test scores, and essays have cleared the hurdle. The interview is where the committee decides whether they want to share a classroom with you for the next two years.",
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
     tag: "Exam Format",
     readTime: "9 min read",
     publishedDate: "2026-08-20",
-    author: "Mr. Surinder Gupta (IIT Roorkee)",
+    author: "MBA Wizards Admissions Team",
     excerpt: "Detailed breakdown of test duration, section structure, Question Review & Edit feature, and scoring scale changes.",
     content: [
       "In late 2023, the Graduate Management Admission Council (GMAC) implemented the most sweeping overhaul of the GMAT in over two decades, transitioning fully to the GMAT Focus Edition.",
@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
     tag: "DILR Masterclass",
     readTime: "11 min read",
     publishedDate: "2026-08-05",
-    author: "Mr. Surinder Gupta (IIT Roorkee)",
+    author: "MBA Wizards Admissions Team",
     excerpt: "Frameworks for solving unconventional CAT DILR puzzle sets and optimizing question selection under 40-minute sectional pressure.",
     content: [
       "Data Interpretation and Logical Reasoning (DILR) is widely recognized as the make-or-break section of the CAT examination. With 20 questions grouped into 4 sets of 5 questions each, solving just 2 complete sets with 100% accuracy often guarantees a 95th+ percentile score in this section.",

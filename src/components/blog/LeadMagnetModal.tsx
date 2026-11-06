@@ -223,7 +223,7 @@ export default function LeadMagnetModal({
                   onChange={(e) => setFormData({ ...formData, interestedIn: e.target.value })}
                 >
                   <option value="GMAT Focus 705+ Comprehensive Batch">GMAT Focus 705+ Comprehensive Batch (Live Online / Offline)</option>
-                  <option value="1-on-1 IIT Roorkee Private Mentorship">1-on-1 IIT Roorkee Private Mentorship (Surinder Gupta)</option>
+                  <option value="1-on-1 IIT Roorkee Private Mentorship">1-on-1 IIT Roorkee Private Mentorship</option>
                   <option value="GMAT Weekend Batch for Working Professionals">GMAT Weekend Batch for Working Professionals (Cyber City / Golf Course Rd)</option>
                   <option value="GMAT 30-Day Intensive Crash Course">GMAT 30-Day Intensive Crash Course (Fast-Track)</option>
                   <option value="GMAT 750+ Elite 99th Percentile Advanced Batch">GMAT 750+ Elite 99th Percentile Advanced Batch</option>
@@ -324,7 +324,7 @@ export default function LeadMagnetModal({
               </div>
             )}
             <p className={styles.modalSub}>
-              Our Chief Academic Mentor, <strong>Mr. Surinder Gupta (IIT Roorkee Alum)</strong>, will also share your 100-day diagnostic roadmap and class schedule via WhatsApp/Email.
+              Our Chief Academic Mentor, <strong>IIT Roorkee Alum Faculty</strong>, will also share your 100-day diagnostic roadmap and class schedule via WhatsApp/Email.
             </p>
             <button
               type="button"

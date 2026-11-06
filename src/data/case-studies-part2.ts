@@ -8,7 +8,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Explore how MBA applicants with average academic records can demonstrate professional growth, leadership and readiness for business school.",
     "metaTitle": "MBA with Average Academics: Building a Strong Profile | MBA Wizards Case Studies",
     "metaDescription": "Explore how MBA applicants with average academic records can demonstrate professional growth, leadership and readiness for business school.",
-    "coverImage": "/images/toppers/ashish-soni.jpeg",
+    "coverImage": "/images/blogs/case-studies/mba-with-average-academics-profile-building.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -270,7 +270,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Learn how applicants from smaller organisations can present professional impact, responsibility and leadership in MBA applications.",
     "metaTitle": "MBA Admissions Without a Big Brand Employer | MBA Wizards Case Studies",
     "metaDescription": "Learn how applicants from smaller organisations can present professional impact, responsibility and leadership in MBA applications.",
-    "coverImage": "/images/toppers/sapna-nair.jpeg",
+    "coverImage": "/images/blogs/case-studies/mba-profile-without-big-brand-employer.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -532,7 +532,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Discover how software engineers can connect technical achievements, business exposure and career goals in MBA applications.",
     "metaTitle": "MBA for Software Engineers: Building Your Profile | MBA Wizards Case Studies",
     "metaDescription": "Discover how software engineers can connect technical achievements, business exposure and career goals in MBA applications.",
-    "coverImage": "/images/toppers/ashutosh-rai.jpeg",
+    "coverImage": "/images/blogs/case-studies/mba-for-software-engineers-career-transition.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -794,7 +794,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Learn how to explain a career break in an MBA application while demonstrating professional continuity, growth and future direction.",
     "metaTitle": "MBA Admissions After a Career Break | MBA Wizards Case Studies",
     "metaDescription": "Learn how to explain a career break in an MBA application while demonstrating professional continuity, growth and future direction.",
-    "coverImage": "/images/toppers/shaheen-pervaz-2021.jpg",
+    "coverImage": "/images/blogs/case-studies/mba-admissions-career-gap.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1056,7 +1056,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Discover how family-business professionals can demonstrate individual contribution, leadership and business impact in global MBA applications.",
     "metaTitle": "MBA After Family Business: Building Your Application | MBA Wizards Case Studies",
     "metaDescription": "Discover how family-business professionals can demonstrate individual contribution, leadership and business impact in global MBA applications.",
-    "coverImage": "/images/toppers/devesh-lahori.jpg",
+    "coverImage": "/images/blogs/case-studies/mba-after-family-business-experience.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1318,7 +1318,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Learn how to develop an authentic MBA essay using personal experiences, career motivations and a coherent application narrative.",
     "metaTitle": "How to Write a Unique MBA Application Essay | MBA Wizards Case Studies",
     "metaDescription": "Learn how to develop an authentic MBA essay using personal experiences, career motivations and a coherent application narrative.",
-    "coverImage": "/images/toppers/shaheen-pervez.jpeg",
+    "coverImage": "/images/blogs/case-studies/how-to-write-unique-mba-application-essay.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1580,7 +1580,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Discover how to connect professional achievements, career milestones and future ambitions into a coherent MBA application.",
     "metaTitle": "How to Build a Compelling MBA Application Story | MBA Wizards Case Studies",
     "metaDescription": "Discover how to connect professional achievements, career milestones and future ambitions into a coherent MBA application.",
-    "coverImage": "/images/toppers/gagan-nanda.jpeg",
+    "coverImage": "/images/blogs/case-studies/mba-application-storytelling-resume-achievements.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1842,7 +1842,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Understand how to develop a convincing MBA rationale by connecting professional experience, career goals and the need for an MBA.",
     "metaTitle": "Why MBA, Why Now? Building a Strong Answer | MBA Wizards Case Studies",
     "metaDescription": "Understand how to develop a convincing MBA rationale by connecting professional experience, career goals and the need for an MBA.",
-    "coverImage": "/images/toppers/sheetal-bhatnagar.jpeg",
+    "coverImage": "/images/blogs/case-studies/why-mba-why-now-career-goals.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2104,7 +2104,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Explore how applicants with low GPAs can provide context and demonstrate academic readiness through professional evidence.",
     "metaTitle": "MBA with Low GPA: How to Strengthen Your Application | MBA Wizards Case Studies",
     "metaDescription": "Explore how applicants with low GPAs can provide context and demonstrate academic readiness through professional evidence.",
-    "coverImage": "/images/toppers/gaurav-mishra.jpeg",
+    "coverImage": "/images/blogs/case-studies/mba-low-gpa-application-strategy.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2366,7 +2366,7 @@ export const caseStudiesPart2: MasterBlogPost[] = [
     "excerpt": "Learn how to evaluate a previous MBA application, identify weaknesses and build a more considered reapplication strategy.",
     "metaTitle": "MBA Reapplication: What to Change After Rejection | MBA Wizards Case Studies",
     "metaDescription": "Learn how to evaluate a previous MBA application, identify weaknesses and build a more considered reapplication strategy.",
-    "coverImage": "/images/toppers/anita-bhatnagar.jpg",
+    "coverImage": "/images/blogs/case-studies/mba-reapplication-after-rejection.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",

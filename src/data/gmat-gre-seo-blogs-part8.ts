@@ -10,9 +10,9 @@ export const gmatGreSeoBlogsPart8: MasterBlogPost[] = [
     "metaDescription": "Build CAT Algebra skills through a sequenced plan covering equations, inequalities, functions and practice review.",
     "coverImage": "/images/blogs/cat-algebra-preparation-equations-inequalities-and-functions.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [
@@ -235,6 +235,261 @@ export const gmatGreSeoBlogsPart8: MasterBlogPost[] = [
     ]
   },
   {
+  "slug": "cat-geometry-preparation-theorems-visualization-and-question-selection",
+  "title": "CAT Geometry Preparation: Theorems, Visualization and Question Selection",
+  "subtitle": "Triangle Theorems, Circle Tangent Properties, Coordinate Geometry Shortcuts, and 3D Mensuration Visualization.",
+  "excerpt": "Master CAT Geometry with essential theorems, diagram visualization techniques, and smart question selection rules.",
+  "metaTitle": "CAT Geometry Preparation: Theorems, Visualization and Practice Plan | MBA Wizards",
+  "metaDescription": "Master CAT Geometry, Mensuration and Coordinate Geometry with essential theorems, diagram visualization techniques, and question selection rules.",
+  "coverImage": "/images/blogs/cat-geometry-preparation-theorems-visualization-and-question-selection.jpg",
+  "author": {
+    "name": "MBA Wizards Master Faculty",
+    "role": "IIT Roorkee Alumni Mentorship Team",
+    "avatar": "/images/common/mbawizards-logo.svg"
+  },
+  "category": "CAT Prep",
+  "tags": [
+    "CAT geometry preparation",
+    "CAT geometry questions",
+    "CAT circles triangles mensuration",
+    "CAT geometry formulas pdf",
+    "CAT geometry theorems",
+    "CAT coordinate geometry",
+    "CAT 2026 Quant preparation"
+  ],
+  "publishedAt": "2026-11-01T09:30:00Z",
+  "readTime": 19,
+  "featured": true,
+  "accentColor": "#d4af37",
+  "schemaTypes": [
+    "Article",
+    "BreadcrumbList",
+    "HowTo",
+    "FAQPage"
+  ],
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A strategic **CAT geometry preparation** plan is indispensable for maximizing Quantitative Aptitude percentile. Across the last five years of CAT examination papers, Geometry, Mensuration, and Coordinate Geometry have consistently accounted for 4 to 6 questions out of 22 in QA—translating to 20% to 27% of the entire section. Unlike school examinations that award partial marks for lengthy proofs, CAT Geometry questions test spatial visualization, structural symmetry, auxiliary construction reflexes, and ruthless question selection."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many CAT aspirants struggle with Geometry because diagrams are often intentionally omitted in the question stem, or complex geometric figures contain misleading visual proportions. However, by classifying questions into triangle centers, cyclic circle properties, regular polygon dissections, and coordinate transformations, you can solve over 75% of CAT Geometry questions in under 100 seconds without memorizing dozens of obscure lemmas. In this definitive guide, our IIT Roorkee alumni faculty presents the core theorem hierarchy, diagram sketching protocols, and a high-yield question selection matrix."
+    },
+    {
+      "type": "heading",
+      "text": "1. Core Triangle Theorems and Special Center Properties",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Triangles form the architectural bedrock of CAT Geometry. Master these five foundational theorem clusters before attempting complex composite figures:"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Theorem / Center Domain",
+        "Mathematical Formula / Property",
+        "CAT Exam Application / Trap",
+        "Ideal Solution Time"
+      ],
+      "rows": [
+        [
+          "Appollonius' Theorem (Medians)",
+          "AB² + AC² = 2(AD² + BD²), where AD is the median to BC",
+          "Frequently tested when side lengths are given and median length is requested without right angles.",
+          "60 - 75 seconds"
+        ],
+        [
+          "Angle Bisector Theorem",
+          "Internal: BD/DC = AB/AC; External: BE/EC = AB/AC",
+          "Combined with area ratio rules: Triangles with the same vertex height have areas proportional to their bases.",
+          "50 - 65 seconds"
+        ],
+        [
+          "Incenter & Inradius (r)",
+          "Area = r × s (s = semi-perimeter); For right triangle: r = (a + b - c)/2",
+          "Tested in incircle-inscribed right triangles and equilateral triangle dissections.",
+          "45 - 60 seconds"
+        ],
+        [
+          "Circumcenter & Circumradius (R)",
+          "R = (a × b × c) / (4 × Area); For right triangle: R = hypotenuse / 2",
+          "Remember that in a right-angled triangle, the circumcenter lies exactly on the midpoint of the hypotenuse.",
+          "40 - 55 seconds"
+        ],
+        [
+          "Centroid (G) Mechanics",
+          "Divides every median in ratio 2:1; Divides triangle into 6 equal area triangles",
+          "Centroid divides coordinates into weighted averages; coordinates are ((x1+x2+x3)/3, (y1+y2+y3)/3).",
+          "40 - 50 seconds"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Circle Properties, Secants, and Tangent Theorems",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Circle geometry in CAT rewards students who instantly spot cyclic quadrilaterals and power of a point configurations:"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Circle Geometric Property",
+        "Core Mathematical Identity",
+        "CAT Shortcut Reflex"
+      ],
+      "rows": [
+        [
+          "Tangent-Secant Power Theorem",
+          "PT² = PA × PB (where PT is tangent from external point P, and PAB is secant line)",
+          "Instantly compute unknown chord segments without trigonometry."
+        ],
+        [
+          "Intersecting Chords Theorem",
+          "PA × PB = PC × PD (for two chords AB and CD intersecting at internal point P)",
+          "Look for similar triangles formed by opposite chord ends."
+        ],
+        [
+          "Alternate Segment Theorem",
+          "Angle between tangent and chord equals angle subtended by chord in alternate segment",
+          "Essential for solving un-dimensioned circle angle puzzles in CAT Slot 1 & 2."
+        ],
+        [
+          "Ptolemy's Theorem (Cyclic Quadrilateral)",
+          "AC × BD = (AB × CD) + (BC × AD) (Product of diagonals equals sum of products of opposite sides)",
+          "Bypasses 3-page sine rule calculations in competitive geometry."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "3. 3D Mensuration Visualization and Composite Solids",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "CAT 3D Mensuration questions rarely ask for direct formula plug-and-chug. Instead, they test geometric operations: cutting a cone into frustums, inscribing a sphere inside a cylinder, or rolling a flat circular sector into an open cone:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "**Sector to Cone Mapping:** The radius (R) of the sector becomes the slant height (L) of the cone. The arc length (θ/360 × 2πR) becomes the base circumference (2πr) of the cone.",
+        "**Frustum Volume by Similarity:** Never memorize the clumsy frustum formula if you can avoid it. Use volume similarity ratios: if height is cut at h1:h2, the volumes scale as (h1/h2)³.",
+        "**Sphere Inscribed in a Cylinder:** The ratio of the volume of the inscribed sphere to the cylinder is exactly 2:3. The ratio of their total surface areas is also 2:3.",
+        "**Maximum Inscribed Cube:** For a sphere of diameter D, the maximum cube edge length is a = D / √3. For a cone of base radius r and height h, the inscribed cylinder radius is r_cyl = r × h / (h + r × tan θ)."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "4. Coordinate Geometry Speed Heuristics",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Coordinate geometry questions in CAT are often algebra problems disguised as shapes. Apply these high-speed shortcuts:"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Coordinate Concept",
+        "Fast-Track Formula",
+        "When to Deploy in CAT"
+      ],
+      "rows": [
+        [
+          "Perpendicular Distance from Point to Line",
+          "d = |Ax0 + By0 + C| / √(A² + B²)",
+          "Finding tangent radius from circle center to a linear chord boundary."
+        ],
+        [
+          "Shoelace Polygon Area Formula",
+          "Area = 1/2 |(x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2))|",
+          "Given vertices of any non-regular polygon on the Cartesian plane."
+        ],
+        [
+          "Reflections Across Axes & Lines",
+          "Across y = x: (x, y) → (y, x); Across y = -x: (x, y) → (-y, -x)",
+          "Rapidly plotting mirrored paths and shortest distance bouncing ray problems."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "5. CAT Geometry Question Selection Protocol (The 3-Round System)",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Geometry questions have high variance in solution time. A student who gets emotionally trapped trying to prove an auxiliary construction will lose 7 vital minutes. Follow our structured triage:"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Question Classification",
+        "Visual / Question Traits",
+        "Tactical Action Protocol"
+      ],
+      "rows": [
+        [
+          "Round 1 (Immediate Solve: < 75s)",
+          "Diagram provided, right-angled triangles, Pythagorean triplets, regular hexagon dissection, direct formula application.",
+          "Solve immediately in your first 20-minute scan. Secure the guaranteed 3 marks."
+        ],
+        [
+          "Round 2 (Mark for Review: 90-120s)",
+          "No diagram provided, wordy problem requiring sketch, 3D cone-cylinder packing, coordinate intersection with inequalities.",
+          "Draft a proportional sketch on rough sheet. If the relationship clicks within 30 seconds, solve; otherwise move on."
+        ],
+        [
+          "Round 3 (Ruthless Skip)",
+          "Arbitrary quadrilateral with unusual angles (e.g. 17°, 33°), obscure locus puzzles, non-standard solids requiring calculus approximations.",
+          "Skip completely. Protect your 40-minute QA section time for high-yield Arithmetic and Algebra sets."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "6. Frequently Asked Questions (FAQ)",
+      "level": 2
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "How many Geometry questions appear in CAT Quant every year?",
+          "answer": "In recent 66-question CAT formats (22 questions in QA), Geometry and Mensuration consistently account for 4 to 6 questions. Of these, 2 to 3 are typically moderate and directly solvable with standard triangle and circle theorems."
+        },
+        {
+          "question": "Can non-engineers crack CAT Geometry without advanced trigonometry?",
+          "answer": "Yes, absolutely. CAT does not test complex trigonometric identities like multiple angle formulas (sin 3θ, cos 3θ) or calculus. Over 90% of CAT geometry questions rely solely on Euclidean geometry, similarity of triangles, circle tangents, and coordinate formulas."
+        },
+        {
+          "question": "Should I draw diagrams to scale during the exam?",
+          "answer": "While exact scale is impossible under time pressure, maintaining proportional sanity is essential. If an angle is given as 120°, sketching it as an acute angle will prevent your mind from seeing the correct supplementary angles and auxiliary perpendicular drops."
+        },
+        {
+          "question": "What is the best sequence to prepare CAT Geometry?",
+          "answer": "Follow this chronological order: 1) Triangles & Similarity, 2) Circles & Tangents, 3) Quadrilaterals & Polygons, 4) Coordinate Geometry, and 5) 3D Solids & Mensuration. This progression builds visual intuition before adding coordinate equations."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "heading": "Master CAT Quant with IIT Roorkee Alumni Mentorship",
+      "subtext": "Book a complimentary 1-on-1 diagnostic review with MBA Wizards senior faculty to evaluate your geometry visualization skills, formula retrieval speed, and mock pacing strategy.",
+      "primaryLabel": "Schedule 1-on-1 Diagnostic Call",
+      "primaryHref": "/premium-university-consulting-packages",
+      "secondaryLabel": "Download Geometry Formula Sheet (PDF)",
+      "secondaryHref": "/lead-magnets/cat-geometry-preparation-theorems-visualization-and-question-selection-guide.pdf"
+    }
+  ]
+},
+  {
     "slug": "cat-dilr-sets-how-to-choose-the-right-set-under-time-pressure",
     "title": "CAT DILR Sets: How to Choose the Right Set Under Time Pressure",
     "subtitle": "The 4-Minute Scanning Protocol, Clue-Density Scoring, The 7-Minute Escape Hatch, and Trap Identification.",
@@ -243,9 +498,9 @@ export const gmatGreSeoBlogsPart8: MasterBlogPost[] = [
     "metaDescription": "Learn how to scan CAT DILR sets, estimate difficulty and choose a sensible order under time pressure.",
     "coverImage": "/images/blogs/cat-dilr-sets-how-to-choose-the-right-set-under-time-pressure.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [
@@ -498,9 +753,9 @@ export const gmatGreSeoBlogsPart8: MasterBlogPost[] = [
     "metaDescription": "Build DILR capability progressively with untimed learning, structured set practice, timed drills and performance tracking.",
     "coverImage": "/images/blogs/cat-dilr-practice-plan-from-untimed-sets-to-exam-pace.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [
@@ -753,9 +1008,9 @@ export const gmatGreSeoBlogsPart8: MasterBlogPost[] = [
     "metaDescription": "Improve CAT VARC with a passage-structure method, question-type practice and a more deliberate passage-selection strategy.",
     "coverImage": "/images/blogs/cat-varc-reading-comprehension-passage-selection-and-accuracy.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [
@@ -1003,9 +1258,9 @@ export const gmatGreSeoBlogsPart8: MasterBlogPost[] = [
     "metaDescription": "Learn to identify central ideas and sentence relationships in CAT verbal questions with a repeatable elimination method.",
     "coverImage": "/images/blogs/cat-para-summary-and-odd-sentence-out-how-to-solve-them.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [

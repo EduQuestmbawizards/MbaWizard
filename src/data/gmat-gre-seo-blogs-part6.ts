@@ -10,9 +10,9 @@ export const gmatGreSeoBlogsPart6: MasterBlogPost[] = [
     "metaDescription": "Decide whether to retake the GRE by comparing program targets, section gaps, likely improvement and deadlines.",
     "coverImage": "/images/blogs/gre-retake-strategy-how-to-decide-whether-another-attempt-is-worth-it.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "GRE Prep",
     "tags": [
@@ -445,9 +445,9 @@ export const gmatGreSeoBlogsPart6: MasterBlogPost[] = [
     "metaDescription": "Understand GRE ScoreSelect and plan score reporting while checking each university's current admissions policy.",
     "coverImage": "/images/blogs/gre-scoreselect-explained-choosing-which-scores-to-send.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "GRE Prep",
     "tags": [
@@ -911,9 +911,9 @@ export const gmatGreSeoBlogsPart6: MasterBlogPost[] = [
     "metaDescription": "Compare GRE and GMAT for MBA applications based on test format, personal strengths and the policies of your target schools.",
     "coverImage": "/images/blogs/gre-for-mba-vs-gmat-which-test-fits-your-application.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "GRE Prep",
     "tags": [
@@ -1172,9 +1172,9 @@ export const gmatGreSeoBlogsPart6: MasterBlogPost[] = [
     "metaDescription": "Research GRE policies for MS Computer Science programs and plan test preparation around each department's current requirements.",
     "coverImage": "/images/blogs/gre-for-ms-in-computer-science-score-planning-and-application-fit.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "GRE Prep",
     "tags": [
@@ -1409,9 +1409,9 @@ export const gmatGreSeoBlogsPart6: MasterBlogPost[] = [
     "metaDescription": "Understand GRE waiver and test-optional policies, and verify requirements at the program level before applying.",
     "coverImage": "/images/blogs/gre-waiver-and-test-optional-graduate-admissions-what-to-check.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "GRE Prep",
     "tags": [

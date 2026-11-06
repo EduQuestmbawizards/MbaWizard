@@ -79,7 +79,7 @@
   <!-- Footer Branding -->
   <g transform="translate(80, 545)">
     <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#d4af37" letter-spacing="1">MBA WIZARDS</text>
-    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">Mentored by Mr. Surinder Gupta (IIT Roorkee Alum, 25+ Yrs Exp) • IIM Interview Masterclass</text>
+    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">Mentored by MBA Wizards Alumni Faculty • IIM Interview Masterclass</text>
     <text x="1040" y="30" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#38bdf8">mbawizards.co.in</text>
   </g>
 </svg>

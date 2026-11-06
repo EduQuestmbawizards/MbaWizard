@@ -41,7 +41,7 @@ export default function LeadMagnetBanner({
           <div className={styles.featurePills}>
             <span className={styles.pill}>✓ 100-Day Day-by-Day Study Plan</span>
             <span className={styles.pill}>✓ Quant / Verbal / DI Formulas</span>
-            <span className={styles.pill}>✓ Mentor: Surinder Gupta (IIT Roorkee)</span>
+            <span className={styles.pill}>✓ Mentor: IIT Roorkee Alumni Faculty</span>
             <span className={styles.pill}>✓ Instant PDF Download with Blog Blueprint</span>
           </div>
 

@@ -58,7 +58,7 @@ export default function BlogsContent({ posts }: BlogsContentProps) {
                 <h2 className={styles.cardTitle}>{post.title}</h2>
                 <p className={styles.cardExcerpt}>{post.excerpt}</p>
                 <div className={styles.cardFooter}>
-                  <span className={styles.cardAuthor}>{post.author}</span>
+                  <span className={styles.cardPublished}>MBA Wizards Insights</span>
                   <Link href={`/blogs/${post.slug}`} className={styles.readMoreLink}>
                     Read Article →
                   </Link>

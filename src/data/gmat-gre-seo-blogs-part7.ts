@@ -10,9 +10,9 @@ export const gmatGreSeoBlogsPart7: MasterBlogPost[] = [
     "metaDescription": "Build a GRE vocabulary routine using context, spaced review and active recall rather than memorising long lists once.",
     "coverImage": "/images/blogs/gre-vocabulary-learning-plan-retention-without-rote-memorisation.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "GRE Prep",
     "tags": [
@@ -295,9 +295,9 @@ export const gmatGreSeoBlogsPart7: MasterBlogPost[] = [
     "metaDescription": "Start CAT preparation with a baseline assessment, section-wise learning plan, mock schedule and revision milestones.",
     "coverImage": "/images/blogs/cat-2026-preparation-roadmap-for-beginners.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [
@@ -563,9 +563,9 @@ export const gmatGreSeoBlogsPart7: MasterBlogPost[] = [
     "metaDescription": "Prepare for CAT alongside a full-time job with realistic weekday sessions, weekend practice and mock-analysis time.",
     "coverImage": "/images/blogs/cat-study-plan-for-working-professionals-with-a-full-time-job.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [
@@ -811,9 +811,9 @@ export const gmatGreSeoBlogsPart7: MasterBlogPost[] = [
     "metaDescription": "Compare CAT self-study, coaching and hybrid preparation based on baseline, available time, feedback needs and budget.",
     "coverImage": "/images/blogs/cat-preparation-self-study-vs-coaching-vs-hybrid-learning.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [
@@ -1044,9 +1044,9 @@ export const gmatGreSeoBlogsPart7: MasterBlogPost[] = [
     "metaDescription": "Organise CAT Arithmetic preparation with a topic sequence, practice milestones and a structured error-review method.",
     "coverImage": "/images/blogs/cat-arithmetic-preparation-topic-order-and-practice-strategy.jpg",
     "author": {
-      "name": "Mr. Surinder Gupta (IIT Roorkee)",
+      "name": "MBA Wizards Master Faculty",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
-      "avatar": "/images/common/surinder-gupta.jpg"
+      "avatar": "/images/common/mbawizards-logo.svg"
     },
     "category": "CAT Prep",
     "tags": [

@@ -8,7 +8,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Understand why GMAT scores plateau and how diagnostic analysis, targeted practice and expert guidance can improve preparation.",
     "metaTitle": "GMAT Score Plateau: How to Improve Your Score | MBA Wizards Case Studies",
     "metaDescription": "Understand why GMAT scores plateau and how diagnostic analysis, targeted practice and expert guidance can improve preparation.",
-    "coverImage": "/images/toppers/abhinanjy-gupta.jpeg",
+    "coverImage": "/images/blogs/case-studies/gmat-score-improvement-after-585-plateau.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -271,7 +271,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Discover how working professionals can organise GMAT preparation with a realistic study plan, performance tracking and expert mentorship.",
     "metaTitle": "GMAT Preparation While Working Full Time | MBA Wizards Case Studies",
     "metaDescription": "Discover how working professionals can organise GMAT preparation with a realistic study plan, performance tracking and expert mentorship.",
-    "coverImage": "/images/toppers/anita-bhatnagar.jpg",
+    "coverImage": "/images/blogs/case-studies/gmat-preparation-working-professionals.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -535,7 +535,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Explore why a strong GMAT score alone may not make an MBA application competitive and how to develop a differentiated profile.",
     "metaTitle": "Good GMAT Score but Weak MBA Profile? | MBA Wizards Case Studies",
     "metaDescription": "Explore why a strong GMAT score alone may not make an MBA application competitive and how to develop a differentiated profile.",
-    "coverImage": "/images/toppers/anil-kaharbar.jpeg",
+    "coverImage": "/images/blogs/case-studies/good-gmat-score-weak-mba-application.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -798,7 +798,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Learn how non-engineering MBA applicants can strengthen GMAT Quant through diagnostic assessment, targeted practice and expert guidance.",
     "metaTitle": "GMAT Quant Preparation for Non-Engineers | MBA Wizards Case Studies",
     "metaDescription": "Learn how non-engineering MBA applicants can strengthen GMAT Quant through diagnostic assessment, targeted practice and expert guidance.",
-    "coverImage": "/images/toppers/ayushi-sharma.jpeg",
+    "coverImage": "/images/blogs/case-studies/gmat-quant-preparation-non-engineers.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1060,7 +1060,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Understand how to review previous GMAT attempts, identify weaknesses and build a more effective retake strategy.",
     "metaTitle": "GMAT Retake Strategy: How to Prepare Again | MBA Wizards Case Studies",
     "metaDescription": "Understand how to review previous GMAT attempts, identify weaknesses and build a more effective retake strategy.",
-    "coverImage": "/images/toppers/ashish-kumar.jpeg",
+    "coverImage": "/images/blogs/case-studies/gmat-second-attempt-retake-strategy.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1322,7 +1322,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Compare GMAT and GRE for MBA admissions based on aptitude, target schools, exam requirements and preparation strategy.",
     "metaTitle": "GMAT vs GRE for MBA: How to Choose | MBA Wizards Case Studies",
     "metaDescription": "Compare GMAT and GRE for MBA admissions based on aptitude, target schools, exam requirements and preparation strategy.",
-    "coverImage": "/images/toppers/dhruvi-kakkar.jpg",
+    "coverImage": "/images/blogs/case-studies/gmat-vs-gre-choosing-mba-exam.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1584,7 +1584,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Discover a structured approach to GRE Quant for non-engineering and humanities graduates through diagnostic testing and focused practice.",
     "metaTitle": "GRE Quant Preparation Without a Maths Background | MBA Wizards Case Studies",
     "metaDescription": "Discover a structured approach to GRE Quant for non-engineering and humanities graduates through diagnostic testing and focused practice.",
-    "coverImage": "/images/toppers/kanchan-puniya.jpeg",
+    "coverImage": "/images/blogs/case-studies/gre-quant-preparation-non-engineers.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1846,7 +1846,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Understand how to evaluate GRE acceptance, university requirements and MBA application strategy before selecting business schools.",
     "metaTitle": "GRE for MBA Admissions: A Planning Guide | MBA Wizards Case Studies",
     "metaDescription": "Understand how to evaluate GRE acceptance, university requirements and MBA application strategy before selecting business schools.",
-    "coverImage": "/images/toppers/prerna-chaudhary.jpg",
+    "coverImage": "/images/blogs/case-studies/gre-for-international-mba-admissions.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2108,7 +2108,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Explore a smarter GRE Verbal preparation strategy combining contextual vocabulary, reading comprehension and question analysis.",
     "metaTitle": "How to Improve GRE Verbal Performance | MBA Wizards Case Studies",
     "metaDescription": "Explore a smarter GRE Verbal preparation strategy combining contextual vocabulary, reading comprehension and question analysis.",
-    "coverImage": "/images/toppers/ashish-singh.jpeg",
+    "coverImage": "/images/blogs/case-studies/gre-verbal-preparation-reading-comprehension.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2370,7 +2370,7 @@ export const caseStudiesPart1: MasterBlogPost[] = [
     "excerpt": "Learn how to decide whether another GRE attempt is worthwhile based on target-school requirements and your overall MBA profile.",
     "metaTitle": "GRE Retake Strategy for MBA Applicants | MBA Wizards Case Studies",
     "metaDescription": "Learn how to decide whether another GRE attempt is worthwhile based on target-school requirements and your overall MBA profile.",
-    "coverImage": "/images/toppers/samreen-ranjan.jpeg",
+    "coverImage": "/images/blogs/case-studies/gre-retake-strategy-mba-applicants.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",

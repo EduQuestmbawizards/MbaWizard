@@ -137,7 +137,7 @@ export function generateLeadMagnetPDF(user: LeadMagnetUserData): void {
 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(9.5);
-  doc.text("Chief Academic Mentor: Mr. Surinder Gupta (IIT Roorkee)", 32, 203);
+  doc.text("Chief Academic Mentors: IIT Roorkee Alumni Faculty", 32, 203);
   doc.text("Over 25+ Years of Test Prep Excellence | 500+ Alumni in M7, INSEAD & ISB", 32, 211);
   doc.text("Exclusive Centers in DLF Cyber City, Golf Course Road & MG Road", 32, 219);
 
@@ -265,7 +265,7 @@ export function generateLeadMagnetPDF(user: LeadMagnetUserData): void {
   doc.setFont("helvetica", "normal");
   doc.setFontSize(9.5);
   doc.text(
-    "Designed by Surinder Gupta (IIT Roorkee) for busy professionals in Cyber City/Golf Course Rd and college aspirants.",
+    "Designed by IIT Roorkee alumni faculty for busy professionals in Cyber City/Golf Course Rd and college aspirants.",
     15,
     38
   );
@@ -496,7 +496,7 @@ export function generateLeadMagnetPDF(user: LeadMagnetUserData): void {
 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(9);
-  doc.text("Speak directly with Mr. Surinder Gupta (IIT Roorkee Alumnus) to evaluate your current", 20, 169);
+  doc.text("Speak directly with IIT Roorkee alumni mentors to evaluate your current", 20, 169);
   doc.text("profile, calculate your target GMAT Focus score, and build a custom study timeline.", 20, 175);
 
   doc.setFillColor(primaryColor[0], primaryColor[1], primaryColor[2]);
