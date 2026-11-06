@@ -270,7 +270,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Understand why MBA applicants should evaluate leadership, professional experience and career goals alongside entrance examination performance.",
     "metaTitle": "Beyond CAT Percentile: Building a Strong MBA Profile | MBA Wizards Case Studies",
     "metaDescription": "Understand why MBA applicants should evaluate leadership, professional experience and career goals alongside entrance examination performance.",
-    "coverImage": "/images/blogs/case-studies/mba-profile-building-beyond-cat-percentile.jpg",
+    "coverImage": "/images/toppers/samreen-ranjan.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -532,7 +532,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Explore how Indian CAT aspirants can evaluate international MBA options, entrance examinations and application requirements.",
     "metaTitle": "MBA Abroad After CAT Preparation: Exploring Options | MBA Wizards Case Studies",
     "metaDescription": "Explore how Indian CAT aspirants can evaluate international MBA options, entrance examinations and application requirements.",
-    "coverImage": "/images/blogs/case-studies/mba-abroad-after-cat-preparation.jpg",
+    "coverImage": "/images/toppers/anil-kaharbar.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -794,7 +794,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Discover how working professionals can balance CAT preparation with their careers through realistic scheduling and mock-test analysis.",
     "metaTitle": "CAT Preparation While Working Full Time | MBA Wizards Case Studies",
     "metaDescription": "Discover how working professionals can balance CAT preparation with their careers through realistic scheduling and mock-test analysis.",
-    "coverImage": "/images/blogs/case-studies/cat-preparation-working-professionals.jpg",
+    "coverImage": "/images/toppers/sapna-nair.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1057,7 +1057,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Compare IIM and international MBA programmes through career outcomes, costs, programme duration and professional goals.",
     "metaTitle": "IIM vs International MBA: How to Make the Right Choice | MBA Wizards Case Studies",
     "metaDescription": "Compare IIM and international MBA programmes through career outcomes, costs, programme duration and professional goals.",
-    "coverImage": "/images/blogs/case-studies/iim-vs-international-mba-career-outcomes.jpg",
+    "coverImage": "/images/toppers/ashish-kumar.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1319,7 +1319,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Learn how technology professionals can connect technical experience, business skills and consulting ambitions in an MBA application.",
     "metaTitle": "MBA for Software Engineers: Transitioning to Consulting | MBA Wizards Case Studies",
     "metaDescription": "Learn how technology professionals can connect technical experience, business skills and consulting ambitions in an MBA application.",
-    "coverImage": "/images/blogs/case-studies/mba-software-engineer-management-consulting.jpg",
+    "coverImage": "/images/toppers/ashish-singh.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1581,7 +1581,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Explore how chartered accountants can present financial expertise, business impact and leadership potential in international MBA applications.",
     "metaTitle": "MBA After CA: Building a Global MBA Application | MBA Wizards Case Studies",
     "metaDescription": "Explore how chartered accountants can present financial expertise, business impact and leadership potential in international MBA applications.",
-    "coverImage": "/images/blogs/case-studies/mba-after-ca-chartered-accountant.jpg",
+    "coverImage": "/images/toppers/ashish-soni.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1843,7 +1843,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Learn how entrepreneurs can communicate business decisions, setbacks, leadership and professional growth in MBA applications.",
     "metaTitle": "MBA for Startup Founders: Presenting Your Journey | MBA Wizards Case Studies",
     "metaDescription": "Learn how entrepreneurs can communicate business decisions, setbacks, leadership and professional growth in MBA applications.",
-    "coverImage": "/images/blogs/case-studies/mba-for-startup-founders-entrepreneurs.jpg",
+    "coverImage": "/images/toppers/shaheen-pervaz-2021.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2105,7 +2105,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Discover how second-generation business professionals can demonstrate individual leadership and measurable contribution in MBA applications.",
     "metaTitle": "MBA for Family Business Successors | MBA Wizards Case Studies",
     "metaDescription": "Discover how second-generation business professionals can demonstrate individual leadership and measurable contribution in MBA applications.",
-    "coverImage": "/images/blogs/case-studies/mba-family-business-successors.jpg",
+    "coverImage": "/images/toppers/ashutosh-rai.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2367,7 +2367,7 @@ export const caseStudiesPart4: MasterBlogPost[] = [
     "excerpt": "Explore how doctors can evaluate MBA programmes and develop a career transition strategy towards healthcare management.",
     "metaTitle": "MBA After MBBS: Exploring Healthcare Management | MBA Wizards Case Studies",
     "metaDescription": "Explore how doctors can evaluate MBA programmes and develop a career transition strategy towards healthcare management.",
-    "coverImage": "/images/blogs/case-studies/mba-after-mbbs-healthcare-management.jpg",
+    "coverImage": "/images/toppers/shaheen-pervez.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",

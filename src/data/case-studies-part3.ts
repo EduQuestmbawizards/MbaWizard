@@ -8,7 +8,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Discover how structured interview practice, AI simulations and expert feedback can help MBA applicants communicate their experiences effectively.",
     "metaTitle": "MBA Interview Preparation: From Profile to Performance | MBA Wizards Case Studies",
     "metaDescription": "Discover how structured interview practice, AI simulations and expert feedback can help MBA applicants communicate their experiences effectively.",
-    "coverImage": "/images/blogs/case-studies/mba-interview-preparation-strong-profile.jpg",
+    "coverImage": "/images/toppers/gopal-sharma.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -271,7 +271,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Explore how AI interview simulations and mentor feedback can help applicants identify weaknesses and prepare for unpredictable MBA interviews.",
     "metaTitle": "AI MBA Interview Practice: Beyond Memorised Answers | MBA Wizards Case Studies",
     "metaDescription": "Explore how AI interview simulations and mentor feedback can help applicants identify weaknesses and prepare for unpredictable MBA interviews.",
-    "coverImage": "/images/blogs/case-studies/ai-mba-interview-practice-tool.jpg",
+    "coverImage": "/images/toppers/ayushi-sharma.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -534,7 +534,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Learn how to prepare authentic, flexible MBA interview responses using real experiences, simulations and expert feedback.",
     "metaTitle": "MBA Interviews: Why Memorised Answers Don't Work | MBA Wizards Case Studies",
     "metaDescription": "Learn how to prepare authentic, flexible MBA interview responses using real experiences, simulations and expert feedback.",
-    "coverImage": "/images/blogs/case-studies/mba-interview-memorised-answers.jpg",
+    "coverImage": "/images/toppers/karan-780.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -797,7 +797,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Learn how to approach MBA behavioural questions on leadership, conflict and failure with structured answers and genuine reflection.",
     "metaTitle": "MBA Behavioural Interviews: Leadership and Conflict | MBA Wizards Case Studies",
     "metaDescription": "Learn how to approach MBA behavioural questions on leadership, conflict and failure with structured answers and genuine reflection.",
-    "coverImage": "/images/blogs/case-studies/mba-behavioural-interview-questions-leadership.jpg",
+    "coverImage": "/images/toppers/dhruvi-kakkar.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1059,7 +1059,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Understand how to prepare for M7 MBA interviews through school research, personal storytelling, AI simulations and expert feedback.",
     "metaTitle": "M7 MBA Interview Preparation: A Strategic Guide | MBA Wizards Case Studies",
     "metaDescription": "Understand how to prepare for M7 MBA interviews through school research, personal storytelling, AI simulations and expert feedback.",
-    "coverImage": "/images/blogs/case-studies/m7-mba-interview-preparation.jpg",
+    "coverImage": "/images/toppers/karan-sharma.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1322,7 +1322,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Explore how an MBA applicant can develop a distinctive Harvard application through leadership evidence, personal reflection and career clarity.",
     "metaTitle": "Harvard MBA Application: Building a Leadership Story | MBA Wizards Case Studies",
     "metaDescription": "Explore how an MBA applicant can develop a distinctive Harvard application through leadership evidence, personal reflection and career clarity.",
-    "coverImage": "/images/blogs/case-studies/harvard-mba-leadership-profile-application.jpg",
+    "coverImage": "/images/toppers/manish-kumar.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1584,7 +1584,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Learn how to connect professional achievements, personal values and future ambitions in a thoughtful Stanford GSB application.",
     "metaTitle": "Stanford GSB MBA: Developing Your Personal Story | MBA Wizards Case Studies",
     "metaDescription": "Learn how to connect professional achievements, personal values and future ambitions in a thoughtful Stanford GSB application.",
-    "coverImage": "/images/blogs/case-studies/stanford-gsb-mba-personal-story.jpg",
+    "coverImage": "/images/toppers/kanchan-puniya.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1846,7 +1846,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Discover how finance professionals can communicate leadership, business impact and career ambitions in Wharton MBA applications.",
     "metaTitle": "Wharton MBA: Building a Strong Finance Profile | MBA Wizards Case Studies",
     "metaDescription": "Discover how finance professionals can communicate leadership, business impact and career ambitions in Wharton MBA applications.",
-    "coverImage": "/images/blogs/case-studies/wharton-mba-finance-leadership-application.jpg",
+    "coverImage": "/images/toppers/mayank-mani-pandey.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2108,7 +2108,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Learn how technology professionals can demonstrate innovation, problem-solving and leadership in an MIT Sloan MBA application.",
     "metaTitle": "MIT Sloan MBA: Presenting Your Innovation Experience | MBA Wizards Case Studies",
     "metaDescription": "Learn how technology professionals can demonstrate innovation, problem-solving and leadership in an MIT Sloan MBA application.",
-    "coverImage": "/images/blogs/case-studies/mit-sloan-mba-innovation-profile.jpg",
+    "coverImage": "/images/toppers/prerna-chaudhary.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2370,7 +2370,7 @@ export const caseStudiesPart3: MasterBlogPost[] = [
     "excerpt": "Compare INSEAD and London Business School through career goals, programme structure, location and professional opportunities.",
     "metaTitle": "INSEAD vs LBS: Which MBA Is Right for You? | MBA Wizards Case Studies",
     "metaDescription": "Compare INSEAD and London Business School through career goals, programme structure, location and professional opportunities.",
-    "coverImage": "/images/blogs/case-studies/insead-vs-lbs-mba-career-fit.jpg",
+    "coverImage": "/images/toppers/ravi-aggarwal.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",

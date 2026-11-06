@@ -8,7 +8,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Understand how to review MBA application rejections, evaluate school fit and identify areas for improvement before reapplying.",
     "metaTitle": "MBA Rejection: What Should You Change Before Reapplying? | MBA Wizards Case Studies",
     "metaDescription": "Understand how to review MBA application rejections, evaluate school fit and identify areas for improvement before reapplying.",
-    "coverImage": "/images/blogs/case-studies/what-to-do-after-mba-application-rejection.jpg",
+    "coverImage": "/images/toppers/sheetal-bhatnagar.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -270,7 +270,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Understand how applicants with low GPAs can evaluate academic requirements and strengthen their applications through credible professional evidence.",
     "metaTitle": "MBA with Low GPA: Is a Competitive Application Possible? | MBA Wizards Case Studies",
     "metaDescription": "Understand how applicants with low GPAs can evaluate academic requirements and strengthen their applications through credible professional evidence.",
-    "coverImage": "/images/blogs/case-studies/mba-admission-with-low-gpa.jpg",
+    "coverImage": "/images/toppers/devesh-lahori.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -532,7 +532,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Explore how professionals can evaluate whether an MBA is the right route for a career transition and how to communicate that decision.",
     "metaTitle": "MBA for Career Switchers: Is It the Right Move? | MBA Wizards Case Studies",
     "metaDescription": "Explore how professionals can evaluate whether an MBA is the right route for a career transition and how to communicate that decision.",
-    "coverImage": "/images/blogs/case-studies/mba-for-career-switchers.jpg",
+    "coverImage": "/images/toppers/anita-bhatnagar.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -794,7 +794,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Learn how Indian professionals can evaluate international MBA opportunities without overseas work experience.",
     "metaTitle": "MBA Without International Work Experience | MBA Wizards Case Studies",
     "metaDescription": "Learn how Indian professionals can evaluate international MBA opportunities without overseas work experience.",
-    "coverImage": "/images/blogs/case-studies/mba-without-international-work-experience.jpg",
+    "coverImage": "/images/toppers/gagan-nanda.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1056,7 +1056,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Discover how to select MBA programmes based on profile competitiveness, career goals, costs, entry requirements and school fit.",
     "metaTitle": "How to Shortlist MBA Universities Abroad | MBA Wizards Case Studies",
     "metaDescription": "Discover how to select MBA programmes based on profile competitiveness, career goals, costs, entry requirements and school fit.",
-    "coverImage": "/images/blogs/case-studies/how-to-shortlist-mba-universities-abroad.jpg",
+    "coverImage": "/images/toppers/ayushi-sharma.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1320,7 +1320,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Explore how AI-powered MBA interview simulations can help applicants practise responses, identify weaknesses and improve interview readiness.",
     "metaTitle": "AI MBA Interviewer: Preparing Beyond Question Lists | MBA Wizards Case Studies",
     "metaDescription": "Explore how AI-powered MBA interview simulations can help applicants practise responses, identify weaknesses and improve interview readiness.",
-    "coverImage": "/images/blogs/case-studies/ai-mba-interviewer-practice.jpg",
+    "coverImage": "/images/toppers/dhruvi-kakkar.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1583,7 +1583,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Understand why evaluating academics, work experience and career goals should precede MBA university selection.",
     "metaTitle": "MBA Profile Assessment Before Choosing Universities | MBA Wizards Case Studies",
     "metaDescription": "Understand why evaluating academics, work experience and career goals should precede MBA university selection.",
-    "coverImage": "/images/blogs/case-studies/mba-profile-assessment-before-university-selection.jpg",
+    "coverImage": "/images/toppers/gaurav-mishra.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -1845,7 +1845,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Discover how AI tools and expert mentors can work together to support MBA applicants without replacing authentic personal storytelling.",
     "metaTitle": "AI vs Human MBA Admissions Guidance | MBA Wizards Case Studies",
     "metaDescription": "Discover how AI tools and expert mentors can work together to support MBA applicants without replacing authentic personal storytelling.",
-    "coverImage": "/images/blogs/case-studies/ai-vs-human-mba-admissions-guidance.jpg",
+    "coverImage": "/images/toppers/kanchan-puniya.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2108,7 +2108,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Explore a structured MBA application journey covering profile assessment, exam selection, university research and application planning.",
     "metaTitle": "MBA Admissions Roadmap: Why Mentorship Matters | MBA Wizards Case Studies",
     "metaDescription": "Explore a structured MBA application journey covering profile assessment, exam selection, university research and application planning.",
-    "coverImage": "/images/blogs/case-studies/mba-admissions-roadmap-mentor-guidance.jpg",
+    "coverImage": "/images/toppers/gopal-sharma.jpeg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
@@ -2371,7 +2371,7 @@ export const caseStudiesPart5: MasterBlogPost[] = [
     "excerpt": "Understand how coordinated exam preparation, profile development, application strategy and interview preparation support a more coherent MBA journey.",
     "metaTitle": "Personalised MBA Admissions Consulting: One Strategy | MBA Wizards Case Studies",
     "metaDescription": "Understand how coordinated exam preparation, profile development, application strategy and interview preparation support a more coherent MBA journey.",
-    "coverImage": "/images/blogs/case-studies/personalised-mba-admissions-consulting-journey.jpg",
+    "coverImage": "/images/toppers/prerna-chaudhary.jpg",
     "author": {
       "name": "Mr. Surinder Gupta (IIT Roorkee)",
       "role": "Founder & Master Admissions Mentor (25+ Yrs Exp)",
