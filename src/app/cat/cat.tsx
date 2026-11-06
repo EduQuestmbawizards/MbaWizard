@@ -16,14 +16,6 @@ import CtaSection from "@/components/shared/cta-section/CtaSection";
 import CatMockSection from "@/components/shared/cat-mock-section/CatMockSection";
 import CatMockPopup from "@/components/shared/cat-mock-popup/CatMockPopup";
 
-
-
-
-
-
-
-
-
 const catArticles = [
   { tag: "CAT Strategy", emoji: "🧩", title: "CAT DILR: How to Crack the Toughest Section with Novel Set Strategies", excerpt: "Deep-dive into the 5 most common CAT DILR set archetypes, with frameworks for solving unconventional puzzles.", href: "/blogs/cat-2025-dilr-strategy" },
   { tag: "PI Preparation", emoji: "🎓", title: "CAT PI Preparation Guide: 30-Day Plan, Top Questions & Evaluation Rubrics", excerpt: "A structured 30-day preparation roadmap to convert IIM Ahmedabad, Bangalore, Calcutta, and Lucknow interview calls.", href: "/blogs/cat-pi-preparation-guide" },
