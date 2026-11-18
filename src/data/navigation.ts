@@ -26,6 +26,10 @@ export const navigationItems: NavItem[] = [
     href: "/about-us",
   },
   {
+    title: "AI Study Planner",
+    href: "/ai-study-planner",
+  },
+  {
     title: "Test Prep",
     groups: [
       {
@@ -132,6 +136,7 @@ export const navigationItems: NavItem[] = [
 ];
 
 export const footerPopularCourses = [
+  { title: "AI Study Planner", href: "/ai-study-planner" },
   { title: "AI Career Intelligence", href: "/career-intelligence" },
   { title: "GMAT Coaching", href: "/gmat-coaching" },
   { title: "CAT Coaching", href: "/cat" },
@@ -140,6 +145,7 @@ export const footerPopularCourses = [
 ];
 
 export const footerUsefulLinks = [
+  { title: "AI Study Planner Portal", href: "/ai-study-planner" },
   { title: "Career Intelligence Tool", href: "/career-intelligence" },
   { title: "About Us", href: "/about-us" },
   { title: "Contact Us", href: "/contact-us" },

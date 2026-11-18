@@ -5,6 +5,7 @@ import Programs from "@/components/home/programs/Programs";
 import CareerIntelligenceSection from "@/components/shared/career-intelligence-section/CareerIntelligenceSection";
 import Methodology from "@/components/home/methodology/Methodology";
 import PrepTools from "@/components/home/prep-tools/PrepTools";
+import AiPlannerShowcase from "@/components/shared/ai-planner-showcase/AiPlannerShowcase";
 import ToppersShowcase from "@/components/home/toppers-showcase/ToppersShowcase";
 import WhyMbaWizards from "@/components/shared/why-mba-wizards/WhyMbaWizards";
 import MythVsFact from "@/components/shared/myth-vs-fact/MythVsFact";
@@ -37,6 +38,7 @@ export default function HomeContent() {
       <Programs />
       <Methodology />
       <PrepTools />
+      <AiPlannerShowcase />
       <ToppersShowcase />
       <WhyMbaWizards exam="MBA" />
       <MythVsFact exam="GMAT & CAT" items={gmatMyths} />

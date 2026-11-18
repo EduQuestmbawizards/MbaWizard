@@ -12,6 +12,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import ExamUpdates from "@/components/shared/exam-updates/ExamUpdates";
 import ExamTimetable from "@/components/shared/exam-timetable/ExamTimetable";
 import RelatedArticles from "@/components/shared/related-articles/RelatedArticles";
+import AiPlannerShowcase from "@/components/shared/ai-planner-showcase/AiPlannerShowcase";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 import CatMockSection from "@/components/shared/cat-mock-section/CatMockSection";
 import CatMockPopup from "@/components/shared/cat-mock-popup/CatMockPopup";
@@ -41,6 +42,7 @@ export default function CatContent() {
       <ExamTimetable defaultExam="CAT" />
       {/* Scroll trigger marker after 10 sections */}
       <div id="cat-mock-trigger-section-10" />
+      <AiPlannerShowcase title="AI Study Planner for CAT 2026: Deterministic Pacing & Auto-Rescheduling" />
       <RelatedArticles
         articles={catArticles}
         title="CAT Strategy Hub"

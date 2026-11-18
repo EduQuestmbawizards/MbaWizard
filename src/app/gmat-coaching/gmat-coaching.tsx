@@ -13,6 +13,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import ExamUpdates from "@/components/shared/exam-updates/ExamUpdates";
 import ExamTimetable from "@/components/shared/exam-timetable/ExamTimetable";
 import RelatedArticles from "@/components/shared/related-articles/RelatedArticles";
+import AiPlannerShowcase from "@/components/shared/ai-planner-showcase/AiPlannerShowcase";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
 
@@ -44,6 +45,7 @@ export default function GmatCoachingContent() {
       />
       <ExamUpdates defaultExam="GMAT" />
       <ExamTimetable defaultExam="GMAT" />
+      <AiPlannerShowcase title="AI Study Planner for GMAT Focus: Autonomous Daily Timetables &amp; 24/7 Mentorship" />
       <RelatedArticles
         articles={gmatArticles}
         title="GMAT Focus Prep Guides"

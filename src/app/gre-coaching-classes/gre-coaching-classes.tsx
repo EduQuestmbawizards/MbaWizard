@@ -13,6 +13,7 @@ import TestimonialsCarousel from "@/components/shared/testimonials-carousel/Test
 import ExamUpdates from "@/components/shared/exam-updates/ExamUpdates";
 import ExamTimetable from "@/components/shared/exam-timetable/ExamTimetable";
 import RelatedArticles from "@/components/shared/related-articles/RelatedArticles";
+import AiPlannerShowcase from "@/components/shared/ai-planner-showcase/AiPlannerShowcase";
 import CtaSection from "@/components/shared/cta-section/CtaSection";
 
 const greArticles = [
@@ -40,6 +41,7 @@ export default function GreCoachingClassesContent() {
       />
       <ExamUpdates defaultExam="GRE" />
       <ExamTimetable defaultExam="GRE" />
+      <AiPlannerShowcase title="AI Study Planner for Shorter GRE: Dynamic Scheduling &amp; Vocabulary Clinics" />
       <RelatedArticles
         articles={greArticles}
         title="GRE Prep Strategies"

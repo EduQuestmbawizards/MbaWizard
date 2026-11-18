@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AiPlannerShowcase from "@/components/shared/ai-planner-showcase/AiPlannerShowcase";
 import styles from "./CareerIntelligence.module.css";
 
 const TOOL_EXTERNAL_URL = "https://carrer.analysis.ai.mbawizards.co.in/";
@@ -1126,6 +1127,9 @@ export default function CareerIntelligencePage() {
           </div>
         </div>
       </section>
+
+      {/* 6.5 AI STUDY PLANNER INTERACTIVE SHOWCASE */}
+      <AiPlannerShowcase compact title="Complement Your Profile with the AI Study Planner" />
 
       {/* 7. FINAL LAUNCH CTA HERO BANNER */}
       <section className={styles.finalLaunchSection}>
