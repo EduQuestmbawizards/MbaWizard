@@ -344,6 +344,7 @@ export default function AiStudyPlannerPage() {
 
             <Link href="/contact-us" className={styles.heroTertiaryBtn}>
               <span>Book Institutional Consultation</span>
+              <span className={styles.btnArrow}>→</span>
             </Link>
           </div>
 
