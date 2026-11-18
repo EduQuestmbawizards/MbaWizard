@@ -63,7 +63,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
 }
 
@@ -73,7 +73,7 @@ body {
   flex-direction: column;
   line-height: 1.6;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
   position: relative;
 }

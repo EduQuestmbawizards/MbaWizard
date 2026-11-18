@@ -363,11 +363,6 @@ export default function AiStudyPlannerPage() {
               <div className={styles.metricVal}>24/7</div>
               <div className={styles.metricLabel}>Syllabus-Contained AI Tutor</div>
             </div>
-            <div className={styles.metricDivider} />
-            <div className={styles.metricCard}>
-              <div className={styles.metricVal}>0%</div>
-              <div className={styles.metricLabel}>Public Bot Registrations (Strict Auth)</div>
-            </div>
           </div>
         </div>
       </section>
