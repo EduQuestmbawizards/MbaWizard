@@ -74,32 +74,36 @@
   background: #ffffff;
   padding: 6px 0;
   position: relative;
+  width: 100%;
 }
 
 .mainNavContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: clamp(10px, 1.5vw, 20px);
-  padding-left: clamp(12px, 2vw, 24px);
-  padding-right: clamp(12px, 2vw, 24px);
+  gap: clamp(6px, 1vw, 16px);
+  padding-left: clamp(10px, 1.5vw, 24px) !important;
+  padding-right: clamp(10px, 1.5vw, 24px) !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
 }
 
 /* Logo */
 .logoLink {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
 .logoImg {
-  height: 44px;
+  height: 40px;
   width: auto;
-  max-width: 185px;
+  max-width: clamp(135px, 9.5vw, 175px);
   object-fit: contain;
   display: block;
+  flex-shrink: 0;
 }
 
 .logoText {
@@ -126,34 +130,58 @@
 .desktopNavList {
   display: flex;
   align-items: center;
-  gap: clamp(8px, 1.2vw, 16px);
+  gap: clamp(3px, 0.65vw, 10px);
+  flex-shrink: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .navItem {
   position: relative;
+  flex-shrink: 0;
 }
 
 .navLink {
-  font-size: 14.5px;
+  font-size: clamp(12.5px, 0.88vw, 14px);
   font-weight: 600;
   color: var(--color-text-main);
-  padding: 6px 5px;
+  padding: 6px clamp(3px, 0.4vw, 7px);
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   transition: color var(--transition-fast);
   cursor: pointer;
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 .navLink:hover {
   color: var(--color-accent-gold);
 }
 
+.aiPlannerBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: linear-gradient(135deg, rgba(5, 22, 77, 0.08) 0%, rgba(201, 168, 76, 0.16) 100%);
+  border: 1px solid rgba(201, 168, 76, 0.45);
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #05164d;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-left: 2px;
+}
+
 .chevron {
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   transition: transform var(--transition-fast);
+  font-size: 9px;
+  line-height: 1;
 }
 
 .navItem:hover .chevron {
@@ -165,7 +193,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 240px;
+  min-width: 230px;
   background: #ffffff;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-xl);
@@ -176,6 +204,12 @@
   transform: translateY(10px);
   transition: all var(--transition-normal);
   z-index: 100;
+}
+
+/* Right-align dropdowns on rightmost items to avoid off-screen overflow */
+.navItem:nth-last-child(-n+3) .dropdownMenu {
+  left: auto;
+  right: 0;
 }
 
 .navItem:hover .dropdownMenu {
@@ -193,7 +227,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 9px 18px;
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--color-text-main);
   font-weight: 500;
   transition: background-color var(--transition-fast), color var(--transition-fast);
@@ -209,7 +243,7 @@
   position: absolute;
   top: 0;
   left: 100%;
-  min-width: 260px;
+  min-width: 250px;
   background: #ffffff;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-xl);
@@ -221,6 +255,12 @@
   transition: all var(--transition-normal);
   max-height: 400px;
   overflow-y: auto;
+}
+
+.navItem:nth-last-child(-n+3) .flyoutMenu {
+  left: auto;
+  right: 100%;
+  transform: translateX(-10px);
 }
 
 .dropdownItem:hover .flyoutMenu {
@@ -248,7 +288,7 @@
 .headerActions {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   flex-shrink: 0;
 }
 
@@ -256,9 +296,9 @@
   background: var(--color-accent-gold);
   color: #000000;
   font-weight: 700;
-  font-size: 12.5px;
-  letter-spacing: 0.4px;
-  padding: 7px 16px;
+  font-size: clamp(10.5px, 0.78vw, 12px);
+  letter-spacing: 0.3px;
+  padding: 6px clamp(9px, 0.8vw, 14px);
   border-radius: var(--radius-sm);
   text-transform: uppercase;
   white-space: nowrap;
@@ -268,6 +308,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .bookDemoBtn:hover {
@@ -280,13 +321,17 @@
 /* Mobile Toggle */
 .mobileToggleBtn {
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
   background: var(--color-bg-alt);
   color: var(--color-primary);
+  font-size: 18px;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 /* Mobile Menu Drawer */
@@ -294,7 +339,8 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
+/* Breakpoint: switch to clean mobile menu drawer below 1200px to prevent any clipping */
+@media (max-width: 1200px) {
   .topBarContact .topBarEmail {
     display: none;
   }
@@ -330,7 +376,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 82%;
+    width: 84%;
     max-width: 340px;
     height: 100%;
     background: #ffffff;
@@ -362,6 +408,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border: none;
   }
 
   .mobileNavList {

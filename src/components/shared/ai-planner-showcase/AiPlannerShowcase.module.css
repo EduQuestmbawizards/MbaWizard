@@ -450,6 +450,27 @@
   transform: translateY(-2px);
 }
 
+.playToggleBtn {
+  background: #f1f5f9;
+  border: 1.5px solid #cbd5e1;
+  color: #05164d;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+}
+
+.playToggleBtn:hover {
+  background: #05164d;
+  color: #c9a84c;
+  border-color: #05164d;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .slideContainer {

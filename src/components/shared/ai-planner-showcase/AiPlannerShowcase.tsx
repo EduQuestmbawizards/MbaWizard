@@ -159,15 +159,19 @@ interface AiPlannerShowcaseProps {
   title?: string;
   subtitle?: string;
   compact?: boolean;
+  autoPlay?: boolean;
 }
 
 export default function AiPlannerShowcase({
   title = "AI Career & Study Planner: Autonomous Daily Scheduling & AI Mentorship",
   subtitle = "Experience the production-ready full-stack educational engine built with FastAPI, React 18, and GPT-4o-mini to turn ambitious syllabi into achievable daily victories.",
   compact = false,
+  autoPlay = false, // Default to false so 1st image stays strictly as the default starting image
 }: AiPlannerShowcaseProps) {
-  const [currentIdx, setCurrentIdx] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [currentIdx, setCurrentIdx] = useState(0); // Guaranteed starting 1st image
+  const [isPlaying, setIsPlaying] = useState(autoPlay);
+  const [isHovered, setIsHovered] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const nextSlide = () => {
@@ -178,24 +182,49 @@ export default function AiPlannerShowcase({
     setCurrentIdx((prev) => (prev - 1 + plannerSlides.length) % plannerSlides.length);
   };
 
+  // Reset to 1st image when scrolled away, ensuring fresh visit always starts at 1st image
   useEffect(() => {
-    if (isPaused) return;
+    const el = sectionRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            setCurrentIdx(0); // Reset to 1st image when out of view
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isPlaying || isHovered) {
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
+
     timerRef.current = setInterval(() => {
       nextSlide();
-    }, 6000);
+    }, 7000);
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isPaused]);
+  }, [isPlaying, isHovered]);
 
   const active = plannerSlides[currentIdx];
 
   return (
     <section
+      ref={sectionRef}
       className={`${styles.showcaseSection} ${compact ? styles.compactSection : ""}`}
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       aria-label="MBA Wizards AI Career & Study Planner Platform Showcase"
     >
       <div className={styles.container}>
@@ -296,7 +325,10 @@ export default function AiPlannerShowcase({
                 <button
                   key={slide.id}
                   type="button"
-                  onClick={() => setCurrentIdx(i)}
+                  onClick={() => {
+                    setCurrentIdx(i);
+                    setIsPlaying(false);
+                  }}
                   className={`${styles.dot} ${i === currentIdx ? styles.dotActive : ""}`}
                   aria-label={`Go to slide ${i + 1}: ${slide.title}`}
                 >
@@ -312,6 +344,16 @@ export default function AiPlannerShowcase({
               aria-label="Next slide"
             >
               ›
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setIsPlaying((p) => !p)}
+              className={styles.playToggleBtn}
+              aria-label={isPlaying ? "Pause auto-slides" : "Start auto-slides"}
+              title={isPlaying ? "Pause slideshow" : "Play slideshow"}
+            >
+              {isPlaying ? "⏸ Pause" : "▶ Play"}
             </button>
           </div>
         </div>
