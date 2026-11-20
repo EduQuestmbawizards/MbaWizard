@@ -1,0 +1,772 @@
+/* Dedicated CityUHK MBA Hub Page Styles */
+
+.hubPageWrapper {
+  width: 100%;
+  background-color: #f8fafc;
+  color: #1a202c;
+  min-height: 100vh;
+}
+
+/* BREADCRUMB */
+.breadcrumbBar {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 12px 0;
+  font-size: 13px;
+}
+
+.breadcrumbContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  flex-wrap: wrap;
+}
+
+.breadcrumbLink {
+  color: #05164d;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbLink:hover {
+  color: #850028;
+}
+
+.breadcrumbCurrent {
+  color: #850028;
+  font-weight: 700;
+}
+
+/* HERO SECTION (BANNER 0 PROMOTION) */
+.heroSection {
+  background-image: 
+    linear-gradient(135deg, rgba(0, 7, 45, 0.92) 0%, rgba(5, 22, 77, 0.88) 40%, rgba(112, 0, 34, 0.94) 100%),
+    url('/images/cityu-mba/cityu-campus-students.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: clamp(40px, 6vw, 80px) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201, 168, 76, 0.18);
+  border: 1px solid #c9a84c;
+  color: #fce79f;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.heroTitle {
+  font-size: clamp(32px, 4.5vw, 50px);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.heroTitle span {
+  background: linear-gradient(135deg, #fce79f 0%, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSubtext {
+  font-size: clamp(16px, 2vw, 19px);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.55;
+  margin-bottom: 28px;
+}
+
+.heroCtas {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, #c9a84c 0%, #e2be5f 100%);
+  color: #05164d;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 13px 28px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.4);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(201, 168, 76, 0.6);
+}
+
+.btnOutline {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 24px;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btnOutline:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* HERO STATS CARD */
+.heroQuickCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 28px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.quickCardTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fce79f;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quickSpecList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quickSpecRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+  font-size: 13px;
+}
+
+.quickSpecLabel {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.quickSpecVal {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* KEY STATS BAR */
+.statsStrip {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 32px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.statItem {
+  text-align: center;
+  padding: 12px;
+  border-right: 1px solid #edf2f7;
+}
+
+.statItem:last-child {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .statItem {
+    border-right: none;
+    border-bottom: 1px solid #edf2f7;
+  }
+}
+
+.statMetric {
+  font-size: 32px;
+  font-weight: 900;
+  color: #850028;
+  margin-bottom: 4px;
+}
+
+.statTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #05164d;
+  margin-bottom: 4px;
+}
+
+.statDesc {
+  font-size: 11.5px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* SECTION STYLING */
+.section {
+  padding: clamp(50px, 8vw, 90px) 0;
+}
+
+.sectionAlt {
+  background: #ffffff;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.sectionEyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  color: #850028;
+  background: #fff0f3;
+  border: 1px solid #fecdd3;
+  padding: 4px 16px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 900;
+  color: #05164d;
+  line-height: 1.2;
+}
+
+.sectionSubtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+/* 1. MEET CITYUHK */
+.meetGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.meetCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.meetCard:hover {
+  transform: translateY(-5px);
+  border-color: #850028;
+  box-shadow: 0 12px 30px rgba(133, 0, 40, 0.1);
+}
+
+.meetBadge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #850028;
+  background: #fff0f3;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.meetMetric {
+  font-size: 34px;
+  font-weight: 900;
+  color: #850028;
+  margin-bottom: 8px;
+}
+
+.meetCardTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #05164d;
+  margin-bottom: 8px;
+}
+
+.meetCardText {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* 2. WHY AN MBA */
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.whyCard {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px;
+  transition: all 0.25s ease;
+}
+
+.whyCard:hover {
+  background: #ffffff;
+  transform: translateY(-4px);
+  border-color: #c9a84c;
+  box-shadow: 0 12px 25px rgba(201, 168, 76, 0.15);
+}
+
+.whyIcon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.whyCardTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #05164d;
+  margin-bottom: 8px;
+}
+
+.whyCardDesc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* 3. PROGRAMME AT A GLANCE */
+.glanceBox {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  padding: 36px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.specRowList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.specItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.specTag {
+  font-size: 12px;
+  font-weight: 800;
+  color: #850028;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.specHeading {
+  font-size: 16px;
+  font-weight: 800;
+  color: #05164d;
+}
+
+.concGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.concCard {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  transition: all 0.25s ease;
+}
+
+.concCard:hover {
+  background: #ffffff;
+  border-color: #850028;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(133, 0, 40, 0.08);
+}
+
+.concTitle {
+  font-size: 17px;
+  font-weight: 800;
+  color: #05164d;
+  margin-bottom: 4px;
+}
+
+.concTagline {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #850028;
+  margin-bottom: 10px;
+}
+
+.concDesc {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.concList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.concList li {
+  font-size: 12px;
+  color: #1e293b;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.concList li::before {
+  content: "✓";
+  color: #c9a84c;
+  font-weight: 900;
+}
+
+.concOutcome {
+  font-size: 12px;
+  color: #64748b;
+  font-style: italic;
+  padding-top: 10px;
+  border-top: 1px dashed #cbd5e1;
+}
+
+/* 4. WHO IT IS FOR */
+.whoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.whoCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.whoIcon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.whoTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #05164d;
+  margin-bottom: 4px;
+}
+
+.whoProfile {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #850028;
+  margin-bottom: 10px;
+}
+
+.whoBenefit {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* 5 & 6. FORM & FOLLOW-US WRAPPER */
+.interestSection {
+  background: linear-gradient(135deg, #05164d 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: clamp(50px, 8vw, 90px) 0;
+}
+
+.formCardWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  background: #ffffff;
+  color: #1a202c;
+  border-radius: 20px;
+  padding: clamp(24px, 4vw, 44px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 900px) {
+  .formCardWrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formLeftCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formLeftHeader h3 {
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 900;
+  color: #05164d;
+  margin-bottom: 12px;
+}
+
+.formLeftHeader p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.servicePoints {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.servicePoints li {
+  font-size: 14px;
+  color: #1e293b;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.followBox {
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.followTitle {
+  font-size: 13px;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.socialRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  font-size: 13px;
+  color: #05164d;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.socialLink:hover {
+  background: #850028;
+  color: #ffffff;
+  border-color: #850028;
+}
+
+/* FORM FIELDS */
+.interestForm {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 500px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fieldLabel {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.inputControl,
+.selectControl,
+.textareaControl {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 13.5px;
+  background: #ffffff;
+  color: #0f172a;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.inputControl:focus,
+.selectControl:focus,
+.textareaControl:focus {
+  border-color: #850028;
+  box-shadow: 0 0 0 3px rgba(133, 0, 40, 0.12);
+}
+
+.btnSubmit {
+  background: linear-gradient(135deg, #850028 0%, #05164d 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 13px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btnSubmit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(133, 0, 40, 0.4);
+}
+
+.successBox {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* FAQ SECTION */
+.faqAccordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.faqQuestion {
+  width: 100%;
+  padding: 18px 24px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #05164d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faqQuestion:hover {
+  color: #850028;
+}
+
+.faqIcon {
+  font-size: 20px;
+  font-weight: 400;
+  color: #850028;
+  transition: transform 0.2s ease;
+}
+
+.faqAnswer {
+  padding: 0 24px 20px;
+  font-size: 14.5px;
+  color: #475569;
+  line-height: 1.6;
+}

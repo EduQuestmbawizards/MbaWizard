@@ -107,6 +107,10 @@ export const navigationItems: NavItem[] = [
   {
     title: "College Consulting",
     href: "/premium-university-consulting-packages",
+    subItems: [
+      { title: "Global Admissions Consulting", href: "/premium-university-consulting-packages" },
+      { title: "CityUHK MBA Hub (Explore)", href: "/cityuhk-mba" },
+    ],
   },
   {
     title: "Toppers",
@@ -136,6 +140,7 @@ export const navigationItems: NavItem[] = [
 ];
 
 export const footerPopularCourses = [
+  { title: "CityUHK MBA Hub (New)", href: "/cityuhk-mba" },
   { title: "AI Study Planner", href: "/ai-study-planner" },
   { title: "AI Career Intelligence", href: "/career-intelligence" },
   { title: "GMAT Coaching", href: "/gmat-coaching" },
@@ -145,6 +150,7 @@ export const footerPopularCourses = [
 ];
 
 export const footerUsefulLinks = [
+  { title: "CityUHK MBA Hub (Explore)", href: "/cityuhk-mba" },
   { title: "AI Study Planner Portal", href: "/ai-study-planner" },
   { title: "Career Intelligence Tool", href: "/career-intelligence" },
   { title: "About Us", href: "/about-us" },
