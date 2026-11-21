@@ -238,7 +238,7 @@ export default function BlogDetail({ blog, relatedBlogs = [] }: BlogDetailProps)
           <div className={styles.coverWrapper}>
             <img
               src={blog.coverImage}
-              alt={blog.title}
+              alt={blog.coverImageAlt || blog.title}
               className={styles.coverImage}
               onError={(e) => {
                 e.currentTarget.onerror = null;

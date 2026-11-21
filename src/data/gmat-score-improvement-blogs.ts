@@ -8,6 +8,7 @@ export interface MasterBlogPost {
   metaTitle: string;
   metaDescription: string;
   coverImage: string;
+  coverImageAlt?: string;
   author: BlogAuthor;
   category: string;
   tags: string[];

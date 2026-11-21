@@ -12,10 +12,12 @@ import { seo15MasterBlogs } from "@/data/seo-15-master-blogs";
 import { gmatOctoberSeoBlogs } from "@/data/gmat-october-seo-blogs";
 import { gmatGreOctoberBatch2Blogs } from "@/data/gmat-gre-october-batch2-blogs";
 import { mbaWizardsCaseStudies } from "@/data/mba-wizards-case-studies";
+import { apExamPlannerBlog } from "@/data/ap-exam-planner-blog";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export const all15MasterBlogs: MasterBlogPost[] = [
+  apExamPlannerBlog,
   ...mbaWizardsCaseStudies,
   ...gmatGreOctoberBatch2Blogs,
   ...gmatOctoberSeoBlogs,
@@ -55,6 +57,7 @@ export interface Blog {
   metaTitle?: string;
   metaDescription?: string;
   coverImage: string;
+  coverImageAlt?: string;
   author: BlogAuthor;
   category: string;
   tags: string[];
@@ -77,6 +80,7 @@ export interface BlogSummary {
   excerpt: string;
   metaDescription?: string;
   coverImage: string;
+  coverImageAlt?: string;
   author: BlogAuthor;
   category: string;
   tags: string[];
@@ -215,6 +219,7 @@ export async function getUnifiedBlogBySlug(slug: string): Promise<Blog | null> {
       metaTitle: masterBlog.metaTitle || `${masterBlog.title} — MBA Wizards`,
       metaDescription: masterBlog.metaDescription || masterBlog.excerpt,
       coverImage: masterBlog.coverImage || `/images/blogs/${masterBlog.slug}.jpg`,
+      coverImageAlt: masterBlog.coverImageAlt,
       author: masterBlog.author,
       category: masterBlog.category,
       tags: masterBlog.tags,
