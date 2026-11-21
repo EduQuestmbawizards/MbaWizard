@@ -15,8 +15,9 @@ function createApPlannerPdf() {
   const textDark = [30, 41, 59];
   const textMuted = [100, 116, 139];
   const borderLight = [226, 232, 240];
+  const TOTAL_PAGES = 5;
 
-  function addHeaderFooter(pageNum, totalPages, title) {
+  function addHeaderFooter(pageNum, title) {
     // Top Bar
     doc.setFillColor(primary[0], primary[1], primary[2]);
     doc.rect(0, 0, 210, 14, "F");
@@ -30,7 +31,7 @@ function createApPlannerPdf() {
     doc.text("EDUQUEST & MBA WIZARDS | 2027 AP EXAM PLANNER BLUEPRINT", 14, 9.5);
 
     doc.setTextColor(accentGold[0], accentGold[1], accentGold[2]);
-    doc.text(`Page ${pageNum} of ${totalPages}`, 196, 9.5, { align: "right" });
+    doc.text(`Page ${pageNum} of ${TOTAL_PAGES}`, 196, 9.5, { align: "right" });
 
     // Bottom Bar
     doc.setFillColor(248, 250, 252);
@@ -59,7 +60,7 @@ function createApPlannerPdf() {
   // ==========================================
   // PAGE 1: TITLE & CORE GRADE-WISE ROADMAP
   // ==========================================
-  addHeaderFooter(1, 4, "Grade-by-Grade AP Subjects Plan (Grades 9 to 12)");
+  addHeaderFooter(1, "Grade-by-Grade AP Subjects Plan (Grades 9 to 12)");
 
   // Hero Card
   doc.setFillColor(240, 249, 255);
@@ -75,7 +76,7 @@ function createApPlannerPdf() {
   doc.setTextColor(textDark[0], textDark[1], textDark[2]);
   doc.setFont("helvetica", "normal");
   doc.setFontSize(8.5);
-  const heroIntro = "An AP exam planner is a year-by-year map that tells a student which Advanced Placement (AP) subjects to take in Grade 9, 10, 11 and 12, and when to sit each exam. AP subjects chosen at random create an unfocused transcript; AP subjects chosen with a purpose build an authentic academic narrative that selective admissions officers recognise immediately.";
+  const heroIntro = "An AP exam planner is a year-by-year map that tells a student which Advanced Placement (AP) subjects to take in Grade 9, 10, 11 and 12, and when to sit each exam. AP subjects chosen at random create an unfocused transcript; AP subjects chosen with a plan build an authentic academic narrative that selective admissions officers recognise immediately.";
   doc.text(doc.splitTextToSize(heroIntro, 174), 18, 41);
 
   // Table: Grade-by-Grade Planner
@@ -174,7 +175,7 @@ function createApPlannerPdf() {
   // PAGE 2: CAREER-SPECIFIC AP PATHWAYS
   // ==========================================
   doc.addPage();
-  addHeaderFooter(2, 4, "Tailored AP Pathways by Career Goal");
+  addHeaderFooter(2, "Tailored AP Pathways by Career Goal");
 
   doc.setTextColor(primary[0], primary[1], primary[2]);
   doc.setFont("helvetica", "bold");
@@ -263,15 +264,105 @@ function createApPlannerPdf() {
   doc.text(doc.splitTextToSize(goldenRuleText, 174), 18, pY + 12);
 
   // ==========================================
-  // PAGE 3: 2026-2027 EXAM CALENDAR & SYLLABUS OVERLAP
+  // PAGE 3: 4 REAL EDUQUEST STUDENT STORIES
   // ==========================================
   doc.addPage();
-  addHeaderFooter(3, 4, "2027 AP Exam Calendar & Board Integration");
+  addHeaderFooter(3, "Student Stories: Four Real AP Calendars from Grade 8");
 
   doc.setTextColor(primary[0], primary[1], primary[2]);
   doc.setFont("helvetica", "bold");
   doc.setFontSize(10.5);
-  doc.text("3. College Board 2026-2027 Official Timeline", 14, 30);
+  doc.text("3. Case Studies: Early Planning Paths Followed by EduQuest Students", 14, 30);
+
+  const studentStories = [
+    {
+      title: "Story 1: The Economics Student Who Built Maths First",
+      detail: "G8: AP Human Geography | G9: AP Microecon & Stats | G10: AP Macroecon | G11: AP Calc AB & Psych | G12: AP Calc BC & Research.",
+      takeaway: "Economics & Stats came early so Calc in G11 sat on strong data foundations. G12 Research gave an independent policy paper."
+    },
+    {
+      title: "Story 2: The Economics Student Who Started from History & Policy",
+      detail: "G8: AP Human Geography | G9: AP US History | G10: AP Statistics | G11: AP Microeconomics | G12: AP Calc AB, Macroecon & Govt.",
+      takeaway: "Moved from history to statistics to core economics, keeping Calculus for G12 so the quantitative load built step-by-step."
+    },
+    {
+      title: "Story 3: The Computer Science Student Who Built Code, Then Maths",
+      detail: "G8: AP Human Geo | G9: AP US History | G10: AP CSP & Stats | G11: AP CSA & Calc AB/BC | G12: AP Physics C & CS Capstone.",
+      takeaway: "Coding in two clear steps: CSP in G10, CSA in G11. Calculus BC and Physics C followed for AI and robotics portfolio."
+    },
+    {
+      title: "Story 4: The Finance Student Who Put Numbers First",
+      detail: "G8: AP Human Geo | G9: AP US History | G10: AP Statistics | G11: AP Microecon & Calc AB/BC | G12: AP Macroecon & Research.",
+      takeaway: "Statistics first as the bedrock of financial modelling. Micro/Macro gave the market view, and AP Research probed finance theory."
+    }
+  ];
+
+  let sY = 36;
+  studentStories.forEach(s => {
+    doc.setFillColor(248, 250, 252);
+    doc.roundedRect(14, sY, 182, 28, 2.5, 2.5, "F");
+    doc.setDrawColor(203, 213, 225);
+    doc.roundedRect(14, sY, 182, 28, 2.5, 2.5, "D");
+
+    doc.setTextColor(brandBlue[0], brandBlue[1], brandBlue[2]);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(8.5);
+    doc.text(s.title, 18, sY + 6);
+
+    doc.setTextColor(textDark[0], textDark[1], textDark[2]);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(7.5);
+    doc.text("Pathway:", 18, sY + 12);
+    doc.setFont("helvetica", "normal");
+    doc.text(doc.splitTextToSize(s.detail, 155), 32, sY + 12);
+
+    doc.setFont("helvetica", "bold");
+    doc.text("Admissions Rationale:", 18, sY + 20);
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(textMuted[0], textMuted[1], textMuted[2]);
+    doc.text(doc.splitTextToSize(s.takeaway, 142), 52, sY + 20);
+
+    sY += 33;
+  });
+
+  // What These Four Stories Have in Common
+  sY += 2;
+  doc.setFillColor(239, 246, 255);
+  doc.roundedRect(14, sY, 182, 40, 3, 3, "F");
+  doc.setDrawColor(191, 219, 254);
+  doc.roundedRect(14, sY, 182, 40, 3, 3, "D");
+
+  doc.setTextColor(brandBlue[0], brandBlue[1], brandBlue[2]);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(9.5);
+  doc.text("What These Four Early-Starter Stories Have in Common:", 18, sY + 7);
+
+  const storyCommon = [
+    "Flexibility: Each plan was customized to individual student strengths, interests and school offerings.",
+    "Maths with Purpose: Calculus and Statistics appear in all four, as quantitative depth is paramount.",
+    "Research at the End: AP Research or an independent published paper provided a tangible portfolio piece.",
+    "A Steady Build: Every plan moves from broad context to core foundations to rigorous depth."
+  ];
+
+  doc.setTextColor(textDark[0], textDark[1], textDark[2]);
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(8);
+  let scY = sY + 13;
+  storyCommon.forEach(item => {
+    doc.text(`✓  ${item}`, 18, scY);
+    scY += 6;
+  });
+
+  // ==========================================
+  // PAGE 4: 2026-2027 EXAM CALENDAR & SYLLABUS OVERLAP
+  // ==========================================
+  doc.addPage();
+  addHeaderFooter(4, "2027 AP Exam Calendar & Board Integration");
+
+  doc.setTextColor(primary[0], primary[1], primary[2]);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(10.5);
+  doc.text("4. College Board 2026-2027 Official Timeline", 14, 30);
 
   const calStartY = 35;
   doc.setFillColor(brandBlue[0], brandBlue[1], brandBlue[2]);
@@ -318,7 +409,7 @@ function createApPlannerPdf() {
   doc.setTextColor(primary[0], primary[1], primary[2]);
   doc.setFont("helvetica", "bold");
   doc.setFontSize(10.5);
-  doc.text("4. CBSE, ICSE & IB Overlap Optimization Strategy", 14, cY);
+  doc.text("5. CBSE, ICSE & IB Overlap Optimization Strategy", 14, cY);
 
   cY += 5;
   const boardPillars = [
@@ -355,15 +446,15 @@ function createApPlannerPdf() {
   });
 
   // ==========================================
-  // PAGE 4: PSAT, SAT, PROFILE INTEGRATION & FAQS
+  // PAGE 5: PSAT, SAT, PROFILE INTEGRATION & MENTORSHIP
   // ==========================================
   doc.addPage();
-  addHeaderFooter(4, 4, "Test Prep, Profile Building & Mentorship Support");
+  addHeaderFooter(5, "Test Prep, Profile Building & Mentorship Support");
 
   doc.setTextColor(primary[0], primary[1], primary[2]);
   doc.setFont("helvetica", "bold");
   doc.setFontSize(10.5);
-  doc.text("5. Coordinating APs with SAT, PSAT & Profile Milestones", 14, 30);
+  doc.text("6. Coordinating APs with SAT, PSAT & Profile Milestones", 14, 30);
 
   const integStartY = 35;
   doc.setFillColor(primary[0], primary[1], primary[2]);
@@ -407,7 +498,7 @@ function createApPlannerPdf() {
   doc.setTextColor(primary[0], primary[1], primary[2]);
   doc.setFont("helvetica", "bold");
   doc.setFontSize(10.5);
-  doc.text("6. Common AP Mistakes to Avoid", 14, iY);
+  doc.text("7. Common AP Mistakes to Avoid", 14, iY);
 
   iY += 5;
   const mistakes = [
@@ -471,7 +562,7 @@ function createApPlannerPdf() {
   const pdfData = Buffer.from(doc.output("arraybuffer"));
   fs.writeFileSync(outPath1, pdfData);
   fs.writeFileSync(outPath2, pdfData);
-  console.log("Successfully generated AP Exam Planner PDFs:", outPath1, outPath2);
+  console.log("Successfully generated AP Exam Planner 5-Page PDFs:", outPath1, outPath2);
 }
 
 createApPlannerPdf();

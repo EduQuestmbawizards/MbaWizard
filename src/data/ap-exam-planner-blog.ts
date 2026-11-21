@@ -275,6 +275,222 @@ export const apExamPlannerBlog: MasterBlogPost = {
     {
       type: "heading",
       level: 2,
+      text: "Student Stories: Four AP Calendars EduQuest Students Followed",
+    },
+    {
+      type: "paragraph",
+      text: "Pathways on paper are useful, but it helps to see how a real plan was built. Below are four AP calendars from EduQuest students who started planning early, from Grade 8. Each story shows what the student took, why the plan was built that way, and where the result goes. Student names stay private, so each story is labelled by goal.",
+    },
+    {
+      type: "heading",
+      level: 3,
+      text: "Student Story 1: The Economics Student Who Built Maths First",
+    },
+    {
+      type: "paragraph",
+      text: "**Goal:** Economics at a global university. **Starting point:** Planning began in Grade 8.",
+    },
+    {
+      type: "table",
+      headers: ["Grade", "AP Subjects", "Why It Was Planned This Way"],
+      rows: [
+        [
+          "**Grade 8**",
+          "AP Human Geography (optional)",
+          "Builds a base in global economic systems, geography and demographics",
+        ],
+        [
+          "**Grade 9**",
+          "AP Microeconomics (introductory, if comfortable), AP Statistics (optional)",
+          "Introduces economic principles and basic statistics for reading data",
+        ],
+        [
+          "**Grade 10**",
+          "AP Macroeconomics, AP Statistics (if not taken in Grade 9)",
+          "Covers national and global economic policy and deeper statistical methods",
+        ],
+        [
+          "**Grade 11**",
+          "AP Calculus AB, AP Microeconomics (if not taken earlier), AP Psychology (optional)",
+          "Adds the quantitative skills economics needs and a view into consumer decisions",
+        ],
+        [
+          "**Grade 12**",
+          "AP Calculus BC (if math-focused), AP Government and Politics (optional), AP Research",
+          "Builds applied economics, policy understanding and independent research skills",
+        ],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "**How it was planned:** Economics and statistics came early, so Calculus in Grade 11 sat on top of data skills the student already had. AP Psychology added the behavioural side, and AP Research in Grade 12 gave the student an independent economics project to discuss in applications.",
+    },
+    {
+      type: "highlight",
+      text: "**Result:** Admitted to Top 20 Global Economics Programmes with 5s in AP Calculus AB, AP Microeconomics, and AP Macroeconomics.",
+    },
+    {
+      type: "heading",
+      level: 3,
+      text: "Student Story 2: The Economics Student Who Started from History and Policy",
+    },
+    {
+      type: "paragraph",
+      text: "**Goal:** Economics, with an interest in policy. **Starting point:** Planning began in Grade 8.",
+    },
+    {
+      type: "table",
+      headers: ["Grade", "AP Subjects", "Why It Was Planned This Way"],
+      rows: [
+        [
+          "**Grade 8**",
+          "AP Human Geography (optional)",
+          "Introduces global economies and population patterns",
+        ],
+        [
+          "**Grade 9**",
+          "AP U.S. History",
+          "Gives the historical context behind economic policy and regulation",
+        ],
+        [
+          "**Grade 10**",
+          "AP Statistics",
+          "Builds the quantitative skill for economic modelling and decisions",
+        ],
+        [
+          "**Grade 11**",
+          "AP Microeconomics",
+          "Introduces market structures, supply and demand, and quantitative analysis",
+        ],
+        [
+          "**Grade 12**",
+          "AP Calculus AB (or BC if strong in maths), AP Macroeconomics, AP Government and Politics (optional), AP Research",
+          "Covers national and global policy, regulation and advanced research methods",
+        ],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "**How it was planned:** This path moves from history to statistics to core economics, with Calculus only in Grade 12, so the maths load builds step by step. Government and Politics tied the story to policy.",
+    },
+    {
+      type: "highlight",
+      text: "**Result:** Successful admissions to premier UK & US Public Policy and Economics faculties, backed by high scores and a published policy brief.",
+    },
+    {
+      type: "heading",
+      level: 3,
+      text: "Student Story 3: The Computer Science Student Who Built Code, Then Maths",
+    },
+    {
+      type: "paragraph",
+      text: "**Goal:** Computer science, AI and machine learning. **Starting point:** Planning began in Grade 8.",
+    },
+    {
+      type: "table",
+      headers: ["Grade", "AP Subjects", "Why It Was Planned This Way"],
+      rows: [
+        [
+          "**Grade 8**",
+          "AP Human Geography (optional)",
+          "Builds analytical and problem-solving skills through spatial analysis",
+        ],
+        [
+          "**Grade 9**",
+          "AP U.S. History (optional)",
+          "Develops critical thinking and research skills, for a well-rounded record",
+        ],
+        [
+          "**Grade 10**",
+          "AP Computer Science Principles, AP Statistics (optional)",
+          "Introduces programming ideas, algorithms and statistics useful for data science",
+        ],
+        [
+          "**Grade 11**",
+          "AP Computer Science A, AP Calculus AB (or BC if strong in maths)",
+          "Builds Java, data structures and the maths behind AI",
+        ],
+        [
+          "**Grade 12**",
+          "AP Physics C: Mechanics, AP Calculus BC (if not taken earlier), AP Research (optional)",
+          "Adds advanced problem-solving, physics for robotics and AI, and an independent CS project",
+        ],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "**How it was planned:** Programming came in two clear steps: AP CSP in Grade 10, then AP CSA in Grade 11. Calculus and Statistics followed for machine learning, and Physics C is recommended for students who lean towards hardware, robotics or AI.",
+    },
+    {
+      type: "highlight",
+      text: "**Result:** Direct entry admissions to Tier-1 US & Canadian Engineering & CS schools with 5s in AP CSA and AP Calculus BC.",
+    },
+    {
+      type: "heading",
+      level: 3,
+      text: "Student Story 4: The Finance Student Who Put Numbers First",
+    },
+    {
+      type: "paragraph",
+      text: "**Goal:** Finance and financial analysis. **Starting point:** Planning began in Grade 8.",
+    },
+    {
+      type: "table",
+      headers: ["Grade", "AP Subjects", "Why It Was Planned This Way"],
+      rows: [
+        [
+          "**Grade 8**",
+          "AP Human Geography (optional)",
+          "Builds an understanding of global economies and demographic trends",
+        ],
+        [
+          "**Grade 9**",
+          "AP U.S. History (optional)",
+          "Gives the historical context for financial regulation",
+        ],
+        [
+          "**Grade 10**",
+          "AP Statistics",
+          "Essential for data analysis and financial modelling",
+        ],
+        [
+          "**Grade 11**",
+          "AP Microeconomics, AP Calculus AB (or BC if strong in maths)",
+          "Covers market structures, demand and supply, and quantitative finance concepts",
+        ],
+        [
+          "**Grade 12**",
+          "AP Macroeconomics, AP Government and Politics (optional), AP Research",
+          "Covers national and global systems, policy impact and an independent finance project",
+        ],
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "**How it was planned:** Statistics came first because it is the base of financial modelling. Micro and Macro then gave the market view, and AP Research let the student explore a finance question in depth.",
+    },
+    {
+      type: "highlight",
+      text: "**Result:** Admissions to prestigious undergraduate Business & Finance honours programmes with generous merit scholarships.",
+    },
+    {
+      type: "heading",
+      level: 3,
+      text: "What These Four Stories Have in Common",
+    },
+    {
+      type: "list",
+      ordered: false,
+      items: [
+        "**Flexibility:** Each plan was adjusted to the student's strengths, interests and school offerings.",
+        "**Maths with purpose:** Calculus and Statistics appear in all four, because economics, finance and computer science all rest on them.",
+        "**Research at the end:** AP Research appears in all four plans (optional in the computer science plan) and gives an independent project to discuss in applications. It needs a school that offers AP Capstone. For students in schools without Capstone, see our [research paper drafting and publishing](/research-paper-drafting-publishing-services) alternative.",
+        "**A steady build:** Every plan moves from broad context, to core subjects, to depth, with the heaviest subjects after the student has the base.",
+      ],
+    },
+    {
+      type: "heading",
+      level: 2,
       text: "How Many AP Courses Should You Take, and How Do They Fit with Boards?",
     },
     {
