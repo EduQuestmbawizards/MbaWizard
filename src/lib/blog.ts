@@ -14,10 +14,16 @@ import { gmatGreOctoberBatch2Blogs } from "@/data/gmat-gre-october-batch2-blogs"
 import { mbaWizardsCaseStudies } from "@/data/mba-wizards-case-studies";
 import { apExamPlannerBlog } from "@/data/ap-exam-planner-blog";
 import { gmatVerbal47Blog } from "@/data/gmat-verbal-47-blog";
+import { gymTrainer685Blog } from "@/data/gym-trainer-685-blog";
+import { ipUniversity675Blog } from "@/data/ip-university-675-blog";
+import { gmat735Blog } from "@/data/gmat-735-blog";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export const all15MasterBlogs: MasterBlogPost[] = [
+  gmat735Blog,
+  ipUniversity675Blog,
+  gymTrainer685Blog,
   gmatVerbal47Blog,
   apExamPlannerBlog,
   ...mbaWizardsCaseStudies,
