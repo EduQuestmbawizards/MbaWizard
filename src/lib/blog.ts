@@ -17,10 +17,12 @@ import { gmatVerbal47Blog } from "@/data/gmat-verbal-47-blog";
 import { gymTrainer685Blog } from "@/data/gym-trainer-685-blog";
 import { ipUniversity675Blog } from "@/data/ip-university-675-blog";
 import { gmat735Blog } from "@/data/gmat-735-blog";
+import { gmat440To685Blog } from "@/data/gmat-440-to-685-blog";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export const all15MasterBlogs: MasterBlogPost[] = [
+  gmat440To685Blog,
   gmat735Blog,
   ipUniversity675Blog,
   gymTrainer685Blog,
