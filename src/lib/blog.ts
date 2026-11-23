@@ -13,10 +13,12 @@ import { gmatOctoberSeoBlogs } from "@/data/gmat-october-seo-blogs";
 import { gmatGreOctoberBatch2Blogs } from "@/data/gmat-gre-october-batch2-blogs";
 import { mbaWizardsCaseStudies } from "@/data/mba-wizards-case-studies";
 import { apExamPlannerBlog } from "@/data/ap-exam-planner-blog";
+import { gmatVerbal47Blog } from "@/data/gmat-verbal-47-blog";
 import { getSortedWPBlogs, WPBlog } from "./wp-blogs";
 import { sanitizeWpHtml } from "@/lib/sanitize-wp-html";
 
 export const all15MasterBlogs: MasterBlogPost[] = [
+  gmatVerbal47Blog,
   apExamPlannerBlog,
   ...mbaWizardsCaseStudies,
   ...gmatGreOctoberBatch2Blogs,
